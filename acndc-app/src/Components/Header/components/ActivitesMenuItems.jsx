@@ -1,22 +1,17 @@
 export const ActivitesMenuItems = [
   {
-    title: 'Marketing',
-    path: '/marketing',
+    title: "Programmes",
+    path: '/',
     cName: 'dropdown-link'
   },
   {
-    title: 'Consulting',
-    path: '/consulting',
+    title: 'Commissions',
+    path: '/',
     cName: 'dropdown-link'
   },
   {
-    title: 'Design',
+    title: "Zone d'intervention",
     path: '/design',
-    cName: 'dropdown-link'
-  },
-  {
-    title: 'Development',
-    path: '/development',
     cName: 'dropdown-link'
   }
 ];

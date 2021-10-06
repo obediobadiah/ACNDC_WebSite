@@ -1,22 +1,43 @@
 export const SommeNousMenuItems = [
   {
-    title: 'Partnership',
-    path: '/marketing',
+    title: "Notre Vision et Mission",
+    path: '/',
     cName: 'dropdown-link'
   },
   {
-    title: 'Consulting',
-    path: '/consulting',
+    title: "Nos Objectifs",
+    path: '/',
     cName: 'dropdown-link'
   },
   {
-    title: 'Design',
-    path: '/design',
+    title: "Nos Approches",
+    path: '/',
     cName: 'dropdown-link'
   },
   {
-    title: 'Development',
-    path: '/development',
+    title: "Nos Resultats",
+    path: '/',
+    cName: 'dropdown-link'
+  },
+  {
+    title: "Organe de Gestions",
+    path: '/',
+    cName: 'dropdown-link'
+  },
+  {
+    title: "Nos Partenaires",
+    path: '/',
+    cName: 'dropdown-link'
+  },
+  {
+    title: "Nos Rapports",
+    path: '/',
+    cName: 'dropdown-link'
+  },
+  {
+    title: "Nos Outils de travail",
+    path: '/',
     cName: 'dropdown-link'
   }
+  
 ];

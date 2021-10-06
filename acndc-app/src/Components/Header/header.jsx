@@ -60,10 +60,13 @@ function Header() {
 	return (
 		<>
 			<div className="header">
+				{/* <div className="menu-icon" onClick={handleClick}>
+					<i className={click ? 'fas fa-times': 'fas fa-bars'} />
+				</div> */}
+				<div className="header-details">
 				<div className="menu-icon" onClick={handleClick}>
 					<i className={click ? 'fas fa-times': 'fas fa-bars'} />
 				</div>
-				<div className="header-details">
 					<div className="logo">
 						<Link to="/" className="header-logo">
 						<img src={logoImg} alt="Site logo" className="logoimg" />
@@ -74,14 +77,14 @@ function Header() {
 							<li className="header-item"
 								onMouseEnter={onMouseEnterAct}
 								onMouseLeave={onMouseLeaveAct}>
-								<Link to="/" className="header-links" onClick={closeMobileMenu}>Nos Activités <i className="fas fa-caret-down"/></Link>
+								<Link to="/" className="header-links" >Nos Activités <i className="fas fa-caret-down"/></Link>
 								{Actdropdown && <ActivitesDropdown />}
 							</li>
 
 							<li className="header-item"
 								onMouseEnter={onMouseEnterSom}
 								onMouseLeave={onMouseLeaveSom}>
-								<Link to="/" className="header-links" onClick={closeMobileMenu}>Qui somme-nous? <i className="fas fa-caret-down"/></Link>
+								<Link to="/" className="header-links">Qui somme-nous? <i className="fas fa-caret-down"/></Link>
 								{SomDropdown && <SommeNousDropdown />}
 							</li>
 
