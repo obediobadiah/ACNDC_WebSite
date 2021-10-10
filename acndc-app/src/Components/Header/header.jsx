@@ -101,7 +101,7 @@ function Header() {
 						</ul>
 					</div>
 					<div className="Button-container">
-						<button className="btn">DONATE</button>
+						<button className="btn">DONATION</button>
 					</div>
 				</div>
 			</div>

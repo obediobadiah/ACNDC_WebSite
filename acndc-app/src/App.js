@@ -1,13 +1,24 @@
 import React from 'react';
-import { BrowserRouter as Router} from 'react-router-dom'
+import { Switch, BrowserRouter as Router, Route} from 'react-router-dom'
+import LandingPage from './Components/Landing Page/components/LandingPage'
 import Header from './Components/Header/header'
 import Footer from './Components/Footer/components/Footer'
 
 function App() {
   return (
     <Router>
-      <Header />
-      <Footer />
+      <Switch>
+        <Route path="/" exact>
+          <LandingPage />
+        </Route>
+        <Route path="/header">
+          <Header />
+        </Route>
+        <Route path="/footer">
+          <Footer />
+        </Route>
+
+      </Switch>
     </Router>
   );
 }
