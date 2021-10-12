@@ -46,7 +46,7 @@
 }
 
 .intro_text .Intro_button:hover{
-	color: #00632C;
+	color: #113f26;
 	cursor: pointer;
 }
 
@@ -69,6 +69,68 @@
 	border-radius: 20px;
 	margin-left: 20px;
 	margin-top: -200px;
+}
+
+.Slogan_container{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.Slogan_content{
+	padding: 100px;
+}
+
+.Slogan_content h1{
+	color: #00632C;
+	text-align: center;
+}
+
+.Vision_content{
+	background-color: rgb(204, 204, 204);
+	padding: 70px 70px 70px 70px;
+}
+
+.Vision_content .Vision_Boxes{
+	display: flex;
+	 justify-content: space-around;
+	 align-items: center;
+}
+
+.Vision_content .Vision_Boxes .Vision_Box img{
+	width: 100px;
+	height: auto;
+}
+
+.Vision_content .Vision_Boxes .Vision_Box .Vision_Img{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.Vision_content .Vision_Boxes .Vision_Box .Vision_Title p{
+	text-align: center;
+	color: #00632C;
+	margin: 30px 0 20px 0
+}
+
+.Vision_content .Vision_Boxes .Vision_Box .Vision_detail{
+	margin: 30px 80px 30px 80px;
+}
+
+.Vision_content .Vision_Boxes .Vision_Box .Vision_detail p{
+	text-align: center;
+	color: #00632C;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.Vision_content .Vision_Boxes .Vision_Box .Vision_link{
+	text-align: center;
+}
+.Vision_content .Vision_Boxes .Vision_Box .Vision_link .VisionMission_Link{
+	
+	color: #00632C;
 }
 
 @media screen and (max-width: 960px) {
@@ -100,6 +162,7 @@
 		 justify-content: center;
 		 align-items: center;
 		 margin-top: -250px;
+		 margin-left: -10px;
 	}
 	
 	.intro_details .intro_images .intro_img_1{
@@ -115,5 +178,27 @@
 		margin-left: 0;
 		margin-top: 20px;
 	}
+	.Slogan_content{
+		padding: 30px;
+	}
+	
+	.Slogan_content h1{
+		color: #00632C;
+		font-size: 1rem;
+		text-align: center;
+	}
 
+	.Vision_content .Vision_Boxes{
+		display: grid;
+		 justify-content: space-around;
+		 align-items: center;
+	}
+
+	.Vision_content .Vision_Boxes .Vision_Box{
+		margin-top: 50px;
+	}
+
+	.Vision_content .Vision_Boxes .Vision_Box .Vision_detail{
+		margin: 30px 40px 30px 40px;
+	}
 }

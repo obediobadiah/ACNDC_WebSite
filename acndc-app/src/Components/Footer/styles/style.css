@@ -49,8 +49,8 @@
 	justify-content: center;
 	align-items: center;
 	/* background-color: darkblue; */
-	border-left: 2px solid rgb(156, 156, 156);
-	border-right: 2px solid rgb(156, 156, 156);
+	border-left: 1px solid rgb(156, 156, 156);
+	border-right: 1px solid rgb(156, 156, 156);
 }
 
 .address .address_text h2{
@@ -122,8 +122,8 @@
 	.address{
 		border-left: none;
 		border-right: none;
-		border-top: 2px solid rgb(156, 156, 156);
-		border-bottom: 2px solid rgb(156, 156, 156);
+		border-top: 1px solid rgb(156, 156, 156);
+		border-bottom: 1px solid rgb(156, 156, 156);
 		padding: 50px 0 50px 0;
 	}
 
