@@ -133,6 +133,54 @@
 	color: #00632C;
 }
 
+.About_contents .About_details{
+	display: flex;
+	justify-content: space-around;
+	padding: 70px 150px 50px 70px;
+}
+
+.About_contents .About_details .About_Img {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.About_contents .About_details .About_Img img{
+	width: 500px;
+	height: auto;
+	border-radius: 30px;
+}
+
+.About_contents .About_details .About_Text{
+	padding-left: 100px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.About_contents .About_details .About_Text h2{
+	color: #00632C;
+}
+
+.About_contents .About_details .About_Text p{
+	text-align: justify;
+	margin: 30px 0 30px 0;
+	color: #00632C;
+}
+
+.About_Button .AboutButton{
+	color: white;
+	background-color: #5c5c5c;
+	padding: 10px 10px 10px 10px;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+.About_Button .AboutButton:hover{
+	background-color: #353535;
+}
+
 @media screen and (max-width: 960px) {
 	.intro_details_text .intro_text{
 		padding: 60px 0 0 0;
@@ -200,5 +248,24 @@
 
 	.Vision_content .Vision_Boxes .Vision_Box .Vision_detail{
 		margin: 30px 40px 30px 40px;
+	}
+
+	.About_contents .About_details{
+		display: block;
+		justify-content: space-around;
+		padding: 30px 30px 30px 30px;
+	}
+	
+	.About_contents .About_details .About_Img img{
+		width: 400px;
+		height: auto;
+		border-radius: 30px;
+	}
+
+	.About_contents .About_details .About_Text{
+		padding: 30px;
+		display: grid;
+		justify-content: center;
+		align-items: center;
 	}
 }
