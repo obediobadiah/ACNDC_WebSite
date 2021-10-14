@@ -181,7 +181,97 @@
 	background-color: #353535;
 }
 
-@media screen and (max-width: 960px) {
+.Actualite_details{
+	margin: 80px 80px 80px 80px;
+	/* width: 100%; */
+}
+
+.Actualite_details .Actualite_header{
+	margin-left: 40px;
+}
+
+.Actualite_details .Actualite_header h2{
+	color: #00632C;
+	font-size: 2rem;
+}
+
+.Actualite_details .Actualite_boxes{
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.Actualite_details .Actualite_boxes .Actualite_box{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin-left: 40px;
+}
+
+
+.Actualite_details .Actualite_boxes .Actualite_box_Img img{
+	width: 100%;
+	object-fit: fill;
+}
+
+.Actualite_box .Actualite_box_text{
+	padding: 25px 25px 25px 25px;
+}
+
+.Actualite_box .Actualite_box_text .Actualite_box_text_head p{
+	background-color: #dddddd;
+	width: 90px;
+	padding: 5px;
+}
+
+.Actualite_box .Actualite_box_text .Actualite_box_text_tit p{
+	margin-top: 8px;
+	background-color: #00632C;
+	font-weight: bold;
+	color: white;
+	padding: 10px;
+}
+
+.Actualite_box .Actualite_box_text .Actualite_box_text_cont p{
+	margin: 20px 0 20px 0;
+	text-align: justify;
+}
+
+.Actualite_box_text_but .SavoirPlus{
+	background-color: #dddddd;
+	width: 90px;
+	padding: 5px;
+	text-decoration: none;
+	color: black;
+}
+
+.Actualite_box_text_but .SavoirPlus:hover{
+	background-color: #b4b4b4;
+}
+
+.Actualite_box_text_but .SavoirPlus .fas{
+	margin-left: 10px;
+}
+
+.Actualite_Button{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.Actualite_Button .Act_Button{
+	background-color: #00632C;
+	padding: 20px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+.Actualite_Button .Act_Button:hover{
+	background-color: #113f26;
+}
+
+@media screen and (max-width: 992px) {
 	.intro_details_text .intro_text{
 		padding: 60px 0 0 0;
 		display: grid;
@@ -215,13 +305,13 @@
 	
 	.intro_details .intro_images .intro_img_1{
 		width: auto;
-		height: 300px;
+		height: 500px;
 		border-radius: 20px;
 	}
 	
 	.intro_details .intro_images .intro_img_2{
 		width: auto;
-		height: 300px;
+		height: 500px;
 		border-radius: 20px;
 		margin-left: 0;
 		margin-top: 20px;
@@ -232,7 +322,7 @@
 	
 	.Slogan_content h1{
 		color: #00632C;
-		font-size: 1rem;
+		font-size: 1.5rem;
 		text-align: center;
 	}
 
@@ -247,7 +337,7 @@
 	}
 
 	.Vision_content .Vision_Boxes .Vision_Box .Vision_detail{
-		margin: 30px 40px 30px 40px;
+		margin: 0 0 10px 0;
 	}
 
 	.About_contents .About_details{
@@ -257,15 +347,66 @@
 	}
 	
 	.About_contents .About_details .About_Img img{
-		width: 400px;
+		width: 500px;
 		height: auto;
 		border-radius: 30px;
 	}
 
 	.About_contents .About_details .About_Text{
-		padding: 30px;
+		padding: 30px 10px 10px 10px;
 		display: grid;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.Actualite_details{
+		margin: 30px 30px 30px 30px;
+		/* width: 100%; */
+	}
+	
+	.Actualite_details .Actualite_header{
+		margin-left: 0px;
+	}
+	
+	.Actualite_details .Actualite_header h2{
+		color: #00632C;
+		font-size: 2.5rem;
+	}
+	
+	.Actualite_details .Actualite_header p{
+		font-size: 0.6rem;
+	}
+
+	.Actualite_details .Actualite_boxes{
+		display: grid;
+	}
+
+	
+	.Actualite_details .Actualite_boxes .Actualite_box{
+		margin-left: 0px;
+		margin-top: 30px;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	.intro_details .intro_images .intro_img_1{
+		width: auto;
+		height: 200px;
+		border-radius: 20px;
+	}
+	
+	.intro_details .intro_images .intro_img_2{
+		width: auto;
+		height: 200px;
+		border-radius: 20px;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+		.About_contents .About_details .About_Img img{
+		width: 300px;
+		height: auto;
+		border-radius: 30px;
 	}
 }

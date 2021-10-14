@@ -13,7 +13,7 @@
 
 .footer_details {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 		grid-template-rows: repeat(auto-fit, minmax(auto, 1fr));
 		gap: 15px;
 		margin-top: 80px;
@@ -107,10 +107,7 @@
 		padding: 10px 10px 10px 10px;
 	}
 	.footer_details {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-		grid-template-rows: repeat(auto-fit, minmax(auto, 1fr));
-		gap: 15px;
+		display: block;
 		margin-top: 80px;
   }
 
@@ -124,7 +121,7 @@
 		border-right: none;
 		border-top: 1px solid rgb(156, 156, 156);
 		border-bottom: 1px solid rgb(156, 156, 156);
-		padding: 50px 0 50px 0;
+		padding: 40px 0 40px 0;
 	}
 
 	.address .address_text h2{

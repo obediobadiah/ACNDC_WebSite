@@ -171,4 +171,19 @@
 	  color: #1888ff;
 	  transition: 250ms;
 	}
+
+	.btn {
+		padding: 15px 15px;
+		width: 100%;
+		height: 70px;
+		position: right;
+		outline: none;
+		overflow: none;
+		border: none;
+		font-size: 1rem;
+		font-weight: bold;
+		color: #fff;
+		cursor: pointer;
+		background-color: #3CB371;
+	  }
   }
