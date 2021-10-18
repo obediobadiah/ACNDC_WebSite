@@ -1,9 +1,7 @@
 import React from 'react';
 import { Switch, BrowserRouter as Router, Route} from 'react-router-dom'
 import LandingPage from './Components/Landing Page/components/LandingPage'
-import Header from './Components/Header/header'
-import Footer from './Components/Footer/components/Footer'
-import NewsLetter from './Components/NewsLetter/components/NewsLetter_Page'
+import Programmes from './Components/Programmes/components/Programmes'
 
 function App() {
   return (
@@ -12,14 +10,8 @@ function App() {
         <Route path="/" exact>
           <LandingPage />
         </Route>
-        <Route path="/header">
-          <Header />
-        </Route>
-        <Route path="/footer">
-          <Footer />
-        </Route>
-        <Route path="/NewsLetter_Page">
-          <NewsLetter />
+        <Route path="/Programmes">
+          <Programmes />
         </Route>
       </Switch>
     </Router>

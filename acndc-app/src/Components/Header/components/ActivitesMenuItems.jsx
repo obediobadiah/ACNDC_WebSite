@@ -1,7 +1,7 @@
 export const ActivitesMenuItems = [
   {
     title: "Programmes",
-    path: '/',
+    path: '/Programmes',
     cName: 'dropdown-link'
   },
   {
@@ -11,7 +11,7 @@ export const ActivitesMenuItems = [
   },
   {
     title: "Zone d'intervention",
-    path: '/design',
+    path: '/',
     cName: 'dropdown-link'
   }
 ];

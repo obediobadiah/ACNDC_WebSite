@@ -1,0 +1,43 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Gilroy', 'PT Sans', sans-serif;
+}
+
+.programmes_Intro{
+	margin-top: 70px;
+}
+
+.programmes_boxes{
+	display: flex;
+	justify-content: space-around;
+}
+
+.programmes_Intro h1{
+	background-color: #286f4e;
+	color: white;
+	text-align: center;
+	font-size: 3.5rem;
+	padding: 150px 150px 150px 150px;
+
+}
+
+.programmes_box{
+	width: 40%;
+	height: auto;
+	border-bottom: 10px solid #286f4e;
+	background-color: rgb(209, 209, 209);
+}
+
+.programmes_box_title{
+	margin: 0px 50px 10px 50px;
+	background-image: url('../assets/IMG-20210701-WA0060.jpg');
+}
+
+.programmes_box_title h2{
+	padding: 50px;
+	text-align: center;
+	font-size: 2rem;
+	color: white;
+}
