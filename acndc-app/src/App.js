@@ -3,6 +3,7 @@ import { Switch, BrowserRouter as Router, Route} from 'react-router-dom'
 import LandingPage from './Components/Landing Page/components/LandingPage'
 import Programmes from './Components/Programmes/components/Programmes'
 import Commissions from './Components/Commissions/components/Commission'
+import ZoneIntervention from './Components/ZoneIntervention/components/ZoneIntervention'
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path="/Commissions">
           <Commissions />
+        </Route>
+        <Route path="/ZoneIntervention">
+          <ZoneIntervention />
         </Route>
       </Switch>
     </Router>

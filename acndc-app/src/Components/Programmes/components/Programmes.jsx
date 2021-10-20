@@ -15,7 +15,7 @@ function Programmes() {
 					<div className="programmes_boxes">
 						<div className="programmes_box">
 							<div className="programmes_box_header">
-								<div className="programmes_box_title">
+								<div className="programmes_box_title" id="box1">
 									<h2>Conservation de la nature</h2>
 								</div>
 							</div>
@@ -33,7 +33,7 @@ function Programmes() {
 
 						<div className="programmes_box">
 							<div className="programmes_box_header">
-								<div className="programmes_box_title">
+								<div className="programmes_box_title" id="box2">
 									<h2>Conservation de la nature</h2>
 								</div>
 							</div>
@@ -53,7 +53,7 @@ function Programmes() {
 					<div className="programmes_boxes">
 						<div className="programmes_box">
 							<div className="programmes_box_header">
-								<div className="programmes_box_title">
+								<div className="programmes_box_title" id="box3">
 									<h2>Conservation de la nature</h2>
 								</div>
 							</div>
@@ -71,7 +71,7 @@ function Programmes() {
 
 						<div className="programmes_box">
 							<div className="programmes_box_header">
-								<div className="programmes_box_title">
+								<div className="programmes_box_title" id="box4">
 									<h2>Conservation de la nature</h2>
 								</div>
 							</div>

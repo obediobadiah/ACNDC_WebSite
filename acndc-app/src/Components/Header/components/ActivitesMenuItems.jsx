@@ -10,8 +10,8 @@ export const ActivitesMenuItems = [
     cName: 'dropdown-link'
   },
   {
-    title: "Zone d'intervention",
-    path: '/',
+    title: "Zone d'Intervention",
+    path: '/ZoneIntervention',
     cName: 'dropdown-link'
   }
 ];
