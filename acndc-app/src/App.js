@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, BrowserRouter as Router, Route} from 'react-router-dom'
 import LandingPage from './Components/Landing Page/components/LandingPage'
 import Programmes from './Components/Programmes/components/Programmes'
+import Commissions from './Components/Commissions/components/Commission'
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
         </Route>
         <Route path="/Programmes">
           <Programmes />
+        </Route>
+        <Route path="/Commissions">
+          <Commissions />
         </Route>
       </Switch>
     </Router>

@@ -6,7 +6,7 @@ export const ActivitesMenuItems = [
   },
   {
     title: 'Commissions',
-    path: '/',
+    path: '/Commissions',
     cName: 'dropdown-link'
   },
   {

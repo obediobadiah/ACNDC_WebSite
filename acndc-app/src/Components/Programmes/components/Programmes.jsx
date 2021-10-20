@@ -14,13 +14,15 @@ function Programmes() {
 					</div>
 					<div className="programmes_boxes">
 						<div className="programmes_box">
-							<div className="programmes_box_title">
-								<h2>Conservation de la nature</h2>
+							<div className="programmes_box_header">
+								<div className="programmes_box_title">
+									<h2>Conservation de la nature</h2>
+								</div>
 							</div>
 							<div className="programmes_box_txt">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum autem perspiciatis, tenetur voluptatibus soluta cumque exercitationem ullam voluptatum itaque, corrupti dicta quidem officia delectus excepturi. Sequi error ut deleniti corporis?</p>
 							</div>
-							<div className="programmes_box_txt">
+							<div className="programmes_box_txt_check">
 								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -28,15 +30,55 @@ function Programmes() {
 							</div>
 						</div>
 
-						
+
 						<div className="programmes_box">
-							<div className="programmes_box_title">
-								<h2>Conservation de la nature</h2>
+							<div className="programmes_box_header">
+								<div className="programmes_box_title">
+									<h2>Conservation de la nature</h2>
+								</div>
 							</div>
 							<div className="programmes_box_txt">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum autem perspiciatis, tenetur voluptatibus soluta cumque exercitationem ullam voluptatum itaque, corrupti dicta quidem officia delectus excepturi. Sequi error ut deleniti corporis?</p>
 							</div>
+							<div className="programmes_box_txt_check">
+								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div className="programmes_boxes">
+						<div className="programmes_box">
+							<div className="programmes_box_header">
+								<div className="programmes_box_title">
+									<h2>Conservation de la nature</h2>
+								</div>
+							</div>
 							<div className="programmes_box_txt">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum autem perspiciatis, tenetur voluptatibus soluta cumque exercitationem ullam voluptatum itaque, corrupti dicta quidem officia delectus excepturi. Sequi error ut deleniti corporis?</p>
+							</div>
+							<div className="programmes_box_txt_check">
+								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+						</div>
+
+
+						<div className="programmes_box">
+							<div className="programmes_box_header">
+								<div className="programmes_box_title">
+									<h2>Conservation de la nature</h2>
+								</div>
+							</div>
+							<div className="programmes_box_txt">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum autem perspiciatis, tenetur voluptatibus soluta cumque exercitationem ullam voluptatum itaque, corrupti dicta quidem officia delectus excepturi. Sequi error ut deleniti corporis?</p>
+							</div>
+							<div className="programmes_box_txt_check">
 								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
