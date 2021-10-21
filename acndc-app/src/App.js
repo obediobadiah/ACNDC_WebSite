@@ -4,6 +4,7 @@ import LandingPage from './Components/Landing Page/components/LandingPage'
 import Programmes from './Components/Programmes/components/Programmes'
 import Commissions from './Components/Commissions/components/Commission'
 import ZoneIntervention from './Components/ZoneIntervention/components/ZoneIntervention'
+import VisionMission from './Components/VisionMission/components/VisionMission'
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/ZoneIntervention">
           <ZoneIntervention />
+        </Route>
+        <Route path="/VisionMission">
+          <VisionMission />
         </Route>
       </Switch>
     </Router>

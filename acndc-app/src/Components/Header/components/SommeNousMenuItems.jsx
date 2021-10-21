@@ -1,7 +1,7 @@
 export const SommeNousMenuItems = [
   {
     title: "Notre Vision et Mission",
-    path: '/',
+    path: '/VisionMission',
     cName: 'dropdown-link'
   },
   {
