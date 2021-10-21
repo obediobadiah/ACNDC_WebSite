@@ -6,7 +6,7 @@ export const SommeNousMenuItems = [
   },
   {
     title: "Nos Objectifs",
-    path: '/',
+    path: '/Objectifs',
     cName: 'dropdown-link'
   },
   {
