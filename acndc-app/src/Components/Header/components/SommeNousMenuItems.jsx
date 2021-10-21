@@ -11,7 +11,7 @@ export const SommeNousMenuItems = [
   },
   {
     title: "Nos Approches",
-    path: '/',
+    path: '/Approches',
     cName: 'dropdown-link'
   },
   {

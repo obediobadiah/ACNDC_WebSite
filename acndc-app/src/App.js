@@ -6,6 +6,7 @@ import Commissions from './Components/Commissions/components/Commission'
 import ZoneIntervention from './Components/ZoneIntervention/components/ZoneIntervention'
 import VisionMission from './Components/VisionMission/components/VisionMission'
 import Objectifs from './Components/Objectifs/components/Objectifs'
+import Approches from './Components/Approches/components/Approches'
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         </Route>
         <Route path="/Objectifs">
           <Objectifs />
+        </Route>
+        <Route path="/Approches">
+          <Approches />
         </Route>
       </Switch>
     </Router>
