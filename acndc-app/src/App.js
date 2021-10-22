@@ -7,6 +7,7 @@ import ZoneIntervention from './Components/ZoneIntervention/components/ZoneInter
 import VisionMission from './Components/VisionMission/components/VisionMission'
 import Objectifs from './Components/Objectifs/components/Objectifs'
 import Approches from './Components/Approches/components/Approches'
+import Resultats from './Components/Resultats/components/Resultats'
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
         </Route>
         <Route path="/Approches">
           <Approches />
+        </Route>
+        <Route path="/Resultats">
+          <Resultats />
         </Route>
       </Switch>
     </Router>

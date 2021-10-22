@@ -27,6 +27,8 @@
 
 .Approches_textes_box .Approches_box{
 	color: #286f4e;
+	width: 100%;
+	height: auto;
 	padding: 30px;
 }
 
@@ -61,6 +63,10 @@
 
 .Approches_textes_box .Approches_box .Approche_exp{
 	margin-top: 20px;
+}
+
+.Approches_textes_box .Approches_box .Approche_exp p{
+	font-size: 0.8rem;
 }
 
 @media screen and (max-width: 992px) {

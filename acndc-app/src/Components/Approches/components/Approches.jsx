@@ -23,10 +23,12 @@ function Approches() {
 							<h1>1</h1>
 						</div>
 						<div className="Approche">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eos deserunt hic deleniti ea commodi rerum velit.</p>
+							<p>APPROCHE OPERATIONNELLE, INTERVENTIONISTE ET ACTIVISTE</p>
 						</div>
 						<div className="Approche_exp">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eaque alias molestias esse nisi, tempore, eligendi magnam maiores quas odio veritatis consequatur corporis obcaecati libero nostrum aliquam similique saepe dolores.</p>
+							<p>ACNDC travaille par activités (opérations/interventions). Celles-ci sont autant continues que discontinues, intégrées ou désintégrées les unes des autres.
+							Suivant un processus cyclique périodique (échéancier), les activités commencent et se terminent. Il est ainsi mis en place un service de coordination et d’appui aux projets (SCAP). 
+							</p>
 						</div>
 					</div>
 
@@ -37,10 +39,12 @@ function Approches() {
 							<h1>2</h1>
 						</div>
 						<div className="Approche">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eos deserunt hic deleniti ea commodi rerum velit.</p>
+							<p>APPROCHE INSTITUTIONNELLE, ORGANISATIONNELLE ET STRUCTURELLE.</p>
 						</div>
 						<div className="Approche_exp">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eaque alias molestias esse nisi, tempore, eligendi magnam maiores quas odio veritatis consequatur corporis obcaecati libero nostrum aliquam similique saepe dolores.</p>
+							<p>Cette approche repose sur cohérence de la structuration fonctionnelle (ressources), stratégiques et idéologiques à tous les niveaux centraux, intermédiaires et décentralisés. Les conseils d’administration et les commissions de conservation de la nature, de développement durable et celle de décentralisation disposent de leurs orientations, leurs gestions et de leurs résultats.
+							A cet effet, chaque structure est une institution à part entière et est en relations hiérarchiques et de collaboration avec d’autres.  ACNDC fonction ainsi en réseau et mouvement autonome.
+							</p>
 						</div>
 					</div>
 
@@ -51,10 +55,10 @@ function Approches() {
 							<h1>3</h1>
 						</div>
 						<div className="Approche">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eos deserunt hic deleniti ea commodi rerum velit.</p>
+							<p>APPROCHE CONTEXTUELLE ET EVOLUTIVE (DYNAMIQUE).</p>
 						</div>
 						<div className="Approche_exp">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eaque alias molestias esse nisi, tempore, eligendi magnam maiores quas odio veritatis consequatur corporis obcaecati libero nostrum aliquam similique saepe dolores.</p>
+							<p>ACNDC surveille continuellement le contexte de sa zone d’action afin de se positionner et d’introduire des adaptations de mise en œuvre (extension, réplication, accélération, diversification) de ses activités.</p>
 						</div>
 					</div>
 				</div>
