@@ -21,7 +21,7 @@ export const SommeNousMenuItems = [
   },
   {
     title: "Organe de Gestions",
-    path: '/',
+    path: '/OrganeGestion',
     cName: 'dropdown-link'
   },
   {

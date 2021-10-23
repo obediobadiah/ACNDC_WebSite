@@ -8,6 +8,7 @@ import VisionMission from './Components/VisionMission/components/VisionMission'
 import Objectifs from './Components/Objectifs/components/Objectifs'
 import Approches from './Components/Approches/components/Approches'
 import Resultats from './Components/Resultats/components/Resultats'
+import OrganeGestion from './Components/OrganeGestion/components/OrganeGestion'
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
         </Route>
         <Route path="/Resultats">
           <Resultats />
+        </Route>
+        <Route path="/OrganeGestion">
+          <OrganeGestion />
         </Route>
       </Switch>
     </Router>

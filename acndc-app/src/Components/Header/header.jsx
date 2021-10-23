@@ -77,7 +77,7 @@ function Header() {
 							<li className="header-item"
 								onMouseEnter={onMouseEnterAct}
 								onMouseLeave={onMouseLeaveAct}>
-								<Link to="/" className="header-links" >Nos Activités <i className="fas fa-caret-down"/></Link>
+								<Link to="" className="header-links" >Nos Activités <i className="fas fa-caret-down"/></Link>
 								{Actdropdown && <ActivitesDropdown />}
 							</li>
 
