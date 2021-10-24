@@ -121,7 +121,7 @@
 		color: #286f4e;
 		text-align: center;
 		font-size: 2rem;
-		padding: 150px 150px 300px 150px;
+		padding: 150px 10px 300px 10px;
 	}
 
 	
@@ -180,5 +180,13 @@
 		font-weight: bold;
 		padding: 10px;
 		margin: 10px 0 0  0;
+	}
+
+	
+	.OrganeGestion_Conseil_Identity{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 15px;
+		padding: 30px 10px 0 10px;
 	}
 }

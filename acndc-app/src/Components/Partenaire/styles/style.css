@@ -1,0 +1,124 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Gilroy', 'PT Sans', sans-serif;
+}
+
+.Partenaire_Intro{
+	margin-top: 70px;
+}
+
+.Partenaire_Quote{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.Partenaire_Quote img{
+	width: 50%;
+	height: auto;
+}
+
+.Partenaire_Quote h1{
+	background-color: #286f4e;
+	color: white;
+	display: grid;
+	font-size: 4rem;
+	padding: 0 100px 0 100px;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.Partenaire_Comp{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.Partenaire_Comp .Partenaire_Exp{
+	color: #286f4e;
+}
+
+.Partenaire_Comp .Partenaire_Exp h1{ 
+	text-align: center;
+	margin-top: 50px;
+}
+
+.Partenaire_Comp .Partenaire_Exp p{ 
+	text-align: center;
+	width: 800px;
+	height: auto;
+	margin-top: 50px;
+}
+
+.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img{ 
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img img{ 
+	width: 150px;
+	height: 100px;
+}
+
+.NewsLetter_Comp{
+	/* width: auto;
+	height: 800px; */
+	background-color: #ccffe3;
+	padding: 70px 0 70px 0;
+}
+
+
+
+@media screen and (max-width: 992px) {
+	.Partenaire_Quote{
+		display: grid;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.Partenaire_Quote h1{
+		background-color: #286f4e;
+		color: white;
+		display: grid;
+		font-size: 2.5rem;
+		padding: 150px 10px 150px 10px;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	
+	.Partenaire_Quote img{
+		width: 100%;
+		height: auto;
+	}
+
+	.Partenaire_Comp .Partenaire_Exp h1{ 
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.Partenaire_Comp .Partenaire_Exp p{ 
+		text-align: center;
+		width: 100%;
+		height: auto;
+		margin-top: 50px;
+		padding: 20px;
+	}
+
+	
+	.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img{ 
+		display: grid;
+		justify-content: space-around;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	
+	.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img img{ 
+		margin-top: 20px;
+	}
+}

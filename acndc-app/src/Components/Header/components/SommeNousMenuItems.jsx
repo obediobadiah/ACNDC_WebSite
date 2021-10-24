@@ -26,7 +26,7 @@ export const SommeNousMenuItems = [
   },
   {
     title: "Nos Partenaires",
-    path: '/',
+    path: '/Partenaire',
     cName: 'dropdown-link'
   },
   {

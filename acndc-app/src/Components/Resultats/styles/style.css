@@ -55,9 +55,13 @@
 	color: white;
 	padding: 20px;
 }
+.Resultats_Boxes .Resultats_Box .Resulats_Header p{
+	color: white;
+	margin-top: 10px;
+}
 
 .Resultats_Boxes .Resultats_Box .Resulats_body{
-	color: #03213c;
+	color: white;
 	padding: 20px;
 }
 

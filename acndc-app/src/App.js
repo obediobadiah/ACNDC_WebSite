@@ -9,6 +9,7 @@ import Objectifs from './Components/Objectifs/components/Objectifs'
 import Approches from './Components/Approches/components/Approches'
 import Resultats from './Components/Resultats/components/Resultats'
 import OrganeGestion from './Components/OrganeGestion/components/OrganeGestion'
+import Partenaire from './Components/Partenaire/components/Partenaire'
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
         </Route>
         <Route path="/OrganeGestion">
           <OrganeGestion />
+        </Route>
+        <Route path="/Partenaire">
+          <Partenaire />
         </Route>
       </Switch>
     </Router>

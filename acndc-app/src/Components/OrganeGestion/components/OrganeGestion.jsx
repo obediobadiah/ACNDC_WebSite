@@ -3,6 +3,7 @@ import React from 'react'
 import {Link} from 'react-scroll'
 import Header from '../../Header/header'
 import Footer from '../../Footer/components/Footer'
+import NewsLetter from '../../NewsLetter/components/NewsLetter_Page'
 import Conseil_Section from './Conseil_Section'
 import Coordination_Section from './Coordination_Section'
 import '../styles/style.css'
@@ -54,6 +55,7 @@ function OrganeGestion() {
 
 					<Conseil_Section />
 					<Coordination_Section />
+					<NewsLetter />
 
 				</div>
 			</div>

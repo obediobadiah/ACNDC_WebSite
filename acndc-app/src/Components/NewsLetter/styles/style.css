@@ -44,6 +44,7 @@
 .Impact_text .Donate_Button .Donate_But button:hover{
 	cursor: pointer;
 	color: #00632C;
+	border: 2px solid #00632C;
 }
 
 .NewsLetter_details .NewsLetter_comp{
@@ -58,11 +59,12 @@
 
 .NewsLetter_comp{
 	width: 100%;
-	border-left: 2px solid rgb(156, 156, 156);
+	border-left: 2px solid rgb(240, 240, 240);
 }
 
 .NewsLetter_details .NewsLetter_comp p{
 	font-weight: bold;
+	color: white;
 }
 
 .NewsLetter_details .NewsLetter_comp .NewLetter_Comp_Names{
@@ -137,7 +139,7 @@
 .NewsLetter_comp{
 	margin-top: 50px;
 	padding-top: 50px;
-	border-top: 2px solid rgb(156, 156, 156);
+	border-top: 2px solid rgb(240, 240, 240);;
 	border-left: none;
 }
 
