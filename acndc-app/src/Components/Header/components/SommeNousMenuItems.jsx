@@ -31,7 +31,7 @@ export const SommeNousMenuItems = [
   },
   {
     title: "Nos Rapports",
-    path: '/',
+    path: '/Rapports',
     cName: 'dropdown-link'
   },
   {

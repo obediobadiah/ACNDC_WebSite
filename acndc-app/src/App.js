@@ -10,6 +10,7 @@ import Approches from './Components/Approches/components/Approches'
 import Resultats from './Components/Resultats/components/Resultats'
 import OrganeGestion from './Components/OrganeGestion/components/OrganeGestion'
 import Partenaire from './Components/Partenaire/components/Partenaire'
+import Rapports from './Components/Rapports/components/Rapports'
 
 function App() {
   return (
@@ -44,6 +45,9 @@ function App() {
         </Route>
         <Route path="/Partenaire">
           <Partenaire />
+        </Route>
+        <Route path="/Rapports">
+          <Rapports />
         </Route>
       </Switch>
     </Router>

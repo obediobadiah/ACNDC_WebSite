@@ -1,0 +1,74 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Gilroy', 'PT Sans', sans-serif;
+}
+
+.rapport_Intro{
+	margin-top: 70px;
+}
+
+.rapport_Intro h1{
+	background-color: #ccffe3;
+	color: #286f4e;
+	text-align: center;
+	font-size: 3.5rem;
+	padding: 100px 150px 100px 150px;
+}
+
+.rapport_textes{
+	color: #286f4e;
+	margin: 50px 300px 50px 300px;
+}
+
+.rapport_boxes{
+	margin-bottom: 50px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.rapport_box{
+	margin-top: 50px;
+	display: flex;
+}
+
+.rapport_box .rapport_img img{
+	width: 300px;
+	height: auto;
+}
+
+.rapport_box .rapport_txt .rapport_texte{
+	color: #286f4e;
+	margin: 30px 0 0 30px;
+}
+
+.rapport_box .rapport_txt .rapport_texte .rapport_texte_link{
+	color: #286f4e;
+	text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+	.rapport_Intro h1{
+		font-size: 2.5rem;
+		padding: 150px 10px 150px 10px;
+	}
+	
+	.rapport_box{
+		margin-top: 50px;
+		display: grid;
+	}
+
+	.rapport_box .rapport_img{
+		margin: 0 20px 0 20px;
+	}
+
+	.rapport_box .rapport_img img{
+		width: 100%;
+		height: auto;
+	}
+}
