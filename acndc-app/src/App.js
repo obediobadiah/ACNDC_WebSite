@@ -13,6 +13,7 @@ import Partenaire from './Components/Partenaire/components/Partenaire'
 import Rapports from './Components/Rapports/components/Rapports'
 import Rapports_Details from './Components/Rapports/components/Rapports_detail'
 import OutilsTravail from './Components/OutilsTravail/components/OutilsTravail'
+import Actualite from './Components/Actualite/components/Actualite'
 
 function App() {
   return (
@@ -56,6 +57,9 @@ function App() {
         </Route>
         <Route path="/OutilsTravail">
           <OutilsTravail />
+        </Route>
+        <Route path="/Actualite">
+          <Actualite />
         </Route>
       </Switch>
     </Router>

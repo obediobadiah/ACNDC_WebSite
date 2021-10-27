@@ -90,7 +90,7 @@ function Header() {
 
 
 							<li className="header-item">
-								<Link to="/" className="header-links" onClick={closeMobileMenu}>Nos Actualités </Link>
+								<Link to="/Actualite" className="header-links" onClick={closeMobileMenu}>Nos Actualités </Link>
 							</li>
 
 
