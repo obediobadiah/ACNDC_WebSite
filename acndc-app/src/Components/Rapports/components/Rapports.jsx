@@ -30,7 +30,7 @@ function Rapports() {
 							</div>
 							<div className="rapport_txt">
 								<div className="rapport_texte">
-									<Link to="/" className="rapport_texte_link">
+									<Link to="/Rapports_detail" className="rapport_texte_link">
 										<h2>Rapport Annuel 2018</h2>
 									</Link>
 									<p>Janvier 2018</p>
@@ -48,7 +48,7 @@ function Rapports() {
 							</div>
 							<div className="rapport_txt">
 								<div className="rapport_texte">
-									<Link to="/" className="rapport_texte_link">
+									<Link to="/Rapports_detail" className="rapport_texte_link">
 										<h2>Rapport Annuel 2018</h2>
 									</Link>
 									<p>Janvier 2018</p>
@@ -66,7 +66,7 @@ function Rapports() {
 							</div>
 							<div className="rapport_txt">
 								<div className="rapport_texte">
-									<Link to="/" className="rapport_texte_link">
+									<Link to="/Rapports_detail" className="rapport_texte_link">
 										<h2>Rapport Annuel 2018</h2>
 									</Link>
 									<p>Janvier 2018</p>
@@ -84,7 +84,7 @@ function Rapports() {
 							</div>
 							<div className="rapport_txt">
 								<div className="rapport_texte">
-									<Link to="/" className="rapport_texte_link">
+									<Link to="/Rapports_detail" className="rapport_texte_link">
 										<h2>Rapport Annuel 2018</h2>
 									</Link>
 									<p>Janvier 2018</p>
