@@ -58,3 +58,25 @@
 	padding: 10px;
 	border-radius: 10px;
 }
+
+
+
+
+@media screen and (max-width: 992px) {
+
+	.outilsTravail_Intro h1{
+		font-size: 2.5rem;
+		padding: 100px 10px 100px 10px;
+	}
+
+	
+	.outilsTravail_boxes{
+		display: grid;
+		margin: 100px 0 100px 0;
+	}
+
+	
+	.outilsTravail_boxes .outilsTravail_box{
+		margin: 0 0 20px 0;
+	}
+}
