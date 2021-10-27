@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react';
 import {Link} from 'react-router-dom'
+import { Drawer, Button } from 'antd';
+// import 'antd/dist/antd.css';
 import Header from '../../Header/header'
 import Footer from '../../Footer/components/Footer'
 import NewsLetter from '../../NewsLetter/components/NewsLetter_Page'
@@ -7,6 +9,18 @@ import '../styles/style.css'
 import Act_Img1 from '../assets/IMG-20210701-WA0062.jpg'
 
 function Actualite() {
+
+	const [visible, setVisible] = useState(false);
+
+	const showDrawer = () => {
+	  setVisible(true);
+	};
+  
+	const onClose = () => {
+	  setVisible(false);
+	};
+
+
 	return (
 		<div className="Actualite_container">
 			<Header />
@@ -16,6 +30,16 @@ function Actualite() {
 						<h1>NOS OUTILS DE TRAVAIL</h1>
 					</div>
 				</div>
+
+				<Button type="primary" onClick={showDrawer}>
+					Open
+				</Button>
+				<Drawer title="Basic Drawer" placement="right" onClose={onClose} visible={visible}>
+					<p>Some contents...</p>
+					<p>Some contents...</p>
+					<p>Some contents...</p>
+				</Drawer>
+
 
 				<div className="Actualite_comp">
 					<div className="Actualite_comp_exp">
@@ -335,7 +359,7 @@ function Actualite() {
 							</div>
 
 
-							
+
 						</div>
 					</div>
 				</div>
