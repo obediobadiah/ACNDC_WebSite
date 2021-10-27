@@ -36,7 +36,7 @@ export const SommeNousMenuItems = [
   },
   {
     title: "Nos Outils de travail",
-    path: '/',
+    path: '/OutilsTravail',
     cName: 'dropdown-link'
   }
   
