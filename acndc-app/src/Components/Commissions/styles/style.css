@@ -12,6 +12,7 @@
 .commissions_Intro h1{
 	background-color: #ccffe3;
 	color: #286f4e;
+	font-weight: bold;
 	text-align: center;
 	font-size: 3.5rem;
 	padding: 150px 150px 150px 150px;
@@ -23,6 +24,8 @@
 }
 
 .commissions_textes h1{
+	font-weight: bold;
+	color: #286f4e;
 	font-size: 1.2rem;
 	text-transform: uppercase;
 	padding: 20px 0 20px 0;

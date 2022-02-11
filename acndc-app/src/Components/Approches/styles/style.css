@@ -12,6 +12,7 @@
 .Approches_Intro h1{
 	background-color: #286f4e;
 	color: white;
+	font-weight: bold;
 	text-align: center;
 	font-size: 3.5rem;
 	padding: 150px 150px 300px 150px;
@@ -41,8 +42,9 @@
 .numbers h1{
 	background-color: #286f4e;
 	color: white;
+	font-weight: bold;
 	padding: 10px;
-	width: 50px;
+	width: 60px;
 	text-align: center;
 	font-size: 1.5rem;
 	height: auto;

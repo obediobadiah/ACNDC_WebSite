@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ActivitesMenuItems } from './ActivitesMenuItems';
-import '../styles/DropdownAct.css';
+// import '../styles/DropdownAct.css';
 import { Link } from 'react-router-dom';
 
 function Dropdown() {

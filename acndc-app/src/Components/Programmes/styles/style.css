@@ -16,6 +16,7 @@
 
 .programmes_Intro h1{
 	background-color: #286f4e;
+	font-weight: bold;
 	color: white;
 	text-align: center;
 	font-size: 3.5rem;
@@ -28,7 +29,7 @@
 .programmes_box{
 	margin-left: 30px;
 	border-top: 10px solid #286f4e;
-	background-color: rgb(209, 209, 209);
+	background-color: rgb(240, 240, 240);
 }
 
 .programmes_box_header{
@@ -85,7 +86,7 @@
 	
 	padding: 50px;
 	text-align: center;
-
+	font-weight: bold;
 	font-size: 2rem;
 	color: white;
 }

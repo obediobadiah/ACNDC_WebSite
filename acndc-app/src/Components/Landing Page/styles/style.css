@@ -28,12 +28,15 @@
 
 .intro_text h1{
 	color: white;
+	line-height: 1.2;
 	font-size: 4rem;
+	font-weight: bold;
+	margin: 0;
 }
 
 .intro_text p{
 	color: white;
-	font-size: 1.4rem;
+	font-size: 1rem;
 }
 
 .intro_text .Intro_button{
@@ -84,6 +87,7 @@
 .Slogan_content h1{
 	color: #008f40;
 	text-align: center;
+	font-weight: bold;
 }
 
 .Vision_content{
@@ -122,6 +126,7 @@
 	text-align: center;
 	color: #00632C;
 	font-weight: bold;
+	line-height: 1.2;
 	font-size: 1.5rem;
 }
 
@@ -160,6 +165,7 @@
 
 .About_contents .About_details .About_Text h2{
 	color: #008f40;
+	font-weight: bold;
 }
 
 .About_contents .About_details .About_Text p{
@@ -193,6 +199,7 @@
 .Actualite_details .Actualite_header h2{
 	color: #00632C;
 	font-size: 2rem;
+	font-weight: bold;
 }
 
 .Actualite_details .Actualite_boxes{
@@ -239,12 +246,14 @@
 	background-color: #dddddd;
 	width: 90px;
 	padding: 5px;
+	border: none;
 	text-decoration: none;
 	color: black;
 }
 
 .Actualite_box_text_but .SavoirPlus:hover{
 	background-color: #b4b4b4;
+	cursor: pointer;
 }
 
 .Actualite_box_text_but .SavoirPlus .fas{

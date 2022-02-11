@@ -95,13 +95,14 @@ function Header() {
 
 
 							<li className="header-item">
-								<Link to="/" className="header-links" onClick={closeMobileMenu}>Contact </Link>
+								<Link to="/Contact" className="header-links" onClick={closeMobileMenu}>Contact </Link>
 							</li>
 							
 						</ul>
 					</div>
 					<div className="Button-container">
-						<button className="btn">DONATION</button>
+						<Link to="/Contact" onClick={closeMobileMenu}><button className="btn">DONATION</button> </Link>
+						
 					</div>
 				</div>
 			</div>

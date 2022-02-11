@@ -11,6 +11,7 @@
 
 .OrganeGestion_Intro_title h1{
 	background-color: #ccffe3;
+	font-weight: bold;
 	color: #286f4e;
 	text-align: center;
 	font-size: 3.5rem;
@@ -81,6 +82,7 @@
 .OrganeGestion_Conseil_title h2{
 	text-align: center;
 	text-transform: uppercase;
+	font-weight: bold;
 	color: #286f4e;
 }
 

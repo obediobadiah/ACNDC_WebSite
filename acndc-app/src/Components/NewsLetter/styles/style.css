@@ -25,6 +25,8 @@
 
 .Impact_text h1{
 	font-size: 4rem;
+	font-weight: bold;
+	color: white;
 }
 
 .Impact_text .Donate_Button{

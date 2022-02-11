@@ -6,7 +6,7 @@
 }
 
 .footer_contents{
-	background-color: #ebebeb;
+	background-color: #f0f0f0;
 	padding: 60px 60px 60px 60px;
 
 }
@@ -54,6 +54,7 @@
 }
 
 .address .address_text h2{
+	font-weight: bold;
 	color: #008F40;
 }
 

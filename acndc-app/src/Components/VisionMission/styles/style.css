@@ -11,6 +11,7 @@
 
 .VisionMission_Intro h1{
 	background-color: #ccffe3;
+	font-weight: bold;
 	color: #286f4e;
 	text-align: center;
 	font-size: 3.5rem;
@@ -27,12 +28,20 @@
 .VisionMission_textes{
 	width: 700px;
 	height: auto;
+	text-align: justify;
+}
+
+.VisionMission_textes p{
+	width: 700px;
+	height: auto;
 	color: #00213d;
 	text-align: justify;
 }
 
 .VisionMission_textes h1{
 	margin: 20px 0 20px 0;
+	font-weight: bold;
+	color: #00213d;
 }
 
 @media screen and (max-width: 992px) {

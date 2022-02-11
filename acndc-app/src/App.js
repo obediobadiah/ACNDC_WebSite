@@ -14,6 +14,7 @@ import Rapports from './Components/Rapports/components/Rapports'
 import Rapports_Details from './Components/Rapports/components/Rapports_detail'
 import OutilsTravail from './Components/OutilsTravail/components/OutilsTravail'
 import Actualite from './Components/Actualite/components/Actualite'
+import Contact from './Components/Contact/components/Contact'
 
 function App() {
   return (
@@ -60,6 +61,9 @@ function App() {
         </Route>
         <Route path="/Actualite">
           <Actualite />
+        </Route>
+        <Route path="/Contact">
+          <Contact />
         </Route>
       </Switch>
     </Router>

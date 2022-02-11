@@ -10,6 +10,7 @@
 }
 
 .outilsTravail_Intro h1{
+	font-weight: bold;
 	background-color: #ccffe3;
 	color: #286f4e;
 	text-align: center;
@@ -25,6 +26,7 @@
 
 .outilsTravail_boxes H2{
 	color: #286f4e;
+	font-weight: bold;
 }
 
 .outilsTravail_boxes .outilsTravail_box{

@@ -10,6 +10,7 @@
 }
 
 .rapport_detail_Intro h1{
+	font-weight: bold;
 	background-color: #ccffe3;
 	color: #286f4e;
 	text-align: center;
@@ -30,6 +31,7 @@
 	height: auto;
 	color: white;
 	background-color: #286f4e;
+	font-weight: bold;
 	text-align: center;
 }
 

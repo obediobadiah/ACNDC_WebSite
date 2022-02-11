@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Gilroy', 'PT Sans', sans-serif;
+	
 }
 
 .Actualite_Intro{
@@ -10,9 +10,11 @@
 }
 
 .Actualite_Intro h1{
+	font-family: 'Gilroy', 'PT Sans', sans-serif;
 	background-color: #286f4e;
 	color: white;
 	text-align: center;
+	font-weight: bold;
 	font-size: 3.5rem;
 	padding: 150px 150px 150px 150px;
 }
@@ -27,6 +29,7 @@
 .Actualite_comp_exp .Actualite_header h2{
 	color: #00632C;
 	font-size: 2rem;
+	font-weight: bold;
 }
 
 .Actualite_comp_exp .Actualite_boxes{
@@ -79,10 +82,12 @@
 	padding: 5px;
 	text-decoration: none;
 	color: black;
+	border: none;
 }
 
 .Actualite_box_text_but .SavoirPlus:hover{
 	background-color: #b4b4b4;
+	cursor: pointer;
 }
 
 .Actualite_box_text_but .SavoirPlus .fas{
@@ -110,6 +115,49 @@
 }
 
 
+
+
+
+
+
+
+.drawer_title{
+	background-color: #113f26;
+	margin-top: 30px;
+	padding: 20px;
+}
+.drawer_title h2{
+	color: white;
+	font-weight: bold;
+}
+
+.drawer_contents_img{
+	max-width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+.drawer_contents_img img{
+	width: 300px;
+	height: auto;
+	border-radius: 10px;
+}
+
+.drawer_contents_det{
+	margin: 50px 0 50px 0;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.drawer_contents_det_txt{
+	width: 700px;
+	height: auto;
+	color: #00213d;
+	text-align: justify;
+}
 
 @media screen and (max-width: 992px) {
 	
@@ -147,5 +195,27 @@
 		margin-left: 0px;
 		margin-top: 30px;
 	}
+
+	.drawer_contents_img{
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin-top: 50px;
+	}
+	
+	.drawer_contents_img img{
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		margin-top: 10px;
+	}
+
+	.drawer_contents_det_txt{
+		width: 100%;
+		height: auto;
+		color: #00213d;
+		text-align: justify;
+	}
+
 
 }

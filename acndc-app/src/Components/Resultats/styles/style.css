@@ -23,12 +23,15 @@
 .Resultats_Intro h1{
 	color: white;
 	font-size: 6rem;
+	font-weight: bold;
+	margin: 0;
 }
 
 .Resultats_Intro p{
 	color: white;
 	width: 600px;
 	height: auto;
+	margin-top: 0;
 }
 
 .Resultats_Intro img{
@@ -55,6 +58,12 @@
 	color: white;
 	padding: 20px;
 }
+.Resultats_Boxes .Resultats_Box .Resulats_Header h2{
+	color: white;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
 .Resultats_Boxes .Resultats_Box .Resulats_Header p{
 	color: white;
 	margin-top: 10px;
@@ -67,7 +76,7 @@
 
 .Resultats_Quote{
 	display: flex;
-	justify-content: space-between;
+	background-color: #3cb371;
 }
 
 .Resultats_Quote img{
@@ -78,6 +87,7 @@
 .Resultats_Quote h1{
 	background-color: #3cb371;
 	color: white;
+	font-weight: bold;
 	display: grid;
 	font-size: 3rem;
 	padding: 0 100px 0 100px;

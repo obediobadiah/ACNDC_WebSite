@@ -12,16 +12,19 @@
 .Partenaire_Quote{
 	display: flex;
 	width: 100%;
+	background-color: #286f4e;
+	height: auto;
 	justify-content: space-between;
 }
 
 .Partenaire_Quote img{
 	width: 50%;
+	object-fit: fill;
 	height: auto;
 }
 
 .Partenaire_Quote h1{
-	background-color: #286f4e;
+	font-weight: bold;
 	color: white;
 	display: grid;
 	font-size: 4rem;
@@ -42,6 +45,8 @@
 
 .Partenaire_Comp .Partenaire_Exp h1{ 
 	text-align: center;
+	font-weight: bold;
+	color: #286f4e;
 	margin-top: 50px;
 }
 
