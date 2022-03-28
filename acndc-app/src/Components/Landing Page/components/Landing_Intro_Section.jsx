@@ -10,8 +10,8 @@ function LandingIntro() {
 				<div className="intro_details">
 					<div className="intro_details_text">
 						<div className="intro_text">
-							<h1>Lorem ipsum <br/>dolor sit amet. </h1>
-							<p>Lorem ipsum dolor sit amet. At enim possimus. <br/>Alias inventore ab nobis iure et accusamus nisi.</p>
+							<h1>Ensemble pour la justice du genre et la justice climatique.</h1>
+							<p>La justice du genre, l’Egalite de sexe, la justice économique et la justice climatique notre travail auprès de la communauté </p>
 							<button 
 							className="Intro_button"
 							>

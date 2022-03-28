@@ -145,7 +145,7 @@ function Actualite_Section() {
 							</div>
 					</div>
 					<div className="Actualite_Button">
-						<Link to="/" className="Act_Button">
+						<Link to="/Actualite" className="Act_Button">
 							Voir plus d'article
 						</Link>
 					</div>

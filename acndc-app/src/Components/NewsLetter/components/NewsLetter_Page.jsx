@@ -10,7 +10,7 @@ function NewsLetter_Page() {
 					<div className="Impact_text">
 						<h1>IMPACT LE MONDE</h1>
 						<div className="Donate_Button">
-							<Link to="/" className="Donate_But">
+							<Link to="/Contact" className="Donate_But">
 								<button>Donation</button>
 							</Link>
 						</div>

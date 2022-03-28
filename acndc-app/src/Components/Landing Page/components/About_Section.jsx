@@ -18,7 +18,7 @@ function About_Section() {
 						</div>
 						<div className="About_Button">
 							<Link
-								to="/"
+								to="/VisionMission"
 								className="AboutButton"
 							>
 								Contactez-Nous

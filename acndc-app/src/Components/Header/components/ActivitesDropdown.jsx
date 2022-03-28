@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ActivitesMenuItems } from './ActivitesMenuItems';
-// import '../styles/DropdownAct.css';
+import '../styles/DropdownAct.css';
 import { Link } from 'react-router-dom';
 
 function Dropdown() {
@@ -12,7 +12,7 @@ function Dropdown() {
     <>
       <ul
         onClick={handleClick}
-        className={click ? 'drop-menu clicked' : 'drop-menu'}
+        className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
         {ActivitesMenuItems.map((item, index) => {
           return (

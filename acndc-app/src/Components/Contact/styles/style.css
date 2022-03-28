@@ -68,6 +68,23 @@
     color: gray;
 }
 
+.contact_links_icons{
+	padding: 10px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.contact_links_icons .address_link_icon{
+	color: gray;
+	font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.contact_links_icons .address_link_icon i:hover{
+	color: #008F40;
+}
+
 
 @media screen and (max-width: 960px) {
     .Contact_color_top{
