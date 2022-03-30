@@ -46,12 +46,15 @@
 	background-color: white;
 	border: none;
 	padding: 10px 10px 10px 10px;
-	font-weight: bold;
-	color: #00632C;
 	margin-top: 10px;
 }
 
-.intro_text .Intro_button:hover{
+.intro_text .Intro_button .Intro_but{
+	font-weight: bold;
+	color: #00632C;
+}
+
+.intro_text .Intro_button .Intro_but:hover{
 	color: #113f26;
 	cursor: pointer;
 }
@@ -267,9 +270,12 @@
 
 .Actualite_box_text_but .SavoirPlus{
 	background-color: #dddddd;
-	width: 90px;
+	width: 100%;
 	padding: 5px;
 	border: none;
+}
+
+.Actualite_box_text_but .SavoirPlus a{
 	text-decoration: none;
 	color: black;
 }

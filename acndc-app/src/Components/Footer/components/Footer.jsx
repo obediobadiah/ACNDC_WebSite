@@ -32,18 +32,18 @@ function Footer() {
 								<h5>Restez avec nous via nos réseau sociaux</h5>
 							</div>
 							<div className="address_link_icons">
-								<Link to="/" className="address_link_icon">
+								<a href="#" className="address_link_icon">
 									<i class="fab fa-facebook"></i>
-								</Link>
-								<Link to="/" className="address_link_icon">
+								</a>
+								<a href="#" className="address_link_icon">
 									<i className="fab fa-twitter"/>
-								</Link>
-								<Link to="/" className="address_link_icon">
+								</a>
+								<a href="#" className="address_link_icon">
 									<i className="fab fa-linkedin"/>
-								</Link>
-								<Link to="/" className="address_link_icon">
+								</a>
+								<a href="#" className="address_link_icon">
 									<i className="fab fa-instagram"/>
-								</Link>
+								</a>
 							</div>
 						</div>
 					</div>

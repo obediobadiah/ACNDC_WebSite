@@ -76,21 +76,24 @@
 	text-align: justify;
 }
 
-.Actualite_box_text_but .SavoirPlus{
+.Act_box_text_but .SavoirPlus{
 	background-color: #dddddd;
-	width: 90px;
+	width: 100%;
 	padding: 5px;
-	text-decoration: none;
-	color: black;
 	border: none;
 }
 
-.Actualite_box_text_but .SavoirPlus:hover{
+.Act_box_text_but .SavoirPlus a{
+	text-decoration: none;
+	color: black;
+}
+
+.Act_box_text_but .SavoirPlus:hover{
 	background-color: #b4b4b4;
 	cursor: pointer;
 }
 
-.Actualite_box_text_but .SavoirPlus .fas{
+.Act_box_text_but .SavoirPlus .fas{
 	margin-left: 10px;
 }
 
