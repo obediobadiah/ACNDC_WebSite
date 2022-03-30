@@ -1,0 +1,143 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.footer_contents{
+	background-color: #f0f0f0;
+	padding: 60px 60px 60px 60px;
+
+}
+
+.footer_details {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		grid-template-rows: repeat(auto-fit, minmax(auto, 1fr));
+		gap: 15px;
+		margin-top: 80px;
+  }
+
+.acndc_logo{
+	  width: 100%;
+	}
+
+.acndc_logo_img{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+.acndc_logo img{
+		width: 50%;
+		height: auto;
+	}
+
+.acndc_logo_text{
+		padding: 10px 10px 10px 10px;
+		text-align: center;
+	}
+
+	.acndc_logo_text h2{
+		color: #008F40;
+		font-weight: bold;
+	}
+
+.address{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	/* background-color: darkblue; */
+	border-left: 1px solid rgb(156, 156, 156);
+	border-right: 1px solid rgb(156, 156, 156);
+}
+
+.address .address_text h2{
+	font-weight: bold;
+	color: #008F40;
+}
+
+.address_links .address_link_text h5{
+	color: #008F40;
+}
+.address_link_icons{
+	padding: 10px;
+	display: flex;
+	justify-content: space-between 	;
+}
+.address_link_icons .address_link_icon{
+	color: #3CB371;
+	font-size: 3rem;
+}
+
+.address_link_icons .address_link_icon i:hover{
+	color: #008F40;
+}
+
+.footer_links{
+	height: 10%;
+	margin-top: 50px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer_links .footer_link{
+	text-decoration: none;
+	font-weight: bold;
+	color: #008F40;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.3rem;
+}
+
+.footer_links .footer_link:hover{
+	color: #01bd55;
+}
+
+.alright h3{
+	margin-top: 80px;
+	color: #3CB371;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+@media screen and (max-width: 960px) {
+
+	.footer_contents{
+		padding: 10px 10px 10px 10px;
+	}
+	.footer_details {
+		display: block;
+		margin-top: 80px;
+  }
+
+	.acndc_logo_text{
+		padding: 30px 10px 30px 10px;
+		
+	}
+
+	.address{
+		border-left: none;
+		border-right: none;
+		border-top: 1px solid rgb(156, 156, 156);
+		border-bottom: 1px solid rgb(156, 156, 156);
+		padding: 40px 0 40px 0;
+	}
+
+	.address .address_text h2{
+		text-align: center;
+	}
+	
+	.address_links{
+		margin-top: 30px;
+	}
+
+	.footer_links .footer_link{
+		text-align: center;
+	}
+
+	.alright h3{
+		margin-bottom: 50px;
+	}
+}
