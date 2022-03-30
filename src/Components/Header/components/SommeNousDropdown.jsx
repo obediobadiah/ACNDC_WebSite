@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { SommeNousMenuItems } from './SommeNousMenuItems';
 import '../styles/DropdownSom.css';
 import { Link } from 'react-router-dom';
 
@@ -14,19 +13,49 @@ function SommeNousDropdown() {
         onClick={handleClick}
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
-        {SommeNousMenuItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <Link
-                className={item.cName}
-                to={item.path}
-                onClick={() => setClick(false)}
-              >
-                {item.title}
-              </Link>
-            </li>
-          );
-        })}
+
+        <li>
+          <Link
+            className="dropdown-link"
+            onClick={() => {window.location.href="/VisionMission"}}
+          >Notre Vision et Mission
+          </Link>
+          <Link
+            className="dropdown-link"
+            onClick={() => {window.location.href="/Objectifs"}}
+          >Nos Objectifs
+          </Link>
+          <Link
+            className="dropdown-link"
+            onClick={() => {window.location.href="/Approches"}}
+          >Nos Approches
+          </Link>
+          <Link
+            className="dropdown-link"
+            onClick={() => {window.location.href="/Resultats"}}
+          >Nos Resultats
+          </Link>
+          <Link
+            className="dropdown-link"
+            onClick={() => {window.location.href="/OrganeGestion"}}
+          >Organe de Gestions
+          </Link>
+          <Link
+            className="dropdown-link"
+            onClick={() => {window.location.href="/Partenaire"}}
+          >Nos Partenaires
+          </Link>
+          <Link
+            className="dropdown-link"
+            onClick={() => {window.location.href="/Rapports"}}
+          >Nos Rapports
+          </Link>
+          <Link
+            className="dropdown-link"
+            onClick={() => {window.location.href="/OutilsTravail"}}
+          >Nos Outils de travail
+          </Link>
+        </li>
       </ul>
     </>
   );

@@ -160,7 +160,7 @@
 	text-align: center;
 }
 .Vision_content .Vision_Boxes .Vision_Box .Vision_link .VisionMission_Link{
-	
+	text-decoration: underline;
 	color: #00632C;
 }
 
@@ -388,7 +388,7 @@
 
 	.Vision_content{
 		background-color: rgb(236, 236, 236);
-		padding: 20px 20px 20px 20px;
+		padding: 70px 20px 150px 20px;
 	}
 
 

@@ -13,7 +13,6 @@ function Header() {
 	const [Actdropdown, setActDropdown] = useState(false);
 	const [SomDropdown, setSomDropdown] = useState(false);
 	const handleClick = () => setClick(!click);
-	const closeMobileMenu = () => setClick(false)
 
 
 
@@ -68,7 +67,7 @@ function Header() {
 						<i className={click ? 'fas fa-times' : 'fas fa-bars'} />
 					</div>
 					<div className="logo">
-						<Link to="/" className="header-logo">
+						<Link className="header-logo" onClick={() => {window.location.href="/"}}>
 							<img src={logoImg} alt="Site logo" className="logoimg" />
 						</Link>
 					</div>
@@ -77,31 +76,31 @@ function Header() {
 							<li className="header-item"
 								onMouseEnter={onMouseEnterAct}
 								onMouseLeave={onMouseLeaveAct}>
-								<Link to="" className="header-links" >Nos Activités <i className="fas fa-caret-down" /></Link>
+								<span to="" className="header-links" >Nos Activités <i className="fas fa-caret-down" /></span>
 								{Actdropdown && <ActivitesDropdown />}
 							</li>
 
 							<li className="header-item"
 								onMouseEnter={onMouseEnterSom}
 								onMouseLeave={onMouseLeaveSom}>
-								<Link to="/" className="header-links">Qui somme-nous? <i className="fas fa-caret-down" /></Link>
+								<span className="header-links">Qui somme-nous? <i className="fas fa-caret-down" /></span>
 								{SomDropdown && <SommeNousDropdown />}
 							</li>
 
 
 							<li className="header-item">
-								<Link to="/Actualite" className="header-links" onClick={closeMobileMenu}>Nos Actualités </Link>
+								<Link className="header-links" onClick={() => {window.location.href="/Actualite"}}>Nos Actualités </Link>
 							</li>
 
 
 							<li className="header-item">
-								<Link to="/Contact" className="header-links" onClick={closeMobileMenu}>Contact </Link>
+								<Link className="header-links" onClick={() => {window.location.href="/Contact"}}>Contact </Link>
 							</li>
 
 						</ul>
 					</div>
 					<div className="Button-container">
-						<Link to="/Contact" onClick={closeMobileMenu}><button className="btn">DONATION</button> </Link>
+						<Link onClick={() => {window.location.href="/Contact"}}><button className="btn">DONATION</button> </Link>
 
 					</div>
 				</div>
