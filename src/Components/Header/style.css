@@ -17,7 +17,6 @@
 	background-color: white;
   }
 
-
   .header-logo .logoimg {
 	width: 40%;
 	height: 60px;
@@ -124,10 +123,16 @@
 	  }
 
 	.header-logo .logoimg {
-		width: 30%;
-		height: 60px;
+		width: 60%;
+		height: 70px;
+		margin-left: 20px;
 	}
 
+	.logo{
+		justify-content: center;
+		align-items: center;
+		margin-left: 80px;
+	}
 	.header-details .logo {
 		width: 100%;
 		justify-content: center;
