@@ -26,7 +26,7 @@ function VisionMission_Section() {
 							<p>ACNDC devienne une alliance des groupes communautaire de base et ceux de la société civile actifs et agissant ensemble pour une conservation de la nature pourvoyeuse du développement durable en faveur des générations présentes et futures des femmes et des filles en particulier et des hommes par une juste exploitation, échange et utilisation des ressources naturelles et aboutissant à des visibilités aux étalages des marchés et dans les assiettes des ménages tant ruraux qu'urbains.</p>
 						</div>
 						<div className="Vision_link">
-							<Link to="/VisionMission" className="VisionMission_Link">
+							<Link onClick={() => {window.location.href="/VisionMission"}} className="VisionMission_Link">
 							Savoir Plus
 							</Link>
 						</div>					
@@ -49,7 +49,7 @@ function VisionMission_Section() {
 							<p>Il est d’encadrer l’autonomisation économique, socioculturelle et environnementale des filles et femmes.</p>
 						</div>
 						<div className="Vision_link">
-							<Link to="/VisionMission" className="VisionMission_Link">
+							<Link onClick={() => {window.location.href="/VisionMission"}} className="VisionMission_Link">
 							Savoir Plus
 							</Link>
 						</div>					
@@ -71,8 +71,8 @@ function VisionMission_Section() {
 							<p>Améliorer les conditions économiques du travail des femmes base sur les droits et le leadership des jeunes filles et des femmes, Entreprendre l’appropriation foncière et la jouissance du droit à la terre des femmes dans les nouvelles zones d’urbanisation et Introduire la gestion des ressources naturelles basées sur les communautés.</p>
 						</div>
 						<div className="Vision_link">
-							<Link 
-								to="/VisionMission" 
+							<Link
+								onClick={() => {window.location.href="/VisionMission"}}
 								className="VisionMission_Link"
 							>
 								Savoir Plus

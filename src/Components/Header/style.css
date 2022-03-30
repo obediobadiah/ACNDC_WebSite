@@ -46,6 +46,7 @@
   
   .header-links:hover{
 	color: #3CB371;
+	cursor: pointer;
 	transition: all 0.2s ease-out;
 	border-bottom: 3px solid #3CB371;
   }
@@ -123,7 +124,7 @@
 	  }
 
 	.header-logo .logoimg {
-		width: 40%;
+		width: 30%;
 		height: 60px;
 	}
 

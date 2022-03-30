@@ -10,7 +10,7 @@ function NewsLetter_Page() {
 					<div className="Impact_text">
 						<h1>IMPACT LE MONDE</h1>
 						<div className="Donate_Button">
-							<Link to="/Contact" className="Donate_But">
+							<Link onClick={() => {window.location.href="/Contact"}} className="Donate_But">
 								<button>Donation</button>
 							</Link>
 						</div>
@@ -32,7 +32,7 @@ function NewsLetter_Page() {
 						</div>
 
 						<div className="NewLetter_Comp_Button">
-							<Link to="/" className="NewsLetter_comp_but">
+							<Link onClick={() => {window.location.href="/"}} className="NewsLetter_comp_but">
 								<button>Envoie</button>
 							</Link>
 						</div>	

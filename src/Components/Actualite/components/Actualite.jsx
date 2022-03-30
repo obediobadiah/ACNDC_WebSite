@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
 import Header from '../../Header/header'
 import Footer from '../../Footer/components/Footer'
 import NewsLetter from '../../NewsLetter/components/NewsLetter_Page'
@@ -46,7 +45,7 @@ function Actualite() {
 									</div>
 									<div className="Act_box_text_but">
 										<button className="SavoirPlus">
-											<a href="#">Savoir Plus<i class="fas fa-angle-right"></i>
+											<a href="https://medium.com/@obediobadiah05/my-goals-and-expectations-at-the-end-of-the-hngi8-internship-program-79dd608637d0">Savoir Plus<i class="fas fa-angle-right"></i>
 											</a>
 										</button>
 									</div>
@@ -73,7 +72,7 @@ function Actualite() {
 									</div>
 									<div className="Act_box_text_but">
 										<button className="SavoirPlus">
-											<a href="#">Savoir Plus<i class="fas fa-angle-right"></i>
+											<a href="https://medium.com/@obediobadiah05/my-goals-and-expectations-at-the-end-of-the-hngi8-internship-program-79dd608637d0">Savoir Plus<i class="fas fa-angle-right"></i>
 											</a>
 										</button>
 									</div>
@@ -100,7 +99,7 @@ function Actualite() {
 									</div>
 									<div className="Act_box_text_but">
 										<button className="SavoirPlus">
-											<a href="#">Savoir Plus<i class="fas fa-angle-right"></i>
+											<a href="https://medium.com/@obediobadiah05/my-goals-and-expectations-at-the-end-of-the-hngi8-internship-program-79dd608637d0">Savoir Plus<i class="fas fa-angle-right"></i>
 											</a>
 										</button>
 									</div>
@@ -127,7 +126,7 @@ function Actualite() {
 									</div>
 									<div className="Act_box_text_but">
 										<button className="SavoirPlus">
-											<a href="#">Savoir Plus<i class="fas fa-angle-right"></i>
+											<a href="https://medium.com/@obediobadiah05/my-goals-and-expectations-at-the-end-of-the-hngi8-internship-program-79dd608637d0">Savoir Plus<i class="fas fa-angle-right"></i>
 											</a>
 										</button>
 									</div>
@@ -154,7 +153,7 @@ function Actualite() {
 									</div>
 									<div className="Act_box_text_but">
 										<button className="SavoirPlus">
-											<a href="#">Savoir Plus<i class="fas fa-angle-right"></i>
+											<a href="https://medium.com/@obediobadiah05/my-goals-and-expectations-at-the-end-of-the-hngi8-internship-program-79dd608637d0">Savoir Plus<i class="fas fa-angle-right"></i>
 											</a>
 										</button>
 									</div>
@@ -181,7 +180,7 @@ function Actualite() {
 									</div>
 									<div className="Act_box_text_but">
 										<button className="SavoirPlus">
-											<a href="#">Savoir Plus<i class="fas fa-angle-right"></i>
+											<a href="https://medium.com/@obediobadiah05/my-goals-and-expectations-at-the-end-of-the-hngi8-internship-program-79dd608637d0">Savoir Plus<i class="fas fa-angle-right"></i>
 											</a>
 										</button>
 									</div>

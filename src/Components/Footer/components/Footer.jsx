@@ -48,19 +48,19 @@ function Footer() {
 						</div>
 					</div>
 					<div className="footer_links">
-						<Link to="/Resultats" className="footer_link">
+						<Link onClick={() => {window.location.href="/Resultats"}} className="footer_link">
 							Nos Résultats
 						</Link><br/>
-						<Link to="/OrganeGestion" className="footer_link">
+						<Link onClick={() => {window.location.href="/OrganeGestion"}} className="footer_link">
 							Organe de Gestions
 						</Link><br/>
-						<Link to="/Partenaire" className="footer_link">
+						<Link onClick={() => {window.location.href="/Partenaire"}} className="footer_link">
 							Nos Partenaire
 						</Link><br/>
-						<Link to="/Contact" className="footer_link">
+						<Link onClick={() => {window.location.href="/Contact"}} className="footer_link">
 							Contactez-Nous
 						</Link><br/>
-						<Link to="/Contact" className="footer_link">
+						<Link onClick={() => {window.location.href="/Contact"}} className="footer_link">
 							Donate
 						</Link>
 					</div>

@@ -18,7 +18,8 @@ function About_Section() {
 						</div>
 						<div className="About_Button">
 							<Link
-								to="/VisionMission"
+								to="/"
+								onClick={() => {window.location.href="/VisionMission"}}
 								className="AboutButton"
 							>
 								Contactez-Nous
