@@ -1,0 +1,155 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Gilroy', 'PT Sans', sans-serif;
+}
+
+.NewsLetter_content{
+	background-color: #3cb371;
+	padding: 100px 10px 100px 10px;
+}
+
+.NewsLetter_content .NewsLetter_details{
+	color: white;
+	display: flex;
+	justify-content: space-around;
+}
+
+.NewsLetter_details .Impact_text{
+	border-right: 5px solid rgba(0, 0, 0, 0);
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.Impact_text h1{
+	font-size: 4rem;
+	font-weight: bold;
+	color: white;
+}
+
+.Impact_text .Donate_Button{
+	margin-top: 30px;
+}
+
+.Impact_text .Donate_Button .Donate_But button{
+	padding: 15px;
+	border: none;
+	font-size: 1.2rem;
+	background-color: white;
+	font-weight: bold;
+	color: #00632C;
+	border-right: 1 solid #0000;
+}
+
+.Impact_text .Donate_Button .Donate_But button:hover{
+	cursor: pointer;
+	color: #00632C;
+	border: 2px solid #00632C;
+}
+
+.NewsLetter_details .NewsLetter_comp{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.Impact_text{
+	width: 100%;
+}
+
+.NewsLetter_comp{
+	width: 100%;
+	border-left: 2px solid rgb(240, 240, 240);
+}
+
+.NewsLetter_details .NewsLetter_comp p{
+	font-weight: bold;
+	color: white;
+}
+
+.NewsLetter_details .NewsLetter_comp .NewLetter_Comp_Names{
+	margin-top: 50px;
+}
+
+.NewsLetter_details .NewsLetter_comp .NewLetter_Comp_Names .PostNom{
+	margin-left: 10px;
+}
+
+.NewsLetter_details .NewsLetter_comp .mail_comp .Mail{
+	margin-top: 10px;
+	width: 100%;
+}
+
+.NewsLetter_details .NewsLetter_comp input{
+	padding: 20px;
+	border: none;
+}
+
+.NewsLetter_comp .NewLetter_Comp_Button {
+	margin-top: 50px;
+}
+
+.NewsLetter_comp .NewLetter_Comp_Button .NewsLetter_comp_but button{
+	padding: 15px;
+	font-weight: bold;
+	background-color: #00632C;
+	color: white;
+	border: none;
+}
+
+.NewsLetter_comp .NewLetter_Comp_Button .NewsLetter_comp_but button:hover{
+	cursor: pointer;
+	background-color: #113f26;
+}
+
+@media screen and (max-width: 992px) {
+	.NewsLetter_content .NewsLetter_details{
+		color: white;
+		display: grid;
+		justify-content: space-around;
+	}
+
+	.NewsLetter_details .NewsLetter_comp .NewLetter_Comp_Names{
+		margin-top: 50px;
+	}
+	
+	.NewsLetter_details .NewsLetter_comp .NewLetter_Comp_Names .Nom{
+		margin-top: 10px;
+		width: 100%;
+	}
+	
+	.NewsLetter_details .NewsLetter_comp .NewLetter_Comp_Names .PostNom{
+		margin-left: 0px;
+		margin-top: 10px;
+		width: 100%;
+	}
+	
+	.NewsLetter_details .NewsLetter_comp .mail_comp .Mail{
+		margin-top: 10px;
+		width: 100%;
+	}
+	
+	
+.NewsLetter_details .NewsLetter_comp{
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
+
+.NewsLetter_comp{
+	margin-top: 50px;
+	padding-top: 50px;
+	border-top: 2px solid rgb(240, 240, 240);;
+	border-left: none;
+}
+
+
+.NewsLetter_details .NewsLetter_comp .NewLetter_Comp_Names{
+	margin-top: 20px;
+}
+	/* .NewsLetter_details .NewsLetter_comp .NewLetter_Comp_Names .PostNom{
+	    margin-left: 0px;
+    } */
+}
