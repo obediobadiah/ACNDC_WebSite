@@ -135,7 +135,8 @@
 	}
   
 	.menu-icon {
-	  display: block;
+	  display: grid;
+	  align-items: center;
 	  position: fixed;
 	  color: #3CB371;
 	  top: 0;
@@ -143,7 +144,6 @@
 	  transform: translate(-100%, 60%);
 	  font-size: 1.8rem;
 	  cursor: pointer;
-	  top: 0;
 	}
   
 	.fa-times {

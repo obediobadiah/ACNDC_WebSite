@@ -10,23 +10,17 @@ function Programmes() {
 			<div className="programmes_contents">
 				<div className="programmes_detatils">
 					<div className="programmes_Intro">
-					<h1>NOS PROGRAMMES</h1>
+						<h1>NOS PROGRAMMES</h1>
 					</div>
 					<div className="programmes_boxes">
 						<div className="programmes_box">
 							<div className="programmes_box_header">
 								<div className="programmes_box_title" id="box1">
-									<h2>Conservation de la nature</h2>
+									<h2>SECURITE FONCIERE ET AMENAGEMENT DES TERRES ET DES RESSOURCES NATURELLES</h2>
 								</div>
 							</div>
 							<div className="programmes_box_txt">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum autem perspiciatis, tenetur voluptatibus soluta cumque exercitationem ullam voluptatum itaque, corrupti dicta quidem officia delectus excepturi. Sequi error ut deleniti corporis?</p>
-							</div>
-							<div className="programmes_box_txt_check">
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p>ACNDC fonde son action sur l’appropriation communautaire des ressources naturelles (sol, sous-sol, eaux, air) et leurs matières connexes (terres, le relief, les minerais, les gaz, les substances chimiques, les pierres et sables, l’eau, la faune et la flore aquatiques, le climat, l’atmosphère) par première occupation, par usage et par acquisition, en harmonie avec la légalité étatique. A partir de cette appropriation, ACNDC accompagne un processus de mise en valeur par des aménagements, la construction des infrastructures et la conduite des travaux agricoles, de pêche et pisciculture, des foresteries, hydrauliques, énergétiques, culturelles, touristiques, d’habitat, de conservation de la nature et de développement rural et urbains durables.</p>
 							</div>
 						</div>
 
@@ -34,17 +28,11 @@ function Programmes() {
 						<div className="programmes_box">
 							<div className="programmes_box_header">
 								<div className="programmes_box_title" id="box2">
-									<h2>Conservation de la nature</h2>
+									<h2>CONSERVATION DE LA NATURE, SAUVEGARDE ENVIRONNEMENTALE ET PROTECTION DE LA BIODIVERSITE. </h2>
 								</div>
 							</div>
 							<div className="programmes_box_txt">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum autem perspiciatis, tenetur voluptatibus soluta cumque exercitationem ullam voluptatum itaque, corrupti dicta quidem officia delectus excepturi. Sequi error ut deleniti corporis?</p>
-							</div>
-							<div className="programmes_box_txt_check">
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p>ACNDC dispose une pensée pieuse aux générations présentes et futures. L’histoire de la RDC indique la surexploitation de la faune, de la flore et des minerais en cette période des crises politiques et civiles entre 1990-2020. C’est pourquoi, il sied de protéger certaines étendues territoriales et leurs ressources naturelles à des fins d’exploitation future. Aussi, l’agenda de consécration de 17% de la surface territoriale à la conservation intégrale s’inscrit dans cette vision. Les aires protégées et les forêts des communautés sont autant des formes de conservation de la nature, de protection de la biodiversité et des finances verts (crédit carbone, éco-tourisme, énergie propre, culture et arts).  </p>
 							</div>
 						</div>
 					</div>
@@ -54,17 +42,13 @@ function Programmes() {
 						<div className="programmes_box">
 							<div className="programmes_box_header">
 								<div className="programmes_box_title" id="box3">
-									<h2>Conservation de la nature</h2>
+									<h2>DEVELOPPEMENT HUMAIN DURABLE</h2>
 								</div>
 							</div>
 							<div className="programmes_box_txt">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum autem perspiciatis, tenetur voluptatibus soluta cumque exercitationem ullam voluptatum itaque, corrupti dicta quidem officia delectus excepturi. Sequi error ut deleniti corporis?</p>
-							</div>
-							<div className="programmes_box_txt_check">
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p>ACNDC souscrit aux objectifs de développement durable (ODD) de Nations unies adoptés en 2015 en succession aux objectifs de développement du millénaire (ODM).  A cet effet, ACNDC assure le développement alimentaire, la santé, l’enseignement, l’entreprenariat communautaire, l’habitat et l’urbanisme en paysage forestier tropical humide etc.
+									Actuellement, ACNDC conduit la riposte contre la maladie à Corona Virus (COVID-19) dans la zone de santé de Mwenga en faveur de plus de 15000 personnes (enfants, jeunes, adultes, personnes âgées et motards et leurs passagers sur la route nationale 2).
+								</p>
 							</div>
 						</div>
 
@@ -72,17 +56,13 @@ function Programmes() {
 						<div className="programmes_box">
 							<div className="programmes_box_header">
 								<div className="programmes_box_title" id="box4">
-									<h2>Conservation de la nature</h2>
+									<h2>DROIT, CITOYENNETTE ET Gouvernance</h2>
 								</div>
 							</div>
 							<div className="programmes_box_txt">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum autem perspiciatis, tenetur voluptatibus soluta cumque exercitationem ullam voluptatum itaque, corrupti dicta quidem officia delectus excepturi. Sequi error ut deleniti corporis?</p>
-							</div>
-							<div className="programmes_box_txt_check">
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><i className="fas fa-check" />Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p>ACNDC à travers des ponts qu’établissent les filles et femmes en leur qualité d’unificatrices communautaires, de premières éducatrices et agents de santé et de régulatrices de balance économique et politique.
+									Les femmes demeurent la majorité de la population mondiale et les plus grandes travailleuses des ressources naturelles et de leur économie verte.
+								</p>
 							</div>
 						</div>
 					</div>

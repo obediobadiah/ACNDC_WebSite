@@ -10,8 +10,9 @@
 }
 
 .programmes_boxes{
-	display: flex;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-gap: 16px;
 }
 
 .programmes_Intro h1{
@@ -27,7 +28,7 @@
 	margin: 150px 100px 100px 100px;
 }
 .programmes_box{
-	margin-left: 30px;
+	margin-left: 10px;
 	border-top: 10px solid #286f4e;
 	background-color: rgb(240, 240, 240);
 }
@@ -63,16 +64,20 @@
 }
 
 #box3{
-	background-image: url('../assets/IMG-20210701-WA0063.jpg');
+	width: 100%;
+	background-image: url('../assets/IMG-20210701-WA0053.jpg');
 	background-repeat: no-repeat;
+	opacity: 80px;
 	object-fit: fill;
 	display: grid;
+	background-color: #286f4e;
 	align-items: center;
 	justify-content: center;
 	background-size: cover;
 }
 
 #box4{
+	width: 100%;
 	background-image: url('../assets/IMG-20210701-WA0053.jpg');
 	background-repeat: no-repeat;
 	object-fit: fill;
@@ -83,35 +88,21 @@
 }
 
 .programmes_box_title h2{
-	
-	padding: 50px;
+	padding: 20px;
 	text-align: center;
 	font-weight: bold;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: white;
 }
 
 .programmes_box_txt{
 	padding: 10px 50px 10px 50px;
-}
-
-.programmes_box_txt_check{
-	padding: 10px 50px 50px 50px;
-}
-
-.programmes_box_txt_check p{
-	font-weight: bold;
-	font-size: 0.8rem;
-	margin-top: 5px;
-}
-
-.programmes_box_txt_check i{
-	margin-right: 5px;
+	width: 100%;
 }
 
 @media screen and (max-width: 992px) {
 	.programmes_boxes{
-		display: grid;
+		display: block;
 		justify-content: space-around;
 	}
 

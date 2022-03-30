@@ -1,4 +1,4 @@
-.dropdown-menu {
+.dropdown-menu-act {
 	width: 200px;
 	position: absolute;
 	margin-left: 50px;
@@ -8,7 +8,7 @@
   }
   
   
-  .dropdown-menu li{
+  .dropdown-menu-act li{
 	cursor: pointer;
 	font-size: 0.8rem;
 	font-weight: bold;
@@ -16,7 +16,7 @@
 	background-color: #f8f8f8;
   }
   
-  .dropdown-menu.clicked {
+  .dropdown-menu-act .clicked {
 	display: none;
   }
   
@@ -36,12 +36,12 @@
   }
   
   @media screen and (max-width: 960px) {
-	.dropdown-menu {
-	  width: 140%;
-	  top: 139px;
+	.dropdown-menu-act {
+	  width: 100%;
+	  top: 85px;
 	  margin-left: 0px;
 	}
-	.dropdown-menu li{
+	.dropdown-menu-act li{
 	  cursor: pointer;
 	  font-size: 0.8rem;
 	  font-weight: bold;
