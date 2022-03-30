@@ -3,8 +3,10 @@ import Header from '../../Header/header'
 import Footer from '../../Footer/components/Footer'
 import '../styles/style.css'
 import IntroImg from '../assets/IMG-20210701-WA0042.jpg'
-import BailleurImg from '../assets/images (2).png'
-import ReaseauImg from '../assets/logo crispine.png'
+import Bailleur1Img from '../assets/images (2).png'
+import Bailleur2Img from '../assets/logo crispine.png'
+import Reaseau1Img from '../assets/Engage.png'
+import Reaseau2Img from '../assets/Voice.png'
 import NewsLetter from '../../NewsLetter/components/NewsLetter_Page'
 
 function Partenaire() {
@@ -27,8 +29,8 @@ function Partenaire() {
 							<h1>BAILLEURS DES FONDS</h1>
 							<p>ACNDC travaille dans l’intermédiation monétaire et financière en conservation de la nature et le développement communautaire. Ainsi, ACNDC assure le sponsorship financier et fiscal dans la coopération au développement et la charité (philanthropie, générosité, bienfaisance, compassion et caritative) manifestée aux organisations et communautés anonymes et non enregistrées légalement.</p>
 							<div className="Partenaire_Exp_Img">
-								<img src={BailleurImg} alt="" />
-								<img src={ReaseauImg} alt="" />
+								<img src={Bailleur1Img} alt="" />
+								<img src={Bailleur2Img} alt="" />
 							</div>
 						</div>
 
@@ -37,8 +39,8 @@ function Partenaire() {
 							<h1>RESEAU, ALLIANCE ET MOUVEMENT</h1>
 							<p>ACNDC intégrera le réseau, alliance et mouvement internationaux à des fins de visibilité, de notoriété, de crédibilité et de solidarité mutuellement avantageux. Elle coordonnera les groupes communautaires et leurs structurations sectorielles, territoriales et populaires.</p>
 							<div className="Partenaire_Exp_Img">
-								<img src={BailleurImg} alt="" />
-								<img src={ReaseauImg} alt="" />
+								<img src={Reaseau1Img} alt="" />
+								<img src={Reaseau2Img} alt="" />
 							</div>
 						</div>
 					</div>
