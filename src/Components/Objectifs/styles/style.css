@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Gilroy', 'PT Sans', sans-serif;
+	font-family: 'Lato', 'PT Sans', sans-serif;
 }
 
 .Objectif_Intro{
@@ -37,7 +37,6 @@
 }
 
 .Objectif_1 i{
-	
 	font-size: 2rem;
 }
 
@@ -67,6 +66,17 @@
 		width: 100%;
 		height: auto;
 		color: #3cb371;
-		text-align: justify;
+		text-align: left;
+	}
+
+	
+	.Objectif_1 p{
+		margin-left: 10px;
+		font-size: 1rem;
+	}
+
+	
+	.Objectif_1 i{
+		font-size: 1.5rem;
 	}
 }

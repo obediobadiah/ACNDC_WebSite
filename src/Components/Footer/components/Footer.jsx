@@ -48,19 +48,19 @@ function Footer() {
 						</div>
 					</div>
 					<div className="footer_links">
-						<Link to="/" className="footer_link">
+						<Link to="/Resultats" className="footer_link">
 							Nos Résultats
 						</Link><br/>
-						<Link to="/" className="footer_link">
+						<Link to="/OrganeGestion" className="footer_link">
 							Organe de Gestions
 						</Link><br/>
-						<Link to="/" className="footer_link">
+						<Link to="/Partenaire" className="footer_link">
 							Nos Partenaire
 						</Link><br/>
-						<Link to="/" className="footer_link">
+						<Link to="/Contact" className="footer_link">
 							Contactez-Nous
 						</Link><br/>
-						<Link to="/" className="footer_link">
+						<Link to="/Contact" className="footer_link">
 							Donate
 						</Link>
 					</div>

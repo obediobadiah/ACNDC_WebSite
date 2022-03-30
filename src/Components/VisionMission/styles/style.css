@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Gilroy', 'PT Sans', sans-serif;
+	font-family: 'Lato', 'PT Sans', sans-serif;
 }
 
 .VisionMission_Intro{
@@ -23,6 +23,7 @@
 	display: grid;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 }
 
 .VisionMission_textes{
@@ -52,16 +53,24 @@
 	}
 
 	.VisionMission_textes_box{
-		margin: 50px 20px 50px 20px;
+		width: 100%;
+		padding: 50px 15px 50px 15px;
 		display: grid;
 		justify-content: center;
 		align-items: center;
 	}
-	
+
+		
 	.VisionMission_textes{
 		width: 100%;
 		height: auto;
+		text-align: left;
+	}
+
+	.VisionMission_textes p{
+		width: 100%;
+		height: auto;
 		color: #00213d;
-		text-align: justify;
+		text-align: left;
 	}
 }
