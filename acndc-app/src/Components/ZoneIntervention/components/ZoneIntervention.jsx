@@ -22,7 +22,7 @@ function ZoneIntervention() {
 								<img src={zone_img} alt="zone Img" />
 							</div>
 							<div className="zone_textes">
-								<h2>Lorem ipsum dolor sit amet</h2>
+								<h2>NORD-KIVU</h2>
 								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus! ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendu</p>
 							</div>
 						</div>
@@ -32,7 +32,7 @@ function ZoneIntervention() {
 
 						<div className="zone_boxes">
 							<div className="zone_textes" id="zone_text_inverse">
-								<h2>Lorem ipsum dolor sit amet</h2>
+								<h2>SUD-KIVU</h2>
 								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus! ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus</p>
 							</div>
 							<div className="zone_image">
@@ -47,76 +47,22 @@ function ZoneIntervention() {
 								<img src={zone_img} alt="zone Img" />
 							</div>
 							<div className="zone_textes">
-								<h2>Lorem ipsum dolor sit amet</h2>
+								<h2>MANIEMA</h2>
 								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus! ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendu</p>
 							</div>
 						</div>
 
 
 
-
 						<div className="zone_boxes">
 							<div className="zone_textes" id="zone_text_inverse">
-								<h2>Lorem ipsum dolor sit amet</h2>
+								<h2>TSHOPO</h2>
 								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus! ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus</p>
 							</div>
 							<div className="zone_image">
 								<img src={zone_img} alt="zone Img" />
 							</div>
 						</div>
-
-
-
-						<div className="zone_boxes">
-							<div className="zone_image">
-								<img src={zone_img} alt="zone Img" />
-							</div>
-							<div className="zone_textes">
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus! ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendu</p>
-							</div>
-						</div>
-
-
-
-
-						<div className="zone_boxes">
-							<div className="zone_textes" id="zone_text_inverse">
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus! ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus</p>
-							</div>
-							<div className="zone_image">
-								<img src={zone_img} alt="zone Img" />
-							</div>
-						</div>
-
-
-
-						<div className="zone_boxes">
-							<div className="zone_image">
-								<img src={zone_img} alt="zone Img" />
-							</div>
-							<div className="zone_textes">
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus! ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendu</p>
-							</div>
-						</div>
-
-
-
-
-						<div className="zone_boxes">
-							<div className="zone_textes" id="zone_text_inverse">
-								<h2>Lorem ipsum dolor sit amet</h2>
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus! ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus</p>
-							</div>
-							<div className="zone_image">
-								<img src={zone_img} alt="zone Img" />
-							</div>
-						</div>
-
-
-
 
 
 					</div>
