@@ -62,6 +62,8 @@ function Programmes() {
 							<div className="programmes_box_txt">
 								<p>ACNDC à travers des ponts qu’établissent les filles et femmes en leur qualité d’unificatrices communautaires, de premières éducatrices et agents de santé et de régulatrices de balance économique et politique.
 									Les femmes demeurent la majorité de la population mondiale et les plus grandes travailleuses des ressources naturelles et de leur économie verte.
+									ACNDC par ces actions veut faire parvenir (élever) les femmes à la profession (emploi, entrepreneuriat et libéralisme) de la science et de la technique, de la technologie, de l’organisation urbaine et rurale à égalité, en autonomie et en prenant en compte la différence corporelle (saxophysique) dans un ménage et dans une société stable, dans une économie libérale ayant des marchés transparents et dans une écologie durable et un environnement sain.
+									Dans ce programme ACNDC s’inscrit autour de la participation de la femme dans la jouissance de ses droits, dans la participation citoyenne dans la gestion de la chose publique mais plus encore faire l’intégrations de la bonne gouvernance politique, des ressources naturelles accès sur la fille et la femme en RDC.
 								</p>
 							</div>
 						</div>
