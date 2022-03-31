@@ -23,7 +23,9 @@ function ZoneIntervention() {
 							</div>
 							<div className="zone_textes">
 								<h2>NORD-KIVU</h2>
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus! ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendu</p>
+								<p>Plaidoyer contre les conséquences des catastrophes naturelles et la juste gestion des aides
+									humanitaires pour une stabilité économique des femmes post catastrophes naturelles aux alentours
+									du volcan Nyiragongo à Goma.</p>
 							</div>
 						</div>
 
@@ -33,7 +35,11 @@ function ZoneIntervention() {
 						<div className="zone_boxes">
 							<div className="zone_textes" id="zone_text_inverse">
 								<h2>SUD-KIVU</h2>
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus! ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus</p>
+								<p>Depuis 2009 jusqu’aujourd’hui, ACNDC travaille dans le Territoire de Mwenga, Fizi et de Maniema
+									auprès des filles et femmes autochtones Batwa Banyindu et tribaux forestiers de Balega et
+									Babembe dans la sécurité frontière des femmes et la restauration de la paix, la justice climatique dans l’agriculture, l'egalité générationnelle des genres et sexes et plaidoyer contre les conséquences des catastrophes naturelles et la juste gestion des aides
+									humanitaires pour une stabilité économique des filles et femmes post catastrophes naturelles de
+									l’épicentre séismique à Kamituga.</p>
 							</div>
 							<div className="zone_image">
 								<img src={zone_img} alt="zone Img" />
@@ -57,7 +63,8 @@ function ZoneIntervention() {
 						<div className="zone_boxes">
 							<div className="zone_textes" id="zone_text_inverse">
 								<h2>TSHOPO</h2>
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus! ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus</p>
+								<p>Sensibilisation des filles et femmes autochtones Bakumu sur la conservation de la nature et la
+									protection de la biodiversité et l’accroissement de l’autonomie des filles et femmes.</p>
 							</div>
 							<div className="zone_image">
 								<img src={zone_img} alt="zone Img" />

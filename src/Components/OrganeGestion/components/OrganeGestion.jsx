@@ -1,6 +1,6 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 import Header from '../../Header/header'
 import Footer from '../../Footer/components/Footer'
 import NewsLetter from '../../NewsLetter/components/NewsLetter_Page'
@@ -25,11 +25,12 @@ function OrganeGestion() {
 
 				<div className="OrganeGestion_exp">
 					<div className="OrganeGestion_exp_Intro">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusantium sunt maxime tempore? Earum recusandae eaque at placeat aut voluptatibus quaerat, voluptates omnis, doloremque cum harum esse? Voluptate, modi reiciendis.</p>
+						<p>CONSEIL D’ADMINISTRATION ET LEADERS. ACNDC dispose un conseil d’administration de 9 personnes aujourd’hui désignées par leurs communautés d’appartenance (famille, clan, tribu) parmi lesquelles se retrouve 6 personnes constituent son leadership permanent/quotidien.</p>
+						<p>COORDINATION ET STAFF. Les professionnels d’ACNDC proviennent de la science, de l’intelligence et de la technique d’une part et de la culture, de l’initiation et de la pratique d’autre part.</p>
 					</div>
 
 					<div className="OrganeGestion_exp_Buttons">
-						<Link 
+						<Link
 							activeClass="active"
 							to="OrganeGestion_Conseil"
 							spy={true}
@@ -40,7 +41,7 @@ function OrganeGestion() {
 						>
 							Conseil d'Administration et Leader
 						</Link>
-						<Link 
+						<Link
 							activeClass="active"
 							to="OrganeGestion_Coord"
 							spy={true}
