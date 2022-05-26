@@ -45,16 +45,16 @@ function SommeNousDropdown() {
             onClick={() => {window.location.href="/Partenaire"}}
           >Nos Partenaires
           </Link>
-          <Link
+          {/* <Link
             className="dropdown-link"
             onClick={() => {window.location.href="/Rapports"}}
           >Nos Rapports
-          </Link>
-          <Link
+          </Link> */}
+          {/* <Link
             className="dropdown-link"
             onClick={() => {window.location.href="/OutilsTravail"}}
           >Nos Outils de travail
-          </Link>
+          </Link> */}
         </li>
       </ul>
     </>

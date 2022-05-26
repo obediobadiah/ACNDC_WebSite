@@ -13,192 +13,84 @@ function Coordination_Section() {
 
 							
 							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
+								{/* <div className="OrganeGestion_Img">
 									<img src={OrganeGestionImgs} alt="" />
-								</div>
+								</div> */}
 								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
+									{/* <h3>Crispine Ngena</h3> */}
+									<p>Coordinatrice</p>
 								</div>						
 							</div>
 
 
 							
 							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
+								{/* <div className="OrganeGestion_Img">
 									<img src={OrganeGestionImgs} alt="" />
-								</div>
+								</div> */}
 								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
+									{/* <h3>Crispine Ngena</h3> */}
+									<p>Administratrice principale</p>
 								</div>						
 							</div>
 
 
 							
 							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
+								{/* <div className="OrganeGestion_Img">
 									<img src={OrganeGestionImgs} alt="" />
-								</div>
+								</div> */}
 								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
+									{/* <h3>Crispine Ngena</h3> */}
+									<p>Analyste principale</p>
 								</div>						
 							</div>
 
 
 							
 							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
+								{/* <div className="OrganeGestion_Img">
 									<img src={OrganeGestionImgs} alt="" />
-								</div>
+								</div> */}
 								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
+									{/* <h3>Crispine Ngena</h3> */}
+									<p>Charges des droits des communautés</p>
 								</div>						
 							</div>
 
 
 							
 							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
+								{/* <div className="OrganeGestion_Img">
 									<img src={OrganeGestionImgs} alt="" />
-								</div>
+								</div> */}
 								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
+									{/* <h3>Crispine Ngena</h3> */}
+									<p>Charges de l’entreprenariat</p>
 								</div>						
 							</div>
 
 
 							
 							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
+								{/* <div className="OrganeGestion_Img">
 									<img src={OrganeGestionImgs} alt="" />
-								</div>
+								</div> */}
 								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
+									{/* <h3>Crispine Ngena</h3> */}
+									<p>Charges de partenariat, construction de mouvement</p>
 								</div>						
 							</div>
 
 
 							
 							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
+								{/* <div className="OrganeGestion_Img">
 									<img src={OrganeGestionImgs} alt="" />
-								</div>
+								</div> */}
 								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
-								</div>						
-							</div>
-
-
-							
-							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
-									<img src={OrganeGestionImgs} alt="" />
-								</div>
-								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
-								</div>						
-							</div>
-
-
-							
-							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
-									<img src={OrganeGestionImgs} alt="" />
-								</div>
-								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
-								</div>						
-							</div>
-
-
-							
-							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
-									<img src={OrganeGestionImgs} alt="" />
-								</div>
-								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
-								</div>						
-							</div>
-
-
-							
-							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
-									<img src={OrganeGestionImgs} alt="" />
-								</div>
-								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
-								</div>						
-							</div>
-
-
-							
-							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
-									<img src={OrganeGestionImgs} alt="" />
-								</div>
-								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
-								</div>						
-							</div>
-
-
-							
-							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
-									<img src={OrganeGestionImgs} alt="" />
-								</div>
-								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
-								</div>						
-							</div>
-
-
-							
-							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
-									<img src={OrganeGestionImgs} alt="" />
-								</div>
-								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
-								</div>						
-							</div>
-
-
-							
-							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
-									<img src={OrganeGestionImgs} alt="" />
-								</div>
-								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
-								</div>						
-							</div>
-
-
-							
-							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
-									<img src={OrganeGestionImgs} alt="" />
-								</div>
-								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
+									{/* <h3>Crispine Ngena</h3> */}
+									<p>Charges de la conservation de la nature et de la restauration du paysage</p>
 								</div>						
 							</div>
 

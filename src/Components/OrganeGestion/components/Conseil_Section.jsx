@@ -13,11 +13,11 @@ function Conseil_Section() {
 
 							
 							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
+								{/* <div className="OrganeGestion_Img">
 									<img src={OrganeGestionImgs} alt="" />
-								</div>
+								</div> */}
 								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
+									{/* <h3>Crispine Ngena</h3> */}
 									<p>Présidente</p>
 								</div>						
 							</div>
@@ -25,72 +25,48 @@ function Conseil_Section() {
 
 							
 							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
+								{/* <div className="OrganeGestion_Img">
 									<img src={OrganeGestionImgs} alt="" />
-								</div>
+								</div> */}
 								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
+									{/* <h3>Crispine Ngena</h3> */}
+									<p>Vice-présidente</p>
 								</div>						
 							</div>
 
 
 							
 							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
+								{/* <div className="OrganeGestion_Img">
 									<img src={OrganeGestionImgs} alt="" />
-								</div>
+								</div> */}
 								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
+									{/* <h3>Crispine Ngena</h3> */}
+									<p>Secrétaire</p>
 								</div>						
 							</div>
 
 
 							
 							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
+								{/* <div className="OrganeGestion_Img">
 									<img src={OrganeGestionImgs} alt="" />
-								</div>
+								</div> */}
 								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
+									{/* <h3>Crispine Ngena</h3> */}
+									<p>Vice-secrétaire</p>
 								</div>						
 							</div>
 
 
 							
 							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
+								{/* <div className="OrganeGestion_Img">
 									<img src={OrganeGestionImgs} alt="" />
-								</div>
+								</div> */}
 								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
-								</div>						
-							</div>
-
-
-							
-							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
-									<img src={OrganeGestionImgs} alt="" />
-								</div>
-								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
-								</div>						
-							</div>
-
-
-							
-							<div className="OrganeGestion_Exp">
-								<div className="OrganeGestion_Img">
-									<img src={OrganeGestionImgs} alt="" />
-								</div>
-								<div className="OrganeGestion_Function">
-									<h3>Crispine Ngena</h3>
-									<p>Présidente</p>
+									{/* <h3>Crispine Ngena</h3> */}
+									<p>Conseil</p>
 								</div>						
 							</div>
 

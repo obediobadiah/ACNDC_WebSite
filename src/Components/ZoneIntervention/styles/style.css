@@ -34,7 +34,7 @@
 
 .zone_boxes .zone_image img{
 	width: 430px;
-	height: auto;
+	height: 300px;
 }
 
 .zone_boxes .zone_textes{
@@ -95,7 +95,7 @@
 
 	.zone_boxes .zone_image img{
 		width: 100%;
-		height: auto;
+		height: 300px;
 		margin-top: 20px;
 	}
 }

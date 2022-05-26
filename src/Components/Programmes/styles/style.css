@@ -44,7 +44,7 @@
 }
 
 #box1{
-	background-image: url('../assets/IMG-20210701-WA0060.jpg');
+	background-image: url('../assets/DSC00024.JPG');
 	background-repeat: no-repeat;
 	object-fit: fill;
 	display: grid;
@@ -54,7 +54,7 @@
 }
 
 #box2{
-	background-image: url('../assets/IMG-20210701-WA0061.jpg');
+	background-image: url('../assets/DSC09952.JPG');
 	background-repeat: no-repeat;
 	object-fit: fill;
 	display: grid;
@@ -65,7 +65,7 @@
 
 #box3{
 	width: 100%;
-	background-image: url('../assets/IMG-20210701-WA0061.jpg');
+	background-image: url('../assets/1623835884090.JPEG');
 	background-repeat: no-repeat;
 	opacity: 80px;
 	object-fit: fill;
@@ -98,6 +98,11 @@
 .programmes_box_txt{
 	padding: 10px 50px 10px 50px;
 	width: 100%;
+}
+
+.programmes_box_txt h2{
+	font-weight: bold;
+	color: #286f4e;
 }
 
 @media screen and (max-width: 992px) {

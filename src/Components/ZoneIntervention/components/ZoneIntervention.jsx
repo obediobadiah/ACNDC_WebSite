@@ -2,7 +2,9 @@ import React from 'react'
 import Header from '../../Header/header'
 import Footer from '../../Footer/components/Footer'
 import '../styles/style.css'
-import zone_img from '../assets/IMG-20210701-WA0058.jpg'
+import zone_img1 from '../assets/DSC01999999.JPG'
+import zone_img2 from '../assets/DSC09999.JPG'
+import zone_img3 from '../assets/1622555756441.JPEG'
 
 function ZoneIntervention() {
 	return (
@@ -19,7 +21,7 @@ function ZoneIntervention() {
 
 						<div className="zone_boxes">
 							<div className="zone_image">
-								<img src={zone_img} alt="zone Img" />
+								<img src={zone_img1} alt="zone Img" />
 							</div>
 							<div className="zone_textes">
 								<h2>NORD-KIVU</h2>
@@ -42,32 +44,32 @@ function ZoneIntervention() {
 									l’épicentre séismique à Kamituga.</p>
 							</div>
 							<div className="zone_image">
-								<img src={zone_img} alt="zone Img" />
+								<img src={zone_img2} alt="zone Img" />
 							</div>
 						</div>
 
 
 
-						<div className="zone_boxes">
+						{/* <div className="zone_boxes">
 							<div className="zone_image">
-								<img src={zone_img} alt="zone Img" />
+								<img src={zone_img1} alt="zone Img" />
 							</div>
 							<div className="zone_textes">
 								<h2>MANIEMA</h2>
 								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus! ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendu</p>
 							</div>
-						</div>
+						</div> */}
 
 
 
 						<div className="zone_boxes">
-							<div className="zone_textes" id="zone_text_inverse">
+							<div className="zone_image">
+								<img src={zone_img3} alt="zone Img" />
+							</div>
+							<div className="zone_textes">
 								<h2>TSHOPO</h2>
 								<p>Sensibilisation des filles et femmes autochtones Bakumu sur la conservation de la nature et la
 									protection de la biodiversité et l’accroissement de l’autonomie des filles et femmes.</p>
-							</div>
-							<div className="zone_image">
-								<img src={zone_img} alt="zone Img" />
 							</div>
 						</div>
 
