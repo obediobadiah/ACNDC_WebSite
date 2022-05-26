@@ -49,19 +49,6 @@ function ZoneIntervention() {
 						</div>
 
 
-
-						{/* <div className="zone_boxes">
-							<div className="zone_image">
-								<img src={zone_img1} alt="zone Img" />
-							</div>
-							<div className="zone_textes">
-								<h2>MANIEMA</h2>
-								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus! ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendu</p>
-							</div>
-						</div> */}
-
-
-
 						<div className="zone_boxes">
 							<div className="zone_image">
 								<img src={zone_img3} alt="zone Img" />
@@ -72,6 +59,18 @@ function ZoneIntervention() {
 									protection de la biodiversité et l’accroissement de l’autonomie des filles et femmes.</p>
 							</div>
 						</div>
+
+
+
+						{/* <div className="zone_boxes">
+							<div className="zone_image">
+								<img src={zone_img1} alt="zone Img" />
+							</div>
+							<div className="zone_textes">
+								<h2>MANIEMA</h2>
+								<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendus! ipsum dolor sit amet consectetur adipisicing elit. Rerum unde dolorem qui debitis non autem excepturi illum? Fugiat provident ullam dolor sed eius, minima consequatur ut minus possimus dolores repellendu</p>
+							</div>
+						</div> */}
 
 
 					</div>
