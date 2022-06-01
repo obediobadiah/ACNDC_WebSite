@@ -230,13 +230,15 @@
 
 .Actualite_details .Actualite_boxes{
 	margin-top: 40px;
-	display: flex;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 15px;
+	padding: 0;
 }
 
 .Actualite_details .Actualite_boxes .Actualite_box{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	margin-left: 40px;
+	margin: 30px 0 0 0;
 }
 
 

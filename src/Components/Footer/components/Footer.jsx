@@ -32,17 +32,14 @@ function Footer() {
 								<h5>Restez avec nous via nos réseau sociaux</h5>
 							</div>
 							<div className="address_link_icons">
-								<a href="#" className="address_link_icon">
+								<a href="https://web.facebook.com/acndc.org" className="address_link_icon">
 									<i class="fab fa-facebook"></i>
 								</a>
-								<a href="#" className="address_link_icon">
+								<a href="https://twitter.com/crispine_ngena" className="address_link_icon">
 									<i className="fab fa-twitter"/>
 								</a>
-								<a href="#" className="address_link_icon">
+								<a href="https://www.linkedin.com/in/acndc-organisation-communautaire-de-base-b11975211/" className="address_link_icon">
 									<i className="fab fa-linkedin"/>
-								</a>
-								<a href="#" className="address_link_icon">
-									<i className="fab fa-instagram"/>
 								</a>
 							</div>
 						</div>
