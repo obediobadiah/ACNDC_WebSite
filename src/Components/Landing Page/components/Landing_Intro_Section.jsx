@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import  '../styles/style.css'
 import Objectif from '../../Objectifs/components/Objectifs' 
 import img1 from '../assets/IMG-20210701-WA0043.jpg'
-import img2 from '../assets/IMG-20210701-WA0028.jpg'
+import img2 from '../assets/IMG-20210701-WA00281.jpg'
 
 function LandingIntro() {
 	return (
