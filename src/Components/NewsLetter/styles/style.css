@@ -91,7 +91,7 @@
 	margin-top: 50px;
 }
 
-.NewsLetter_comp .NewLetter_Comp_Button .NewsLetter_comp_but button{
+.NewsLetter_comp .NewLetter_Comp_Button .NewsLetter_comp_but{
 	padding: 15px;
 	font-weight: bold;
 	background-color: #00632C;
@@ -99,7 +99,7 @@
 	border: none;
 }
 
-.NewsLetter_comp .NewLetter_Comp_Button .NewsLetter_comp_but button:hover{
+.NewsLetter_comp .NewLetter_Comp_Button .NewsLetter_comp_but:hover{
 	cursor: pointer;
 	background-color: #113f26;
 }

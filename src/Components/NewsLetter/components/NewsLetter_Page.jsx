@@ -32,9 +32,9 @@ function NewsLetter_Page() {
 						</div>
 
 						<div className="NewLetter_Comp_Button">
-							<Link onClick={() => {window.location.href="/"}} className="NewsLetter_comp_but">
-								<button>Envoie</button>
-							</Link>
+							{/* <Link onClick={() => {window.location.href="/"}} className="NewsLetter_comp_but"> */}
+								<button className="NewsLetter_comp_but">Envoie</button>
+							{/* </Link> */}
 						</div>	
 					</div>
 				</div>

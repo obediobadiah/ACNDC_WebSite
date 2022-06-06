@@ -2,9 +2,9 @@ import React from 'react'
 import Header from '../../Header/header'
 import Footer from '../../Footer/components/Footer'
 import '../styles/style.css'
-import zone_img1 from '../assets/DSC01999999.JPG'
-import zone_img2 from '../assets/DSC09999.JPG'
-import zone_img3 from '../assets/1622555756441.JPEG'
+import zone_img1 from '../assets/IMG_5806.JPG'
+import zone_img2 from '../assets/DSC00005.JPG'
+import zone_img3 from '../assets/IMG_20220313_153838_601.jpg'
 
 function ZoneIntervention() {
 	return (
