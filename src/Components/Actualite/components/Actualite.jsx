@@ -15,7 +15,7 @@ function Actualite() {
 			<div className="Actualite_contents">
 				<div className="Actualite_detatils">
 					<div className="Actualite_Intro">
-						<h1>NOS OUTILS DE TRAVAIL</h1>
+						<h1>NOS ACTUALITES</h1>
 					</div>
 				</div>
 

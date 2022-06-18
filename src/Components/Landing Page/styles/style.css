@@ -167,7 +167,7 @@
 .About_contents .About_details{
 	display: flex;
 	justify-content: space-around;
-	padding: 70px 150px 50px 70px;
+	padding: 70px 70px 70px 70px;
 }
 
 .About_contents .About_details .About_Img {
@@ -179,7 +179,7 @@
 .About_contents .About_details .About_Img img{
 	width: 500px;
 	height: auto;
-	border-radius: 30px;
+	border-radius: 10px;
 }
 
 .About_contents .About_details .About_Text{
@@ -206,7 +206,7 @@
 	padding: 10px 10px 10px 10px;
 	font-weight: bold;
 	text-decoration: none;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 }
 
 .About_Button .AboutButton:hover{

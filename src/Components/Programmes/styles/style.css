@@ -11,7 +11,7 @@
 
 .programmes_boxes{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	grid-gap: 16px;
 }
 
@@ -25,10 +25,10 @@
 }
 
 .programmes_boxes{
-	margin: 150px 100px 100px 100px;
+	margin: 100px 50px 100px 50px;
 }
 .programmes_box{
-	margin-left: 10px;
+	margin-top: 70px;
 	border-top: 10px solid #286f4e;
 	background-color: rgb(240, 240, 240);
 }
@@ -78,6 +78,17 @@
 
 #box4{
 	width: 100%;
+	background-image: url('../assets/IMG_5336.JPG');
+	background-repeat: no-repeat;
+	object-fit: fill;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+}
+
+#box5{
+	width: 100%;
 	background-image: url('../assets/IMG-20210701-WA0060.jpg');
 	background-repeat: no-repeat;
 	object-fit: fill;
@@ -103,6 +114,7 @@
 .programmes_box_txt h2{
 	font-weight: bold;
 	color: #286f4e;
+	text-transform: uppercase;
 }
 
 @media screen and (max-width: 992px) {

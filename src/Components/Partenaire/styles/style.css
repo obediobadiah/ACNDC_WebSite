@@ -64,14 +64,28 @@
 	margin-bottom: 50px;
 }
 
+.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img h2{ 
+	text-align: center; 
+	font-weight: bold;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+}
+
+.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img div{ 
+	display: grid;
+	justify-content: space-around;
+	align-items: center;
+}
+
 .Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img img{ 
 	width: 150px;
 	height: 100px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
 }
 
 .NewsLetter_Comp{
-	/* width: auto;
-	height: 800px; */
 	background-color: #ccffe3;
 	padding: 70px 0 70px 0;
 }

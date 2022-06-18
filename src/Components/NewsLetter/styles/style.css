@@ -80,11 +80,15 @@
 .NewsLetter_details .NewsLetter_comp .mail_comp .Mail{
 	margin-top: 10px;
 	width: 100%;
+	padding: 20px;
+	border: none;
+	color: black;
 }
 
 .NewsLetter_details .NewsLetter_comp input{
 	padding: 20px;
 	border: none;
+	color: black;
 }
 
 .NewsLetter_comp .NewLetter_Comp_Button {
@@ -129,7 +133,11 @@
 	.NewsLetter_details .NewsLetter_comp .mail_comp .Mail{
 		margin-top: 10px;
 		width: 100%;
+		padding: 20px;
+		border: none;
+		color: black;
 	}
+	
 	
 	
 .NewsLetter_details .NewsLetter_comp{

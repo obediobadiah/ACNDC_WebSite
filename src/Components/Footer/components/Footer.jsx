@@ -41,6 +41,9 @@ function Footer() {
 								<a href="https://www.linkedin.com/in/acndc-organisation-communautaire-de-base-b11975211/" className="address_link_icon">
 									<i className="fab fa-linkedin"/>
 								</a>
+								<a href="https://www.instagram.com/acndc_organisation_de_base/" className="address_link_icon">
+									<i className="fab fa-instagram"/>
+								</a>
 							</div>
 						</div>
 					</div>
