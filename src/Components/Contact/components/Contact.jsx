@@ -16,7 +16,7 @@ function Contact() {
 						<div className="contact_container_detail">
                             <div className="contact_img">
                             <Link onClick={() => {window.location.href="/"}} className="contact_logo">
-                                <img src={Act_Img1} alt="Contact image" />
+                                <img src={Act_Img1} alt="Contact" />
                             </Link>
                             </div>
                             <div className="contact_address">
