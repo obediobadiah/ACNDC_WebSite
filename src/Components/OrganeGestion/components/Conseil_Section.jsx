@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/style.css'
-import OrganeGestionImgs from '../assets/IMG-20210701-WA0030 - Copy.jpg'
 
 function Conseil_Section() {
 	return (
