@@ -6,6 +6,8 @@ import '../styles/style.css'
 import Act_Img1 from '../assets/IMG_20210412_094629_947.jpg'
 import Act_Img2 from '../assets/IMG-20210701-WA0028.jpg'
 import Act_Img3 from '../assets/DSC09950.JPG'
+import Act_Img4 from '../assets/1660507234077.jfif'
+import Act_Img5 from '../assets/DSC09950.JPG'
 
 function Actualite() {
 
@@ -27,6 +29,61 @@ function Actualite() {
 							<p>Decouvrez ce que ACNDC et Nos partenaires bénéficiare ont fait</p>
 						</div>
 						<div className="Actualite_boxes">
+
+
+
+						<div className="Actualite_box">
+							<div className="Actualite_box_Img">
+								<img src={Act_Img4} alt="Actualite" />
+							</div>
+							<div className="Actualite_box_text">
+								<div className="Actualite_box_text_head">
+									<p>Actualités</p>
+								</div>
+								<div className="Actualite_box_text_tit">
+									<p>Le renforcement des capacités</p>
+								</div>
+								<div className="Actualite_box_text_cont">
+									<p>Dans le cadre du projet Renforcement du système alimentaire les peuples autochtones batwa banyindu et peuples forestiers balega et babembe, ACNDC et son partenaire AMEN ont renforcé la capacité des femmes autochtones Nyindu dans la connaissance de leurs milieux et ses pontentiels. Projet fiancé par fonds #AYNI</p>
+								</div>
+								<div className="Actualite_box_text_but">
+									<button className="SavoirPlus">
+										<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_acndc-luindi-acndc-activity-6958481785106128896-ob2g?utm_source=linkedin_share&utm_medium=android_app.">Savoir Plus<i class="fas fa-angle-right"></i>
+										</a>
+									</button>
+								</div>
+							</div>
+						</div>
+
+
+
+
+						<div className="Actualite_box">
+							<div className="Actualite_box_Img">
+								<img src={Act_Img5} alt="Actualite" />
+							</div>
+							<div className="Actualite_box_text">
+								<div className="Actualite_box_text_head">
+									<p>Actualités</p>
+								</div>
+								<div className="Actualite_box_text_tit">
+									<p>La journée internationale des peuples autochtones</p>
+								</div>
+								<div className="Actualite_box_text_cont">
+									<p>Dans le cadre de la journée internationale des peuples autochtones. ACNDC et son partenaire Humanité ont présenté à la communauté Kuma, le service d'accompagnement juridique, qu'elles organisent tout en mettant l'accès sur leurs dans la protection de l'environnement et l'accès aux ressources aux femmes et filles.</p>
+								</div>
+								<div className="Actualite_box_text_but">
+									<button className="SavoirPlus">
+										<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_acndc-humanitaez-mujoga-activity-6964672146497253376-jX0Y?utm_source=linkedin_share&utm_medium=android_app">Savoir Plus<i class="fas fa-angle-right"></i>
+										</a>
+									</button>
+								</div>
+							</div>
+						</div>
+
+
+
+
 
 
 
