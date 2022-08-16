@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import '../styles/style.css'
 import Act_Img1 from '../assets/IMG_0829.JPG'

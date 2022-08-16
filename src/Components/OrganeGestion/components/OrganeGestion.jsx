@@ -4,8 +4,8 @@ import { Link } from 'react-scroll'
 import Header from '../../Header/header'
 import Footer from '../../Footer/components/Footer'
 import NewsLetter from '../../NewsLetter/components/NewsLetter_Page'
-import Conseil_Section from './Conseil_Section'
-import Coordination_Section from './Coordination_Section'
+import ConseilSection from './Conseil_Section'
+import CoordinationSection from './Coordination_Section'
 import '../styles/style.css'
 import IntroImg from '../assets/IMG-20210701-WA0030.jpg'
 
@@ -54,8 +54,8 @@ function OrganeGestion() {
 						</Link>
 					</div>
 
-					<Conseil_Section />
-					<Coordination_Section />
+					<ConseilSection />
+					<CoordinationSection />
 					<NewsLetter />
 
 				</div>
