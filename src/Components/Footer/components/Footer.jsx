@@ -61,7 +61,7 @@ function Footer() {
 							Contactez-Nous
 						</Link><br/>
 						<Link onClick={() => {window.location.href="/Contact"}} className="footer_link">
-							Donate
+							Donation
 						</Link>
 					</div>
 				</div>
