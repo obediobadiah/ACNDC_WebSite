@@ -52,10 +52,10 @@ function Footer() {
 							Nos Résultats
 						</Link><br/>
 						<Link onClick={() => {window.location.href="/OrganeGestion"}} className="footer_link">
-							Organe de Gestions
+							Organes de Gestions
 						</Link><br/>
 						<Link onClick={() => {window.location.href="/Partenaire"}} className="footer_link">
-							Nos Partenaire
+							Nos Partenaires
 						</Link><br/>
 						<Link onClick={() => {window.location.href="/Contact"}} className="footer_link">
 							Contactez-Nous
@@ -66,7 +66,7 @@ function Footer() {
 					</div>
 				</div>
 				<div className="alright">
-					<h3>© 2021 Action Pour La Conservation de la Nature et Development Comminautaire, All Rights Reserved</h3>
+					<h3>© 2022 Action Pour La Conservation de la Nature et Development Communautaire, All Rights Reserved</h3>
 				</div>
 			</div>
 		</div>
