@@ -43,7 +43,7 @@ function Actualite() {
 									<p>Actualités</p>
 								</div>
 								<div className="Actualite_box_text_tit">
-									<p>Le renforcement des capacités</p>
+									<p>Egalité générationnelle et de genre dans la création d'emplois et amélioration des moyens des subsistances</p>
 								</div>
 								<div className="Actualite_box_text_cont">
 									<p>Expéditions terrestres des filles dans le territoire de Mwenga dans le cadre du Projet
