@@ -20,7 +20,7 @@ function LandingIntro() {
 							<button 
 							className="Intro_button"
 							>
-								<Link onClick={() => {window.location.href="/Objectifs"}} className='Intro_but'>EN SAVOIR PLUS</Link>
+								<Link onClick={() => {window.location.href="/Objectifs"}} className='Intro_but'> {t("intro_button")} </Link>
 							</button>
 						</div>
 					</div>

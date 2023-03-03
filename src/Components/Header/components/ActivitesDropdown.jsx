@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import '../styles/DropdownAct.css';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'
 
 function Dropdown() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -17,17 +19,17 @@ function Dropdown() {
           <Link
             className="dropdown-link"
             onClick={() => {window.location.href="/Programmes"}}
-          >Programmes
+          >{t("program_menu_link")}
           </Link>
           <Link
             className="dropdown-link"
             onClick={() => {window.location.href="/Commissions"}}
-          >Commissions
+          >{t("commission_menu_link")}
           </Link>
           <Link
             className="dropdown-link"
             onClick={() => {window.location.href="/ZoneIntervention"}}
-          >Zone d'Intervention
+          >{t("zone_menu_link")}
           </Link>
         </li>
       </ul>

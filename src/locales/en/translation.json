@@ -1,4 +1,20 @@
 {
+    "activity_menu_link" : "Our Activities",
+    "program_menu_link" : "Programs",
+    "commission_menu_link" : "Committees",
+    "zone_menu_link" : "Intervention Zones",
+    "some_nous_menu_link" : "Who we are",
+    "vision_menu_link" : "Our Vision and Mission",
+    "objectif_menu_link" : "Our Objectives",
+    "approches_menu_link" : "Our Approaches",
+    "result_menu_link" : "Our Results",
+    "organe_menu_link" : "Management Body",
+    "patner_menu_link" : "Our partners",
+    "actuality_menu_link" : "Our News",
+    "contact_menu_link" : "Contact",
+    "lang_menu_link" : "Languages",
+    "donate_button" : "DONATE",
     "intro_text_title" : "Together for gender justice and climate justice.",
-    "intro_text_par" : "Gender Justice, Gender Equality, Economic Justice and Climate Justice our work with the community"
+    "intro_text_par" : "Gender Justice, Gender Equality, Economic Justice and Climate Justice our work with the community",
+    "intro_button" : "LEARN MORE"
 }

@@ -1,4 +1,20 @@
 {
+    "activity_menu_link" : "Nos Activités",
+    "program_menu_link" : "Programmes",
+    "commission_menu_link" : "Commissions",
+    "zone_menu_link" : "Intervention Zones",
+    "some_nous_menu_link" : "Qui somme-nous?",
+    "vision_menu_link" : "Notre Vision et Mission",
+    "objectif_menu_link" : "Nos Objectifs",
+    "approches_menu_link" : "Nos Approches",
+    "result_menu_link" : "Nos Resultats",
+    "organe_menu_link" : "Organe de Gestions",
+    "patner_menu_link" : "Nos Partenaires",
+    "actuality_menu_link" : "Nos Actualités",
+    "contact_menu_link" : "Contact",
+    "lang_menu_link" : "Langues",
+    "donate_button" : "FAIRE UN DON",
     "intro_text_title" : "Ensemble pour la justice du genre et la justice climatique.",
-    "intro_text_par" : "La justice du genre, l’Egalite de sexe, la justice économique et la justice climatique notre travail auprès de la communauté"
+    "intro_text_par" : "La justice du genre, l’Egalite de sexe, la justice économique et la justice climatique notre travail auprès de la communauté",
+    "intro_button" : "EN SAVOIR PLUS"
 }

@@ -5,6 +5,7 @@ import SommeNousDropdown from './components/SommeNousDropdown'
 import LanguageDropdown from './components/LanguagesDropDown'
 import './style.css'
 import logoImg from './assets/Logos ACNDC.png'
+import { useTranslation } from 'react-i18next'
 
 
 
@@ -15,6 +16,7 @@ function Header() {
 	const [SomDropdown, setSomDropdown] = useState(false);
 	const [LangDropdown, setLangDropdown] = useState(false);
 	const handleClick = () => setClick(!click);
+	const { t, i18n } = useTranslation();
 
 
 
@@ -99,31 +101,31 @@ function Header() {
 							<li className="header-item"
 								onMouseEnter={onMouseEnterAct}
 								onMouseLeave={onMouseLeaveAct}>
-								<span to="" className="header-links" >Nos Activités <i className="fas fa-caret-down" /></span>
+								<span to="" className="header-links" >{t("activity_menu_link")} <i className="fas fa-caret-down" /></span>
 								{Actdropdown && <ActivitesDropdown />}
 							</li>
 
 							<li className="header-item"
 								onMouseEnter={onMouseEnterSom}
 								onMouseLeave={onMouseLeaveSom}>
-								<span className="header-links">Qui somme-nous? <i className="fas fa-caret-down" /></span>
+								<span className="header-links">{t("some_nous_menu_link")} <i className="fas fa-caret-down" /></span>
 								{SomDropdown && <SommeNousDropdown />}
 							</li>
 
 
 							<li className="header-item">
-								<Link className="header-links" onClick={() => { window.location.href = "/Actualite" }}>Nos Actualités </Link>
+								<Link className="header-links" onClick={() => { window.location.href = "/Actualite" }}> {t("actuality_menu_link")} </Link>
 							</li>
 
 
 							<li className="header-item">
-								<Link className="header-links" onClick={() => { window.location.href = "/Contact" }}>Contact </Link>
+								<Link className="header-links" onClick={() => { window.location.href = "/Contact" }}> {t("contact_menu_link")} </Link>
 							</li>
 
 							<li className="header-item"
 								onMouseEnter={onMouseEnterLang}
 								onMouseLeave={onMouseLeaveLang}>
-								<span className="header-links">Langues <i className="fas fa-caret-down" /></span>
+								<span className="header-links"> {t("lang_menu_link")} <i className="fas fa-caret-down" /></span>
 								{LangDropdown && <LanguageDropdown />}
 							</li>
 
@@ -131,7 +133,7 @@ function Header() {
 					</div>
 					<div className="Button_container">
 						<div className="donation_button">
-							<Link onClick={() => { window.location.href = "/Contact" }}><button className="btn">DONATION</button> </Link>
+							<Link onClick={() => { window.location.href = "/Contact" }}><button className="btn"> {t("donate_button")} </button> </Link>
 						</div>
 					</div>
 				</div>

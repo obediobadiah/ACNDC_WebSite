@@ -27,6 +27,7 @@
 	text-decoration: none;
 	color: #3CB371;
 	padding: 16px;
+	margin: 0;
   }
   
   .dropdown-link:hover {

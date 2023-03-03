@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import '../styles/DropdownSom.css';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'
 
 function SommeNousDropdown() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
+  const { t, i18n } = useTranslation();
 
   return (
     <>
@@ -18,32 +20,32 @@ function SommeNousDropdown() {
           <Link
             className="dropdown-link"
             onClick={() => {window.location.href="/VisionMission"}}
-          >Notre Vision et Mission
+          >{t("vision_menu_link")}
           </Link>
           <Link
             className="dropdown-link"
             onClick={() => {window.location.href="/Objectifs"}}
-          >Nos Objectifs
+          >{t("objectif_menu_link")}
           </Link>
           <Link
             className="dropdown-link"
             onClick={() => {window.location.href="/Approches"}}
-          >Nos Approches
+          >{t("approches_menu_link")}
           </Link>
           <Link
             className="dropdown-link"
             onClick={() => {window.location.href="/Resultats"}}
-          >Nos Resultats
+          >{t("result_menu_link")}
           </Link>
           <Link
             className="dropdown-link"
             onClick={() => {window.location.href="/OrganeGestion"}}
-          >Organe de Gestions
+          >{t("organe_menu_link")}
           </Link>
           <Link
             className="dropdown-link"
             onClick={() => {window.location.href="/Partenaire"}}
-          >Nos Partenaires
+          >{t("patner_menu_link")}
           </Link>
           {/* <Link
             className="dropdown-link"
