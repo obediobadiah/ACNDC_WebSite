@@ -1,11 +1,15 @@
 import React from 'react'
 import  '../styles/style.css'
+import { useTranslation } from 'react-i18next'
 
 function Slogan_Section() {
+
+	const { t, i18n } = useTranslation();
+
 	return (
 		<div className="Slogan_container">
 			<div className="Slogan_content">
-				<h1>L’AFFAIRE DES GENERATIONS PRESENTES ET FUTURES, C’EST LA GESTION DURABLE DE LA NATURE ET DE LA PROTECTION, LA PROMOTION DES DROITS DES FILLES ET DES FEMMES DANS LA COMMUNAUTE (AUTOCHTONES)</h1>
+				<h1> {t("slogan_content_title")} </h1>
 			</div>
 		</div>
 	)
