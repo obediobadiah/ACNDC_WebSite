@@ -18,7 +18,7 @@
   }
 
   .header-logo .logoimg {
-	width: 40%;
+	width: auto;
 	height: 60px;
 	margin-left: 100px;
 	cursor: pointer;
@@ -67,7 +67,13 @@
   .menu-icon {
 	display: none;
   }
-  
+
+  .Button_container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+
   .btn {
 	padding: 20px 20px;
 	width: 100%;
@@ -123,16 +129,16 @@
 	  }
 
 	.header-logo .logoimg {
-		width: 35%;
-		height: 70px;
+		/* width: auto; */
+		/* height: 40px; */
 		margin-left: 50px;
 	}
-
-	.logo{
+/* 
+	.header-details .logo{
 		justify-content: center;
 		align-items: center;
-		margin-left: 80px;
-	}
+		argin-left: 80px;
+	} */
 	.header-details .logo {
 		width: 100%;
 		justify-content: center;

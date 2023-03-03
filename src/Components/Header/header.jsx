@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import ActivitesDropdown from './components/ActivitesDropdown'
 import SommeNousDropdown from './components/SommeNousDropdown'
+import LanguageDropdown from './components/LanguagesDropDown'
 import './style.css'
 import logoImg from './assets/Logos ACNDC.png'
 
@@ -12,6 +13,7 @@ function Header() {
 	const [click, setClick] = useState(false);
 	const [Actdropdown, setActDropdown] = useState(false);
 	const [SomDropdown, setSomDropdown] = useState(false);
+	const [LangDropdown, setLangDropdown] = useState(false);
 	const handleClick = () => setClick(!click);
 
 
@@ -56,6 +58,27 @@ function Header() {
 		}
 	};
 
+
+	const onMouseEnterLang = () => {
+		if (window.innerWidth < 960) {
+
+			setLangDropdown(true);
+		} else {
+
+			setLangDropdown(true);
+		}
+	};
+
+	const onMouseLeaveLang = () => {
+		if (window.innerWidth < 960) {
+
+			setLangDropdown(false);
+		} else {
+
+			setLangDropdown(false);
+		}
+	};
+
 	return (
 		<>
 			<div className="header">
@@ -67,7 +90,7 @@ function Header() {
 						<i className={click ? 'fas fa-times' : 'fas fa-bars'} />
 					</div>
 					<div className="logo">
-						<Link className="header-logo" onClick={() => {window.location.href="/"}}>
+						<Link className="header-logo" onClick={() => { window.location.href = "/" }}>
 							<img src={logoImg} alt="Site logo" className="logoimg" />
 						</Link>
 					</div>
@@ -89,19 +112,27 @@ function Header() {
 
 
 							<li className="header-item">
-								<Link className="header-links" onClick={() => {window.location.href="/Actualite"}}>Nos Actualités </Link>
+								<Link className="header-links" onClick={() => { window.location.href = "/Actualite" }}>Nos Actualités </Link>
 							</li>
 
 
 							<li className="header-item">
-								<Link className="header-links" onClick={() => {window.location.href="/Contact"}}>Contact </Link>
+								<Link className="header-links" onClick={() => { window.location.href = "/Contact" }}>Contact </Link>
+							</li>
+
+							<li className="header-item"
+								onMouseEnter={onMouseEnterLang}
+								onMouseLeave={onMouseLeaveLang}>
+								<span className="header-links">Langues <i className="fas fa-caret-down" /></span>
+								{LangDropdown && <LanguageDropdown />}
 							</li>
 
 						</ul>
 					</div>
-					<div className="Button-container">
-						<Link onClick={() => {window.location.href="/Contact"}}><button className="btn">DONATION</button> </Link>
-
+					<div className="Button_container">
+						<div className="donation_button">
+							<Link onClick={() => { window.location.href = "/Contact" }}><button className="btn">DONATION</button> </Link>
+						</div>
 					</div>
 				</div>
 			</div>
