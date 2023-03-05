@@ -24,14 +24,14 @@ function VisionMission_Section() {
 							/>
 						</div>
 						<div className="Vision_Title">
-							<p>VISION</p>
+							<p>{t("home_vision_title")}</p>
 						</div>
 						<div className="Vision_detail">
-							<p>ACNDC devienne une alliance des groupes communautaire de base et ceux de la société civile actifs et agissant ensemble pour une conservation de la nature pourvoyeuse du développement durable en faveur des générations présentes et futures des femmes et des filles en particulier et des hommes par une juste exploitation, échange et utilisation des ressources naturelles et aboutissant à des visibilités aux étalages des marchés et dans les assiettes des ménages tant ruraux qu'urbains.</p>
+							<p>{t("home_vision_content")}</p>
 						</div>
 						<div className="Vision_link">
 							<Link onClick={() => {window.location.href="/VisionMission"}} className="VisionMission_Link">
-							Savoir Plus
+							{t("home_savoir_plus")}
 							</Link>
 						</div>					
 					</div>
@@ -47,14 +47,14 @@ function VisionMission_Section() {
 							/>
 						</div>
 						<div className="Vision_Title">
-							<p>MISSION</p>
+							<p>{t("home_mission_title")}</p>
 						</div>
 						<div className="Vision_detail">
-							<p>Il est d’encadrer l’autonomisation économique, socioculturelle et environnementale des filles et femmes.</p>
+							<p> {t("home_mission_content")} </p>
 						</div>
 						<div className="Vision_link">
 							<Link onClick={() => {window.location.href="/VisionMission"}} className="VisionMission_Link">
-							Savoir Plus
+							{t("home_savoir_plus")}
 							</Link>
 						</div>					
 					</div>
@@ -69,17 +69,17 @@ function VisionMission_Section() {
 							/>
 						</div>
 						<div className="Vision_Title">
-							<p>OBJECTIF</p>
+							<p>{t("home_object_title")}</p>
 						</div>
 						<div className="Vision_detail">
-							<p>Améliorer les conditions économiques du travail des femmes base sur les droits et le leadership des jeunes filles et des femmes, Entreprendre l’appropriation foncière et la jouissance du droit à la terre des femmes dans les nouvelles zones d’urbanisation et Introduire la gestion des ressources naturelles basées sur les communautés.</p>
+							<p> {t("home_object_content")} </p>
 						</div>
 						<div className="Vision_link">
 							<Link
 								onClick={() => {window.location.href="/VisionMission"}}
 								className="VisionMission_Link"
 							>
-								Savoir Plus
+								{t("home_savoir_plus")}
 							</Link>
 						</div>					
 					</div>

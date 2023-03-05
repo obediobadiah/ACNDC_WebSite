@@ -2,8 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import  '../styles/style.css'
 import AboutImg from '../assets/IMG-20210701-WA0042.jpg'
+import { useTranslation } from 'react-i18next'
 
 function About_Section() {
+
+	const { t } = useTranslation();
+
 	return (
 		<div className="About_container">
 			<div className="About_contents">
@@ -13,8 +17,8 @@ function About_Section() {
 					</div>
 					<div className="About_Text">
 						<div className="About_txt">
-							<h2>A propos d'ACNDC</h2>
-							<p>Actions pour la Conservation de la Nature et le Développement communautaire, ACNDC est Organisation de base à vocation communautaire, une coordination des organisations communautaires de base familiales et tribalo-ethniques, celles sociales et professionnelles et scientifiques et intellectuelles, celles coutumières et traditionnelles, des autorités locales et autres faiseurs d’opinions de proximité territoriale, sectorielle et populaire. A ce titre, elle fonctionne sur base de la légitimité communautaire et populaire.  <br/>C’est organisation féminine œuvrant pour la défense des droits des femmes autochtones, les femmes marginalisées et des groupes des personnes Marginalisées en RDC.</p>
+							<h2> {t("home_about_title")} </h2>
+							<p> {t("home_about_content")} </p>
 						</div>
 						<div className="About_Button">
 							<Link
@@ -22,7 +26,7 @@ function About_Section() {
 								onClick={() => {window.location.href="/VisionMission"}}
 								className="AboutButton"
 							>
-								Contactez-Nous
+								{t("home_about_contactus")}
 							</Link>
 						</div>
 					</div>
