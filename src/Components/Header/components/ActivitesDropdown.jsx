@@ -7,7 +7,7 @@ function Dropdown() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>

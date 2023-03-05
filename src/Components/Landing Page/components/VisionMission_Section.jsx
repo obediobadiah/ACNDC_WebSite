@@ -4,8 +4,12 @@ import  '../styles/style.css'
 import VisionImg from '../assets/Vision.png'
 import MissionImg from '../assets/Mission.png'
 import ObjectifImg from '../assets/Objectf.png'
+import { useTranslation } from 'react-i18next'
 
 function VisionMission_Section() {
+
+	const { t } = useTranslation();
+
 	return (
 		<div className="Vision_container">
 			<div className="Vision_content">

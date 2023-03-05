@@ -16,7 +16,7 @@ function Header() {
 	const [SomDropdown, setSomDropdown] = useState(false);
 	const [LangDropdown, setLangDropdown] = useState(false);
 	const handleClick = () => setClick(!click);
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 
 
 

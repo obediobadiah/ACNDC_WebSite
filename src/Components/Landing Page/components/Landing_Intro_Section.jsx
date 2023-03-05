@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 
 function LandingIntro() {
 
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 
 	return (
 		<div className="Introduction_container">
