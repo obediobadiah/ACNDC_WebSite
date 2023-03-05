@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import {Link} from 'react-router-dom'
 import  '../styles/style.css'
+import { useTranslation } from 'react-i18next'
 
 
 function NewsLetter_Page() {
@@ -19,20 +20,22 @@ function NewsLetter_Page() {
 		});
 	};
 
+	const { t } = useTranslation();
+
 	return (
 		<div className="NewsLetter_container">
 			<div className="NewsLetter_content">
 				<div className="NewsLetter_details">
 					<div className="Impact_text">
-						<h1>IMPACTEZ LE MONDE</h1>
+						<h1> {t("newsletter_title")} </h1>
 						<div className="Donate_Button">
 							<Link onClick={() => {window.location.href="/Contact"}} className="Donate_But">
-								<button>Donation</button>
+								<button> {t("donate_button")} </button>
 							</Link>
 						</div>
 					</div>
 					<div className="NewsLetter_comp">
-						<p>Connectez-vous pour plus d'information</p>
+						<p> {t("newsletter_comp_title")} </p>
 						<form ref={form} onSubmit={sendEmail}>
 							<div className="NewLetter_Comp_Names">
 								<input 
@@ -48,7 +51,7 @@ function NewsLetter_Page() {
 								/>
 							</div>
 							<div className="NewLetter_Comp_Button">
-								<button type="submit" className="NewsLetter_comp_but" value="Send">Envoie</button>
+								<button type="submit" className="NewsLetter_comp_but" value="Send"> {t("newsletter_comp_comp_cutton")} </button>
 							</div>
 						</form>	
 					</div>
