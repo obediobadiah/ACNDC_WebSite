@@ -2,8 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logoImg from '../assets/Logos ACNDC.png'
 import  '../styles/style.css'
+import { useTranslation } from 'react-i18next'
 
 function Footer() {
+
+	const { t } = useTranslation();
+
 	return (
 		<div className="footer_container">
 			<div className="footer_contents">
@@ -13,7 +17,7 @@ function Footer() {
 							<img src={logoImg} alt="footer logo" />
 						</div>
 						<div className="acndc_logo_text">
-							<h2>Action pour la Conservation <br/>de la Nature et Developement <br/>Communautaire</h2>
+							<h2>Action pour la Conservation de la Nature et Developement Communautaire</h2>
 						</div>
 					</div>
 					<div className="address">
@@ -29,7 +33,7 @@ function Footer() {
 						</div>
 						<div className="address_links">
 							<div className="address_link_text">
-								<h5>Restez avec nous via nos réseau sociaux</h5>
+								<h5> {t("footer_address_link_text")} </h5>
 							</div>
 							<div className="address_link_icons">
 								<a href="https://web.facebook.com/acndc.org" className="address_link_icon">
@@ -49,24 +53,24 @@ function Footer() {
 					</div>
 					<div className="footer_links">
 						<Link onClick={() => {window.location.href="/Resultats"}} className="footer_link">
-							Nos Résultats
+							{t("result_menu_link")}
 						</Link><br/>
 						<Link onClick={() => {window.location.href="/OrganeGestion"}} className="footer_link">
-							Organes de Gestions
+							{t("organe_menu_link")}
 						</Link><br/>
 						<Link onClick={() => {window.location.href="/Partenaire"}} className="footer_link">
-							Nos Partenaires
+							{t("patner_menu_link")}
 						</Link><br/>
 						<Link onClick={() => {window.location.href="/Contact"}} className="footer_link">
-							Contactez-Nous
+							{t("contact_menu_link")}
 						</Link><br/>
 						<Link onClick={() => {window.location.href="/Contact"}} className="footer_link">
-							Donation
+							{t("donate_button")}
 						</Link>
 					</div>
 				</div>
 				<div className="alright">
-					<h3>© 2022 Action Pour La Conservation de la Nature et Development Communautaire, All Rights Reserved</h3>
+					<h3>© 2023 Action Pour La Conservation de la Nature et Development Communautaire, All Rights Reserved</h3>
 				</div>
 			</div>
 		</div>
