@@ -5,15 +5,19 @@ import '../styles/style.css'
 import zone_img1 from '../assets/IMG_5806.JPG'
 import zone_img2 from '../assets/DSC00005.JPG'
 import zone_img3 from '../assets/IMG_20220313_153838_601.jpg'
+import { useTranslation } from 'react-i18next'
 
 function ZoneIntervention() {
+
+	const { t } = useTranslation();
+
 	return (
 		<div className="zone_container">
 			<Header />
 			<div className="zone_contents">
 				<div className="zone_detatils">
 					<div className="zone_Intro">
-						<h1>NOS ZONES D'INTERVENTION</h1>
+						<h1>{t("zone_intro_title")}</h1>
 					</div>
 					<div className="zone_block">
 
@@ -24,10 +28,8 @@ function ZoneIntervention() {
 								<img src={zone_img1} alt="zone Img" />
 							</div>
 							<div className="zone_textes">
-								<h2>NORD-KIVU</h2>
-								<p>Plaidoyer contre les conséquences des catastrophes naturelles et la juste gestion des aides
-									humanitaires pour une stabilité économique des femmes post catastrophes naturelles aux alentours
-									du volcan Nyiragongo à Goma.</p>
+								<h2>{t("zone_texte_nordkivu_h")}</h2>
+								<p>{t("zone_texte_nordkivu_P")}</p>
 							</div>
 						</div>
 
@@ -36,12 +38,8 @@ function ZoneIntervention() {
 
 						<div className="zone_boxes">
 							<div className="zone_textes" id="zone_text_inverse">
-								<h2>SUD-KIVU</h2>
-								<p>Depuis 2009 jusqu’aujourd’hui, ACNDC travaille dans le Territoire de Mwenga, Fizi et de Maniema
-									auprès des filles et femmes autochtones Batwa Banyindu et tribaux forestiers de Balega et
-									Babembe dans la sécurité frontière des femmes et la restauration de la paix, la justice climatique dans l’agriculture, l'egalité générationnelle des genres et sexes et plaidoyer contre les conséquences des catastrophes naturelles et la juste gestion des aides
-									humanitaires pour une stabilité économique des filles et femmes post catastrophes naturelles de
-									l’épicentre séismique à Kamituga.</p>
+								<h2>{t("zone_texte_sudkivu_h")}</h2>
+								<p>{t("zone_texte_sudkivu_P")}</p>
 							</div>
 							<div className="zone_image">
 								<img src={zone_img2} alt="zone Img" />
@@ -54,9 +52,8 @@ function ZoneIntervention() {
 								<img src={zone_img3} alt="zone Img" />
 							</div>
 							<div className="zone_textes">
-								<h2>TSHOPO</h2>
-								<p>Sensibilisation des filles et femmes autochtones Bakumu sur la conservation de la nature et la
-									protection de la biodiversité et l’accroissement de l’autonomie des filles et femmes.</p>
+								<h2>{t("zone_texte_tchopo_h")}</h2>
+								<p>{t("zone_texte_tchopo_P")}</p>
 							</div>
 						</div>
 
