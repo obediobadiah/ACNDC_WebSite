@@ -14,7 +14,7 @@ function Programmes() {
 			<div className="programmes_contents">
 				<div className="programmes_detatils">
 					<div className="programmes_Intro">
-						<h1>NOS PROGRAMMES</h1>
+						<h1>{t("programmes_intro_title")}</h1>
 					</div>
 					<div className="programmes_boxes">
 						<div className="programmes_box">
