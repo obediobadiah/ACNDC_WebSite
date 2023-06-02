@@ -111,5 +111,10 @@
     "organe_coord_droit" : "Community Rights Advocacy",
     "organe_coord_entrepreneuriat" : "Entrepreneurship Responsibilities",
     "organe_coord_partenariat" : "Partnership Responsibilities, Movement Building",
-    "organe_coord_conservation" : "Nature Conservation and Landscape Restoration Responsibilities"
+    "organe_coord_conservation" : "Nature Conservation and Landscape Restoration Responsibilities",
+    "partenaire_intro_title" : "OUR PATNERS",
+    "partenaire_bailleur_h" : "FUNDING PARTNER",
+    "partenaire_bailleur_p" : "ACNDC works in monetary and financial intermediation in nature conservation and community development. As such, ACNDC provides financial and fiscal sponsorship in development cooperation and charity (philanthropy, generosity, benevolence, compassion, and charitable acts) extended to anonymous and legally unregistered organizations and communities.",
+    "partenaire_reseau_h" : "NETWORK, ALLIANCE, AND MOVEMENT",
+    "partenaire_reseau_p" : "ACNDC will integrate international networks, alliances, and movements for the purpose of visibility, recognition, credibility, and mutually beneficial solidarity. It will coordinate community groups and their sectoral, territorial, and popular structures."
 }

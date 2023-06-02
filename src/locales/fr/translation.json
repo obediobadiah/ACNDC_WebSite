@@ -111,5 +111,10 @@
     "organe_coord_droit" : "Charges des droits des communautés",
     "organe_coord_entrepreneuriat" : "Charges de l’entreprenariat",
     "organe_coord_partenariat" : "Charges de partenariat, construction de mouvement",
-    "organe_coord_conservation" : "Charges de la conservation de la nature et de la restauration du paysage"
+    "organe_coord_conservation" : "Charges de la conservation de la nature et de la restauration du paysage",
+    "partenaire_intro_title" : "NOS PARTENAIRES",
+    "partenaire_bailleur_h" : "BAILLEURS DES FONDS",
+    "partenaire_bailleur_p" : "ACNDC travaille dans l’intermédiation monétaire et financière en conservation de la nature et le développement communautaire. Ainsi, ACNDC assure le sponsorship financier et fiscal dans la coopération au développement et la charité (philanthropie, générosité, bienfaisance, compassion et caritative) manifestée aux organisations et communautés anonymes et non enregistrées légalement.",
+    "partenaire_reseau_h" : "RESEAU, ALLIANCE ET MOUVEMENT",
+    "partenaire_reseau_p" : "ACNDC intégrera le réseau, alliance et mouvement internationaux à des fins de visibilité, de notoriété, de crédibilité et de solidarité mutuellement avantageux. Elle coordonnera les groupes communautaires et leurs structurations sectorielles, territoriales et populaires."
 }

@@ -9,8 +9,12 @@ import Bailleur3Img from '../assets/logo crispine.png'
 import Reaseau1Img from '../assets/Engage.png'
 import Reaseau2Img from '../assets/Voice.png'
 import NewsLetter from '../../NewsLetter/components/NewsLetter_Page'
+import { useTranslation } from 'react-i18next'
 
 function Partenaire() {
+
+	const { t } = useTranslation();
+
 	return (
 		<div className="Partenaire_container">
 			<Header />
@@ -19,7 +23,7 @@ function Partenaire() {
 					<div className="Partenaire_Intro">
 						<div className="Intro_text">
 							<div className="Partenaire_Quote">
-								<h1>NOS PARTENAIRES</h1>
+								<h1>{t("partenaire_intro_title")}</h1>
 								<img src={IntroImg} alt="Intro Img" />
 							</div>
 						</div>
@@ -27,8 +31,8 @@ function Partenaire() {
 
 					<div className="Partenaire_Comp">
 						<div className="Partenaire_Exp">
-							<h1>BAILLEURS DES FONDS</h1>
-							<p>ACNDC travaille dans l’intermédiation monétaire et financière en conservation de la nature et le développement communautaire. Ainsi, ACNDC assure le sponsorship financier et fiscal dans la coopération au développement et la charité (philanthropie, générosité, bienfaisance, compassion et caritative) manifestée aux organisations et communautés anonymes et non enregistrées légalement.</p>
+							<h1>{t("partenaire_bailleur_h")}</h1>
+							<p>{t("partenaire_bailleur_p")}</p>
 							<div className="Partenaire_Exp_Img">
 								<div><img src={Bailleur1Img} alt="" /></div>
 								<div><img src={Bailleur2Img} alt="" /></div>
@@ -41,8 +45,8 @@ function Partenaire() {
 
 
 						<div className="Partenaire_Exp">
-							<h1>RESEAU, ALLIANCE ET MOUVEMENT</h1>
-							<p>ACNDC intégrera le réseau, alliance et mouvement internationaux à des fins de visibilité, de notoriété, de crédibilité et de solidarité mutuellement avantageux. Elle coordonnera les groupes communautaires et leurs structurations sectorielles, territoriales et populaires.</p>
+							<h1>{t("partenaire_reseau_h")}</h1>
+							<p>{t("partenaire_reseau_p")}</p>
 							<div className="Partenaire_Exp_Img">
 								<div><img src={Reaseau1Img} alt="" /></div>
 								<div>
