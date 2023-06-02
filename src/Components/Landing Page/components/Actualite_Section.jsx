@@ -110,8 +110,8 @@ function Actualite_Section() {
 						</Link>
 					</div>
 				</div>
-			</div>
-		</div>
+			</div >
+		</div >
 	)
 }
 
