@@ -1,11 +1,16 @@
 import React from 'react'
 import '../styles/style.css'
+import { useTranslation } from 'react-i18next'
+
 
 function Conseil_Section() {
+
+	const { t } = useTranslation();
+	
 	return (
 		<div className="OrganeGestion_Conseil">
 						<div className="OrganeGestion_Conseil_title">
-							<h2>Conseil d'Administration et Leader</h2>
+							<h2>{t("organe_conseil_title")}</h2>
 						</div>
 						<div className="OrganeGestion_Conseil_Identity">
 
@@ -17,7 +22,7 @@ function Conseil_Section() {
 								</div> */}
 								<div className="OrganeGestion_Function">
 									{/* <h3>Crispine Ngena</h3> */}
-									<p>Présidente</p>
+									<p>{t("organe_conseil_president")}</p>
 								</div>						
 							</div>
 
@@ -29,7 +34,7 @@ function Conseil_Section() {
 								</div> */}
 								<div className="OrganeGestion_Function">
 									{/* <h3>Crispine Ngena</h3> */}
-									<p>Vice-présidente</p>
+									<p>{t("organe_conseil_vice_president")}</p>
 								</div>						
 							</div>
 
@@ -41,7 +46,7 @@ function Conseil_Section() {
 								</div> */}
 								<div className="OrganeGestion_Function">
 									{/* <h3>Crispine Ngena</h3> */}
-									<p>Secrétaire</p>
+									<p>{t("organe_conseil_sec")}</p>
 								</div>						
 							</div>
 
@@ -53,7 +58,7 @@ function Conseil_Section() {
 								</div> */}
 								<div className="OrganeGestion_Function">
 									{/* <h3>Crispine Ngena</h3> */}
-									<p>Vice-secrétaire</p>
+									<p>{t("organe_conseil_vice_sec")}</p>
 								</div>						
 							</div>
 
@@ -65,7 +70,7 @@ function Conseil_Section() {
 								</div> */}
 								<div className="OrganeGestion_Function">
 									{/* <h3>Crispine Ngena</h3> */}
-									<p>Conseil</p>
+									<p>{t("organe_conseil_conseil")}</p>
 								</div>						
 							</div>
 

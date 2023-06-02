@@ -1,11 +1,15 @@
 import React from 'react'
 import '../styles/style.css'
+import { useTranslation } from 'react-i18next'
 
 function Coordination_Section() {
+
+	const { t } = useTranslation();
+
 	return (
 		<div className="OrganeGestion_Coord">
 						<div className="OrganeGestion_Conseil_title">
-							<h2>coordination et staff</h2>
+							<h2>{t("organe_coord_title")}</h2>
 						</div>
 						<div className="OrganeGestion_Conseil_Identity">
 
@@ -17,7 +21,7 @@ function Coordination_Section() {
 								</div> */}
 								<div className="OrganeGestion_Function">
 									{/* <h3>Crispine Ngena</h3> */}
-									<p>Coordinatrice</p>
+									<p>{t("organe_coord_coordinatrice")}</p>
 								</div>						
 							</div>
 
@@ -29,7 +33,7 @@ function Coordination_Section() {
 								</div> */}
 								<div className="OrganeGestion_Function">
 									{/* <h3>Crispine Ngena</h3> */}
-									<p>Administratrice principale</p>
+									<p>{t("organe_coord_admin")}</p>
 								</div>						
 							</div>
 
@@ -41,7 +45,7 @@ function Coordination_Section() {
 								</div> */}
 								<div className="OrganeGestion_Function">
 									{/* <h3>Crispine Ngena</h3> */}
-									<p>Analyste principale</p>
+									<p>{t("organe_coord_droit")}</p>
 								</div>						
 							</div>
 
@@ -53,7 +57,7 @@ function Coordination_Section() {
 								</div> */}
 								<div className="OrganeGestion_Function">
 									{/* <h3>Crispine Ngena</h3> */}
-									<p>Charges des droits des communautés</p>
+									<p>{t("organe_coord_entrepreneuriat")}</p>
 								</div>						
 							</div>
 
@@ -65,7 +69,7 @@ function Coordination_Section() {
 								</div> */}
 								<div className="OrganeGestion_Function">
 									{/* <h3>Crispine Ngena</h3> */}
-									<p>Charges de l’entreprenariat</p>
+									<p>{t("organe_coord_partenariat")}</p>
 								</div>						
 							</div>
 
@@ -77,7 +81,7 @@ function Coordination_Section() {
 								</div> */}
 								<div className="OrganeGestion_Function">
 									{/* <h3>Crispine Ngena</h3> */}
-									<p>Charges de partenariat, construction de mouvement</p>
+									<p>{t("organe_coord_partenariat")}</p>
 								</div>						
 							</div>
 
@@ -89,7 +93,7 @@ function Coordination_Section() {
 								</div> */}
 								<div className="OrganeGestion_Function">
 									{/* <h3>Crispine Ngena</h3> */}
-									<p>Charges de la conservation de la nature et de la restauration du paysage</p>
+									<p>{t("organe_coord_conservation")}</p>
 								</div>						
 							</div>
 

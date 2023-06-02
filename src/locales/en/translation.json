@@ -92,6 +92,24 @@
     "resultat_egalite_p" : "It focuses on strengthening the leadership, responsibility, and well-being of marginalized and discriminated human categories, including adolescent girls, young women, the elderly (elderly people), and to some extent, children. The emphasis is placed on protection, education, technical and vocational training, entrepreneurship, and the defense of fundamental rights and freedoms.",
     "resultat_securite_h" : "Border security for women and peace restoration in the Mwenga Territory (Kasika) 2014-2015.",
     "resultat_securite_p" : "It concerns the participation of women in environmental management, which is achieved through access to secure land. Thus, 1150 individuals indirectly benefited from this project, and 1725 individuals were directly served, among whom 5 submitted requests for land contracts, and 200 individuals were informed about land management. Additionally, 500 participants attended workshops for feedback in the committees.",
-    "resultat_quote_h" : "' THE VOCATION IS ONLY THE RESULT OF PRACTICE '"
-
+    "resultat_quote_h" : "' THE VOCATION IS ONLY THE RESULT OF PRACTICE '",
+    "organe_intro_title" : "ORGAN OF MANAGEMENT",
+    "organe_conseil_intro" : "BOARD OF DIRECTORS AND LEADERS. ACNDC has a board of directors consisting of 9 individuals currently appointed by their respective communities (family, clan, tribe), among whom 6 individuals constitute its permanent/daily leadership.",
+    "organe_coord_intro" : "COORDINATION AND STAFF. The professionals at ACNDC come from the fields of science, intelligence, and technical expertise on one hand, and from culture, initiation, and practical knowledge on the other hand.",
+    "organe_conseil_intro_title" : "Board of Directors and Leadership",
+    "organe_coord_intro_title" : "Coordination and Staff",
+    "organe_conseil_title" : "Board of Directors and Leader.",
+    "organe_conseil_president" : "Président",
+    "organe_conseil_vice_president" : "Vice-président",
+    "organe_conseil_sec" : "Secretary",
+    "organe_conseil_vice_sec" : "Vice-secretary",
+    "organe_conseil_conseil" : "Council",
+    "organe_coord_title" : "Coordination and staff",
+    "organe_coord_coordinatrice" : "The coordinator",
+    "organe_coord_admin" : "The main administrator",
+    "organe_coord_analyste" : "The main analyst",
+    "organe_coord_droit" : "Community Rights Advocacy",
+    "organe_coord_entrepreneuriat" : "Entrepreneurship Responsibilities",
+    "organe_coord_partenariat" : "Partnership Responsibilities, Movement Building",
+    "organe_coord_conservation" : "Nature Conservation and Landscape Restoration Responsibilities"
 }

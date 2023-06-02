@@ -8,15 +8,19 @@ import ConseilSection from './Conseil_Section'
 import CoordinationSection from './Coordination_Section'
 import '../styles/style.css'
 import IntroImg from '../assets/IMG-20210701-WA0030.jpg'
+import { useTranslation } from 'react-i18next'
 
 function OrganeGestion() {
+
+	const { t } = useTranslation();
+
 	return (
 		<div className="OrganeGestion_container">
 			<Header />
 			<div className="OrganeGestion_contents">
 				<div className="OrganeGestion_detatils">
 					<div className="OrganeGestion_Intro_title">
-						<h1>ORGANE DE GESTION</h1>
+						<h1>{t("organe_intro_title")}</h1>
 					</div>
 					<div className="OrganeGestion_Intro_img">
 						<img src={IntroImg} alt="IntroImg" />
@@ -25,8 +29,8 @@ function OrganeGestion() {
 
 				<div className="OrganeGestion_exp">
 					<div className="OrganeGestion_exp_Intro">
-						<p>CONSEIL D’ADMINISTRATION ET LEADERS. ACNDC dispose un conseil d’administration de 9 personnes aujourd’hui désignées par leurs communautés d’appartenance (famille, clan, tribu) parmi lesquelles se retrouve 6 personnes constituent son leadership permanent/quotidien.</p>
-						<p>COORDINATION ET STAFF. Les professionnels d’ACNDC proviennent de la science, de l’intelligence et de la technique d’une part et de la culture, de l’initiation et de la pratique d’autre part.</p>
+						<p>{t("organe_conseil_intro")}</p>
+						<p>{t("organe_coord_intro")}</p>
 					</div>
 
 					<div className="OrganeGestion_exp_Buttons">
@@ -39,7 +43,7 @@ function OrganeGestion() {
 							duration={800}
 							className="button_1"
 						>
-							Conseil d'Administration et Leader
+						{t("organe_conseil_intro_title")}	
 						</Link>
 						<Link
 							activeClass="active"
@@ -50,7 +54,7 @@ function OrganeGestion() {
 							duration={800}
 							className="button_2"
 						>
-							Coordination et Staff
+						{t("organe_coord_intro_title")}	
 						</Link>
 					</div>
 
