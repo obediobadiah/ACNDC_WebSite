@@ -3,8 +3,12 @@ import Footer from '../../Footer/components/Footer'
 import '../styles/style.css'
 import Act_Img1 from '../assets/Logos ACNDC.png'
 import { Link } from "react-router-dom"
+import { useTranslation } from 'react-i18next'
 
 function Contact() {
+
+    const { t } = useTranslation();
+
     return(
         <div className="Contact_container">
 			<div className="Contact_contents">
@@ -20,7 +24,7 @@ function Contact() {
                             </Link>
                             </div>
                             <div className="contact_address">
-                                <p>A Kasika (100km), à Mwenga (130km) et à Kitutu (220km) sur la route nationale 2 Bukavu-Kasanga, <br/>Telephone: (+243) (976154547), <br/>E-mail: acndcongo@gmail.com, acndccbo@gmail.com</p>
+                                <p>{t("contact_address")} <br/>{t("contact_address_tel")}<br/> {t("contact_address_email")}</p>
                             </div>
                             <div className="contact_links">
                                 <div className="contact_links_icons">
