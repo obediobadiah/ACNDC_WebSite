@@ -72,6 +72,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 10px;
   }
 
   .btn {
@@ -92,6 +93,15 @@
   .btn:hover {
 	background-color: #008F40;
   }
+
+  
+.Button_container .LanguageSelector{
+	padding: 5px;
+	font-size: 1rem;
+	background: none;
+	border: none;
+	font-weight: bold;
+}
 
   @media screen and (max-width: 960px) {
 

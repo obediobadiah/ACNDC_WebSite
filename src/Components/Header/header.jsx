@@ -16,7 +16,13 @@ function Header() {
 	const [SomDropdown, setSomDropdown] = useState(false);
 	const [LangDropdown, setLangDropdown] = useState(false);
 	const handleClick = () => setClick(!click);
-	const { t } = useTranslation();
+
+	const { t, i18n } = useTranslation();
+
+	const handleChangeLang = (lng) =>{
+		i18n.changeLanguage(lng);
+		localStorage.setItem("lng", lng);
+	}
 
 
 
@@ -122,16 +128,16 @@ function Header() {
 								<Link className="header-links" onClick={() => { window.location.href = "/Contact" }}> {t("contact_menu_link")} </Link>
 							</li>
 
-							<li className="header-item"
-								onMouseEnter={onMouseEnterLang}
-								onMouseLeave={onMouseLeaveLang}>
-								<span className="header-links"> {t("lang_menu_link")} <i className="fas fa-caret-down" /></span>
-								{LangDropdown && <LanguageDropdown />}
-							</li>
-
 						</ul>
 					</div>
 					<div className="Button_container">
+
+						<div>
+							<select class="LanguageSelector" id="" onChange={(val) => handleChangeLang(val.target.value)} >
+								<option value="fr" >Fr</option>
+								<option value="en">En</option>
+							</select>
+						</div>
 						<div className="donation_button">
 							<Link onClick={() => { window.location.href = "/Contact" }}><button className="btn"> {t("donate_button")} </button> </Link>
 						</div>
