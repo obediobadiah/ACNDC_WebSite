@@ -3,6 +3,7 @@ import '../styles/style.css'
 import Video_1 from '../assets/Video_1.mp4'
 import Video_2 from '../assets/Video_2.mp4'
 import Video_3 from '../assets/Video_3.mp4'
+import Video_4 from '../assets/Video_4.mp4'
 import { useTranslation } from 'react-i18next'
 import 'antd/dist/antd.css';
 
@@ -27,6 +28,9 @@ function Actualite_Section() {
                         </video>
                         <video controls>
                             <source src={Video_3} type="video/mp4" />
+                        </video>
+                        <video controls>
+                            <source src={Video_4} type="video/mp4" />
                         </video>
                     </div>
                 </div>
