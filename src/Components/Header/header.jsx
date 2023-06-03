@@ -19,7 +19,7 @@ function Header() {
 
 	const { t, i18n } = useTranslation();
 
-	const handleChangeLang = (lng) =>{
+	const handleChangeLang = (lng) => {
 		i18n.changeLanguage(lng);
 		localStorage.setItem("lng", lng);
 	}
@@ -131,15 +131,16 @@ function Header() {
 						</ul>
 					</div>
 					<div className="Button_container">
-
-						<div>
-							<select class="LanguageSelector" id="" onChange={(val) => handleChangeLang(val.target.value)} >
-								<option value="fr" >Fr</option>
-								<option value="en">En</option>
-							</select>
-						</div>
-						<div className="donation_button">
-							<Link onClick={() => { window.location.href = "/Contact" }}><button className="btn"> {t("donate_button")} </button> </Link>
+						<div className="button_container_content">
+							<div>
+								<select class="LanguageSelector" id="" onChange={(val) => handleChangeLang(val.target.value)} >
+									<option value="fr" >Fr</option>
+									<option value="en">En</option>
+								</select>
+							</div>
+							<div className="donation_button">
+								<Link onClick={() => { window.location.href = "/Contact" }}><button className="btn"> {t("donate_button")} </button> </Link>
+							</div>
 						</div>
 					</div>
 				</div>
