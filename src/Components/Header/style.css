@@ -70,8 +70,9 @@
 
   .Button_container{
 	display: flex;
-	justify-content: space-between;
+	justify-content: right;
 	align-items: center;
+	gap: 10px;
   }
 
   .btn {
