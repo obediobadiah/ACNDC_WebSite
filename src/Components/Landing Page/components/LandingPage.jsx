@@ -6,6 +6,7 @@ import Slogan from './Slogan_Section'
 import VisionMission from './VisionMission_Section'
 import AboutSection from './About_Section'
 import ActualiteSection from './Actualite_Section'
+import VideoSection from './video_section'
 import NewsLetter from '../../NewsLetter/components/NewsLetter_Page'
 
 function LandingPage() {
@@ -17,6 +18,7 @@ function LandingPage() {
 			<VisionMission />
 			<AboutSection />
 			<ActualiteSection />
+			<VideoSection />
 			<NewsLetter />
 			<Footer />
 		</div>
