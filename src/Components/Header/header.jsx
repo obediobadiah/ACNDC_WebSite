@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import ActivitesDropdown from './components/ActivitesDropdown'
 import SommeNousDropdown from './components/SommeNousDropdown'
-import LanguageDropdown from './components/LanguagesDropDown'
 import './style.css'
 import logoImg from './assets/Logos ACNDC.png'
 import { useTranslation } from 'react-i18next'
@@ -14,7 +13,7 @@ function Header() {
 	const [click, setClick] = useState(false);
 	const [Actdropdown, setActDropdown] = useState(false);
 	const [SomDropdown, setSomDropdown] = useState(false);
-	const [LangDropdown, setLangDropdown] = useState(false);
+	const [ setLangDropdown] = useState(false);
 	const handleClick = () => setClick(!click);
 
 	const { t, i18n } = useTranslation();

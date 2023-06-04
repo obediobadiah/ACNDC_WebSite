@@ -19,7 +19,7 @@ function Dropdown() {
     <>
       <ul
         onClick={handleClick}
-        className={click ? 'dropdown-menu-lang clicked' : 'dropdown-menu-lang'}
+        className={click ? 'dropdown-menu-act clicked' : 'dropdown-menu-act'}
       >
         <li>
           <p

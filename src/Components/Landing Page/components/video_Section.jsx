@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import '../styles/style.css'
 import Video_1 from '../assets/Video_1.mp4'
 import Video_2 from '../assets/Video_2.mp4'
