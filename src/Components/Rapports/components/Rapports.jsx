@@ -23,17 +23,18 @@ function Rapports() {
 
 
 
-						
+
+
 						<div className="rapport_box">
 							<div className="rapport_img">
 								<img src={RapportImg} alt="" />
 							</div>
 							<div className="rapport_txt">
 								<div className="rapport_texte">
-									<Link to="/Rapports_detail" className="rapport_texte_link">
-										<h2>Rapport Annuel 2018</h2>
+									<Link to="/Rapport_detail_2022" className="rapport_texte_link">
+										<h2>Rapport Annuel 2022</h2>
 									</Link>
-									<p>Janvier 2018</p>
+									<p>ACNDC Rapport general annuel d'activités 2022</p>
 								</div>
 							</div>
 						</div>
@@ -48,10 +49,10 @@ function Rapports() {
 							</div>
 							<div className="rapport_txt">
 								<div className="rapport_texte">
-									<Link to="/Rapports_detail" className="rapport_texte_link">
-										<h2>Rapport Annuel 2018</h2>
+									<Link to="/Rapport_detail_2021" className="rapport_texte_link">
+										<h2>Rapport Annuel 2021</h2>
 									</Link>
-									<p>Janvier 2018</p>
+									<p>ACNDC Rapport general annuel d'activités 2021</p>
 								</div>
 							</div>
 						</div>
@@ -66,28 +67,10 @@ function Rapports() {
 							</div>
 							<div className="rapport_txt">
 								<div className="rapport_texte">
-									<Link to="/Rapports_detail" className="rapport_texte_link">
-										<h2>Rapport Annuel 2018</h2>
+									<Link to="/Rapport_Detail_2020" className="rapport_texte_link">
+										<h2>Rapport Annuel 2020</h2>
 									</Link>
-									<p>Janvier 2018</p>
-								</div>
-							</div>
-						</div>
-
-
-
-
-
-						<div className="rapport_box">
-							<div className="rapport_img">
-								<img src={RapportImg} alt="" />
-							</div>
-							<div className="rapport_txt">
-								<div className="rapport_texte">
-									<Link to="/Rapports_detail" className="rapport_texte_link">
-										<h2>Rapport Annuel 2018</h2>
-									</Link>
-									<p>Janvier 2018</p>
+									<p>ACNDC Rapport general annuel d'activités 2020</p>
 								</div>
 							</div>
 						</div>

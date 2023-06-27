@@ -1,15 +1,15 @@
-*{
+* {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	font-family: 'Lato', 'PT Sans', sans-serif;
 }
 
-.rapport_detail_Intro{
+.rapport_detail_Intro {
 	margin-top: 70px;
 }
 
-.rapport_detail_Intro h1{
+.rapport_detail_Intro h1 {
 	font-weight: bold;
 	background-color: #ccffe3;
 	color: #286f4e;
@@ -18,14 +18,14 @@
 	padding: 150px 150px 150px 150px;
 }
 
-.rapport_detail_date{
+.rapport_detail_date {
 	margin-top: -40px;
 	display: grid;
 	justify-content: center;
 	align-items: center;
 }
 
-.rapport_detail_date h2{
+.rapport_detail_date h2 {
 	padding: 20px;
 	width: 200px;
 	height: auto;
@@ -35,25 +35,25 @@
 	text-align: center;
 }
 
-.rapport_detail_comp{
+.rapport_detail_comp {
 	display: grid;
 	justify-content: center;
 	align-items: center;
 }
 
-.rapport_detail_comp_txt{
+.rapport_detail_comp_txt {
 	margin: 50px 0 50px 0;
 	width: 600px;
 	height: auto;
 }
 
-.download_button{
+.download_button {
 	display: grid;
 	justify-content: center;
 	align-items: center;
 }
 
-.download_link{
+.download_link {
 	padding: 10px;
 	color: white;
 	font-size: 1rem;
@@ -62,24 +62,33 @@
 	background-color: #286f4e;
 	text-align: center;
 	margin: 50px 0 50px 0;
+	border: none;
+	cursor: pointer;
 }
 
-.download_link I{
+.download_link:hover {
+	background-color: #0d432a;
+}
+
+.download_link I {
 	margin-left: 10px;
 }
 
+.acndc_programme_2022 ul{
+	margin-left: 2rem;
+}
 
 
 
 @media screen and (max-width: 992px) {
 
-	.rapport_detail_Intro h1{
+	.rapport_detail_Intro h1 {
 		font-size: 2.5rem;
 		padding: 150px 10px 150px 10px;
 	}
 
-	
-	.rapport_detail_comp_txt{
+
+	.rapport_detail_comp_txt {
 		margin: 50px 0 50px 0;
 		padding: 0 10px 0 10px;
 		width: 100%;

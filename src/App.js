@@ -11,7 +11,9 @@ import Resultats from './Components/Resultats/components/Resultats'
 import OrganeGestion from './Components/OrganeGestion/components/OrganeGestion'
 import Partenaire from './Components/Partenaire/components/Partenaire'
 import Rapports from './Components/Rapports/components/Rapports'
-import Rapports_Details from './Components/Rapports/components/Rapports_detail'
+import Rapports_Details_2020 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2020'
+import Rapports_Details_2021 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2021'
+import Rapports_Details_2022 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2022'
 import OutilsTravail from './Components/OutilsTravail/components/OutilsTravail'
 import Actualite from './Components/Actualite/components/Actualite'
 import Contact from './Components/Contact/components/Contact'
@@ -53,8 +55,14 @@ function App() {
         <Route path="/Rapports">
           <Rapports />
         </Route>
-        <Route path="/Rapports_detail">
-          <Rapports_Details />
+        <Route path="/Rapport_Detail_2020">
+          <Rapports_Details_2020 />
+        </Route>
+        <Route path="/Rapport_Detail_2021">
+          <Rapports_Details_2021 />
+        </Route>
+        <Route path="/Rapport_Detail_2022">
+          <Rapports_Details_2022 />
         </Route>
         {/*<Route path="/OutilsTravail">
           <OutilsTravail />
