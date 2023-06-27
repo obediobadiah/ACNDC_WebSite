@@ -23,7 +23,7 @@ function Rapports_detail() {
 			<div className="rapport_detail_contents">
 				<div className="rapport_detail_detatils">
 					<div className="rapport_detail_Intro">
-						<h1>Rapport Annuel 2022</h1>
+						<h1>Rapport Annuel 2021</h1>
 					</div>
 					<div className="rapport_detail_date">
 						<h2>RAPPORT 2021</h2>
