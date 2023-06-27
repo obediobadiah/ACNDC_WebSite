@@ -33,7 +33,7 @@ function Programmes() {
 								<div className="programmes_box_title" id="box2"></div>
 							</div>
 							<div className="programmes_box_txt">
-								<h2>{t("programmes_security_title")}</h2>
+								<h2>{t("programmes_conservation_title")}</h2>
 								<p>{t("programmes_conservation_dev")}</p>
 							</div>
 						</div>

@@ -10,9 +10,9 @@ import Approches from './Components/Approches/components/Approches'
 import Resultats from './Components/Resultats/components/Resultats'
 import OrganeGestion from './Components/OrganeGestion/components/OrganeGestion'
 import Partenaire from './Components/Partenaire/components/Partenaire'
-// import Rapports from './Components/Rapports/components/Rapports'
-// import Rapports_Details from './Components/Rapports/components/Rapports_detail'
-// import OutilsTravail from './Components/OutilsTravail/components/OutilsTravail'
+import Rapports from './Components/Rapports/components/Rapports'
+import Rapports_Details from './Components/Rapports/components/Rapports_detail'
+import OutilsTravail from './Components/OutilsTravail/components/OutilsTravail'
 import Actualite from './Components/Actualite/components/Actualite'
 import Contact from './Components/Contact/components/Contact'
 
@@ -50,13 +50,13 @@ function App() {
         <Route path="/Partenaire">
           <Partenaire />
         </Route>
-        {/* <Route path="/Rapports">
+        <Route path="/Rapports">
           <Rapports />
         </Route>
         <Route path="/Rapports_detail">
           <Rapports_Details />
-        </Route> */}
-        {/* <Route path="/OutilsTravail">
+        </Route>
+        {/*<Route path="/OutilsTravail">
           <OutilsTravail />
         </Route> */}
         <Route path="/Actualite">
