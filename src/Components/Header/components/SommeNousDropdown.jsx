@@ -47,11 +47,11 @@ function SommeNousDropdown() {
             onClick={() => {window.location.href="/Partenaire"}}
           >{t("patner_menu_link")}
           </Link>
-          {/* <Link
+          <Link
             className="dropdown-link"
             onClick={() => {window.location.href="/Rapports"}}
           >Nos Rapports
-          </Link> */}
+          </Link>
           {/* <Link
             className="dropdown-link"
             onClick={() => {window.location.href="/OutilsTravail"}}
