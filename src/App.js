@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, BrowserRouter as Router, Route} from 'react-router-dom'
-import LandingPage from './Components/Landing Page/components/LandingPage'
+import LandingPage from './Components/LandingPage/components/LandingPage'
 import Programmes from './Components/Programmes/components/Programmes'
 import Commissions from './Components/Commissions/components/Commission'
 import ZoneIntervention from './Components/ZoneIntervention/components/ZoneIntervention'
