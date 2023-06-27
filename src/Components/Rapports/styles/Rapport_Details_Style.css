@@ -52,8 +52,7 @@
 	justify-content: center;
 	align-items: center;
 }
-
-.download_link{
+.download_link {
 	padding: 10px;
 	color: white;
 	font-size: 1rem;
@@ -62,12 +61,21 @@
 	background-color: #286f4e;
 	text-align: center;
 	margin: 50px 0 50px 0;
+	border: none;
+	cursor: pointer;
 }
 
-.download_link I{
+.download_link:hover {
+	background-color: #0d432a;
+}
+
+.download_link I {
 	margin-left: 10px;
 }
 
+.acndc_programme_2022 ul{
+	margin-left: 2rem;
+}
 
 
 
