@@ -1,80 +1,98 @@
-*{
+* {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	font-family: 'Lato', 'PT Sans', sans-serif;
 }
 
-.rapport_Intro{
+.rapport_detail_Intro {
 	margin-top: 70px;
 }
 
-.rapport_Intro h1{
+.rapport_detail_Intro h1 {
+	font-weight: bold;
 	background-color: #ccffe3;
 	color: #286f4e;
-	font-weight: bold;
 	text-align: center;
 	font-size: 3.5rem;
-	padding: 100px 150px 100px 150px;
+	padding: 150px 150px 150px 150px;
 }
 
-.rapport_textes{
-	color: #286f4e;
-	margin: 50px 300px 50px 300px;
-}
-
-.rapport_boxes{
-	margin-bottom: 50px;
+.rapport_detail_date {
+	margin-top: -40px;
 	display: grid;
 	justify-content: center;
 	align-items: center;
 }
 
-.rapport_box{
-	margin-top: 50px;
-	display: flex;
+.rapport_detail_date h2 {
+	padding: 20px;
+	width: 200px;
+	height: auto;
+	color: white;
+	background-color: #286f4e;
+	font-weight: bold;
+	text-align: center;
 }
 
-.rapport_box .rapport_img img{
-	width: 300px;
+.rapport_detail_comp {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.rapport_detail_comp_txt {
+	margin: 50px 0 50px 0;
+	width: 600px;
 	height: auto;
 }
 
-.rapport_box .rapport_txt .rapport_texte{
-	color: #286f4e;
-	margin: 30px 0 0 30px;
+.download_button {
+	display: grid;
+	justify-content: center;
+	align-items: center;
 }
 
-.rapport_box .rapport_txt .rapport_texte .rapport_texte_link h2{
-	color: #286f4e;
+.download_link {
+	padding: 10px;
+	color: white;
+	font-size: 1rem;
 	font-weight: bold;
 	text-decoration: none;
+	background-color: #286f4e;
+	text-align: center;
+	margin: 50px 0 50px 0;
+	border: none;
+	cursor: pointer;
 }
 
-.rapport_box .rapport_txt .rapport_texte .rapport_texte_link h2:hover{
-	color: #479470;
+.download_link:hover {
+	background-color: #0d432a;
+}
+
+.download_link I {
+	margin-left: 10px;
+}
+
+.acndc_programme_2022 ul{
+	margin-left: 2rem;
 }
 
 
 
 @media screen and (max-width: 992px) {
 
-	.rapport_Intro h1{
+	.rapport_detail_Intro h1 {
 		font-size: 2.5rem;
 		padding: 150px 10px 150px 10px;
 	}
-	
-	.rapport_box{
-		margin-top: 50px;
-		display: grid;
-	}
 
-	.rapport_box .rapport_img{
-		margin: 0 20px 0 20px;
-	}
 
-	.rapport_box .rapport_img img{
+	.rapport_detail_comp_txt {
+		margin: 50px 0 50px 0;
+		padding: 0 10px 0 10px;
 		width: 100%;
+		text-align: justify;
 		height: auto;
 	}
 }
