@@ -5,6 +5,7 @@ import Footer from '../../../Footer/components/Footer'
 import NewsLetter from '../../../NewsLetter/components/NewsLetter_Page'
 import '../../styles/Rapport_Details_Style.css'
 import repportAnnuel2020 from '../../assets/RAPPORT GENERAL ANNUEL DES ACTIVITES 2021.pdf'
+import { useTranslation } from 'react-i18next'
 
 function Rapports_detail() {
 
@@ -15,6 +16,7 @@ function Rapports_detail() {
 		link.click();
 	};
 
+	const { t } = useTranslation();
 
 	return (
 
@@ -23,10 +25,10 @@ function Rapports_detail() {
 			<div className="rapport_detail_contents">
 				<div className="rapport_detail_detatils">
 					<div className="rapport_detail_Intro">
-						<h1>Rapport Annuel 2021</h1>
+						<h1>{t("rapport_boxes_txt_h1_2021")}</h1>
 					</div>
 					<div className="rapport_detail_date">
-						<h2>RAPPORT 2021</h2>
+						<h2>{t("rapport2021_detail_date")}</h2>
 					</div>
 				</div>
 
@@ -34,19 +36,17 @@ function Rapports_detail() {
 
 				<div className="rapport_detail_comp">
 					<div className="rapport_detail_comp_txt">
-						<p>Voici en ces quelques lignes les réalisations annuelles de 2021. Celles-ci indiquent le niveau opérationnel atteint. Il s’agit du civisme et de la défense des droits des femmes au développement durable.
+						<p>{t("rapport2021_detail_comp_txt_p1")}
 
-							La dégradation de l' environnement du fait de l’exploitation des ressources naturelles s’enfonce à des états inquiétants. L’agriculture, la foresterie, l’artisanat minier et la transhumance d’élevage sont des fléaux quotidiens.
+							<p>{t("rapport2021_detail_comp_txt_p2")}</p>
 
-							<p>Devant cela, ACNDC s’est inscrite dans une démarche progressiste de résilience (adaptation, atténuation et mitigation) adaptée à leurs situations spécifiques (réversible ou irréversible).</p>
-
-							<p>A ces treizième années, ACNDC fait entendre et fait voir ses réalisations à divers niveaux territoriaux. Ces accomplissements ne seraient effectifs sans les subventions de divers partenaires internationaux sur place (directs) et lointains. Ce sont Global Fund for Women USA et UK, AMEN/urgent Action Fund for Africa et autres. Qu’il trouve ici notre expression de nos sentiments de profonde gratitude.</p></p>
+							<p>{t("rapport2021_detail_comp_txt_p3")}</p></p>
 					</div>
 					<div className="download_button">
 						<button
 							onClick={handleDownload}
 							className="download_link">
-							Télécharger
+							{t("rapport_download_button")}
 							<i class="fas fa-download" />
 						</button>
 					</div>

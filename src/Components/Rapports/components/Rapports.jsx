@@ -4,16 +4,23 @@ import Header from '../../Header/header'
 import Footer from '../../Footer/components/Footer'
 import NewsLetter from '../../NewsLetter/components/NewsLetter_Page'
 import '../styles/style.css'
-import RapportImg from '../assets/IMG-20210701-WA0056.jpg'
+import Rapport2022Img from '../assets/IMG_2969.JPG'
+import Rapport2021Img from '../assets/IMG-20210701-WA0061.jpg'
+import Rapport2020Img from '../assets/3152dacf-2e19-467d-8c1e-fe7ad279ba3d.JPG'
+import { useTranslation } from 'react-i18next'
+
 
 function Rapports() {
+
+	const { t } = useTranslation();
+
 	return (
 		<div className="rapport_container">
 			<Header />
 			<div className="rapport_contents">
 				<div className="rapport_detatils">
 					<div className="rapport_Intro">
-						<h1>NOS RAPPORTS</h1>
+						<h1>{t("rapport_Intro")}</h1>
 					</div>
 				</div>
 
@@ -27,14 +34,14 @@ function Rapports() {
 
 						<div className="rapport_box">
 							<div className="rapport_img">
-								<img src={RapportImg} alt="" />
+								<img src={Rapport2022Img} alt="" />
 							</div>
 							<div className="rapport_txt">
 								<div className="rapport_texte">
 									<Link to="/Rapport_detail_2022" className="rapport_texte_link">
-										<h2>Rapport Annuel 2022</h2>
+										<h2>{t("rapport_boxes_txt_h1_2022")}</h2>
 									</Link>
-									<p>ACNDC Rapport general annuel d'activités 2022</p>
+									<p>{t("rapport_boxes_txt_p_2022")}</p>
 								</div>
 							</div>
 						</div>
@@ -45,14 +52,14 @@ function Rapports() {
 
 						<div className="rapport_box">
 							<div className="rapport_img">
-								<img src={RapportImg} alt="" />
+								<img src={Rapport2021Img} alt="" />
 							</div>
 							<div className="rapport_txt">
 								<div className="rapport_texte">
 									<Link to="/Rapport_detail_2021" className="rapport_texte_link">
-										<h2>Rapport Annuel 2021</h2>
+										<h2>{t("rapport_boxes_txt_h1_2021")}</h2>
 									</Link>
-									<p>ACNDC Rapport general annuel d'activités 2021</p>
+									<p>{t("rapport_boxes_txt_p_2021")}</p>
 								</div>
 							</div>
 						</div>
@@ -63,14 +70,14 @@ function Rapports() {
 
 						<div className="rapport_box">
 							<div className="rapport_img">
-								<img src={RapportImg} alt="" />
+								<img src={Rapport2020Img} alt="" />
 							</div>
 							<div className="rapport_txt">
 								<div className="rapport_texte">
 									<Link to="/Rapport_Detail_2020" className="rapport_texte_link">
-										<h2>Rapport Annuel 2020</h2>
+										<h2>{t("rapport_boxes_txt_h1_2020")}</h2>
 									</Link>
-									<p>ACNDC Rapport general annuel d'activités 2020</p>
+									<p>{t("rapport_boxes_txt_p_2020")}</p>
 								</div>
 							</div>
 						</div>
