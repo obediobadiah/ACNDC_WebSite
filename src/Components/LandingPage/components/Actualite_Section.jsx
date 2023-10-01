@@ -41,6 +41,8 @@ function Actualite_Section() {
 								<div className="Actualite_box_text_cont">
 									<p>{t("home_actuality_box_text_cont_journee_education")}</p>
 								</div>
+							</div>
+
 								<div className="Actualite_box_text_but">
 
 									<a href="https://web.facebook.com/100068401316248/posts/487973723492667/?flite=scwspnss&_rdc=1&_rdr">
@@ -48,7 +50,6 @@ function Actualite_Section() {
 									</a>
 
 								</div>
-							</div>
 						</div>
 
 
@@ -78,6 +79,8 @@ function Actualite_Section() {
 								</ul>
 									<p>{t("home_actuality_box_text_cont_conference_mixte_p")}</p>
 								</div>
+							</div>
+
 								<div className="Actualite_box_text_but">
 
 									<a href="https://www.linkedin.com/posts/acndc-asbl-organisation-f%C3%A9minine-de-base_solidaritehumaine-activity-7024683423172562944--2cN?utm_source=share&utm_medium=member_android ">
@@ -85,7 +88,6 @@ function Actualite_Section() {
 									</a>
 
 								</div>
-							</div>
 						</div>
 
 
@@ -112,6 +114,9 @@ function Actualite_Section() {
 									<p>{t("home_actuality_box_text_cont_formation_resilience")}</p>
 									<p>{t("home_actuality_box_text_cont_formation_resilience_p")}</p>
 								</div>
+
+							</div>
+
 								<div className="Actualite_box_text_but">
 
 									<a href="https://www.linkedin.com/posts/acndc-asbl-organisation-f%C3%A9minine-de-base_solidaritehumaine-activity-7024683423172562944--2cN?utm_source=share&utm_medium=member_android ">
@@ -119,7 +124,6 @@ function Actualite_Section() {
 									</a>
 
 								</div>
-							</div>
 						</div>
 
 
