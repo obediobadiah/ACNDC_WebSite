@@ -59,13 +59,14 @@ function Actualite() {
 								<div className="Actualite_box_text_cont">
 									<p>{t("actuality_box_text_cont_journee_education")}</p>
 								</div>
-								<div className="Actualite_box_text_but">
 
-									<a href="https://web.facebook.com/100068401316248/posts/487973723492667/?flite=scwspnss&_rdc=1&_rdr">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
+							</div>
+							<div className="Actualite_box_text_but">
 
-								</div>
+								<a href="https://web.facebook.com/100068401316248/posts/487973723492667/?flite=scwspnss&_rdc=1&_rdr">
+									<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+								</a>
+
 							</div>
 						</div>
 
@@ -96,13 +97,14 @@ function Actualite() {
 								</ul>
 									<p>{t("actuality_box_text_cont_conference_mixte_p")}</p>
 								</div>
-								<div className="Actualite_box_text_but">
 
-									<a href="https://www.linkedin.com/posts/acndc-asbl-organisation-f%C3%A9minine-de-base_solidaritehumaine-activity-7024683423172562944--2cN?utm_source=share&utm_medium=member_android ">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
+							</div>
+							<div className="Actualite_box_text_but">
 
-								</div>
+								<a href="https://www.linkedin.com/posts/acndc-asbl-organisation-f%C3%A9minine-de-base_solidaritehumaine-activity-7024683423172562944--2cN?utm_source=share&utm_medium=member_android ">
+									<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+								</a>
+
 							</div>
 						</div>
 
@@ -130,13 +132,14 @@ function Actualite() {
 									<p>{t("actuality_box_text_cont_formation_resilience")}</p>
 									<p>{t("actuality_box_text_cont_formation_resilience_p")}</p>
 								</div>
-								<div className="Actualite_box_text_but">
 
-									<a href="https://www.linkedin.com/posts/acndc-asbl-organisation-f%C3%A9minine-de-base_solidaritehumaine-activity-7024683423172562944--2cN?utm_source=share&utm_medium=member_android ">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
+							</div>
+							<div className="Actualite_box_text_but">
 
-								</div>
+								<a href="https://www.linkedin.com/posts/acndc-asbl-organisation-f%C3%A9minine-de-base_solidaritehumaine-activity-7024683423172562944--2cN?utm_source=share&utm_medium=member_android ">
+									<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+								</a>
+
 							</div>
 						</div>
 
@@ -161,13 +164,13 @@ function Actualite() {
 								<div className="Actualite_box_text_cont">
 									<p>{t("actuality_box_text_cont_solidarite_humaine")}</p>
 								</div>
-								<div className="Actualite_box_text_but">
+							</div>
+							<div className="Actualite_box_text_but">
 
-									<a href="https://www.linkedin.com/posts/acndc-asbl-organisation-f%C3%A9minine-de-base_solidaritehumaine-activity-7024683423172562944--2cN?utm_source=share&utm_medium=member_android ">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
+								<a href="https://www.linkedin.com/posts/acndc-asbl-organisation-f%C3%A9minine-de-base_solidaritehumaine-activity-7024683423172562944--2cN?utm_source=share&utm_medium=member_android ">
+									<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+								</a>
 
-								</div>
 							</div>
 						</div>
 
@@ -191,14 +194,14 @@ function Actualite() {
 								</div>
 								<div className="Actualite_box_text_cont">
 									<p>{t("actuality_box_text_cont_alerte_femme")}</p>
-								</div>
-								<div className="Actualite_box_text_but">
 
-									<a href="https://www.facebook.com/100068401316248/posts/pfbid0waDcoXiEAN8jkrN1noNmNcz7c8j4XFHu2vYhMH6i875hbpm2ixpPXAgnmHb7wq3Cl/?app=fbl">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
+							</div>
+							<div className="Actualite_box_text_but">
 
-								</div>
+								<a href="https://www.facebook.com/100068401316248/posts/pfbid0waDcoXiEAN8jkrN1noNmNcz7c8j4XFHu2vYhMH6i875hbpm2ixpPXAgnmHb7wq3Cl/?app=fbl">
+									<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+								</a>
+
 							</div>
 						</div>
 
@@ -220,13 +223,14 @@ function Actualite() {
 									<p>{t("actuality_box_text_cont_egalité")}
 										<br/><strong>{t("actuality_box_text_cont_egalité_fin")}</strong></p>
 								</div>
-								<div className="Actualite_box_text_but">
 
-									<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_participation-aezgalitaez-genre-activity-6969381908870770688-Q47b?utm_source=share&utm_medium=member_android">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
+							</div>
+							<div className="Actualite_box_text_but">
 
-								</div>
+								<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_participation-aezgalitaez-genre-activity-6969381908870770688-Q47b?utm_source=share&utm_medium=member_android">
+									<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+								</a>
+
 							</div>
 						</div>
 
@@ -247,13 +251,14 @@ function Actualite() {
 								<div className="Actualite_box_text_cont">
 									<p>{t("actuality_box_text_cont_ceremonie")}</p>
 								</div>
-								<div className="Actualite_box_text_but">
 
-									<a href="https://www.linkedin.com/feed/update/urn:li:activity:6976650259171020800?utm_source=share&utm_medium=member_android">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
+							</div>
+							<div className="Actualite_box_text_but">
 
-								</div>
+								<a href="https://www.linkedin.com/feed/update/urn:li:activity:6976650259171020800?utm_source=share&utm_medium=member_android">
+									<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+								</a>
+
 							</div>
 						</div>
 
@@ -274,13 +279,14 @@ function Actualite() {
 								<div className="Actualite_box_text_cont">
 									<p>{t("actuality_box_text_cont_analyse")}</p>
 								</div>
-								<div className="Actualite_box_text_but">
 
-									<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_education-activity-6977258715783548928-fOJE?utm_source=share&utm_medium=member_android">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
+							</div>
+							<div className="Actualite_box_text_but">
 
-								</div>
+								<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_education-activity-6977258715783548928-fOJE?utm_source=share&utm_medium=member_android">
+									<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+								</a>
+
 							</div>
 						</div>
 
@@ -300,12 +306,13 @@ function Actualite() {
 								<div className="Actualite_box_text_cont">
 									<p>{t("actuality_box_text_cont_renforcement")}</p>
 								</div>
-								<div className="Actualite_box_text_but">
 
-									<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_acndc-luindi-acndc-activity-6958481785106128896-ob2g?utm_source=linkedin_share&utm_medium=android_app.">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
-								</div>
+							</div>
+							<div className="Actualite_box_text_but">
+
+								<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_acndc-luindi-acndc-activity-6958481785106128896-ob2g?utm_source=linkedin_share&utm_medium=android_app.">
+									<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+								</a>
 							</div>
 						</div>
 
@@ -326,13 +333,14 @@ function Actualite() {
 								<div className="Actualite_box_text_cont">
 									<p>{t("actuality_box_text_cont_international")}</p>
 								</div>
-								<div className="Actualite_box_text_but">
 
-									<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_acndc-humanitaez-mujoga-activity-6964672146497253376-jX0Y?utm_source=linkedin_share&utm_medium=android_app">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
+							</div>
+							<div className="Actualite_box_text_but">
 
-								</div>
+								<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_acndc-humanitaez-mujoga-activity-6964672146497253376-jX0Y?utm_source=linkedin_share&utm_medium=android_app">
+									<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+								</a>
+
 							</div>
 						</div>
 
@@ -353,13 +361,15 @@ function Actualite() {
 								<div className="Actualite_box_text_cont">
 									<p>{t("actuality_box_text_cont_engagement")}</p>
 								</div>
-								<div className="Actualite_box_text_but">
 
-									<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_acndc-rutshuru-acndc-activity-6932538814934446080-NlmY?utm_source=linkedin_share&utm_medium=android_app">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
+							</div>
 
-								</div>
+							<div className="Actualite_box_text_but">
+
+								<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_acndc-rutshuru-acndc-activity-6932538814934446080-NlmY?utm_source=linkedin_share&utm_medium=android_app">
+									<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+								</a>
+
 							</div>
 						</div>
 
@@ -380,13 +390,15 @@ function Actualite() {
 								<div className="Actualite_box_text_cont">
 									<p>{t("actuality_box_text_cont_nyira")}</p>
 								</div>
-								<div className="Actualite_box_text_but">
 
-									<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_presentation-de-notre-experience-dans-les-activity-6935555072084824064-TEVX?utm_source=linkedin_share&utm_medium=android_app">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
+							</div>
 
-								</div>
+							<div className="Actualite_box_text_but">
+
+								<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_presentation-de-notre-experience-dans-les-activity-6935555072084824064-TEVX?utm_source=linkedin_share&utm_medium=android_app">
+									<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+								</a>
+
 							</div>
 						</div>
 
@@ -407,13 +419,13 @@ function Actualite() {
 								<div className="Actualite_box_text_cont">
 									<p>{t("actuality_box_text_cont_climatique")}</p>
 								</div>
-								<div className="Actualite_box_text_but">
+							</div>
+							<div className="Actualite_box_text_but">
 
-									<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_acndc-ocb-mwenga-activity-6924094904323170304-ocRl?utm_source=linkedin_share&utm_medium=android_app">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
+								<a href="https://www.linkedin.com/posts/acndc-organisation-communautaire-de-base-b11975211_acndc-ocb-mwenga-activity-6924094904323170304-ocRl?utm_source=linkedin_share&utm_medium=android_app">
+									<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+								</a>
 
-								</div>
 							</div>
 						</div>
 
