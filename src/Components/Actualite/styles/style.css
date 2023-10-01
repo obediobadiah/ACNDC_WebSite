@@ -80,6 +80,8 @@
 .Actualite_box .Actualite_box_text_but{
 	position: absolute;
 	bottom: 0;
+        left: 0;
+	right: 0;
 }
 
 .Act_box_text_but .SavoirPlus{
