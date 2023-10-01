@@ -10,6 +10,11 @@ import Act_Img5 from '../assets/1660507234077.jfif'
 import Act_Img6 from '../assets/DSC_8.jpg'
 import Act_Img7 from '../assets/1663363038452.jfif'
 import Act_Img8 from '../assets/IMG_7931.JPG'
+import Act_Img9 from '../assets/PXL_20221217_112901021.MP.jpg'
+import Act_Img10 from '../assets/IMG-20221126-WA0025.jpg'
+import Act_Img11 from '../assets/1671217015713.jpg'
+import Act_Img12 from '../assets/IMG-20230124-WA0011.jpg'
+import Act_Img13 from '../assets/DSC_9479.jpg'
 import { useTranslation } from 'react-i18next'
 
 function Actualite() {
@@ -37,13 +42,176 @@ function Actualite() {
 
 
 
+
+
+
+						<div className="Actualite_box">
+							<div className="Actualite_box_Img">
+								<img src={Act_Img13} alt="Actualite" />
+							</div>
+							<div className="Actualite_box_text">
+								<div className="Actualite_box_text_head">
+									<p> {t("home_actualite_box_text_head")}</p>
+								</div>
+								<div className="Actualite_box_text_tit">
+									<p>{t("actuality_box_text_tit_journee_education")}</p>
+								</div>
+								<div className="Actualite_box_text_cont">
+									<p>{t("actuality_box_text_cont_journee_education")}</p>
+								</div>
+								<div className="Actualite_box_text_but">
+
+									<a href="https://web.facebook.com/100068401316248/posts/487973723492667/?flite=scwspnss&_rdc=1&_rdr">
+										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+									</a>
+
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+
+						<div className="Actualite_box">
+							<div className="Actualite_box_Img">
+								<img src={Act_Img12} alt="Actualite" />
+							</div>
+							<div className="Actualite_box_text">
+								<div className="Actualite_box_text_head">
+									<p> {t("home_actualite_box_text_head")}</p>
+								</div>
+								<div className="Actualite_box_text_tit">
+									<p>{t("actuality_box_text_tit_conference_mixte")}</p>
+								</div>
+								<div className="Actualite_box_text_cont">
+									<p>{t("actuality_box_text_cont_conference_mixte")}</p>
+									<ul>
+									<li>{t("actuality_box_text_cont_conference_mixte_l1")}</li>
+									<li>{t("actuality_box_text_cont_conference_mixte_l2")}</li>
+									<li>{t("actuality_box_text_cont_conference_mixte_l3")}</li>
+									<li>{t("actuality_box_text_cont_conference_mixte_l4")}</li>
+								</ul>
+									<p>{t("actuality_box_text_cont_conference_mixte_p")}</p>
+								</div>
+								<div className="Actualite_box_text_but">
+
+									<a href="https://www.linkedin.com/posts/acndc-asbl-organisation-f%C3%A9minine-de-base_solidaritehumaine-activity-7024683423172562944--2cN?utm_source=share&utm_medium=member_android ">
+										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+									</a>
+
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+
+
+
+
+						<div className="Actualite_box">
+							<div className="Actualite_box_Img">
+								<img src={Act_Img11} alt="Actualite" />
+							</div>
+							<div className="Actualite_box_text">
+								<div className="Actualite_box_text_head">
+									<p> {t("home_actualite_box_text_head")}</p>
+								</div>
+								<div className="Actualite_box_text_tit">
+									<p>{t("actuality_box_text_tit_formation_resilience")}</p>
+								</div>
+								<div className="Actualite_box_text_cont">
+									<p>{t("actuality_box_text_cont_formation_resilience")}</p>
+									<p>{t("actuality_box_text_cont_formation_resilience_p")}</p>
+								</div>
+								<div className="Actualite_box_text_but">
+
+									<a href="https://www.linkedin.com/posts/acndc-asbl-organisation-f%C3%A9minine-de-base_solidaritehumaine-activity-7024683423172562944--2cN?utm_source=share&utm_medium=member_android ">
+										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+									</a>
+
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+
+
+						<div className="Actualite_box">
+							<div className="Actualite_box_Img">
+								<img src={Act_Img10} alt="Actualite" />
+							</div>
+							<div className="Actualite_box_text">
+								<div className="Actualite_box_text_head">
+									<p> {t("home_actualite_box_text_head")}</p>
+								</div>
+								<div className="Actualite_box_text_tit">
+									<p>{t("actuality_box_text_tit_solidarite_humaine")}</p>
+								</div>
+								<div className="Actualite_box_text_cont">
+									<p>{t("actuality_box_text_cont_solidarite_humaine")}</p>
+								</div>
+								<div className="Actualite_box_text_but">
+
+									<a href="https://www.linkedin.com/posts/acndc-asbl-organisation-f%C3%A9minine-de-base_solidaritehumaine-activity-7024683423172562944--2cN?utm_source=share&utm_medium=member_android ">
+										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+									</a>
+
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+
+
+						<div className="Actualite_box">
+							<div className="Actualite_box_Img">
+								<img src={Act_Img9} alt="Actualite" />
+							</div>
+							<div className="Actualite_box_text">
+								<div className="Actualite_box_text_head">
+									<p> {t("home_actualite_box_text_head")}</p>
+								</div>
+								<div className="Actualite_box_text_tit">
+									<p>{t("actuality_box_text_tit_alerte_femme")}</p>
+								</div>
+								<div className="Actualite_box_text_cont">
+									<p>{t("actuality_box_text_cont_alerte_femme")}</p>
+								</div>
+								<div className="Actualite_box_text_but">
+
+									<a href="https://www.facebook.com/100068401316248/posts/pfbid0waDcoXiEAN8jkrN1noNmNcz7c8j4XFHu2vYhMH6i875hbpm2ixpPXAgnmHb7wq3Cl/?app=fbl">
+										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+									</a>
+
+								</div>
+							</div>
+						</div>
+
+
+
+
 						<div className="Actualite_box">
 							<div className="Actualite_box_Img">
 								<img src={Act_Img6} alt="Actualite" />
 							</div>
 							<div className="Actualite_box_text">
 								<div className="Actualite_box_text_head">
-									<p> {t("home_ctualite_box_text_head")}</p>
+									<p> {t("home_actualite_box_text_head")}</p>
 								</div>
 								<div className="Actualite_box_text_tit">
 									<p>{t("actuality_box_text_tit_egalité")}</p>
@@ -71,7 +239,7 @@ function Actualite() {
 							</div>
 							<div className="Actualite_box_text">
 								<div className="Actualite_box_text_head">
-									<p> {t("home_ctualite_box_text_head")}</p>
+									<p> {t("home_actualite_box_text_head")}</p>
 								</div>
 								<div className="Actualite_box_text_tit">
 									<p>{t("actuality_box_text_tit_ceremonie")}</p>
@@ -98,7 +266,7 @@ function Actualite() {
 							</div>
 							<div className="Actualite_box_text">
 								<div className="Actualite_box_text_head">
-									<p> {t("home_ctualite_box_text_head")}</p>
+									<p> {t("home_actualite_box_text_head")}</p>
 								</div>
 								<div className="Actualite_box_text_tit">
 									<p>{t("actuality_box_text_tit_analyse")}</p>
@@ -124,7 +292,7 @@ function Actualite() {
 							</div>
 							<div className="Actualite_box_text">
 								<div className="Actualite_box_text_head">
-									<p> {t("home_ctualite_box_text_head")}</p>
+									<p> {t("home_actualite_box_text_head")}</p>
 								</div>
 								<div className="Actualite_box_text_tit">
 									<p>{t("actuality_box_text_tit_renforcement")}</p>
@@ -150,7 +318,7 @@ function Actualite() {
 							</div>
 							<div className="Actualite_box_text">
 								<div className="Actualite_box_text_head">
-									<p> {t("home_ctualite_box_text_head")}</p>
+									<p> {t("home_actualite_box_text_head")}</p>
 								</div>
 								<div className="Actualite_box_text_tit">
 									<p>{t("actuality_box_text_tit_international")}</p>
@@ -177,7 +345,7 @@ function Actualite() {
 							</div>
 							<div className="Actualite_box_text">
 								<div className="Actualite_box_text_head">
-									<p> {t("home_ctualite_box_text_head")}</p>
+									<p> {t("home_actualite_box_text_head")}</p>
 								</div>
 								<div className="Actualite_box_text_tit">
 									<p>{t("actuality_box_text_tit_engagement")}</p>
@@ -204,7 +372,7 @@ function Actualite() {
 							</div>
 							<div className="Actualite_box_text">
 								<div className="Actualite_box_text_head">
-									<p> {t("home_ctualite_box_text_head")}</p>
+									<p> {t("home_actualite_box_text_head")}</p>
 								</div>
 								<div className="Actualite_box_text_tit">
 									<p>{t("actuality_box_text_tit_nyira")}</p>
@@ -231,7 +399,7 @@ function Actualite() {
 							</div>
 							<div className="Actualite_box_text">
 								<div className="Actualite_box_text_head">
-									<p> {t("home_ctualite_box_text_head")}</p>
+									<p> {t("home_actualite_box_text_head")}</p>
 								</div>
 								<div className="Actualite_box_text_tit">
 									<p>{t("actuality_box_text_tit_climatique")}</p>
