@@ -44,7 +44,6 @@ function Actualite() {
 
 
 
-
 						<div className="Actualite_box">
 							<div className="Actualite_box_Img">
 								<img src={Act_Img13} alt="Actualite" />
@@ -116,7 +115,6 @@ function Actualite() {
 
 
 
-
 						<div className="Actualite_box">
 							<div className="Actualite_box_Img">
 								<img src={Act_Img11} alt="Actualite" />
@@ -179,8 +177,6 @@ function Actualite() {
 
 
 
-
-
 						<div className="Actualite_box">
 							<div className="Actualite_box_Img">
 								<img src={Act_Img9} alt="Actualite" />
@@ -194,16 +190,18 @@ function Actualite() {
 								</div>
 								<div className="Actualite_box_text_cont">
 									<p>{t("actuality_box_text_cont_alerte_femme")}</p>
-
+								</div>
 							</div>
 							<div className="Actualite_box_text_but">
 
-								<a href="https://www.facebook.com/100068401316248/posts/pfbid0waDcoXiEAN8jkrN1noNmNcz7c8j4XFHu2vYhMH6i875hbpm2ixpPXAgnmHb7wq3Cl/?app=fbl">
+								<a href="https://www.linkedin.com/posts/acndc-asbl-organisation-f%C3%A9minine-de-base_solidaritehumaine-activity-7024683423172562944--2cN?utm_source=share&utm_medium=member_android ">
 									<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
 								</a>
 
 							</div>
 						</div>
+
+
 
 
 
@@ -261,6 +259,7 @@ function Actualite() {
 
 							</div>
 						</div>
+
 
 
 
@@ -427,6 +426,11 @@ function Actualite() {
 								</a>
 
 							</div>
+						</div>
+						
+
+
+
 						</div>
 					</div>
 				</div>
