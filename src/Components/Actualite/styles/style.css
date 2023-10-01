@@ -45,6 +45,7 @@
 .Actualite_comp_exp .Actualite_boxes .Actualite_box{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	margin: 30px 0 0 0;
+	position: relative
 }
 
 
@@ -74,6 +75,11 @@
 .Actualite_box .Actualite_box_text .Actualite_box_text_cont p{
 	margin: 20px 0 20px 0;
 	text-align: justify;
+}
+
+.Actualite_box .Actualite_box_text_but{
+	position: absolute;
+	bottom: 0;
 }
 
 .Act_box_text_but .SavoirPlus{
