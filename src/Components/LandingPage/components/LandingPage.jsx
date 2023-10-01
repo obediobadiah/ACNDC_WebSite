@@ -18,7 +18,7 @@ function LandingPage() {
 			<VisionMission />
 			<AboutSection />
 			<ActualiteSection />
-			{/* <VideoSection /> */}
+			<VideoSection />
 			<NewsLetter />
 			<Footer />
 		</div>
