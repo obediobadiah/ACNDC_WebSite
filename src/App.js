@@ -1,5 +1,7 @@
 import React from 'react';
-import { Switch, BrowserRouter as Router, Route} from 'react-router-dom'
+import { Routes, BrowserRouter as Router, Route } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import LandingPage from './Components/LandingPage/components/LandingPage'
 import Programmes from './Components/Programmes/components/Programmes'
 import Commissions from './Components/Commissions/components/Commission'
@@ -17,63 +19,40 @@ import Rapports_Details_2022 from './Components/Rapports/components/RapportsAnnu
 import OutilsTravail from './Components/OutilsTravail/components/OutilsTravail'
 import Actualite from './Components/Actualite/components/Actualite'
 import Contact from './Components/Contact/components/Contact'
+import Login from './Components/Admin/Login/components/Login'
+import Dashboard from './Components/Admin/Dashboard/dashboard';
+import ProtectedRoute from '../src/utils/ProtectedRoutes';
+
 
 function App() {
+
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact>
-          <LandingPage />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/Programmes" element={<Programmes />} />
+        <Route path="/Commissions" element={<Commissions />} />
+        <Route path="/ZoneIntervention" element={<ZoneIntervention />} />
+        <Route path="/VisionMission" element={<VisionMission />} />
+        <Route path="/Objectifs" element={<Objectifs />} />
+        <Route path="/Approches" element={<Approches />} />
+        <Route path="/Resultats" element={<Resultats />} />
+        <Route path="/OrganeGestion" element={<OrganeGestion />} />
+        <Route path="/Partenaire" element={<Partenaire />} />
+        <Route path="/Rapports" element={<Rapports />} />
+        <Route path="/Rapport_Detail_2020" element={<Rapports_Details_2020 />} />
+        <Route path="/Rapport_Detail_2021" element={<Rapports_Details_2021 />} />
+        <Route path="/Rapport_Detail_2022" element={<Rapports_Details_2022 />} />
+        <Route path="/OutilsTravail" element={<OutilsTravail />} />
+        <Route path="/Actualite" element={<Actualite />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Login" element={<Login />} />
+
+        <Route element={<ProtectedRoute />}>
+          <Route path="/admin-dashboard/*" element={<Dashboard />} />
         </Route>
-        <Route path="/Programmes">
-          <Programmes />
-        </Route>
-        <Route path="/Commissions">
-          <Commissions />
-        </Route>
-        <Route path="/ZoneIntervention">
-          <ZoneIntervention />
-        </Route>
-        <Route path="/VisionMission">
-          <VisionMission />
-        </Route>
-        <Route path="/Objectifs">
-          <Objectifs />
-        </Route>
-        <Route path="/Approches">
-          <Approches />
-        </Route>
-        <Route path="/Resultats">
-          <Resultats />
-        </Route>
-        <Route path="/OrganeGestion">
-          <OrganeGestion />
-        </Route>
-        <Route path="/Partenaire">
-          <Partenaire />
-        </Route>
-        <Route path="/Rapports">
-          <Rapports />
-        </Route>
-        <Route path="/Rapport_Detail_2020">
-          <Rapports_Details_2020 />
-        </Route>
-        <Route path="/Rapport_Detail_2021">
-          <Rapports_Details_2021 />
-        </Route>
-        <Route path="/Rapport_Detail_2022">
-          <Rapports_Details_2022 />
-        </Route>
-        {/*<Route path="/OutilsTravail">
-          <OutilsTravail />
-        </Route> */}
-        <Route path="/Actualite">
-          <Actualite />
-        </Route>
-        <Route path="/Contact">
-          <Contact />
-        </Route>
-      </Switch>
+
+      </Routes>
     </Router>
   );
 }

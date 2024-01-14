@@ -4,13 +4,32 @@ import Act_Img11 from '../assets/1671217015713.jpg'
 import Act_Img12 from '../assets/IMG-20230124-WA0011.jpg'
 import Act_Img13 from '../assets/DSC_9479.jpg'
 import { useTranslation } from 'react-i18next'
+import React, { useState, useEffect } from "react";
 
 import 'antd/dist/antd.css';
 
 
 function Actualite_Section() {
 
+
+	const [data, setData] = useState([]);
+	const [filteredData, setFilteredData] = useState([]);
 	const { t } = useTranslation();
+
+	// Fetch all data
+	const fetchData = () => {
+		fetch('https://acndc-backend.vercel.app/api/get-actuality/')
+			.then((response) => response.json())
+			.then((data) => {
+				setData(data);
+				setFilteredData(data);
+			})
+			.catch((error) => console.error('Error getting data: ', error));
+	};
+
+	useEffect(() => {
+		fetchData();
+	}, []);
 
 	return (
 		<div className="Actualite_container">
@@ -24,6 +43,33 @@ function Actualite_Section() {
 
 
 
+						{data.slice(-4).map((item) => (
+
+							<div className="Actualite_box">
+								<div className="Actualite_box_Img">
+									<img src={`data:image/jpeg;base64,${item.image}`} alt="Actualite" width="100" height="300" />
+								</div>
+								<div className="Actualite_box_text">
+									<div className="Actualite_box_text_head">
+										<p> {t("home_ctualite_box_text_head")}</p>
+									</div>
+									<div className="Actualite_box_text_tit">
+										<p>{item.title}</p>
+									</div>
+									<div className="Actualite_box_text_cont">
+										<p>{item.description}</p>
+									</div>
+									<div className="Actualite_box_text_but">
+
+										<a href={item.link}>
+											<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+										</a>
+
+									</div>
+								</div>
+							</div>
+
+						)).reverse()}
 
 
 

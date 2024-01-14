@@ -1,0 +1,107 @@
+.login_container {
+    background-color: rgb(250, 249, 249);
+}
+
+.login_Intro {
+    background-color: #286f4e;
+    font-weight: bold;
+    color: white;
+    font-size: 3.5rem;
+    height: 100%;
+}
+
+.login_contents_container h1 {
+    font-weight: bold;
+    color: #286f4e;
+    font-size: 3.5rem;
+    padding: 100px 50px 50px 100px;
+}
+
+.login_Intro h2 {
+    font-weight: light;
+    color: white;
+    font-size: 3.5rem;
+    padding: 0px 50px 0px 100px;
+}
+
+.login_Intro h3 {
+    font-weight: light;
+    color: white;
+    font-size: 1.5rem;
+    padding: 50px 50px 0px 100px;
+}
+
+.login_contents_container {
+    font-weight: bold;
+    height: 100%;
+}
+
+.login_img {
+    margin: 100px;
+}
+
+.login_img img {
+    width: 30%;
+    height: auto;
+}
+
+.login_from_container form .input_container .inputContainerDetails {
+    padding: 10px 100px 100px 100px;
+}
+
+.login_from_container form .input_container .inputContainerDetails .input_box {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #767676;
+    width: 80%;
+    font-weight: bold;
+    align-items: center;
+}
+
+.login_from_container form .input_container .inputContainerDetails .submit_button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #286f4e;
+    color: white;
+    width: 80%;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 980px) {
+
+    .login_contents_container h1 {
+        font-weight: bold;
+        color: #286f4e;
+        font-size: 3.5rem;
+        padding: 100px 50px 50px 10px;
+    }
+
+    .login_from_container form .input_container .inputContainerDetails {
+        padding: 10px 100px 100px 10px;
+    }
+
+    .login_from_container form .input_container .inputContainerDetails .input_box {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #767676;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .login_Intro {
+        background-color: #286f4e;
+        font-weight: bold;
+        color: white;
+        font-size: 3.5rem;
+        height: 100%;
+        display: none;
+    }
+
+    .login_contents_container {
+        padding: 100px 50px 50px 100px;
+    }
+}
