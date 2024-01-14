@@ -1,0 +1,70 @@
+.dash-container{
+    padding: 0px !important;
+}
+
+.sidebar{
+    width: 220px;
+    box-shadow: brown;
+}
+
+.list-group-item:hover{
+    background-color: #f4f4f4;
+    color: #286f4e;
+    /* border-left: 3px solid #286f4e; */
+    font-weight: bold;
+    box-shadow: inset 5px 0 0 #286f4e
+}
+
+.list-group-item{
+    font-weight: 400
+}
+
+.admin-logo .admin-header-logo{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.admin-header-logo .admin-logoimg {
+	width: auto;
+	height: 35px;
+  }
+
+.admin-header-logo span {
+    font-weight: bold;
+    font-size: 1px;
+    color: #286f4e;
+  }
+  
+  .dachboard-container-column{
+    display: flex;
+  }
+
+  .flex-item {
+    flex: 1; /* Makes the items flexible within the container */
+    display: grid; /* Use grid properties within flex items */
+    place-items: center; /* Aligns content in the center of grid items */
+    border: 1px solid #ccc; /* Optional border for visual reference */
+    height: 100px; /* Set height for demonstration */
+    width: 100px; /* Set width for demonstration */
+  }
+
+  .voir_plus_button{
+    text-align: right;
+  }
+
+  .dash_voir_plus{
+    color: #727373;
+  }
+
+  .dash_voir_plus:hover{
+    color: #286f4e;
+  }
+
+  .activities_buttons a{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }

@@ -66,6 +66,9 @@ function Footer() {
 						</Link><br/>
 						<Link onClick={() => {window.location.href="/Contact"}} className="footer_link">
 							{t("donate_button")}
+						</Link><br/>
+						<Link onClick={() => {window.location.href="/Login"}} className="footer_link">
+							Login
 						</Link>
 					</div>
 				</div>
