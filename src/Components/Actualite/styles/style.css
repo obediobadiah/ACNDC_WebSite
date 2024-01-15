@@ -51,7 +51,6 @@
 
 .Actualite_comp_exp .Actualite_boxes .Actualite_box_Img img{
 	width: 100%;
-	/* height: 350px; */
 	object-fit: fill;
 }
 

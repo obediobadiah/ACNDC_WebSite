@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import Act_Img1 from '../assets/Logos ACNDC.png'
 import login_vector from '../assets/undraw_projections_re_ulc6.svg'
 import Swal from 'sweetalert2'
+import { CircularProgress } from "@mui/material";
 
 
 
@@ -12,9 +13,11 @@ function Login() {
     const [data, setData] = useState([])
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const [isLoading, setIsLoading] = useState(false);
 
     const onButtonClick = (e) => {
         e.preventDefault();
+        setIsLoading(true);
 
         const data = {
             username: username,
@@ -30,6 +33,7 @@ function Login() {
         })
             .then((response) => response.json())
             .then((data) => {
+
                 if (data.message == "Success") {
                     console.log(data);
                     window.localStorage.setItem("Token", data.token);
@@ -38,9 +42,12 @@ function Login() {
                 }
                 else if (data.message == "Invalid password") {
                     Swal.fire('Echec', 'Votre Mot de Passe est incorrect', 'error')
+                    setIsLoading(false);
                 }
                 else if (data.message == "The user doesn't exist") {
                     Swal.fire('Echec', `Ce compte n'existe pas`, 'error')
+                    setIsLoading(false);
+
                 }
             })
             .catch((error) => console.error('Error getting data: ', error));
@@ -62,7 +69,7 @@ function Login() {
             <div className="login_contents">
                 <div className="login_detatils row">
                     <div className="login_Intro .d-sm-none col vh-100">
-                    <div className="login_container_detail">
+                        <div className="login_container_detail">
                             <div className="login_img">
                                 <Link onClick={() => { window.location.href = "/" }} className="login_logo">
                                     <img src={Act_Img1} alt="login" />
@@ -71,10 +78,9 @@ function Login() {
                         </div>
                         <h2>Ensemble pour la justice du genre et la justice climatique.</h2>
                         <h3>La justice du genre, l’Egalite de sexe, la justice économique et la justice climatique notre travail auprès de la communauté.</h3>
-                        {/* <img src={login_vector} alt="login" /> */}
                     </div>
                     <div className="login_contents_container col vh-100">
-                    <h1>LOGIN</h1>
+                        <h1>LOGIN</h1>
 
                         <div className="login_from_container">
                             <form action="submit" onSubmit={onButtonClick}>
@@ -91,9 +97,11 @@ function Login() {
                                             placeholder="Enter your password here"
                                             onChange={(e) => setPassword(e.target.value)}
                                             className={"input_box my-4"} required />
-                                        <button
-                                            type="submit" className='submit_button my-4'>
+                                        <button type="submit" className='submit_button my-4'>
                                             <span>Log in</span>
+                                            {isLoading && (
+                                                <CircularProgress sx={{ color: "white" }} thickness={5} size={22} className='circular_bar mx-2' />
+                                            )}
                                         </button>
                                     </div>
                                 </div>
