@@ -61,7 +61,7 @@ function Login() {
         <div className="login_container">
             <div className="login_contents">
                 <div className="login_detatils row">
-                    <div className="login_Intro d-block .d-sm-none col vh-100">
+                    <div className="login_Intro .d-sm-none col vh-100">
                     <div className="login_container_detail">
                             <div className="login_img">
                                 <Link onClick={() => { window.location.href = "/" }} className="login_logo">
