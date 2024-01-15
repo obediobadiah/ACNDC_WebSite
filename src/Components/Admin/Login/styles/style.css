@@ -53,7 +53,7 @@
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #767676;
-    width: 80%;
+    width: 100%;
     font-weight: bold;
     align-items: center;
 }
@@ -63,7 +63,7 @@
     border-radius: 5px;
     background-color: #286f4e;
     color: white;
-    width: 80%;
+    width: 100%;
     font-weight: bold;
     border: none;
     text-transform: uppercase;
@@ -78,8 +78,9 @@
         padding: 100px 50px 50px 10px;
     }
 
+
     .login_from_container form .input_container .inputContainerDetails {
-        padding: 10px 100px 100px 10px;
+        padding: 10px 10px 10px 10px;
     }
 
     .login_from_container form .input_container .inputContainerDetails .input_box {
@@ -102,6 +103,6 @@
     }
 
     .login_contents_container {
-        padding: 100px 50px 50px 100px;
+        padding: 100px 50px 50px 50px;
     }
 }
