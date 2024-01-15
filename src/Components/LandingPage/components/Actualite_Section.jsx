@@ -75,7 +75,7 @@ function Actualite_Section() {
 
 					<div className="Actualite_box">
 							<div className="Actualite_box_Img">
-								<img src={Act_Img13} alt="Actualite" />
+								<img src={Act_Img13} alt="Actualite" width="100" height="300"/>
 							</div>
 							<div className="Actualite_box_text">
 								<div className="Actualite_box_text_head">
@@ -106,7 +106,7 @@ function Actualite_Section() {
 
 						<div className="Actualite_box">
 							<div className="Actualite_box_Img">
-								<img src={Act_Img12} alt="Actualite" />
+								<img src={Act_Img12} alt="Actualite" width="100" height="300"/>
 							</div>
 							<div className="Actualite_box_text">
 								<div className="Actualite_box_text_head">
@@ -147,7 +147,7 @@ function Actualite_Section() {
 
 						<div className="Actualite_box">
 							<div className="Actualite_box_Img">
-								<img src={Act_Img11} alt="Actualite" />
+								<img src={Act_Img11} alt="Actualite" width="100" height="300"/>
 							</div>
 							<div className="Actualite_box_text">
 								<div className="Actualite_box_text_head">
