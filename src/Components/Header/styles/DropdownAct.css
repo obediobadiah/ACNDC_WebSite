@@ -1,7 +1,7 @@
 .dropdown-menu-act {
 	width: 200px;
 	position: absolute;
-	margin-left: 50px;
+	margin-left: 10px;
 	top: 60px;
 	list-style: none;
 	text-align: start;
@@ -41,6 +41,7 @@
 	  width: 100%;
 	  top: 85px;
 	  margin-left: 0px;
+	  padding: 0 10px;
 	}
 	.dropdown-menu-act li{
 	  cursor: pointer;
