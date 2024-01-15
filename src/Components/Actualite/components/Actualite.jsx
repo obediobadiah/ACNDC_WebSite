@@ -70,7 +70,7 @@ function Actualite() {
 									</div>
 									<div className="Actualite_box_text">
 										<div className="Actualite_box_text_head">
-											<p> {t("home_ctualite_box_text_head")}</p>
+											<p> {t("home_actualite_box_text_head")}</p>
 										</div>
 										<div className="Actualite_box_text_tit">
 											<p>{item.title}</p>
@@ -98,7 +98,7 @@ function Actualite() {
 								</div>
 								<div className="Actualite_box_text">
 									<div className="Actualite_box_text_head">
-										<p> {t("home_ctualite_box_text_head")}</p>
+										<p> {t("home_actualite_box_text_head")}</p>
 									</div>
 									<div className="Actualite_box_text_tit">
 										<p>{t("actuality_box_text_tit_egalité")}</p>
@@ -123,7 +123,7 @@ function Actualite() {
 								</div>
 								<div className="Actualite_box_text">
 									<div className="Actualite_box_text_head">
-										<p> {t("home_ctualite_box_text_head")}</p>
+										<p> {t("home_actualite_box_text_head")}</p>
 									</div>
 									<div className="Actualite_box_text_tit">
 										<p>{t("actuality_box_text_tit_ceremonie")}</p>
@@ -149,7 +149,7 @@ function Actualite() {
 								</div>
 								<div className="Actualite_box_text">
 									<div className="Actualite_box_text_head">
-										<p> {t("home_ctualite_box_text_head")}</p>
+										<p> {t("home_actualite_box_text_head")}</p>
 									</div>
 									<div className="Actualite_box_text_tit">
 										<p>{t("actuality_box_text_tit_analyse")}</p>
@@ -173,7 +173,7 @@ function Actualite() {
 								</div>
 								<div className="Actualite_box_text">
 									<div className="Actualite_box_text_head">
-										<p> {t("home_ctualite_box_text_head")}</p>
+										<p> {t("home_actualite_box_text_head")}</p>
 									</div>
 									<div className="Actualite_box_text_tit">
 										<p>{t("actuality_box_text_tit_renforcement")}</p>
@@ -199,7 +199,7 @@ function Actualite() {
 								</div>
 								<div className="Actualite_box_text">
 									<div className="Actualite_box_text_head">
-										<p> {t("home_ctualite_box_text_head")}</p>
+										<p> {t("home_actualite_box_text_head")}</p>
 									</div>
 									<div className="Actualite_box_text_tit">
 										<p>{t("actuality_box_text_tit_international")}</p>
@@ -226,7 +226,7 @@ function Actualite() {
 								</div>
 								<div className="Actualite_box_text">
 									<div className="Actualite_box_text_head">
-										<p> {t("home_ctualite_box_text_head")}</p>
+										<p> {t("home_actualite_box_text_head")}</p>
 									</div>
 									<div className="Actualite_box_text_tit">
 										<p>{t("actuality_box_text_tit_engagement")}</p>
@@ -250,7 +250,7 @@ function Actualite() {
 								</div>
 								<div className="Actualite_box_text">
 									<div className="Actualite_box_text_head">
-										<p> {t("home_ctualite_box_text_head")}</p>
+										<p> {t("home_actualite_box_text_head")}</p>
 									</div>
 									<div className="Actualite_box_text_tit">
 										<p>{t("actuality_box_text_tit_nyira")}</p>
@@ -275,7 +275,7 @@ function Actualite() {
 								</div>
 								<div className="Actualite_box_text">
 									<div className="Actualite_box_text_head">
-										<p> {t("home_ctualite_box_text_head")}</p>
+										<p> {t("home_actualite_box_text_head")}</p>
 									</div>
 									<div className="Actualite_box_text_tit">
 										<p>{t("actuality_box_text_tit_climatique")}</p>
