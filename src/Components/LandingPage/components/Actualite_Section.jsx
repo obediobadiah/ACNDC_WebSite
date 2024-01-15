@@ -51,7 +51,7 @@ function Actualite_Section() {
 								</div>
 								<div className="Actualite_box_text">
 									<div className="Actualite_box_text_head">
-										<p> {t("home_ctualite_box_text_head")}</p>
+										<p> {t("home_actualite_box_text_head")}</p>
 									</div>
 									<div className="Actualite_box_text_tit">
 										<p>{item.title}</p>
