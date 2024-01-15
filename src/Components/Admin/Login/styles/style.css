@@ -69,6 +69,10 @@
     text-transform: uppercase;
 }
 
+.circular_bar{
+    color: white;
+}
+
 @media screen and (max-width: 980px) {
 
     .login_contents_container h1 {

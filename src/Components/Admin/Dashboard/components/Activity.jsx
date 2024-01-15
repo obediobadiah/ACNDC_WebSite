@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Swal from 'sweetalert2'
 import { Modal } from "react-bootstrap";
 import { Link } from 'react-router-dom'
+import { CircularProgress } from "@mui/material";
+
 
 function Activity({ Toggle }) {
 
@@ -14,6 +16,7 @@ function Activity({ Toggle }) {
     const [show, setShow] = useState(false);
     const handleCloseAddForm = () => setShow(false);
     const handleShowAddForm = () => setShow(true);
+    const [isLoading, setIsLoading] = useState(false);
 
     // const handleCloseEditForm = () => setShow(false);
     // const handleShowEditForm = () => setShow(true);
@@ -46,6 +49,8 @@ function Activity({ Toggle }) {
 
     const InsertData = (e) => {
         e.preventDefault();
+        setIsLoading(true);
+
         Swal.fire({
             title: 'Etes-vous sûr?',
             text: 'Cet actualité sera ajouter dans la liste!',
@@ -70,12 +75,15 @@ function Activity({ Toggle }) {
                         Swal.fire('Success', 'Actualité Ajouté avec succès', 'success').then(() => {
                             window.location.reload();
                         });;
+                        setIsLoading(false);
                     })
                     .catch((error) => {
                         console.error('Echec ', error);
                         Swal.fire('Error', 'Echec', 'error');
+                        setIsLoading(false);
                     });
             }
+            setIsLoading(false);
         });
 
     };
@@ -118,7 +126,6 @@ function Activity({ Toggle }) {
             .then((data) => {
                 setData(data);
                 setFilteredData(data);
-
             })
             .catch((error) => console.error('Error getting data: ', error));
     };
@@ -211,6 +218,9 @@ function Activity({ Toggle }) {
                                 </button>
                                 <button type="submit" className="m-2 bg-success border-0 px-6 fw-bold text-white rounded-1 p-2 text-white" variant="primary">
                                     <i className="bi bi-save2-fill m-2"></i>Enregistrer
+                                    {isLoading && (
+                                        <CircularProgress sx={{ color: "white" }} thickness={5} size={22} className='circular_bar mx-2' />
+                                    )}
                                 </button>
                             </div>
 
