@@ -10,6 +10,11 @@ import Act_Img5 from '../assets/1660507234077.jfif'
 import Act_Img6 from '../assets/DSC_8.jpg'
 import Act_Img7 from '../assets/1663363038452.jfif'
 import Act_Img8 from '../assets/IMG_7931.JPG'
+import Act_Img9 from '../assets/PXL_20221217_112901021.MP.jpg'
+import Act_Img10 from '../assets/IMG-20221126-WA0025.jpg'
+import Act_Img11 from '../assets/1671217015713.jpg'
+import Act_Img12 from '../assets/IMG-20230124-WA0011.jpg'
+import Act_Img13 from '../assets/DSC_9479.jpg'
 import { useTranslation } from 'react-i18next'
 import React, { useState, useEffect } from "react";
 
@@ -112,9 +117,6 @@ function Actualite() {
 								</div>
 							</div>
 
-
-
-
 							<div className="Actualite_box">
 								<div className="Actualite_box_Img">
 									<img src={Act_Img7} alt="Actualite" width="100" height="300"/>
@@ -141,7 +143,6 @@ function Actualite() {
 
 
 
-
 							<div className="Actualite_box">
 								<div className="Actualite_box_Img">
 									<img src={Act_Img8} alt="Actualite" width="100" height="300"/>
@@ -165,8 +166,6 @@ function Actualite() {
 									</div>
 								</div>
 							</div>
-
-
 
 							<div className="Actualite_box">
 								<div className="Actualite_box_Img">
@@ -245,9 +244,6 @@ function Actualite() {
 								</div>
 							</div>
 
-
-
-
 							<div className="Actualite_box">
 								<div className="Actualite_box_Img">
 									<img src={Act_Img2} alt="Actualite" width="100" height="300"/>
@@ -273,8 +269,6 @@ function Actualite() {
 							</div>
 
 
-
-
 							<div className="Actualite_box">
 								<div className="Actualite_box_Img">
 									<img src={Act_Img3} alt="Actualite" width="100" height="300"/>
@@ -298,7 +292,6 @@ function Actualite() {
 									</div>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
