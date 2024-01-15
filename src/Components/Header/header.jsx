@@ -113,10 +113,9 @@ function Header() {
 							<li className="header-item"
 								onMouseEnter={onMouseEnterSom}
 								onMouseLeave={onMouseLeaveSom}>
-								<span className="header-links">{t("some_nous_menu_link")} <i className="fas fa-caret-down" /></span>
+								<span to="" className="header-links" >{t("some_nous_menu_link")} <i className="fas fa-caret-down" /></span>
 								{SomDropdown && <SommeNousDropdown />}
 							</li>
-
 
 							<li className="header-item">
 								<Link className="header-links" onClick={() => { window.location.href = "/Actualite" }}> {t("actuality_menu_link")} </Link>
@@ -137,7 +136,7 @@ function Header() {
 								</select>
 							</div>
 							<div className="donation_button">
-								<Link onClick={() => { window.location.href = "/Contact" }}><button className="btn"> {t("donate_button")} </button> </Link>
+								<Link onClick={() => { window.location.href = "/Contact" }}><button className="donation_btn"> {t("donate_button")} </button> </Link>
 							</div>
 						</div>
 					</div>
