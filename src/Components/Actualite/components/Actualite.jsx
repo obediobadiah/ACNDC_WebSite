@@ -195,7 +195,7 @@ function Actualite() {
 
 							<div className="Actualite_box">
 								<div className="Actualite_box_Img">
-									<img src={Act_Img5} alt="Actualite" width="100" height="300"/>
+									<img src={Act_Img5} alt="Actualite"/>
 								</div>
 								<div className="Actualite_box_text">
 									<div className="Actualite_box_text_head">
