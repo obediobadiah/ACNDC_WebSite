@@ -130,7 +130,7 @@ function Header() {
 					<div className="Button_container">
 						<div className="button_container_content">
 							<div>
-								<select class="LanguageSelector" id="" onChange={(val) => handleChangeLang(val.target.value)} >
+								<select class="LanguageSelector" id="" onChange={(val) => handleChangeLang(val.target.value)} value={i18n.language}>
 									<option value="fr" >Fr</option>
 									<option value="en">En</option>
 								</select>

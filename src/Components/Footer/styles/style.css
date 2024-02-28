@@ -51,11 +51,21 @@
 	/* background-color: darkblue; */
 	border-left: 1px solid rgb(156, 156, 156);
 	border-right: 1px solid rgb(156, 156, 156);
+	padding: 0 100px;
 }
 
-.address .address_text h2{
+.address .address_text h3{
 	font-weight: bold;
 	color: #008F40;
+	font-size: 1.5rem;
+}
+
+.address .address_text i{
+	margin-right: 10px;
+}
+
+.address_links{
+	margin-top: 30px;
 }
 
 .address_links .address_link_text h5{
@@ -64,7 +74,8 @@
 .address_link_icons{
 	padding: 10px;
 	display: flex;
-	justify-content: space-between 	;
+	gap: 20px;
+	/* justify-content: space-between 	; */
 }
 .address_link_icons .address_link_icon{
 	color: #3CB371;
@@ -125,14 +136,23 @@
 		padding: 40px 0 40px 0;
 	}
 
-	.address .address_text h2{
+	.address .address_text h3{
 		text-align: center;
+		padding: 0 100px;
 	}
 	
 	.address_links{
 		margin-top: 30px;
+		padding: 0 10px;
+		text-align: center;
+		display: grid;
+		justify-content: center;
 	}
-
+	
+	.address_links .address_link_icons{
+		display: flex;
+		justify-content: space-between;
+	}
 	.footer_links .footer_link{
 		text-align: center;
 	}
