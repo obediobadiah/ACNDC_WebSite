@@ -22,14 +22,16 @@ function Footer() {
 					</div>
 					<div className="address">
 						<div className="address_text">
-							<h2>	
+							<h3>	
 								<i className="fas fa-map-marker-alt"/><t/>		
-								A Kasika (100 km),<br/>
-								à Mwenga (130km) <br/>
-								et à Kitutu (210 km) <br/>
-								sur la route nationale 2 <br/>
-								Bukavu-Kasongo
-							</h2>
+								Sud-Kivu: A Kasika (100 km), à Mwenga (130km) et à Kitutu (210 km) sur la route nationale 2, Bukavu-Kasongo
+							</h3>
+						</div>
+						<div className="address_text">
+							<h3>	
+								<i className="fas fa-map-marker-alt"/>	
+								Nord-Kivu: Goma, RN2 Goma-Sake Commune de Karisimbi, Q. Mugunga, Av.Mushebere, N°38
+							</h3>
 						</div>
 						<div className="address_links">
 							<div className="address_link_text">
@@ -39,13 +41,13 @@ function Footer() {
 								<a href="https://web.facebook.com/acndc.org" className="address_link_icon">
 									<i class="fab fa-facebook"></i>
 								</a>
-								<a href="https://twitter.com/crispine_ngena" className="address_link_icon">
+								<a href="https://x.com/ACNDC_ASBL?t=jwMpjWhuT4ScZgeAIa8juA&s=08" className="address_link_icon">
 									<i className="fab fa-twitter"/>
 								</a>
-								<a href="https://www.linkedin.com/in/acndc-organisation-communautaire-de-base-b11975211/" className="address_link_icon">
+								<a href="https://www.linkedin.com/company/acndc-asbl-organisation-f%C3%A9minine-de-base/" className="address_link_icon">
 									<i className="fab fa-linkedin"/>
 								</a>
-								<a href="https://www.instagram.com/acndc_organisation_de_base/" className="address_link_icon">
+								<a href="https://instagram.com/acndc_asbl?igshid=MzNlNGNkZWQ4Mg==" className="address_link_icon">
 									<i className="fab fa-instagram"/>
 								</a>
 							</div>

@@ -24,20 +24,20 @@ function Contact() {
                             </Link>
                             </div>
                             <div className="contact_address">
-                                <p>{t("contact_address")} <br/>{t("contact_address_tel")}<br/> {t("contact_address_email")}</p>
+                                <p>{t("contact_address_south")} <br/>{t("contact_address_north")}<br/><br/>{t("contact_address_tel")}<br/>{t("contact_address_email")}</p>
                             </div>
                             <div className="contact_links">
                                 <div className="contact_links_icons">
-                                    <Link to="/" className="address_link_icon">
+                                    <Link to="https://web.facebook.com/acndc.org" className="address_link_icon">
                                         <i class="fab fa-facebook"></i>
                                     </Link>
-                                    <Link to="/" className="address_link_icon">
+                                    <Link to="https://x.com/ACNDC_ASBL?t=jwMpjWhuT4ScZgeAIa8juA&s=08" className="address_link_icon">
                                         <i className="fab fa-twitter"/>
                                     </Link>
-                                    <Link to="/" className="address_link_icon">
+                                    <Link to="https://www.linkedin.com/company/acndc-asbl-organisation-f%C3%A9minine-de-base/" className="address_link_icon">
                                         <i className="fab fa-linkedin"/>
                                     </Link>
-                                    <Link to="/" className="address_link_icon">
+                                    <Link to="https://instagram.com/acndc_asbl?igshid=MzNlNGNkZWQ4Mg==" className="address_link_icon">
                                         <i className="fab fa-instagram"/>
                                     </Link>
                                 </div>
