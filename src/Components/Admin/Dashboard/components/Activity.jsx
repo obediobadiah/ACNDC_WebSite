@@ -25,6 +25,8 @@ function Activity({ Toggle }) {
     const [description, setActDescription] = useState('');
     const [link, setActLink] = useState('');
     const [image, setActImage] = useState(null);
+    const [fileSizeError, setFileSizeError] = useState('');
+
 
 
     // Insert data
@@ -184,6 +186,16 @@ function Activity({ Toggle }) {
         setSearchTerm(e.target.value);
     };
 
+    const handleFileChange = (e) => {
+        const file = e.target.files[0];
+        if (file && file.size > 4 * 1024 * 1024) { // 4MB in bytes
+            setFileSizeError("L'image choisi doit avoir moins de 4M");
+            setActImage(null);
+            return;
+        }
+        setFileSizeError('');
+        setActImage(file);
+    };
 
 
     return (
@@ -202,7 +214,9 @@ function Activity({ Toggle }) {
                         <div className="add_actuality_header_form">
                             <div className="row">
                                 <input type="text" className="col m-2 rounded-3 p-2 border-1 fw-bold" placeholder="Ecrivez le titre de l'actualite" value={title} onChange={(e) => setActTitle(e.target.value)} required />
-                                <input type="file" className="col m-2 rounded p-2" onChange={(e) => setActImage(e.target.files[0])} required />
+                                {/* <input type="file" className="col m-2 rounded p-2" onChange={(e) => setActImage(e.target.files[0])} required /> */}
+                                <input type="file" className="col m-2 rounded p-2" onChange={handleFileChange} required />
+                                {fileSizeError && <div className="text-danger">{fileSizeError}</div>}
                             </div>
                             <div className="row">
                                 <input type="text" className="col m-2 rounded-3 p-2 border-1 fw-bold" placeholder="Ecrivez le lien de l'actualite" value={link} onChange={(e) => setActLink(e.target.value)} required />
