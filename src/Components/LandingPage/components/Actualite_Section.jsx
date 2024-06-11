@@ -43,7 +43,7 @@ function Actualite_Section() {
 
 
 
-						{data.slice(-4).map((item) => (
+						{data.slice(-8).map((item) => (
 
 							<div className="Actualite_box">
 								<div className="Actualite_box_Img">
@@ -71,7 +71,7 @@ function Actualite_Section() {
 
 						)).reverse()}
 
-
+{/* 
 
 					<div className="Actualite_box">
 							<div className="Actualite_box_Img">
@@ -172,7 +172,7 @@ function Actualite_Section() {
 								</div>
 						</div>
 
-
+ */}
 
 
 
