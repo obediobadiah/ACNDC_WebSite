@@ -75,6 +75,12 @@
 .Actualite_box .Actualite_box_text .Actualite_box_text_cont p{
 	margin: 20px 0 20px 0;
 	text-align: justify;
+
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .Actualite_box .Actualite_box_text_but{
@@ -124,7 +130,6 @@
 .Actualite_Button .Act_Button:hover{
 	background-color: #113f26;
 }
-
 
 
 
