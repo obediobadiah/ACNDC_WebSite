@@ -1,0 +1,171 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', 'PT Sans', sans-serif;
+}
+
+.plan_Intro{
+	margin-top: 70px;
+}
+
+.plan_Intro h1{
+	background-color: #ccffe3;
+	color: #286f4e;
+	font-weight: bold;
+	text-align: center;
+	font-size: 3.5rem;
+	padding: 100px 150px 100px 150px;
+}
+
+.plan_textes{
+	color: #286f4e;
+	margin: 50px 300px 50px 300px;
+}
+
+.plan_boxes{
+	margin-bottom: 50px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.plan_box{
+	margin: 50px 350px;
+	display: flex;
+	gap: 50px;
+}
+
+.plan_box .plan_img img{
+	width: 500px;
+	height: 350px;
+}
+
+.plan_box .plan_txt .plan_texte{
+	color: #286f4e;
+	margin: 0 20px 0 20px;
+}
+
+.plan_box .plan_txt .plan_button{
+	color: #286f4e;
+	margin: 30px 0 0 30px;
+}
+
+.plan_box .plan_txt .plan_button  button{
+	color: #ffffff;
+	background-color: #286f4e;
+	border: none;
+	padding: 10px 20px;
+	font-weight:  bold;
+}
+
+.plan_box .plan_txt .plan_texte p{
+	color: #286f4e;
+}
+
+.plan_box .plan_txt .plan_texte .plan_texte_link{
+	color: #286f4e;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.plan_follow{
+	background-color: #ccffe3;
+	font-weight: bold;
+	font-size: 3.5rem;
+	padding: 50px 50px 50px 50px;
+	margin: 50px 300px 100px 300px;
+}
+
+.plan_follow .plan_follow_Intro h1{
+	color: #286f4e;
+	font-weight: bold;
+	margin: 10px 0 !important;
+	font-size: 2rem;
+}
+
+.plan_follow .plan_follow_Intro h2{
+	color: #286f4e;
+	margin: 0 !important;
+	font-size: 1.2rem;
+}
+
+.plan_follow .plan_follow_Intro .plan_links .plan_link_icon i{
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #286f4e;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 20px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.plan_links{
+	margin-top: 10px;
+}
+
+.plan_links .plan_link_text h5{
+	color: #008F40;
+}
+.plan_link_icons{
+	display: flex;
+	gap: 20px;
+}
+.plan_link_icons .plan_link_icon{
+	color: #3CB371;
+	font-size: 3rem;
+}
+
+.plan_link_icons .plan_link_icon i:hover{
+	color: #008F40;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+
+	.plan_Intro h1{
+		font-size: 2.5rem;
+		padding: 150px 10px 150px 10px;
+	}
+
+	.plan_box{
+		margin: 20px 0px;
+		display: grid;
+	}
+
+	.plan_box .plan_img{
+		margin: 0 20px 0 20px;
+	}
+
+	.plan_box .plan_img img{
+		width: 100%;
+		height: auto;
+	}
+	
+	.plan_follow{
+		background-color: #ccffe3;
+		font-weight: bold;
+		font-size: 3.5rem;
+		padding: 20px 20px 20px 20px;
+		margin: 20px 20px 20px 20px;
+	}
+}
+
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1266px){
+	.plan_follow{
+		background-color: #ccffe3;
+		font-weight: bold;
+		font-size: 3.5rem;
+		padding: 50px 50px 50px 50px;
+		margin: 50px 50px 50px 50px;
+	}
+}
