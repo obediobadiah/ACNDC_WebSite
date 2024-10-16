@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import ActivitesDropdown from './components/ActivitesDropdown'
-import SommeNousDropdown from './components/SommeNousDropdown'
+import ActivitesDropdown from './Components/ActivitesDropdown'
+import SommeNousDropdown from './Components/SommeNousDropdown'
 import './style.css'
 import logoImg from './assets/Logos ACNDC.png'
 import { useTranslation } from 'react-i18next'
@@ -130,7 +130,7 @@ function Header() {
 					<div className="Button_container">
 						<div className="button_container_content">
 							<div>
-								<select class="LanguageSelector" id="" onChange={(val) => handleChangeLang(val.target.value)} value={i18n.language}>
+								<select class="LanguageSelector" id="" onChange={(val) => { handleChangeLang(val.target.value); window.location.reload();}} value={i18n.language}>
 									<option value="fr" >Fr</option>
 									<option value="en">En</option>
 								</select>
