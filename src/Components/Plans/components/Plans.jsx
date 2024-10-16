@@ -4,9 +4,7 @@ import Header from '../../Header/header'
 import Footer from '../../Footer/components/Footer'
 import NewsLetter from '../../NewsLetter/components/NewsLetter_Page'
 import '../styles/style.css'
-import plan2022Img from '../assets/DSC_8.jpg'
-import plan2021Img from '../assets/IMG-20210701-WA0061.jpg'
-import plan2020Img from '../assets/3152dacf-2e19-467d-8c1e-fe7ad279ba3d.JPG'
+import planKaleheImg from '../assets/000_33EN462.jpg'
 import { useTranslation } from 'react-i18next'
 import report2022Pdf from '../assets/Plan Kalehe - Securite climatique et prevention des catastrophes naturelles.pdf'
 
@@ -39,7 +37,7 @@ function Plans() {
 
 						<div className="plan_box">
 							<div className="plan_img">
-								<img src={plan2021Img} alt="" />
+								<img src={planKaleheImg} alt="" />
 							</div>
 							<div className="plan_txt">
 								<div className="plan_texte">
