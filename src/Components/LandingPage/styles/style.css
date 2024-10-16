@@ -357,7 +357,7 @@
 	align-items: center;
 	justify-content: center; */
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	gap: 20px;
 	padding: 0 150px;
 	padding-bottom: 50px;
@@ -519,7 +519,7 @@
 
 	.video_details .home_video_slider_cards {
 		display: block;
-		grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 		gap: 20px;
 		padding: 0 30px;
 	}
