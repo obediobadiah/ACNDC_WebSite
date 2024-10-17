@@ -16,6 +16,7 @@ import Rapports from './Components/Rapports/components/Rapports'
 import Rapports_Details_2020 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2020'
 import Rapports_Details_2021 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2021'
 import Rapports_Details_2022 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2022'
+import Rapports_Details_2023 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2023'
 import OutilsTravail from './Components/OutilsTravail/components/OutilsTravail'
 import Plans from './Components/Plans/components/Plans'
 import Actualite from './Components/Actualite/components/Actualite'
@@ -44,6 +45,7 @@ function App() {
         <Route path="/Rapport_Detail_2020" element={<Rapports_Details_2020 />} />
         <Route path="/Rapport_Detail_2021" element={<Rapports_Details_2021 />} />
         <Route path="/Rapport_Detail_2022" element={<Rapports_Details_2022 />} />
+        <Route path="/Rapport_Detail_2023" element={<Rapports_Details_2023 />} />
         <Route path="/OutilsTravail" element={<OutilsTravail />} />
         <Route path="/Plans" element={<Plans />} />
         <Route path="/Actualite" element={<Actualite />} />
