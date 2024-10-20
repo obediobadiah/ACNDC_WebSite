@@ -20,6 +20,7 @@ import Rapports_Details_2023 from './Components/Rapports/components/RapportsAnnu
 import OutilsTravail from './Components/OutilsTravail/components/OutilsTravail'
 import Plans from './Components/Plans/components/Plans'
 import Actualite from './Components/Actualite/components/Actualite'
+import ActualiteDetails from './Components/Actualite/components/ActualiteDetails'
 import Contact from './Components/Contact/components/Contact'
 import Login from './Components/Admin/Login/components/Login'
 import Dashboard from './Components/Admin/Dashboard/dashboard';
@@ -49,6 +50,7 @@ function App() {
         <Route path="/OutilsTravail" element={<OutilsTravail />} />
         <Route path="/Plans" element={<Plans />} />
         <Route path="/Actualite" element={<Actualite />} />
+        <Route path="/Actualite_details/:slug" element={<ActualiteDetails />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
 

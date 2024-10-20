@@ -6,6 +6,8 @@ import Swal from 'sweetalert2'
 import { Modal } from "react-bootstrap";
 import { Link } from 'react-router-dom'
 import { CircularProgress } from "@mui/material";
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
 
 
 function Activity({ Toggle }) {
@@ -14,9 +16,11 @@ function Activity({ Toggle }) {
     const [filteredData, setFilteredData] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [show, setShow] = useState(false);
-    const handleCloseAddForm = () => setShow(false);
-    const handleShowAddForm = () => setShow(true);
-    const [isLoading, setIsLoading] = useState(false);
+    // const handleCloseAddForm = () => setShow(false);
+    // const handleShowAddForm = () => setShow(true);
+    // const [fullscreen, setFullscreen] = useState(true);
+
+    const [value, setValue] = useState('');
 
     // const handleCloseEditForm = () => setShow(false);
     // const handleShowEditForm = () => setShow(true);
@@ -26,69 +30,6 @@ function Activity({ Toggle }) {
     const [link, setActLink] = useState('');
     const [image, setActImage] = useState(null);
     const [fileSizeError, setFileSizeError] = useState('');
-
-
-
-    // Insert data
-
-    // const InsertData = (e) => {
-    //     e.preventDefault();
-    //     const formData = new FormData();
-    //     formData.append('title', title);
-    //     formData.append('description', description);
-    //     formData.append('link', link);
-    //     formData.append('image', image);
-
-    //     fetch('https://acndc-backend.vercel.app/api/add-actuality/', {
-    //         method: 'POST',
-    //         body: formData,
-    //     })
-    //         .then((res) => { console.log(res) })
-    //         .catch((error) => { console.log(error) })
-    // }
-
-    // // Insert data
-
-    const InsertData = (e) => {
-        e.preventDefault();
-        setIsLoading(true);
-
-        Swal.fire({
-            title: 'Etes-vous sûr?',
-            text: 'Cet actualité sera ajouter dans la liste!',
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#d33',
-            cancelButtonColor: '#3085d6',
-            confirmButtonText: 'OUI, Ajoutez!',
-        }).then((result) => {
-            if (result.isConfirmed) {
-                const formData = new FormData();
-                formData.append('title', title);
-                formData.append('description', description);
-                formData.append('link', link);
-                formData.append('image', image);
-
-                fetch('https://acndc-backend.vercel.app/api/add-actuality/', {
-                    method: 'POST',
-                    body: formData,
-                })
-                    .then((res) => {
-                        Swal.fire('Success', 'Actualité Ajouté avec succès', 'success').then(() => {
-                            window.location.reload();
-                        });;
-                        setIsLoading(false);
-                    })
-                    .catch((error) => {
-                        console.error('Echec ', error);
-                        Swal.fire('Error', 'Echec', 'error');
-                        setIsLoading(false);
-                    });
-            }
-            setIsLoading(false);
-        });
-
-    };
 
     const duplicateAct = (dipId) => {
         Swal.fire({
@@ -186,70 +127,20 @@ function Activity({ Toggle }) {
         setSearchTerm(e.target.value);
     };
 
-    const handleFileChange = (e) => {
-        const file = e.target.files[0];
-        if (file && file.size > 4 * 1024 * 1024) { // 4MB in bytes
-            setFileSizeError("L'image choisi doit avoir moins de 4M");
-            setActImage(null);
-            return;
-        }
-        setFileSizeError('');
-        setActImage(file);
-    };
-
 
     return (
         <div className="px-3">
             <Navbar Toggle={Toggle} />
 
-            <Modal show={show} onHide={handleCloseAddForm} backdrop="static" keyboard={false} dialogClassName="modal-90w" aria-labelledby="example-custom-modal-styling-title" centered>
-                <Modal.Header closebutton>
-                    <Modal.Title>Ajoutez des Actualites</Modal.Title>
-                </Modal.Header>
-                <div className="actuality_list_table border bg-white p-3 m-4 rounded-3">
-                    <div className="add_actuality_header">
-                        <span className="fw-bold text-secondary fs-1">ACTUALITES</span>
-                    </div>
-                    <form onSubmit={InsertData}>
-                        <div className="add_actuality_header_form">
-                            <div className="row">
-                                <input type="text" className="col m-2 rounded-3 p-2 border-1 fw-bold" placeholder="Ecrivez le titre de l'actualite" value={title} onChange={(e) => setActTitle(e.target.value)} required />
-                                {/* <input type="file" className="col m-2 rounded p-2" onChange={(e) => setActImage(e.target.files[0])} required /> */}
-                                <input type="file" className="col m-2 rounded p-2" onChange={handleFileChange} required />
-                                {fileSizeError && <div className="text-danger">{fileSizeError}</div>}
-                            </div>
-                            <div className="row">
-                                <input type="text" className="col m-2 rounded-3 p-2 border-1 fw-bold" placeholder="Ecrivez le lien de l'actualite" value={link} onChange={(e) => setActLink(e.target.value)} required />
-                            </div>
-                            <div className="row">
-                                <textarea type="text" className="col m-2 rounded-3 p-3 fw-bold" placeholder="Ecrivez la description de l'actualite" value={description} onChange={(e) => setActDescription(e.target.value)} required />
-                            </div>
-                        </div>
-                        <Modal.Footer>
-                            <div className="">
-                                <button className="m-2 bg-danger border-0 px-6 fw-bold text-white rounded-1 p-2 text-white" variant="secondary" onClick={handleCloseAddForm}>
-                                    <span aria-hidden="true" className="m-2">&times;</span>Annuler
-                                </button>
-                                <button type="submit" className="m-2 bg-success border-0 px-6 fw-bold text-white rounded-1 p-2 text-white" variant="primary">
-                                    <i className="bi bi-save2-fill m-2"></i>Enregistrer
-                                    {isLoading && (
-                                        <CircularProgress sx={{ color: "white" }} thickness={5} size={22} className='circular_bar mx-2' />
-                                    )}
-                                </button>
-                            </div>
-
-                        </Modal.Footer>
-                    </form>
-
-                </div>
-
-            </Modal>
 
             <div className="caontiner-fluid d-flex justify-content-start">
                 <div className="activities_buttons">
-                    <button onClick={handleShowAddForm} className="bg-primary border-0 px-5 py-1 fw-bold text-white rounded-3 m-2 text-white">
+                    {/* <button onClick={handleShowAddForm} >
                         <i className="bi bi-plus fs-5"></i>AJOUTER
-                    </button>
+                    </button> */}
+                    <Link to={`/admin-dashboard/add-actuality/`} className="bg-primary border-0 px-5 py-1 fw-bold text-white rounded-3 m-2 text-white" >
+                        AJOUTER
+                    </Link>
                 </div>
                 <div className="activities_search">
                     <input type="text" class="p-2 m-2 rounded-5 border-1 border-top-0" placeholder="Recherche" aria-label="Search" aria-describedby="basic-addon1" value={searchTerm} onChange={handleSearch} />

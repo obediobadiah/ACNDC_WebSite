@@ -30,10 +30,10 @@ function sidebar({ handleComponentChange }) {
                     <i className="bi bi-speedometer2 fs-5 me-3"></i>
                     <span className="fs-6">Activity</span>
                 </a>
-                <a href={'/admin-dashboard/report'} className="list-group-item list-group-item-action p-3">
+                {/* <a href={'/admin-dashboard/report'} className="list-group-item list-group-item-action p-3">
                     <i className="bi bi-clipboard-data fs-5 me-3"></i>
                     <span className="fs-6">Report</span>
-                </a>
+                </a> */}
 
             </div>
         </div>
