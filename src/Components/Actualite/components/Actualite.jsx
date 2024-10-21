@@ -80,11 +80,11 @@ function Actualite() {
 											<p>{item.description}</p>
 										</div>
 										<div className="Actualite_box_text_but">
-											<Link className="Actualite_box_text_but" onClick={() => { window.location.href = `/Actualite_details/${item.slug}` }}><i class="fas fa-angle-right"></i></Link>
+											{/* <Link className="SavoirPlus" onClick={() => { window.location.href = `/Actualite_details/${item.slug}` }}>{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></Link> */}
 
-											{/* <a href={item.slug}>
+											<a href={`/Actualite/${item.slug}`}>
 												<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-											</a> */}
+											</a>
 
 										</div>
 									</div>
