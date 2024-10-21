@@ -17,6 +17,7 @@ import Act_Img12 from '../assets/IMG-20230124-WA0011.jpg'
 import Act_Img13 from '../assets/DSC_9479.jpg'
 import { useTranslation } from 'react-i18next'
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom'
 
 
 function Actualite() {
@@ -79,8 +80,9 @@ function Actualite() {
 											<p>{item.description}</p>
 										</div>
 										<div className="Actualite_box_text_but">
+											{/* <Link className="SavoirPlus" onClick={() => { window.location.href = `/Actualite_details/${item.slug}` }}>{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></Link> */}
 
-											<a href={item.link}>
+											<a href={`/Actualite/${item.slug}`}>
 												<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
 											</a>
 

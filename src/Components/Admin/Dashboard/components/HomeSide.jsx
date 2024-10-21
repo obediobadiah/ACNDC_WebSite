@@ -51,7 +51,7 @@ function HomeSide({ Toggle }) {
                             <i className="bi bi-cart-plus p-3 fs-1"></i>
                         </div>
                     </div>
-                    <div className="col-md-6">
+                    {/* <div className="col-md-6">
                         <div className="p-3 bg-secondary border d-flex justify-content-around align-items-center rounded-3 text-white">
                             <div>
                                 <h3 className="fs-1 fw-bold text-white">10</h3>
@@ -59,7 +59,7 @@ function HomeSide({ Toggle }) {
                             </div>
                             <i className="bi bi-cart-plus p-3 fs-1"></i>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="actuality_list_table border bg-white p-3 m-4 rounded-4">
@@ -92,7 +92,7 @@ function HomeSide({ Toggle }) {
                             </a>
                         </div>
             </div>
-            <div className="actuality_list_table border rounded-3 bg-white p-3 m-4">
+            {/* <div className="actuality_list_table border rounded-3 bg-white p-3 m-4">
                 <span className="fw-bold text-secondary">Liste des Rapports</span>
                 <table class="table fw-bold">
                     <thead>
@@ -128,7 +128,7 @@ function HomeSide({ Toggle }) {
                         <span className="fs-8 me-3">Voir Plus →</span>
                     </a>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
