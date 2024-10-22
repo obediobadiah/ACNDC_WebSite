@@ -33,6 +33,8 @@ function NewsLetter_Page() {
 		  text: 'Email sent successfully',
 		  icon: 'success',
 		  confirmButtonText: 'OK'
+		}).then(() => {
+			form.current.reset();
 		});
 	  } else {
 		Swal.fire({
