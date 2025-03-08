@@ -22,9 +22,9 @@ function OrganeGestion() {
 					<div className="OrganeGestion_Intro_title">
 						<h1>{t("organe_intro_title")}</h1>
 					</div>
-					<div className="OrganeGestion_Intro_img">
+					{/* <div className="OrganeGestion_Intro_img">
 						<img src={IntroImg} alt="IntroImg" />
-					</div>
+					</div> */}
 				</div>
 
 				<div className="OrganeGestion_exp">

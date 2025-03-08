@@ -47,18 +47,7 @@ function ActualiteDetails() {
                 ) : actuality ? (
                     <>
                         <div className="Act_details_details">
-                            <div className="Act_details_Intro">
-                                <div className="Act_details_Intro_Img"
-                                    style={{
-                                        backgroundImage: `url(data:image/jpeg;base64,${actuality.image})`,
-                                        backgroundSize: 'cover',
-                                        backgroundPosition: 'center',
-                                        width: '100%',
-                                        height: '200px',
-                                    }}
-                                >
-                                    {/* <img src={`data:image/jpeg;base64,${actuality.image}`} alt="Actualite" width="100" height="300" /> */}
-                                </div>
+                            <div className="Act_details_Intro" style={{ backgroundImage: `linear-gradient(rgba(0, 104, 57, 0.83), rgba(0, 104, 57, 0.83)), url(data:image/jpeg;base64,${actuality.image}`, }}>
                                 <div className="Act_details_Intro_Text">
                                     <h1>{actuality.title}</h1>
                                 </div>

@@ -2,20 +2,20 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato', 'PT Sans', sans-serif;
+	font-family: 'Raleway', 'PT Sans', sans-serif;
 }
 
 .rapport_Intro{
-	margin-top: 70px;
+	margin-top: 0 !important;
 }
 
 .rapport_Intro h1{
-	background-color: #ccffe3;
-	color: #286f4e;
+	background-color: #286f4e;
+	color: #ffffff;
 	font-weight: bold;
 	text-align: center;
 	font-size: 3.5rem;
-	padding: 100px 150px 100px 150px;
+	padding: 150px 150px 100px 150px;
 }
 
 .rapport_textes{

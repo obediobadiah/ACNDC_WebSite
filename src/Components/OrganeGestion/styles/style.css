@@ -2,20 +2,23 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato', 'PT Sans', sans-serif;
+	font-family: 'Raleway', 'PT Sans', sans-serif;
 }
 
 .OrganeGestion_Intro_title{
-	margin-top: 70px;
+	margin-top: 0 !important;
 }
 
 .OrganeGestion_Intro_title h1{
-	background-color: #ccffe3;
+	/* background-color: #286f4e; */
+	background-image: linear-gradient(rgba(0, 81, 186, 0.5), rgba(0, 81, 186, 0.5)), url('../assets/IMG-20210701-WA0030.jpg') !important;
+	background-repeat: no-repeat;
+	background-size: cover;
 	font-weight: bold;
-	color: #286f4e;
+	color: #ffffff;
 	text-align: center;
 	font-size: 3.5rem;
-	padding: 150px 150px 300px 150px;
+	padding: 300px 150px 300px 150px;
 }
 
 .OrganeGestion_Intro_img{
@@ -128,8 +131,8 @@
 
 @media screen and (max-width: 992px) {
 	.OrganeGestion_Intro_title h1{
-		background-color: #ccffe3;
-		color: #286f4e;
+		background-color: #286f4e;
+		color: #ffffff;
 		text-align: center;
 		font-size: 2rem;
 		padding: 150px 10px 300px 10px;

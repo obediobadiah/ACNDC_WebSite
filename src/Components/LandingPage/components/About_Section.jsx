@@ -19,15 +19,13 @@ function About_Section() {
 						<div className="About_txt">
 							<h2> {t("home_about_title")} </h2>
 							<p> {t("home_about_content")} </p>
-						</div>
-						<div className="About_Button">
-							<Link
+							{/* <Link
 								to="/"
 								onClick={() => {window.location.href="/VisionMission"}}
 								className="AboutButton"
 							>
 								{t("home_about_contactus")}
-							</Link>
+							</Link> */}
 						</div>
 					</div>
 				</div>

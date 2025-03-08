@@ -19,7 +19,7 @@ function Resultats() {
 						<div className="Intro_text">
 							<h1>{t("resultat_intro_title")}</h1>
 						</div>
-						<img src={IntroImg} alt="" />
+						{/* <img src={IntroImg} alt="" /> */}
 					</div>
 
 					<div className="Resultats_Boxes">

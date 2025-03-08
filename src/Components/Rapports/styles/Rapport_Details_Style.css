@@ -2,24 +2,24 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato', 'PT Sans', sans-serif;
+	font-family: 'Raleway', 'PT Sans', sans-serif;
 }
 
 .rapport_detail_Intro {
-	margin-top: 70px;
+	margin-top: 0 !important;
 }
 
 .rapport_detail_Intro h1 {
 	font-weight: bold;
-	background-color: #ccffe3;
-	color: #286f4e;
+	background-color: #286f4e;
+	color: #ffffff;
 	text-align: center;
 	font-size: 3.5rem;
-	padding: 150px 150px 150px 150px;
+	padding: 200px 150px 150px 150px;
 }
 
 .rapport_detail_date {
-	margin-top: -40px;
+	margin-top: -80px;
 	display: grid;
 	justify-content: center;
 	align-items: center;
@@ -29,8 +29,8 @@
 	padding: 20px;
 	width: 200px;
 	height: auto;
-	color: white;
-	background-color: #286f4e;
+	color: #286f4e;
+	background-color: #c2fbe0;
 	font-weight: bold;
 	text-align: center;
 }

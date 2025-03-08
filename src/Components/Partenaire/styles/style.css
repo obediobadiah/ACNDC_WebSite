@@ -2,11 +2,11 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato', 'PT Sans', sans-serif;
+	font-family: 'Raleway', 'PT Sans', sans-serif;
 }
 
 .Partenaire_Intro{
-	margin-top: 70px;
+	margin-top: 0 !important;
 }
 
 .Partenaire_Quote{
@@ -21,6 +21,7 @@
 	width: 50%;
 	object-fit: fill;
 	height: auto;
+	opacity: 0.5;
 }
 
 .Partenaire_Quote h1{
@@ -86,7 +87,7 @@
 }
 
 .NewsLetter_Comp{
-	background-color: #ccffe3;
+	background-color: #286f4e;
 	padding: 70px 0 70px 0;
 }
 

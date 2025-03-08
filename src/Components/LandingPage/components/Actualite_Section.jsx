@@ -45,137 +45,45 @@ function Actualite_Section() {
 
 						{data.slice(-8).map((item) => (
 
-							<div className="Actualite_box">
-								<div className="Actualite_box_Img">
+							<div className="Actualite_box" style={{ backgroundImage: `linear-gradient(rgba(186, 171, 0, 0.5), rgba(186, 171, 0, 0.5)), url(data:image/jpeg;base64,${item.image}`, }}>
+								{/* <div className="Actualite_box_Img">
 									<img src={`data:image/jpeg;base64,${item.image}`} alt="Actualite" width="100" height="300" />
-								</div>
+								</div> */}
 								<div className="Actualite_box_text">
-									<div className="Actualite_box_text_head">
+									{/* <div className="Actualite_box_text_head">
 										<p> {t("home_actualite_box_text_head")}</p>
-									</div>
+									</div> */}
 									<div className="Actualite_box_text_tit">
 										<p>{item.title}</p>
 									</div>
 									<div className="Actualite_box_text_cont">
 										<p>{item.description}</p>
 									</div>
-									<div className="Actualite_box_text_but">
-										{/* <Link className="SavoirPlus" onClick={() => { window.location.href = `/Actualite_details/${item.slug}` }}>{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></Link> */}
-
-										<a href={`/Actualite/${item.slug}`}>
-											<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-										</a>
-
-									</div>
+									<a href={`/Actualite/${item.slug}`}>
+										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+									</a>
 								</div>
 							</div>
 
 						)).reverse()}
 
-						{/* 
 
-					<div className="Actualite_box">
-							<div className="Actualite_box_Img">
-								<img src={Act_Img13} alt="Actualite" width="100" height="300"/>
-							</div>
+
+						{/* <div className="Actualite_box" style={{backgroundImage: `linear-gradient(rgba(186, 171, 0, 0.5), rgba(186, 171, 0, 0.5)), url(${Act_Img11})`,}}>
 							<div className="Actualite_box_text">
-								<div className="Actualite_box_text_head">
-									<p> {t("home_actualite_box_text_head")}</p>
-								</div>
 								<div className="Actualite_box_text_tit">
 									<p>{t("home_actuality_box_text_tit_journee_education")}</p>
 								</div>
 								<div className="Actualite_box_text_cont">
 									<p>{t("home_actuality_box_text_cont_journee_education")}</p>
 								</div>
-							</div>
 
-								<div className="Actualite_box_text_but">
-
-									<a href="https://web.facebook.com/100068401316248/posts/487973723492667/?flite=scwspnss&_rdc=1&_rdr">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
-
-								</div>
-						</div>
-
-
-
-
-
-
-
-						<div className="Actualite_box">
-							<div className="Actualite_box_Img">
-								<img src={Act_Img12} alt="Actualite" width="100" height="300"/>
-							</div>
-							<div className="Actualite_box_text">
-								<div className="Actualite_box_text_head">
-									<p> {t("home_actualite_box_text_head")}</p>
-								</div>
-								<div className="Actualite_box_text_tit">
-									<p>{t("home_actuality_box_text_tit_conference_mixte")}</p>
-								</div>
-								<div className="Actualite_box_text_cont">
-									<p>{t("actuality_box_text_cont_conference_mixte")}</p>
-									<ul>
-									<li>{t("home_actuality_box_text_cont_conference_mixte_l1")}</li>
-									<li>{t("home_actuality_box_text_cont_conference_mixte_l2")}</li>
-									<li>{t("home_actuality_box_text_cont_conference_mixte_l3")}</li>
-									<li>{t("home_actuality_box_text_cont_conference_mixte_l4")}</li>
-								</ul>
-									<p>{t("home_actuality_box_text_cont_conference_mixte_p")}</p>
-								</div>
-							</div>
-
-								<div className="Actualite_box_text_but">
-
-									<a href="https://www.linkedin.com/posts/acndc-asbl-organisation-f%C3%A9minine-de-base_solidaritehumaine-activity-7024683423172562944--2cN?utm_source=share&utm_medium=member_android ">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
-
-								</div>
-						</div>
-
-
-
-
-
-
-
-
-
-
-						<div className="Actualite_box">
-							<div className="Actualite_box_Img">
-								<img src={Act_Img11} alt="Actualite" width="100" height="300"/>
-							</div>
-							<div className="Actualite_box_text">
-								<div className="Actualite_box_text_head">
-									<p> {t("home_actualite_box_text_head")}</p>
-								</div>
-								<div className="Actualite_box_text_tit">
-									<p>{t("home_actuality_box_text_tit_formation_resilience")}</p>
-								</div>
-								<div className="Actualite_box_text_cont">
-									<p>{t("home_actuality_box_text_cont_formation_resilience")}</p>
-									<p>{t("home_actuality_box_text_cont_formation_resilience_p")}</p>
-								</div>
+								<a href="https://web.facebook.com/100068401316248/posts/487973723492667/?flite=scwspnss&_rdc=1&_rdr">
+									<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
+								</a>
 
 							</div>
-
-								<div className="Actualite_box_text_but">
-
-									<a href="https://www.linkedin.com/posts/acndc-asbl-organisation-f%C3%A9minine-de-base_solidaritehumaine-activity-7024683423172562944--2cN?utm_source=share&utm_medium=member_android ">
-										<button className="SavoirPlus">{t("home_savoir_plus")}<i class="fas fa-angle-right"></i></button>
-									</a>
-
-								</div>
-						</div>
-
- */}
-
-
+						</div> */}
 
 
 

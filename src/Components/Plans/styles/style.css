@@ -2,20 +2,20 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato', 'PT Sans', sans-serif;
+	font-family: 'Raleway', 'PT Sans', sans-serif;
 }
 
 .plan_Intro{
-	margin-top: 70px;
+	margin-top: 0 !important;
 }
 
 .plan_Intro h1{
-	background-color: #ccffe3;
-	color: #286f4e;
+	background-color: #286f4e;
+	color: #ffffff;
 	font-weight: bold;
 	text-align: center;
 	font-size: 3.5rem;
-	padding: 100px 150px 100px 150px;
+	padding: 150px 150px 100px 150px;
 }
 
 .plan_textes{
@@ -70,7 +70,7 @@
 }
 
 .plan_follow{
-	background-color: #ccffe3;
+	background-color: #286f4e;
 	font-weight: bold;
 	font-size: 3.5rem;
 	padding: 50px 50px 50px 50px;
@@ -78,14 +78,14 @@
 }
 
 .plan_follow .plan_follow_Intro h1{
-	color: #286f4e;
+	color: #ffffff;
 	font-weight: bold;
 	margin: 10px 0 !important;
 	font-size: 2rem;
 }
 
 .plan_follow .plan_follow_Intro h2{
-	color: #286f4e;
+	color: #ffffff;
 	margin: 0 !important;
 	font-size: 1.2rem;
 }
@@ -149,7 +149,7 @@
 	}
 	
 	.plan_follow{
-		background-color: #ccffe3;
+		background-color: #286f4e;
 		font-weight: bold;
 		font-size: 3.5rem;
 		padding: 20px 20px 20px 20px;
@@ -162,7 +162,7 @@
 
 @media screen and (min-width: 992px) and (max-width: 1266px){
 	.plan_follow{
-		background-color: #ccffe3;
+		background-color: #286f4e;
 		font-weight: bold;
 		font-size: 3.5rem;
 		padding: 50px 50px 50px 50px;

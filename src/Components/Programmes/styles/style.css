@@ -2,11 +2,11 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato', 'PT Sans', sans-serif;
+	font-family: 'Raleway', 'PT Sans', sans-serif;
 }
 
 .programmes_Intro{
-	margin-top: 70px;
+	margin-top: 0 !important;
 }
 
 .programmes_boxes{
@@ -16,19 +16,21 @@
 }
 
 .programmes_Intro h1{
-	background-color: #286f4e;
+	/* background-color: #286f4e; */
 	font-weight: bold;
 	color: white;
 	text-align: center;
 	font-size: 3.5rem;
-	padding: 150px 150px 150px 150px;
+	padding: 200px 150px 150px 150px;
+	background-image: linear-gradient(rgba(186, 99, 0, 0.5),
+	rgba(186, 99, 0, 0.5)), url('../assets/IMG-20210701-WA0060.jpg');
 }
 
 .programmes_boxes{
 	margin: 100px 50px 100px 50px;
 }
 .programmes_box{
-	margin-top: 70px;
+	margin-top: 0 !important;
 	border-top: 10px solid #286f4e;
 	background-color: rgb(240, 240, 240);
 }
@@ -40,7 +42,7 @@
 .programmes_box_title{
 	width: 100%;
 	height: 300px;
-	margin: -70px 10px 10px 0px;
+	margin: 0 10px 10px 0px;
 }
 
 #box1{
@@ -115,6 +117,7 @@
 	font-weight: bold;
 	color: #286f4e;
 	text-transform: uppercase;
+	font-size: 1.5rem;
 }
 
 @media screen and (max-width: 992px) {

@@ -2,27 +2,28 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato', 'PT Sans', sans-serif;
+	font-family: 'Raleway', 'PT Sans', sans-serif;
 }
 
 .zone_Intro{
-	margin-top: 70px;
+	margin-top: 0 !important;
 }
 
 
 .zone_Intro h1{
-	background-color: #ccffe3;
+	background-color: #286f4e;
 	font-weight: bold;
 	text-align: center;
 	font-size: 3.5rem;
-	padding: 100px 0 100px 0;
+	padding: 200px 150px 150px 150px;
+	color: rgb(255, 255, 255);
 }
 
 .zone_block{
 	display: grid;
 	justify-content: center;
 	align-items: center;
-	padding: 80px 0 80px 0;
+	padding: 100px 0 80px 0;
 }
 
 .zone_boxes{

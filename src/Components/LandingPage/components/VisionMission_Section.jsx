@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import  '../styles/style.css'
+import '../styles/style.css'
 import VisionImg from '../assets/Vision.png'
 import MissionImg from '../assets/Mission.png'
 import ObjectifImg from '../assets/Objectf.png'
@@ -15,10 +15,10 @@ function VisionMission_Section() {
 			<div className="Vision_content">
 				<div className="Vision_Boxes">
 					<div className="Vision_Box" id="Vision">
-						
+
 						<div className="Vision_Img">
-							<img 
-								src={VisionImg} 
+							<img
+								src={VisionImg}
 								alt="Vision images"
 								className="img"
 							/>
@@ -29,19 +29,19 @@ function VisionMission_Section() {
 						<div className="Vision_detail">
 							<p>{t("home_vision_content")}</p>
 						</div>
-						<div className="Vision_link">
+						{/* <div className="Vision_link">
 							<Link onClick={() => {window.location.href="/VisionMission"}} className="VisionMission_Link">
 							{t("home_savoir_plus")}
 							</Link>
-						</div>					
+						</div>					 */}
 					</div>
 
 
 					<div className="Vision_Box" id="Mission">
-						
+
 						<div className="Vision_Img">
-							<img 
-								src={MissionImg} 
+							<img
+								src={MissionImg}
 								alt="Vision images"
 								className="img"
 							/>
@@ -52,18 +52,18 @@ function VisionMission_Section() {
 						<div className="Vision_detail">
 							<p> {t("home_mission_content")} </p>
 						</div>
-						<div className="Vision_link">
+						{/* <div className="Vision_link">
 							<Link onClick={() => {window.location.href="/VisionMission"}} className="VisionMission_Link">
 							{t("home_savoir_plus")}
 							</Link>
-						</div>					
+						</div>					 */}
 					</div>
 
 
 					<div className="Vision_Box" id="Objectif">
 						<div className="Vision_Img">
-							<img 
-								src={ObjectifImg} 
+							<img
+								src={ObjectifImg}
 								alt="Vision images"
 								className="img"
 							/>
@@ -74,18 +74,20 @@ function VisionMission_Section() {
 						<div className="Vision_detail">
 							<p> {t("home_object_content")} </p>
 						</div>
-						<div className="Vision_link">
-							<Link
-								onClick={() => {window.location.href="/VisionMission"}}
-								className="VisionMission_Link"
-							>
-								{t("home_savoir_plus")}
-							</Link>
-						</div>					
 					</div>
 
 
 				</div>
+
+				{/* <div className="Vision_link">
+					<Link
+						onClick={() => { window.location.href = "/VisionMission" }}
+						className="VisionMission_Link"
+					>
+						{t("home_savoir_plus")}
+					</Link>
+				</div> */}
+
 			</div>
 		</div>
 	)

@@ -14,7 +14,7 @@ function LandingPage() {
 		<div className="Landing_container">
 			<Header />
 			<Intro />
-			<Slogan />
+			{/* <Slogan /> */}
 			<VisionMission />
 			<AboutSection />
 			<ActualiteSection />

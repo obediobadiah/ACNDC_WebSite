@@ -2,20 +2,20 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Lato', 'PT Sans', sans-serif;
+	font-family: 'Raleway', 'PT Sans', sans-serif;
 }
 
 .VisionMission_Intro{
-	margin-top: 70px;
+	margin-top: 0 !important;
 }
 
 .VisionMission_Intro h1{
-	background-color: #ccffe3;
+	background-color: #286f4e;
 	font-weight: bold;
-	color: #286f4e;
+	color: #ffffff;
 	text-align: center;
 	font-size: 3.5rem;
-	padding: 150px 150px 150px 150px;
+	padding: 200px 150px 150px 150px;
 }
 
 .VisionMission_textes_box{

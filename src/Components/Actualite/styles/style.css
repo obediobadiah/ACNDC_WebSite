@@ -6,17 +6,17 @@
 }
 
 .Actualite_Intro{
-	margin-top: 70px;
+	margin-top: 0 !important;
 }
 
 .Actualite_Intro h1{
-	font-family: 'Lato', 'PT Sans', sans-serif;
+	font-family: 'Raleway', 'PT Sans', sans-serif;
 	background-color: #286f4e;
 	color: white;
 	text-align: center;
 	font-weight: bold;
 	font-size: 3.5rem;
-	padding: 150px 150px 150px 150px;
+	padding: 200px 150px 150px 150px;
 }
 
 
@@ -43,9 +43,15 @@
 }
 
 .Actualite_comp_exp .Actualite_boxes .Actualite_box{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	margin: 30px 0 0 0;
-	position: relative
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    margin: 30px 0 0 0;
+    position: relative;
+    background-image: linear-gradient(rgba(186, 171, 0, 0.5), rgba(186, 171, 0, 0.5)), url('../assets/1671217015713.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
 }
 
 
@@ -179,9 +185,10 @@
 
 
 .Act_details_Intro{
-	margin-top: 70px;
-	/* display: flex; */
-	background-color: #ccffe3;
+	margin-top: 0 !important;
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .Act_details_Intro_Img{
@@ -195,7 +202,7 @@
 }
 
 .Act_details_contents{
-	padding: 0 300px;
+	padding: 0;
 }
 
 
@@ -205,7 +212,7 @@
 }
 
 .Act_details_contents .Act_details_comp .Act_details_comp_exp{
-	padding: 20px 0;
+	padding: 20px 300px;
 }
 
 .Act_details_contents .Act_details_comp .Act_details_comp_exp p img{
@@ -215,12 +222,13 @@
 }
 
 .Act_details_Intro h1{
-	font-family: 'Lato', 'PT Sans', sans-serif;
-	color: #286f4e;
+	font-family: 'Raleway', 'PT Sans', sans-serif;
+	color: #ffffff;
 	text-align: center;
 	font-weight: bold;
-	font-size: 2rem;
-	padding: 150px 150px 150px 150px;
+	font-size: 3.2rem;
+	padding: 250px 150px 150px 150px;
+	text-transform: uppercase;
 }
 
 /* 
@@ -233,8 +241,8 @@
 
 
 	.Act_details_Intro h1{
-		font-family: 'Lato', 'PT Sans', sans-serif;
-		background-color: #ccffe3;
+		font-family: 'Raleway', 'PT Sans', sans-serif;
+		background-color: #286f4e;
 		color: #286f4e;
 		text-align: center;
 		font-weight: bold;
@@ -250,7 +258,7 @@
 
 
 .act_follow{
-	background-color: #ccffe3;
+	background-color: #d0ffe9;
 	font-weight: bold;
 	font-size: 3.5rem;
 	padding: 50px 50px 50px 50px;
@@ -309,36 +317,32 @@
 
 
 @media screen and (min-width: 992px) and (max-width: 1400px){
-
-	.Act_details_contents{
-		padding: 0 200px;
-	}
-
-
 	.Act_details_Intro h1{
-		font-family: 'Lato', 'PT Sans', sans-serif;
-		background-color: #ccffe3;
-		color: #286f4e;
+		font-family: 'Raleway', 'PT Sans', sans-serif;
+		color: #ffffff;
 		text-align: center;
 		font-weight: bold;
 		font-size: 2rem;
-		padding: 150px 50px 150px 50px;
+		padding: 250px 50px 150px 50px;
 	}
 
 	.act_follow{
-		background-color: #ccffe3;
+		background-color: #d0ffe9;
 		font-weight: bold;
 		font-size: 3.5rem;
 		padding: 50px 50px 50px 50px;
 		margin: 50px 50px 50px 50px;
 	}
 
+	.Act_details_contents .Act_details_comp .Act_details_comp_exp {
+		padding: 20px 200px;
+	}
 
 }
 
 
 
-@media screen and (max-width: 992px) {
+@media screen  and (max-width: 992px) {
 	
 
 	.Actualite_Intro h1{
@@ -396,26 +400,26 @@
 		text-align: justify;
 	}
 
-	.Act_details_contents{
-		padding: 0 20px;
-	}	
-
 	.Act_details_Intro h1{
-		font-family: 'Lato', 'PT Sans', sans-serif;
-		background-color: #ccffe3;
-		color: #286f4e;
+		font-family: 'Raleway', 'PT Sans', sans-serif;
+		color: #ffffff;
 		text-align: center;
 		font-weight: bold;
 		font-size: 2rem;
-		padding: 150px 50px 150px 50px;
+		padding: 250px 20px 150px 20px;
 	}
 
 	.act_follow{
-		background-color: #ccffe3;
+		background-color: #d0ffe9;
 		font-weight: bold;
 		font-size: 3.5rem;
 		padding: 20px 20px 20px 20px;
 		margin: 20px 20px 20px 20px;
+	}
+
+
+	.Act_details_contents .Act_details_comp .Act_details_comp_exp {
+		padding: 20px 50px;
 	}
 
 }
