@@ -151,6 +151,10 @@
 	justify-content: center;
 }
 
+.zone_dropdown_content .zone_textes p{
+	color: #333;
+}
+
 .content_chevron {
 	text-align: center;
 	margin-bottom: 15px;
