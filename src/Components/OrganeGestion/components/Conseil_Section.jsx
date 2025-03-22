@@ -74,6 +74,42 @@ function Conseil_Section() {
 								</div>						
 							</div>
 
+
+							
+							<div className="OrganeGestion_Exp">
+								{/* <div className="OrganeGestion_Img">
+									<img src={OrganeGestionImgs} alt="" />
+								</div> */}
+								<div className="OrganeGestion_Function">
+									{/* <h3>Crispine Ngena</h3> */}
+									<p>{t("organe_conseil_conseil")}</p>
+								</div>						
+							</div>
+
+
+							
+							<div className="OrganeGestion_Exp">
+								{/* <div className="OrganeGestion_Img">
+									<img src={OrganeGestionImgs} alt="" />
+								</div> */}
+								<div className="OrganeGestion_Function">
+									{/* <h3>Crispine Ngena</h3> */}
+									<p>{t("organe_conseil_conseil")}</p>
+								</div>						
+							</div>
+
+
+							
+							<div className="OrganeGestion_Exp">
+								{/* <div className="OrganeGestion_Img">
+									<img src={OrganeGestionImgs} alt="" />
+								</div> */}
+								<div className="OrganeGestion_Function">
+									{/* <h3>Crispine Ngena</h3> */}
+									<p>{t("organe_conseil_conseil")}</p>
+								</div>						
+							</div>
+
 						</div>
 					</div>
 					

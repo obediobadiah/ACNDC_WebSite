@@ -5,45 +5,184 @@
 	font-family: 'Raleway', 'PT Sans', sans-serif;
 }
 
-.commissions_Intro {
-	margin-top: 0 !important;
-}
-
-.commissions_Intro h1 {
+/* Commission intro section */
+.commissions_intro {
 	background-color: #286f4e;
-	color: #ffffff;
-	font-weight: bold;
+	background-image: linear-gradient(135deg, #286f4e 0%, #1a4b34 100%);
 	text-align: center;
-	font-size: 3.5rem;
-	padding: 200px 150px 150px 150px;
+	padding: 150px 0 100px;
+	position: relative;
+	overflow: hidden;
 }
 
-.commissions_textes {
-	color: #286f4e;
-	margin: 50px 300px 50px 300px;
-}
 
-.commissions_textes h1 {
+.commissions_intro h1 {
 	font-weight: bold;
-	color: #286f4e;
-	font-size: 1.2rem;
-	border: 2px solid #286f4e;
-	text-transform: uppercase;
-	padding: 20px 20px 20px 20px;
-	box-shadow: 0px 1px 2px 2px #888888;
-	border-radius: 10px;
+	font-size: 3.5rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	color: #ffffff;
+	/* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
 }
 
+/* Commission description */
+.commissions_description {
+	color: #333;
+	max-width: 900px;
+	margin: 60px auto 40px;
+	text-align: center;
+	padding: 0 30px;
+	position: relative;
+	background-color: #fff;
+}
 
+.commissions_description p {
+	font-size: 1.2rem;
+	line-height: 1.6;
+	background-color: #fff;
+}
+
+/* Commission grid layout */
+.commissions_grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto auto;
+	gap: 20px;
+	max-width: 900px;
+	margin: 0 auto 60px;
+	padding: 20px 20px;
+	background-color: #fff;
+}
+
+/* Position cards 4 and 5 in the second row, centered */
+.commission_card:nth-child(4) {
+	grid-column: 1 / 2;
+	grid-row: 2;
+}
+
+.commission_card:nth-child(5) {
+	grid-column: 2 / 3;
+	grid-row: 2;
+}
+
+/* Commission card styling */
+.commission_card {
+	background-color: #fff;
+	border-radius: 30px;
+	box-shadow: none;
+	padding: 25px 20px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid #bebebe;
+	margin-bottom: 10px;
+}
+
+.commission_card:hover {
+	transform: none;
+	box-shadow: none;
+	border-color: #777777;
+}
+
+.commission_icon {
+	font-size: 2.5rem;
+	color: #777777;
+	margin-bottom: 20px;
+	transition: none;
+}
+
+.commission_card:hover .commission_icon {
+	transform: none;
+}
+
+.commission_card p {
+	color: #777777;
+	font-size: 1rem;
+	margin-bottom: 15px;
+	line-height: 1.5;
+	transition: none;
+}
+
+.commission_card:hover h2 {
+	color: #777777;
+}
+
+.commission_overlay {
+	display: none;
+}
+
+.commission_card:hover .commission_overlay {
+	display: none;
+}
+
+/* Additional decoration */
+.commissions_contents {
+	background-color: #ffff;}
+
+/* Responsive design */
 @media screen and (max-width: 992px) {
-
-	.commissions_Intro h1 {
+	.commissions_intro h1 {
 		font-size: 2.5rem;
-		padding: 150px 10px 150px 10px;
+		padding: 0 20px;
 	}
+	
+	.commissions_grid {
+		grid-template-columns: 1fr 1fr;
+		max-width: 600px;
+	}
+	
+	/* Reposition cards for 2-column layout */
+	.commission_card:nth-child(1) {
+		grid-column: 1 / 2;
+		grid-row: 1;
+	}
+	
+	.commission_card:nth-child(2) {
+		grid-column: 2 / 3;
+		grid-row: 1;
+	}
+	
+	.commission_card:nth-child(3) {
+		grid-column: 1 / 2;
+		grid-row: 2;
+	}
+	
+	.commission_card:nth-child(4) {
+		grid-column: 2 / 3;
+		grid-row: 2;
+	}
+	
+	.commission_card:nth-child(5) {
+		grid-column: 1 / 3;
+		grid-row: 3;
+	}
+}
 
-	.commissions_textes {
-		color: #286f4e;
-		margin: 50px 20px 50px 20px;
+@media screen and (max-width: 576px) {
+	.commissions_intro {
+		padding: 100px 0 70px;
+	}
+	
+	.commissions_intro h1 {
+		font-size: 2rem;
+	}
+	
+	.commissions_description p {
+		font-size: 1rem;
+	}
+	
+	.commissions_grid {
+		grid-template-columns: 1fr;
+	}
+	
+	/* Reposition cards for 1-column layout */
+	.commission_card:nth-child(n) {
+		grid-column: 1;
+		grid-row: auto;
 	}
 }

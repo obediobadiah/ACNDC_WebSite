@@ -69,7 +69,7 @@ function Coordination_Section() {
 								</div> */}
 								<div className="OrganeGestion_Function">
 									{/* <h3>Crispine Ngena</h3> */}
-									<p>{t("organe_coord_partenariat")}</p>
+									<p>{t("organe_coord_programme")}</p>
 								</div>						
 							</div>
 
