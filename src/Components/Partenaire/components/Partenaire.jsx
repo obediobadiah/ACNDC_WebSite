@@ -53,7 +53,7 @@ function Partenaire() {
 						<div className="Partenaire_Exp">
 							<h1>{t("partenaire_reseau_h")}</h1>
 							<p>{t("partenaire_reseau_p")}</p>
-							<div className="Partenaire_Exp_Img">
+							<div className="Partenaire_Exp_Img" style={{ marginBottom: '150px' }}>
 								<div><img src={Reaseau1Img} alt="" /></div>
 								<div>
 									<img src={Reaseau2Img} alt="" />
