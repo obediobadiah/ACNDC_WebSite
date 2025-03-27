@@ -24,36 +24,64 @@ function Resultats() {
 
 					<div className="Resultats_Boxes">
 						<div className="Resultats_Box">
-							<div className="Resulats_Header">
+							<div className="Resulats_Title">
 								<h2>{t("resultat_justice_h")}</h2>
 							</div>
-							<div className="Resulats_body">
+							<div className="Resulats_Description">
 								<p>{t("resultat_justice_p")}</p>
 							</div>
 						</div>
 
-
 						<div className="Resultats_Box">
-							<div className="Resulats_Header">
+							<div className="Resulats_Title">
 								<h2>{t("resultat_egalite_h")}</h2>
 							</div>
-							<div className="Resulats_body">
+							<div className="Resulats_Description">
 								<p>{t("resultat_egalite_p")}</p>
 							</div>
 						</div>
 
-
-
 						<div className="Resultats_Box">
-							<div className="Resulats_Header">
+							<div className="Resulats_Title">
 								<h2>{t("resultat_securite_h")}</h2>
 							</div>
-							<div className="Resulats_body">
+							<div className="Resulats_Description">
 								<p>{t("resultat_securite_p")}</p>
 							</div>
 						</div>
 
+						<div className="Resultats_Box">
+							<div className="Resulats_Title">
+								<h2>{t("resultat_croissance_h")}</h2>
+							</div>
+							<div className="Resulats_Description">
+								<p>{t("resultat_croissance_p1")}</p>
+								<p>{t("resultat_croissance_p2")}</p>
+								<p>{t("resultat_croissance_p3")}</p>
+							</div>
+						</div>
 
+						<div className="Resultats_Box">
+							<div className="Resulats_Title">
+								<h2>{t("resultat_gouvernance_h")}</h2>
+							</div>
+							<div className="Resulats_Description">
+								<p>{t("resultat_gouvernance_p")}</p>
+							</div>
+						</div>
+
+						<div className="Resultats_Box">
+							<div className="Resulats_Title">
+								<h2>{t("resultat_crise_h")}</h2>
+							</div>
+							<div className="Resulats_Description">
+								<p>{t("resultat_crise_p1")}</p>
+								<p>{t("resultat_crise_p2")}</p>
+								<p>{t("resultat_crise_p3")}</p>
+								<p>{t("resultat_crise_p4")}</p>
+								<p>{t("resultat_crise_p5")}</p>
+							</div>
+						</div>
 					</div>
 
 					<div className="Resultats_Quote">

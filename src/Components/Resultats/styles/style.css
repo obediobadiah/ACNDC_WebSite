@@ -43,38 +43,74 @@
 } */
 
 .Resultats_Boxes{
-	display: grid;
-	justify-content: center;
-	align-items: center;
-	padding-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding: 80px 120px;
+	max-width: 1400px;
+	margin: 0 auto;
 }
 
 .Resultats_Boxes .Resultats_Box{
-	width: 500px;
-	height: auto;
-	margin: 80px 0 0 0;
-	border: 2px solid hsl(0, 0%, 16%);
+	display: flex;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	transition: transform 0.3s ease;
 }
 
-.Resultats_Boxes .Resultats_Box .Resulats_Header{
+.Resultats_Boxes .Resultats_Box:hover {
+	transform: translateY(-5px);
+}
+
+.Resultats_Boxes .Resultats_Box .Resulats_Title{
+	width: 35%;
 	background-color: #03213c;
 	color: white;
-	padding: 20px;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	position: relative;
 }
-.Resultats_Boxes .Resultats_Box .Resulats_Header h2{
+
+.Resultats_Boxes .Resultats_Box .Resulats_Title::after {
+	content: '';
+	position: absolute;
+	right: -15px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-style: solid;
+	border-width: 15px 0 15px 15px;
+	border-color: transparent transparent transparent #03213c;
+}
+
+.Resultats_Boxes .Resultats_Box .Resulats_Title h2{
 	color: white;
-	margin-top: 10px;
 	font-weight: bold;
+	font-size: 1.6rem;
+	margin: 0;
+	line-height: 1.3;
+	word-wrap: break-word;
+	hyphens: auto;
 }
 
-.Resultats_Boxes .Resultats_Box .Resulats_Header p{
-	color: white;
-	margin-top: 10px;
+.Resultats_Boxes .Resultats_Box .Resulats_Description{
+	width: 65%;
+	padding: 30px 40px;
+	background-color: #f9f9f9;
 }
 
-.Resultats_Boxes .Resultats_Box .Resulats_body{
-	color: white;
-	padding: 20px;
+.Resultats_Boxes .Resultats_Box .Resulats_Description p{
+	color: #333;
+	line-height: 1.6;
+	margin: 0 0 15px 0;
+	font-size: 1rem;
+}
+
+.Resultats_Boxes .Resultats_Box .Resulats_Description p:last-child {
+	margin-bottom: 0;
 }
 
 .Resultats_Quote{
@@ -85,6 +121,7 @@
 .Resultats_Quote img{
 	width: 50%;
 	height: auto;
+	object-fit: cover;
 }
 
 .Resultats_Quote h1{
@@ -123,30 +160,40 @@
 		font-size: 0.8rem;
 	}
 
-	.Resultats_Boxes .Resultats_Box{
-		width: 100%;
-		height: auto;
-		border: 2px solid hsl(0, 0%, 16%);
-	}
-
 	.Resultats_Boxes{
-		display: grid;
-		justify-content: center;
-		align-items: center;
-		padding: 0 10px 80px 10px;
+		padding: 40px 20px;
+		gap: 30px;
 	}
 
-	
-	.Resultats_Boxes .Resultats_Box .Resulats_Header p{
-		font-size: 0.8rem;
+	.Resultats_Boxes .Resultats_Box{
+		flex-direction: column;
+		width: 100%;
 	}
 
-	
-	.Resultats_Boxes .Resultats_Box .Resulats_body p{
+	.Resultats_Boxes .Resultats_Box .Resulats_Title{
+		width: 100%;
+		padding: 20px;
+	}
+
+	.Resultats_Boxes .Resultats_Box .Resulats_Title::after {
+		display: none;
+	}
+
+	.Resultats_Boxes .Resultats_Box .Resulats_Title h2{
+		font-size: 1.4rem;
+		text-align: center;
+		width: 100%;
+	}
+
+	.Resultats_Boxes .Resultats_Box .Resulats_Description{
+		width: 100%;
+		padding: 20px;
+	}
+
+	.Resultats_Boxes .Resultats_Box .Resulats_Description p{
 		font-size: 0.9rem;
 	}
 
-	
 	.Resultats_Quote{
 		display: grid;
 	}
@@ -167,7 +214,24 @@
 	}
 }
 
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+	.Resultats_Boxes {
+		padding: 60px 80px;
+	}
 
+	.Resultats_Boxes .Resultats_Box .Resulats_Title {
+		width: 38%;
+	}
+	
+	.Resultats_Boxes .Resultats_Box .Resulats_Description {
+		width: 62%;
+	}
+
+	.Resultats_Boxes .Resultats_Box .Resulats_Title h2 {
+		font-size: 1.4rem;
+		line-height: 1.2;
+	}
+}
 
 @media screen and (max-width: 1298px) and (min-width: 992px) {
 	

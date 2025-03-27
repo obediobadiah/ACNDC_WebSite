@@ -1,15 +1,15 @@
-*{
+* {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	font-family: 'Raleway', 'PT Sans', sans-serif;
 }
 
-.Partenaire_Intro{
+.Partenaire_Intro {
 	margin-top: 0 !important;
 }
 
-.Partenaire_Quote{
+.Partenaire_Quote {
 	display: flex;
 	width: 100%;
 	background-color: #286f4e;
@@ -17,14 +17,14 @@
 	justify-content: space-between;
 }
 
-.Partenaire_Quote img{
+.Partenaire_Quote img {
 	width: 50%;
 	object-fit: fill;
 	height: auto;
 	opacity: 0.5;
 }
 
-.Partenaire_Quote h1{
+.Partenaire_Quote h1 {
 	font-weight: bold;
 	color: white;
 	display: grid;
@@ -34,59 +34,62 @@
 	align-items: center;
 	width: 100%;
 }
-.Partenaire_Comp{
+
+.Partenaire_Comp {
 	display: grid;
 	justify-content: center;
 	align-items: center;
 }
 
-.Partenaire_Comp .Partenaire_Exp{
+.Partenaire_Comp .Partenaire_Exp {
 	color: #286f4e;
 }
 
-.Partenaire_Comp .Partenaire_Exp h1{ 
+.Partenaire_Comp .Partenaire_Exp h1 {
 	text-align: center;
 	font-weight: bold;
 	color: #286f4e;
 	margin-top: 50px;
 }
 
-.Partenaire_Comp .Partenaire_Exp p{ 
+.Partenaire_Comp .Partenaire_Exp p {
 	text-align: center;
-	width: 800px;
+	/* width: 800px; */
 	height: auto;
 	margin-top: 50px;
+	padding: 0 500px 0 500px;
 }
 
-.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img{ 
+.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	gap: 60px;
 }
 
-.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img h2{ 
-	text-align: center; 
+.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img h2 {
+	text-align: center;
 	font-weight: bold;
 	font-size: 0.7rem;
 	text-transform: uppercase;
 }
 
-.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img div{ 
+.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img div {
 	display: grid;
 	justify-content: space-around;
 	align-items: center;
 }
 
-.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img img{ 
-	width: 150px;
+.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img img {
+	width: auto;
 	height: 100px;
 	display: grid;
 	justify-content: center;
 	align-items: center;
 }
 
-.NewsLetter_Comp{
+.NewsLetter_Comp {
 	background-color: #286f4e;
 	padding: 70px 0 70px 0;
 }
@@ -94,13 +97,13 @@
 
 
 @media screen and (max-width: 992px) {
-	.Partenaire_Quote{
+	.Partenaire_Quote {
 		display: grid;
 		width: 100%;
 		justify-content: space-between;
 	}
 
-	.Partenaire_Quote h1{
+	.Partenaire_Quote h1 {
 		background-color: #286f4e;
 		color: white;
 		display: grid;
@@ -111,18 +114,18 @@
 		width: 100%;
 	}
 
-	
-	.Partenaire_Quote img{
+
+	.Partenaire_Quote img {
 		width: 100%;
 		height: auto;
 	}
 
-	.Partenaire_Comp .Partenaire_Exp h1{ 
+	.Partenaire_Comp .Partenaire_Exp h1 {
 		text-align: center;
 		margin-top: 50px;
 	}
 
-	.Partenaire_Comp .Partenaire_Exp p{ 
+	.Partenaire_Comp .Partenaire_Exp p {
 		text-align: center;
 		width: 100%;
 		height: auto;
@@ -130,15 +133,27 @@
 		padding: 20px;
 	}
 
-	
-	.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img{ 
+
+	.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img {
 		display: grid;
 		justify-content: space-around;
 		margin-top: 50px;
 		margin-bottom: 50px;
 	}
-	
-	.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img img{ 
+
+	.Partenaire_Comp .Partenaire_Exp .Partenaire_Exp_Img img {
 		margin-top: 20px;
 	}
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+
+	.Partenaire_Comp .Partenaire_Exp p {
+		text-align: center;
+		height: auto;
+		margin-top: 50px;
+		padding: 0 200px 0 200px;
+	}
+
 }
