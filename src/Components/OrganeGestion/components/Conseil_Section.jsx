@@ -6,7 +6,7 @@ import VicePresidentImg from '../assets/MALINGA MUGANZA vice presidente .jpg'
 import RapporteuseImg from '../assets/Rapporteuse.jpg'
 import ConseillereMitila from '../assets/Mitila Esperance conseillere .jpg'
 import ConseillereEsther from '../assets/Esther Furaha conseillere.jpg'
-import DefaultImg from '../assets/IMG-20210701-WA0030 - Copy.jpg'
+import PersonPlaceholder from '../assets/svg/person-placeholder.svg'
 
 function Conseil_Section() {
 
@@ -36,7 +36,7 @@ function Conseil_Section() {
 									<img src={VicePresidentImg} alt="Vice Presidente" />
 								</div>
 								<div className="OrganeGestion_Function">
-									<h3>Malinda Muganza</h3>
+									<h3>MALINGA MUGANZA</h3>
 									<p>{t("organe_conseil_vice_president")}</p>
 								</div>						
 							</div>
@@ -44,7 +44,7 @@ function Conseil_Section() {
 							
 							{/* <div className="OrganeGestion_Exp">
 								<div className="OrganeGestion_Img">
-									<img src={DefaultImg} alt="Secrétaire" />
+									<img src={PersonPlaceholder} alt="Secrétaire" />
 								</div>
 								<div className="OrganeGestion_Function">
 									<h3>Cristine Ngena</h3>
@@ -86,26 +86,37 @@ function Conseil_Section() {
 							</div>
 
 							
-							{/* <div className="OrganeGestion_Exp">
+							<div className="OrganeGestion_Exp">
 								<div className="OrganeGestion_Img">
-									<img src={DefaultImg} alt="Conseillere" />
+									<img src={PersonPlaceholder} alt="Conseillere" />
 								</div>
 								<div className="OrganeGestion_Function">
-									<h3>Clémentine Ndolomo</h3>
+									{/* <h3>Clémentine Ndolomo</h3> */}
+									<p>{t("organe_conseil_conseil_tech")}</p>
+								</div>						
+							</div>
+
+
+							<div className="OrganeGestion_Exp">
+								<div className="OrganeGestion_Img">
+									<img src={PersonPlaceholder} alt="Conseillere" />
+								</div>
+								<div className="OrganeGestion_Function">
+									{/* <h3>Clémentine Ndolomo</h3> */}
 									<p>{t("organe_conseil_conseil")}</p>
 								</div>						
-							</div> */}
+							</div>
 
 							
-							{/* <div className="OrganeGestion_Exp">
+							<div className="OrganeGestion_Exp">
 								<div className="OrganeGestion_Img">
-									<img src={DefaultImg} alt="Conseillere" />
+									<img src={PersonPlaceholder} alt="Conseillere" />
 								</div>
 								<div className="OrganeGestion_Function">
-									<h3>Feza Kandeke</h3>
+									{/* <h3>Feza Kandeke</h3> */}
 									<p>{t("organe_conseil_conseil")}</p>
 								</div>						
-							</div> */}
+							</div>
 
 						</div>
 					</div>
