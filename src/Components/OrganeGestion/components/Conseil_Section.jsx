@@ -108,15 +108,14 @@ function Conseil_Section() {
 							</div>
 
 							
-							<div className="OrganeGestion_Exp">
+							{/* <div className="OrganeGestion_Exp">
 								<div className="OrganeGestion_Img">
 									<img src={PersonPlaceholder} alt="Conseillere" />
 								</div>
 								<div className="OrganeGestion_Function">
-									{/* <h3>Feza Kandeke</h3> */}
 									<p>{t("organe_conseil_conseil")}</p>
 								</div>						
-							</div>
+							</div> */}
 
 						</div>
 					</div>
