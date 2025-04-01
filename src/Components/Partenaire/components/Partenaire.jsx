@@ -12,6 +12,7 @@ import Reaseau1Img from '../assets/Engage.png'
 import Reaseau2Img from '../assets/Voice.png'
 import Reaseau3Img from '../assets/IMG_8068.jpg'
 import Reaseau4Img from '../assets/REJEFEMAC MOUVEMENT_n.jpg'
+import Reaseau5Img from '../assets/PHOTO-2025-03-31-22-45-46.jpg'
 import NewsLetter from '../../NewsLetter/components/NewsLetter_Page'
 import { useTranslation } from 'react-i18next'
 
@@ -61,6 +62,7 @@ function Partenaire() {
 								</div>
 								<div><img src={Reaseau4Img} alt="" /></div>
 								<div><img src={Reaseau3Img} alt="" /></div>
+								<div><img src={Reaseau5Img} alt="" /></div>
 							</div>
 						</div>
 					</div>
