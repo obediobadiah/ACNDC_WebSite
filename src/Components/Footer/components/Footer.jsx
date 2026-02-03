@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next'
 function Footer() {
 
 	const { t } = useTranslation();
+	const currentYear = new Date().getFullYear();
 
 	return (
 		<div className="footer_container">
@@ -85,7 +86,7 @@ function Footer() {
 
 				</div>
 				<div className="alright">
-					<h3>© 2025 Action Pour La Conservation de la Nature et Development Communautaire, All Rights Reserved</h3>
+					<h3>© {currentYear} Action Pour La Conservation de la Nature et Development Communautaire, All Rights Reserved</h3>
 
 					<div className="address_link_icons">
 						<a href="https://web.facebook.com/acndc.org" className="address_link_icon">

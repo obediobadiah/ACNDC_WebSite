@@ -288,6 +288,180 @@
 	/* border-radius: 10px; */
 }
 
+/* New About Video Section Styles */
+.about_video_container {
+	width: 100%;
+	background: linear-gradient(to right, rgb(49, 49, 49) 0%, rgba(49, 49, 49) 40%, rgba(49, 49, 49, 0.869) 100%),
+	            url('../assets/IMG-20210701-WA0042.jpg') right/cover no-repeat;
+	padding: 100px 0;
+	position: relative;
+	/* filter: grayscale(100%); */
+}
+
+.about_video_content {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	gap: 60px;
+	align-items: center;
+	position: relative;
+}
+
+.about_video_left {
+	flex: 0 0 40%;
+}
+
+.about_video_img {
+	position: relative;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.about_video_img img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 15px;
+}
+
+.about_video_right {
+	flex: 0 0 50%;
+	color: white;
+}
+
+.about_video_label {
+	font-size: 0.9rem;
+	color: #3bc487;
+	font-weight: 600;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.about_video_title h2 {
+	font-size: 2.5rem;
+	font-weight: 800;
+	line-height: 1.2;
+	margin-bottom: 20px;
+	color: #ffffff;
+}
+
+.about_video_description p {
+	font-size: 1rem;
+	color: #cccccc;
+	line-height: 1.8;
+	margin-bottom: 30px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1200px) {
+	.about_video_content {
+		gap: 40px;
+	}
+
+	.about_video_left {
+		flex: 0 0 45%;
+	}
+
+	.about_video_right {
+		flex: 0 0 45%;
+	}
+
+	.about_video_title h2 {
+		font-size: 2rem;
+	}
+
+	.about_video_description p {
+		font-size: 0.95rem;
+	}
+}
+
+@media (max-width: 992px) {
+	.about_video_container {
+		padding: 60px 0;
+	}
+
+	.about_video_content {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.about_video_left {
+		flex: 0 0 100%;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.about_video_right {
+		flex: 0 0 100%;
+	}
+
+	.about_video_title h2 {
+		font-size: 1.8rem;
+	}
+
+	.about_video_description p {
+		font-size: 0.9rem;
+	}
+
+	.about_video_controls {
+		position: static;
+		transform: none;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.about_video_container {
+		padding: 50px 0;
+	}
+
+	.about_video_content {
+		padding: 0 15px;
+	}
+
+	.about_video_title h2 {
+		font-size: 1.5rem;
+	}
+
+	.about_video_description p {
+		font-size: 0.85rem;
+		line-height: 1.6;
+	}
+}
+
+@media (max-width: 600px) {
+	.about_video_container {
+		padding: 40px 0;
+	}
+
+	.about_video_label {
+		font-size: 0.8rem;
+	}
+
+	.about_video_title h2 {
+		font-size: 1.3rem;
+	}
+
+	.about_video_description p {
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 400px) {
+	.about_video_title h2 {
+		font-size: 1.1rem;
+	}
+
+	.about_video_description p {
+		font-size: 0.75rem;
+	}
+}
+
 .AboutButton:hover {
 	background-color: #eeeeee;
 	color: #113f26;
@@ -577,7 +751,7 @@
 	align-items: center;
 	justify-content: center; */
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 20px;
 	padding: 0 150px;
 	padding-bottom: 50px;
@@ -585,7 +759,7 @@
 
 .video_details .home_video_slider_cards video {
 	width: 100%;
-	height: auto;
+	height: 300px;
 	margin-bottom: 50px;
 }
 
@@ -890,7 +1064,7 @@
 /* Partners Carousel Styles */
 .partners_carousel_container {
 	width: 100%;
-	background: #f8f8f8;
+	background: #ffffff;
 	padding: 80px 0;
 }
 
@@ -923,7 +1097,7 @@
 	background: white;
 	border-radius: 10px;
 	padding: 40px 20px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	/* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
 	display: flex;
 	align-items: center;
 	gap: 20px;
@@ -968,6 +1142,7 @@
 
 .partners_carousel_btn {
 	color: rgb(173, 173, 173);
+	background-color: none;
 	border: none;
 	width: 50px;
 	height: 50px;
@@ -982,9 +1157,9 @@
 }
 
 .partners_carousel_btn:hover {
-	background: rgb(200, 200, 200);
+	background: rgb(233, 233, 233);
 	transform: scale(1.1);
-	box-shadow: 0 4px 12px rgba(40, 111, 78, 0.3);
+	/* box-shadow: 0 4px 12px rgba(40, 111, 78, 0.3); */
 }
 
 .partners_carousel_btn:active {
