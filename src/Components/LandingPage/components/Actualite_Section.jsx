@@ -43,7 +43,7 @@ function Actualite_Section() {
 
 
 
-						{data.slice(-8).map((item) => (
+						{data.slice(-4).map((item) => (
 
 							<div className="Actualite_box" style={{ backgroundImage: `linear-gradient(rgba(186, 171, 0, 0.5), rgba(186, 171, 0, 0.5)), url(data:image/jpeg;base64,${item.image}`, }}>
 								{/* <div className="Actualite_box_Img">

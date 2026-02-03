@@ -2,14 +2,12 @@ import '../styles/style.css'
 import Video_1 from '../assets/Video_1.mp4'
 import Video_2 from '../assets/Video_2.mp4'
 import Video_3 from '../assets/Video_3.mp4'
-import Video_4 from '../assets/Video_4.mp4'
-import Video_5 from '../assets/Video_5.mp4'
-import Video_6 from '../assets/Video_6.mp4'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import 'antd/dist/antd.css';
 
 
-function Actualite_Section() {
+function Video_Section() {
 
     const { t } = useTranslation();
 
@@ -30,15 +28,11 @@ function Actualite_Section() {
                         <video controls>
                             <source src={Video_3} type="video/mp4" />
                         </video>
-                        <video controls>
-                            <source src={Video_4} type="video/mp4" />
-                        </video>
-                        <video controls>
-                            <source src={Video_5} type="video/mp4" />
-                        </video>
-                        <video controls>
-                            <source src={Video_6} type="video/mp4" />
-                        </video>
+                    </div>
+                    <div className="video_view_more_section">
+                        <Link to="/Testimony" className="video_view_more_btn">
+                            {t("video_view_more")}
+                        </Link>
                     </div>
                 </div>
             </div >
@@ -46,4 +40,4 @@ function Actualite_Section() {
     )
 }
 
-export default Actualite_Section
+export default Video_Section

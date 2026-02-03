@@ -1,0 +1,151 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', 'PT Sans', sans-serif;
+}
+
+.testimony_container {
+	width: 100%;
+	background-color: #f9f9f9;
+}
+
+.testimony_contents {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 60px 40px;
+}
+
+.testimony_intro {
+	text-align: center;
+	margin-bottom: 80px;
+	padding: 40px 0;
+}
+
+.testimony_intro h1 {
+	font-size: 3.5rem;
+	font-weight: 900;
+	color: #286f4e;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.testimony_intro p {
+	font-size: 1.1rem;
+	color: #666666;
+	line-height: 1.8;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.testimony_details {
+	width: 100%;
+}
+
+.testimony_videos_grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+	gap: 30px;
+	width: 100%;
+}
+
+.testimony_video_item {
+	background-color: white;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+}
+
+.testimony_video_item:hover {
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+	transform: translateY(-5px);
+}
+
+.testimony_video_item video {
+	width: 100%;
+	height: auto;
+	display: block;
+	background-color: #000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+	.testimony_contents {
+		padding: 50px 30px;
+	}
+
+	.testimony_intro h1 {
+		font-size: 2.8rem;
+	}
+
+	.testimony_videos_grid {
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 25px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.testimony_contents {
+		padding: 40px 20px;
+	}
+
+	.testimony_intro {
+		margin-bottom: 50px;
+		padding: 20px 0;
+	}
+
+	.testimony_intro h1 {
+		font-size: 2.2rem;
+		margin-bottom: 15px;
+	}
+
+	.testimony_intro p {
+		font-size: 1rem;
+	}
+
+	.testimony_videos_grid {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.testimony_contents {
+		padding: 30px 15px;
+	}
+
+	.testimony_intro h1 {
+		font-size: 1.8rem;
+		margin-bottom: 10px;
+	}
+
+	.testimony_intro p {
+		font-size: 0.95rem;
+		max-width: 100%;
+	}
+
+	.testimony_videos_grid {
+		grid-template-columns: 1fr;
+		gap: 15px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.testimony_contents {
+		padding: 20px 10px;
+	}
+
+	.testimony_intro h1 {
+		font-size: 1.5rem;
+	}
+
+	.testimony_intro p {
+		font-size: 0.9rem;
+	}
+
+	.testimony_videos_grid {
+		gap: 12px;
+	}
+}
