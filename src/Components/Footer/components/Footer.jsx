@@ -27,7 +27,7 @@ function Footer() {
 						</div>
 						<div className="address_text">
 							<h3>
-								<i className="fas fa-map-marker-alt" /><t />
+								<i className="fas fa-map-marker-alt" />
 								Sud-Kivu: A Kasika (100 km), à Mwenga (130km) et à Kitutu (210 km) sur la route nationale 2, Bukavu-Kasongo
 							</h3>
 						</div>

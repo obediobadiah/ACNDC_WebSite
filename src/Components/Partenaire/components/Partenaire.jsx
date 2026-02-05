@@ -40,7 +40,7 @@ function Partenaire() {
 							<p>{t("partenaire_bailleur_p")}</p>
 							<div className="Partenaire_Exp_Img">
 								<div><img src={Bailleur1Img} alt="" /></div>
-								<div><img src={Bailleur2Img} alt="" /></div>
+								{/* <div><img src={Bailleur2Img} alt="" /></div> */}
 								<div><img src={Bailleur4Img} alt="" /></div>
 								<div><img src={Bailleur5Img} alt="" /></div>
 								<div>

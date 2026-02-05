@@ -190,9 +190,9 @@ function Header() {
 								<Link className="header-links" onClick={() => { window.location.href = "/Actualite" }}> {t("actuality_menu_link")} </Link>
 							</li>
 
-							<li className="header-item">
+							{/* <li className="header-item">
 								<Link className="header-links" onClick={() => { window.location.href = "/Contact" }}> {t("contact_menu_link")} </Link>
-							</li>
+							</li> */}
 						</ul>
 					</div>
 

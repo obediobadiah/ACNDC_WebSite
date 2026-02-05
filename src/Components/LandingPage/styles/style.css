@@ -574,7 +574,7 @@
 .benefit_number {
 	font-size: 6rem;
 	font-weight: 300;
-	color: #c0c0c0;
+	color: #2d6a4fc7;
 	line-height: 1;
 	margin-bottom: 15px;
 }
@@ -754,7 +754,6 @@
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 20px;
 	padding: 0 150px;
-	padding-bottom: 50px;
 }
 
 .video_details .home_video_slider_cards video {
@@ -767,7 +766,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 40px 0;
+	padding-bottom: 100px;
 }
 
 .video_view_more_btn {
@@ -1164,6 +1163,18 @@
 
 .partners_carousel_btn:active {
 	transform: scale(0.95);
+}
+
+.partners_carousel_btn:disabled {
+	background: #d0d0d0;
+	color: #999999;
+	cursor: not-allowed;
+	opacity: 0.5;
+}
+
+.partners_carousel_btn:disabled:hover {
+	transform: none;
+	background: #d0d0d0;
 }
 
 .partners_carousel_btn_prev,

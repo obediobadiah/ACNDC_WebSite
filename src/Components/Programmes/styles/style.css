@@ -24,6 +24,8 @@
 	padding: 200px 150px 150px 150px;
 	background-image: linear-gradient(rgba(186, 99, 0, 0.5),
 	rgba(186, 99, 0, 0.5)), url('../assets/IMG-20210701-WA0060.jpg');
+	position: relative;
+	top: -35px;
 }
 
 .programmes_boxes{

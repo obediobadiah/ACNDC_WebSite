@@ -15,6 +15,8 @@
 	background-color: #286f4e;
 	height: auto;
 	justify-content: space-between;
+	position: relative;
+	top: -35px;
 }
 
 .Partenaire_Quote img {

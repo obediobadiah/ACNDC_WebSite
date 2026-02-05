@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Header from '../../Header/header'
 import Footer from '../../Footer/components/Footer'
@@ -7,14 +7,23 @@ import '../styles/style.css'
 import planKaleheImg from '../assets/000_33EN462.jpg'
 import { useTranslation } from 'react-i18next'
 import report2022Pdf from '../assets/Plan Kalehe - Securite climatique et prevention des catastrophes naturelles.pdf'
+import { Modal } from 'react-bootstrap'
 
 
 function Plans() {
 
 	const { t } = useTranslation();
+	const [showPDF, setShowPDF] = useState(false);
+	const [pdfUrl, setPdfUrl] = useState('');
 
 	const viewPDF = (pdfUrl) => {
-		window.open(pdfUrl, '_blank');
+		setPdfUrl(pdfUrl);
+		setShowPDF(true);
+	  };
+
+	const closePDF = () => {
+		setShowPDF(false);
+		setPdfUrl('');
 	  };
 
 	return (
@@ -84,6 +93,22 @@ function Plans() {
 			</div>
 			<NewsLetter />
 			<Footer />
+
+		{/* PDF Viewer Modal */}
+			<Modal show={showPDF} onHide={closePDF} size="xl" centered dialogClassName="pdf-modal-wide">
+				<Modal.Header closeButton>
+					<Modal.Title>{t("plans_annuel_title_2022")}</Modal.Title>
+				</Modal.Header>
+				<Modal.Body style={{ height: '800px', padding: 0 }}>
+					{pdfUrl && (
+						<iframe
+							src={`${pdfUrl}#toolbar=0`}
+							style={{ width: '100%', height: '100%', border: 'none' }}
+							title="PDF Viewer"
+						></iframe>
+					)}
+				</Modal.Body>
+			</Modal>
 		</div>
 	)
 }

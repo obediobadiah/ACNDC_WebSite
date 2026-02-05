@@ -114,6 +114,7 @@
 	background-color: #286f4e;
 	margin: 0 150px;
 	width: calc(100% - 300px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .header-details.scrolled {
@@ -246,7 +247,7 @@
 	color: #fff;
 	text-decoration: none;
 	font-size: 0.9rem;
-	font-weight: weight;
+	font-weight: bold;
 	transition: all 0.3s ease;
 	display: flex;
 	align-items: center;

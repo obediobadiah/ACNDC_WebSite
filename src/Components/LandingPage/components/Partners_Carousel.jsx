@@ -19,7 +19,7 @@ function Partners_Carousel() {
 
 	const allLogos = [
 		{ id: 1, src: Bailleur1Img, alt: 'Partner 1' },
-		{ id: 2, src: Bailleur2Img, alt: 'Partner 2' },
+		// { id: 2, src: Bailleur2Img, alt: 'Partner 2' },
 		{ id: 3, src: Bailleur3Img, alt: 'Partner 3' },
 		{ id: 4, src: Bailleur4Img, alt: 'Partner 4' },
 		{ id: 5, src: Bailleur5Img, alt: 'Partner 5' },
@@ -31,11 +31,15 @@ function Partners_Carousel() {
 	];
 
 	const handlePrevClick = () => {
-		setScrollPosition(prev => (prev - 1 + allLogos.length) % allLogos.length);
+		if (scrollPosition > 0) {
+			setScrollPosition(prev => prev - 1);
+		}
 	};
 
 	const handleNextClick = () => {
-		setScrollPosition(prev => (prev + 1) % allLogos.length);
+		if (scrollPosition < allLogos.length - 1) {
+			setScrollPosition(prev => prev + 1);
+		}
 	};
 
 	return (
@@ -50,6 +54,7 @@ function Partners_Carousel() {
 					<button 
 						className="partners_carousel_btn partners_carousel_btn_prev"
 						onClick={handlePrevClick}
+						disabled={scrollPosition === 0}
 						aria-label="Previous partners"
 					>
 						<i className="fas fa-chevron-left"></i>
@@ -74,6 +79,7 @@ function Partners_Carousel() {
 					<button 
 						className="partners_carousel_btn partners_carousel_btn_next"
 						onClick={handleNextClick}
+						disabled={scrollPosition === allLogos.length - 1}
 						aria-label="Next partners"
 					>
 						<i className="fas fa-chevron-right"></i>
