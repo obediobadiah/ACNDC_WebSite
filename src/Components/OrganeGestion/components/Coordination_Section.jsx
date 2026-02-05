@@ -11,6 +11,7 @@ import JulBanzaNgoyi from '../assets/Julienne Banza Ngoyi.JPG'
 import MariMuliro from '../assets/Marianna Muliro.JPG'
 import JoseAmina from '../assets/Joséphine Amina.JPG'
 import GayNgendo from '../assets/Gaylord Ngendo.JPG'
+import JustMaombi from '../assets/Justine Maombi.JPG'
 
 function Coordination_Section() {
 
@@ -130,7 +131,19 @@ function Coordination_Section() {
 						<p>{t("organe_coord_conservation_paysage")}</p>
 					</div>
 				</div>
-				
+
+
+
+				<div className="OrganeGestion_Exp">
+					<div className="OrganeGestion_Img">
+						<img src={JustMaombi} alt="Chargé de conservation" />
+					</div>
+					<div className="OrganeGestion_Function">
+						<h3>Justine Maombi</h3>
+						<p>{t("organe_coord_assistante_programme")}</p>
+					</div>
+				</div>
+
 
 
 				<div className="OrganeGestion_Exp">
