@@ -24,6 +24,8 @@ import Actualite from './Components/Actualite/components/Actualite'
 import ActualiteDetails from './Components/Actualite/components/ActualiteDetails'
 import Testimony from './Components/Testimony/components/Testimony'
 import Contact from './Components/Contact/components/Contact'
+import Terms from './Components/Terms/components/Terms'
+import Privacy from './Components/Privacy/components/Privacy'
 import Login from './Components/Admin/Login/components/Login'
 import Dashboard from './Components/Admin/Dashboard/dashboard';
 import ProtectedRoute from '../src/utils/ProtectedRoutes';
@@ -55,6 +57,8 @@ function App() {
         <Route path="/Actualite/:slug" element={<ActualiteDetails />} />
         <Route path="/Testimony" element={<Testimony />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
         <Route path="/Login" element={<Login />} />
 
         <Route element={<ProtectedRoute />}>

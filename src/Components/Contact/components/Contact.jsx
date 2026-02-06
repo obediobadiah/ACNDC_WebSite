@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Footer from '../../Footer/components/Footer';
 import '../styles/style.css';
 import Act_Img1 from '../assets/Logos ACNDC.png';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 
@@ -14,9 +14,12 @@ function Contact() {
     const [selectedPayment, setSelectedPayment] = useState('mobile-money');
     const [donationMode, setDonationMode] = useState(null);
     const [selectedAmount, setSelectedAmount] = useState(null);
-    const [isSubmitting, setIsSubmitting] = useState(false);
-    const [isDonationConfirmed, setIsDonationConfirmed] = useState(false);
     const [selectedPaymentDetail, setSelectedPaymentDetail] = useState(null);
+    const [isDonationConfirmed, setIsDonationConfirmed] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [termsAccepted, setTermsAccepted] = useState(false);
+    const [errors, setErrors] = useState({});
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -67,18 +70,109 @@ function Contact() {
         }
     };
 
+    const validateForm = () => {
+        const newErrors = {};
+        
+        // Validate personal information
+        if (!formData.name.trim()) {
+            newErrors.name = t('validation_name_required');
+        }
+        
+        if (!formData.email.trim()) {
+            newErrors.email = t('validation_email_required');
+        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+            newErrors.email = t('validation_email_invalid');
+        }
+        
+        // Validate donation selection
+        if (!donationMode) {
+            newErrors.donationMode = t('validation_donation_mode_required');
+        }
+        
+        if (!selectedAmount) {
+            newErrors.amount = t('validation_amount_required');
+        }
+        
+        // Validate payment method and details
+        if (!selectedPayment) {
+            newErrors.paymentMethod = t('validation_payment_method_required');
+        }
+        
+        if (!selectedPaymentDetail) {
+            newErrors.paymentDetail = t('validation_payment_detail_required');
+        }
+        
+        // Validate terms acceptance
+        if (!termsAccepted) {
+            newErrors.terms = t('validation_terms_required');
+        }
+        
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
+
+    // Real-time validation to show errors as user interacts
+    const showValidationErrors = () => {
+        const newErrors = {};
+        
+        // Validate personal information
+        if (!formData.name.trim()) {
+            newErrors.name = t('validation_name_required');
+        }
+        
+        if (!formData.email.trim()) {
+            newErrors.email = t('validation_email_required');
+        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+            newErrors.email = t('validation_email_invalid');
+        }
+        
+        // Validate donation selection
+        if (!donationMode) {
+            newErrors.donationMode = t('validation_donation_mode_required');
+        }
+        
+        if (!selectedAmount) {
+            newErrors.amount = t('validation_amount_required');
+        }
+        
+        // Validate payment method and details
+        if (!selectedPayment) {
+            newErrors.paymentMethod = t('validation_payment_method_required');
+        }
+        
+        if (!selectedPaymentDetail) {
+            newErrors.paymentDetail = t('validation_payment_detail_required');
+        }
+        
+        // Validate terms acceptance
+        if (!termsAccepted) {
+            newErrors.terms = t('validation_terms_required');
+        }
+        
+        setErrors(newErrors);
+    };
+
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData(prev => ({
             ...prev,
             [name]: value
         }));
+        
+        // Clear error for this field when user starts typing
+        if (errors[name]) {
+            setErrors(prev => ({
+                ...prev,
+                [name]: ''
+            }));
+        }
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (!donationMode || !selectedAmount || !formData.name || !formData.email) {
-            alert('Please fill in all required fields');
+        
+        // Show validation errors and check if form is valid
+        if (!validateForm()) {
             return;
         }
 
@@ -109,12 +203,19 @@ function Contact() {
             setSelectedPayment('mobile-money');
             setIsDonationConfirmed(false);
             setSelectedPaymentDetail(null);
+            setTermsAccepted(false);
+            setErrors({});
         } catch (error) {
             console.error('Error processing donation:', error);
             alert('There was an error processing your donation. Please try again later.');
         } finally {
             setIsSubmitting(false);
         }
+    };
+
+    // Show errors when user interacts with form
+    const handleFormInteraction = () => {
+        showValidationErrors();
     };
 
     return (
@@ -140,8 +241,10 @@ function Contact() {
                                 placeholder={t('form_name_placeholder')}
                                 value={formData.name}
                                 onChange={handleInputChange}
+                                className={errors.name ? 'error' : ''}
                                 required
                             />
+                            {errors.name && <span className="error_message">{errors.name}</span>}
                         </div>
                         <div className="form_group">
                             <label>{t('form_email_label')} *</label>
@@ -151,8 +254,10 @@ function Contact() {
                                 placeholder={t('form_email_placeholder')}
                                 value={formData.email}
                                 onChange={handleInputChange}
+                                className={errors.email ? 'error' : ''}
                                 required
                             />
+                            {errors.email && <span className="error_message">{errors.email}</span>}
                         </div>
                         <div className="form_row">
                             <div className="form_group">
@@ -260,10 +365,22 @@ function Contact() {
 
                         {/* Terms and Submit */}
                         <div className="terms_section">
-                            <input type="checkbox" id="terms" required />
-                            <label htmlFor="terms">
-                                {t('terms_label')} <a href="/terms" target="_blank" rel="noopener noreferrer">{t('terms_link')}</a> {t('and')} <a href="/privacy" target="_blank" rel="noopener noreferrer">{t('privacy_link')}</a>
+                            <input 
+                                type="checkbox" 
+                                id="terms" 
+                                checked={termsAccepted}
+                                onChange={(e) => {
+                                    setTermsAccepted(e.target.checked);
+                                    if (errors.terms) {
+                                        setErrors(prev => ({ ...prev, terms: '' }));
+                                    }
+                                }}
+                                className={errors.terms ? 'error' : ''}
+                            />
+                            <label htmlFor="terms" className={errors.terms ? 'error' : ''}>
+                                {t('terms_label')} <Link to="/terms" target="_blank" rel="noopener noreferrer">{t('terms_link')}</Link> {t('and')} <Link to="/privacy" target="_blank" rel="noopener noreferrer">{t('privacy_link')}</Link>
                             </label>
+                            {errors.terms && <span className="error_message">{errors.terms}</span>}
                         </div>
 
                     </form>
@@ -404,10 +521,39 @@ function Contact() {
                 
                 {/* Full Width Submit Button */}
                 <div className="full_width_submit_section">
+                    {/* Donation Mode Error */}
+                    {errors.donationMode && (
+                        <div className="error_message_section">
+                            <span className="error_message">{errors.donationMode}</span>
+                        </div>
+                    )}
+                    
+                    {/* Amount Error */}
+                    {errors.amount && (
+                        <div className="error_message_section">
+                            <span className="error_message">{errors.amount}</span>
+                        </div>
+                    )}
+                    
+                    {/* Payment Method Error */}
+                    {errors.paymentMethod && (
+                        <div className="error_message_section">
+                            <span className="error_message">{errors.paymentMethod}</span>
+                        </div>
+                    )}
+                    
+                    {/* Payment Detail Error */}
+                    {errors.paymentDetail && (
+                        <div className="error_message_section">
+                            <span className="error_message">{errors.paymentDetail}</span>
+                        </div>
+                    )}
+                    
                     <button
                         type="submit"
                         className="submit_btn full_width"
-                        disabled={!donationMode || !selectedAmount || isSubmitting}
+                        onMouseEnter={handleFormInteraction}
+                        disabled={isSubmitting}
                     >
                         {isSubmitting ? (
                             <span>{t('submit_processing')}</span>

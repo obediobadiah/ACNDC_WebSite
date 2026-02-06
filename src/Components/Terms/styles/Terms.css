@@ -1,0 +1,124 @@
+.terms_container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+.terms_header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.back_link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #286f4e;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.back_link:hover {
+    color: #1a5a3e;
+}
+
+.terms_title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.terms_subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.terms_content {
+    margin-bottom: 40px;
+}
+
+.terms_section {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #286f4e;
+}
+
+.terms_section h2 {
+    font-size: 1.5rem;
+    color: #286f4e;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.terms_section p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.terms_section ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.terms_section li {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.contact_info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 15px;
+    border: 1px solid #e9ecef;
+}
+
+.contact_info p {
+    margin-bottom: 8px;
+}
+
+.terms_footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-top: 2px solid #286f4e;
+}
+
+.terms_footer p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .terms_container {
+        padding: 20px 15px;
+    }
+    
+    .terms_title {
+        font-size: 2rem;
+    }
+    
+    .terms_section {
+        padding: 20px;
+    }
+    
+    .terms_section h2 {
+        font-size: 1.3rem;
+    }
+}
