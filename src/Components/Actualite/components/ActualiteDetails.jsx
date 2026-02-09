@@ -1,9 +1,10 @@
 import Header from '../../Header/header';
 import Footer from '../../Footer/components/Footer';
-import { useParams } from "react-router-dom";
-import '../styles/style.css';
 import React, { useState, useEffect } from "react";
-import { useTranslation } from 'react-i18next';
+import '../styles/style.css'
+import { useParams } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import API_BASE_URL from '../../../config/api';
 import { CircularProgress } from "@mui/material";
 
 function ActualiteDetails() {
@@ -13,7 +14,7 @@ function ActualiteDetails() {
     const [loading, setLoading] = useState(true);
 
     const fetchActualityData = () => {
-        fetch('https://acndc-backend.vercel.app/api/get-actuality')
+        fetch(`${API_BASE_URL}/get-actuality`)
             .then((response) => response.json())
             .then((data) => {
                 const foundActuality = data.find((item) => item.slug === slug);

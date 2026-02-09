@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Navbar from './navbar'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import '../styles/style.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import logoImg from '../assets/Logos ACNDC.png'
+import API_BASE_URL from '../../../../config/api'
+import Navbar from './navbar'
 import Swal from 'sweetalert2'
 import { Modal } from "react-bootstrap";
 import { useParams } from "react-router-dom";
@@ -67,7 +70,7 @@ function AddActivity({ Toggle }) {
                 formData.append('image', image);
                 formData.append('content', reactQuillvalue);
     
-                fetch('https://acndc-backend.vercel.app/api/add-actuality/', {
+                fetch(`${API_BASE_URL}/add-actuality/`, {
                     method: 'POST',
                     body: formData,
                 })

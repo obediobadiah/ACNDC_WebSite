@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Navbar from './navbar'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import '../styles/style.css'
+import logoImg from '../assets/Logos ACNDC.png'
+import API_BASE_URL from '../../../../config/api'
+import Navbar from "./navbar";
 
 function HomeSide({ Toggle }) {
 
@@ -9,7 +13,7 @@ function HomeSide({ Toggle }) {
 
     // Fetch all data
     const fetchCount = () => {
-        fetch('https://acndc-backend.vercel.app/api/get-actuality-count/')
+        fetch(`${API_BASE_URL}/get-actuality-count/`)
             .then((response) => response.json())
             .then((countData) => {
                 setCountData(countData);
@@ -23,7 +27,7 @@ function HomeSide({ Toggle }) {
 
     // Fetch all data
     const fetchData = () => {
-        fetch('https://acndc-backend.vercel.app/api/get-actuality/')
+        fetch(`${API_BASE_URL}/get-actuality/`)
             .then((response) => response.json())
             .then((data) => {
                 setData(data);

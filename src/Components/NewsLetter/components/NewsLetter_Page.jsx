@@ -1,7 +1,8 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/style.css';
 import { useTranslation } from 'react-i18next';
+import API_BASE_URL from '../../../config/api'
 import Swal from 'sweetalert2'
 
 function NewsLetter_Page() {
@@ -19,7 +20,7 @@ function NewsLetter_Page() {
 	};
   
 	try {
-	  const response = await fetch('https://acndc-backend.vercel.app/api/send-email', {
+	  const response = await fetch(`${API_BASE_URL}/send-email`, {
 		method: 'POST',
 		headers: {
 		  'Content-Type': 'application/json',

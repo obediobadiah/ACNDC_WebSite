@@ -4,7 +4,8 @@ import Act_Img11 from '../assets/1671217015713.jpg'
 import Act_Img12 from '../assets/IMG-20230124-WA0011.jpg'
 import Act_Img13 from '../assets/DSC_9479.jpg'
 import { useTranslation } from 'react-i18next'
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"
+import API_BASE_URL from '../../../config/api'
 
 import 'antd/dist/antd.css';
 
@@ -18,7 +19,7 @@ function Actualite_Section() {
 
 	// Fetch all data
 	const fetchData = () => {
-		fetch('https://acndc-backend.vercel.app/api/get-actuality/')
+		fetch(`${API_BASE_URL}/get-actuality/`)
 			.then((response) => response.json())
 			.then((data) => {
 				setData(data);

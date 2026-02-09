@@ -26,6 +26,10 @@ function sidebar({ handleComponentChange }) {
                     <i className="bi bi-house fs-5 me-3"></i>
                     <span className="fs-6">Home</span>
                 </a>
+                <a href={'/admin-dashboard/donations/'} className="list-group-item list-group-item-action p-3">
+                    <i className="bi bi-heart fs-5 me-3"></i>
+                    <span className="fs-6">Donations</span>
+                </a>
                 <a href={'/admin-dashboard/actuality/'} className="list-group-item list-group-item-action p-3">
                     <i className="bi bi-speedometer2 fs-5 me-3"></i>
                     <span className="fs-6">Activity</span>

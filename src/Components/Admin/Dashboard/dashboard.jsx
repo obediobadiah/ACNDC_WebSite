@@ -5,6 +5,7 @@ import Activity from './components/Activity'
 import Report from './components/Report'
 import AddActivity from './components/AddActivity'
 import UpdateActivity from './components/UpdateActivity'
+import Donations from './components/Donations'
 import './styles/style.css'
 import { useState } from "react";
 import { Routes, BrowserRouter as Router, Route } from 'react-router-dom'
@@ -32,6 +33,7 @@ function Dashboard() {
                 <div className="col vh-100">
                         <Routes>
                             <Route path="/" element={<HomeSide Toggle={Toggle}/>} />
+                            <Route path="/donations/" element={<Donations Toggle={Toggle}/>} />
                             <Route path="/actuality/" element={<Activity Toggle={Toggle}/>} />
                             <Route path="/add-actuality/" element={<AddActivity Toggle={Toggle}/>} />
                             <Route path="/report" element={<Report Toggle={Toggle}/>} />
