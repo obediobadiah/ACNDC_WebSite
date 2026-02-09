@@ -281,152 +281,177 @@ function Contact() {
         <div className="Contact_container">
 
             <div className="checkout_page_container">
-                
-                    <form className="checkout_page_form" onSubmit={handleSubmit}>
 
-                        <div className="checkout_page">
+                <form className="checkout_page_form" onSubmit={handleSubmit}>
 
-                            {/* Left Side - Checkout Form */}
-                            <div className="checkout_form_section">
-                                <Link className="contact-home-link" onClick={() => { window.location.href = "/" }}>
-                                    <i className="fas fa-home"></i>
-                                </Link>
-                                <h1 className="checkout_title">{t('checkout_title')}</h1>
-                                <p className="checkout_subtitle">{t('checkout_subtitle')}</p>
+                    <div className="checkout_page">
 
-                                {/* Personal Information */}
+                        {/* Left Side - Checkout Form */}
+                        <div className="checkout_form_section">
+                            <Link className="contact-home-link" onClick={() => { window.location.href = "/" }}>
+                                <i className="fas fa-home"></i>
+                            </Link>
+                            <h1 className="checkout_title">{t('checkout_title')}</h1>
+                            <p className="checkout_subtitle">{t('checkout_subtitle')}</p>
+
+                            {/* Personal Information */}
+                            <div className="form_group">
+                                <label>{t('form_name_label')} *</label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder={t('form_name_placeholder')}
+                                    value={formData.name}
+                                    onChange={handleInputChange}
+                                    className={errors.name ? 'error' : ''}
+                                    required
+                                />
+                                {errors.name && <span className="error_message">{errors.name}</span>}
+                            </div>
+                            <div className="form_group">
+                                <label>{t('form_email_label')} *</label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder={t('form_email_placeholder')}
+                                    value={formData.email}
+                                    onChange={handleInputChange}
+                                    className={errors.email ? 'error' : ''}
+                                    required
+                                />
+                                {errors.email && <span className="error_message">{errors.email}</span>}
+                            </div>
+                            <div className="form_row">
                                 <div className="form_group">
-                                    <label>{t('form_name_label')} *</label>
+                                    <label>{t('form_country_label')}</label>
                                     <input
                                         type="text"
-                                        name="name"
-                                        placeholder={t('form_name_placeholder')}
-                                        value={formData.name}
+                                        name="country"
+                                        placeholder={t('form_country_placeholder')}
+                                        value={formData.country}
                                         onChange={handleInputChange}
-                                        className={errors.name ? 'error' : ''}
-                                        required
                                     />
-                                    {errors.name && <span className="error_message">{errors.name}</span>}
                                 </div>
                                 <div className="form_group">
-                                    <label>{t('form_email_label')} *</label>
+                                    <label>{t('form_organization_label')}</label>
                                     <input
-                                        type="email"
-                                        name="email"
-                                        placeholder={t('form_email_placeholder')}
-                                        value={formData.email}
+                                        type="text"
+                                        name="organization"
+                                        placeholder={t('form_organization_placeholder')}
+                                        value={formData.organization}
                                         onChange={handleInputChange}
-                                        className={errors.email ? 'error' : ''}
-                                        required
                                     />
-                                    {errors.email && <span className="error_message">{errors.email}</span>}
                                 </div>
-                                <div className="form_row">
-                                    <div className="form_group">
-                                        <label>{t('form_country_label')}</label>
-                                        <input
-                                            type="text"
-                                            name="country"
-                                            placeholder={t('form_country_placeholder')}
-                                            value={formData.country}
-                                            onChange={handleInputChange}
-                                        />
-                                    </div>
-                                    <div className="form_group">
-                                        <label>{t('form_organization_label')}</label>
-                                        <input
-                                            type="text"
-                                            name="organization"
-                                            placeholder={t('form_organization_placeholder')}
-                                            value={formData.organization}
-                                            onChange={handleInputChange}
-                                        />
-                                    </div>
+                            </div>
+
+                            {/* Payment Method Selector */}
+                            <h3 className="section_title">{t('payment_method_title')}</h3>
+                            <div className="payment_methods_selector">
+                                <div
+                                    className={`payment_option ${selectedPayment === 'mobile-money' ? 'active' : ''}`}
+                                    onClick={() => handlePaymentSelect('mobile-money')}
+                                >
+                                    <i className="fas fa-mobile-alt"></i>
+                                    <p>{t('payment_mobile_money')}</p>
+                                </div>
+                                <div
+                                    className={`payment_option ${selectedPayment === 'card' ? 'active' : ''}`}
+                                    onClick={() => handlePaymentSelect('card')}
+                                >
+                                    <i className="fas fa-university"></i>
+                                    <p>{t('payment_bank_transfer')}</p>
                                 </div>
 
-                                {/* Payment Method Selector */}
-                                <h3 className="section_title">{t('payment_method_title')}</h3>
-                                <div className="payment_methods_selector">
-                                    <div
-                                        className={`payment_option ${selectedPayment === 'mobile-money' ? 'active' : ''}`}
-                                        onClick={() => handlePaymentSelect('mobile-money')}
-                                    >
-                                        <i className="fas fa-mobile-alt"></i>
-                                        <p>{t('payment_mobile_money')}</p>
-                                    </div>
-                                    <div
-                                        className={`payment_option ${selectedPayment === 'card' ? 'active' : ''}`}
-                                        onClick={() => handlePaymentSelect('card')}
-                                    >
-                                        <i className="fas fa-university"></i>
-                                        <p>{t('payment_bank_transfer')}</p>
-                                    </div>
-                                </div>
 
-                                {/* Card Payment Form - Removed as we're only showing bank transfer details */}
-
-                                {/* Mobile Money Payment Info */}
-                                {selectedPayment === 'mobile-money' && (
-                                    <div className="payment_info_section">
-                                        <h4>{t('payment_mobile_title')}</h4>
-                                        <p>{t('payment_mobile_instruction')}</p>
-                                        <div className="payment_details">
-                                            {mobileMoneyAccounts.map((account, index) => (
-                                                <div
-                                                    key={index}
-                                                    className={`payment_detail_item ${selectedPaymentDetail?.provider === account.provider ? 'selected' : ''}`}
-                                                    onClick={() => setSelectedPaymentDetail(account)}
-                                                >
-                                                    <div className="payment_provider">{account.provider}</div>
-                                                    <div className="payment_number">{account.number}</div>
-                                                    <div className="payment_name">Name: {account.name}</div>
-                                                    {selectedPaymentDetail?.provider === account.provider && (
-                                                        <div className="selected_indicator">
-                                                            <i className="fas fa-check-circle"></i> {t('payment_selected')}
-                                                        </div>
-                                                    )}
-                                                </div>
-                                            ))}
-                                        </div>
-                                        <p className="payment_note">
-                                            {t('payment_note')}
-                                        </p>
+                                {/* Payment Method Error */}
+                                {errors.paymentMethod && (
+                                    <div className="error_message_section">
+                                        <span className="error_message">{errors.paymentMethod}</span>
                                     </div>
                                 )}
+                            </div>
 
-                                {/* Bank Transfer Info */}
-                                {selectedPayment === 'card' && (
-                                    <div className="payment_info_section">
-                                        <h4>{t('payment_bank_title')}</h4>
-                                        <p>{t('payment_bank_instruction')}</p>
-                                        <div className="payment_details">
-                                            {cardPaymentInfo.map((info, index) => (
-                                                <div
-                                                    key={index}
-                                                    className={`payment_detail_item ${selectedPaymentDetail?.bank === info.bank ? 'selected' : ''}`}
-                                                    onClick={() => setSelectedPaymentDetail(info)}
-                                                >
-                                                    <div className="payment_provider">{info.bank}</div>
-                                                    <div className="payment_number">Account: {info.cardNumber} </div>
-                                                    <div className="payment_expiry">Expiry: {info.expiry}</div>
-                                                    <div className="payment_name">Name: {info.cardHolder}</div>
-                                                    <div className="payment_branch">Branch: {info.branch}</div>
-                                                    {selectedPaymentDetail?.bank === info.bank && (
-                                                        <div className="selected_indicator">
-                                                            <i className="fas fa-check-circle"></i> {t('payment_selected')}
-                                                        </div>
-                                                    )}
-                                                </div>
-                                            ))}
-                                        </div>
-                                        <p className="payment_note">
-                                            {t('payment_note')}
-                                        </p>
+                            {/* Card Payment Form - Removed as we're only showing bank transfer details */}
+
+                            {/* Mobile Money Payment Info */}
+                            {selectedPayment === 'mobile-money' && (
+                                <div className="payment_info_section">
+                                    <h4>{t('payment_mobile_title')}</h4>
+                                    <p>{t('payment_mobile_instruction')}</p>
+                                    <div className="payment_details">
+                                        {mobileMoneyAccounts.map((account, index) => (
+                                            <div
+                                                key={index}
+                                                className={`payment_detail_item ${selectedPaymentDetail?.provider === account.provider ? 'selected' : ''}`}
+                                                onClick={() => setSelectedPaymentDetail(account)}
+                                            >
+                                                <div className="payment_provider">{account.provider}</div>
+                                                <div className="payment_number">{account.number}</div>
+                                                <div className="payment_name">Name: {account.name}</div>
+                                                {selectedPaymentDetail?.provider === account.provider && (
+                                                    <div className="selected_indicator">
+                                                        <i className="fas fa-check-circle"></i> {t('payment_selected')}
+                                                    </div>
+                                                )}
+                                            </div>
+                                        ))}
                                     </div>
-                                )}
 
-                                {/* Terms and Submit */}
-                                <div className="terms_section">
+
+                                    {/* Payment Detail Error */}
+                                    {errors.paymentDetail && (
+                                        <div className="error_message_section">
+                                            <span className="error_message">{errors.paymentDetail}</span>
+                                        </div>
+                                    )}
+                                    <p className="payment_note">
+                                        {t('payment_note')}
+                                    </p>
+                                </div>
+                            )}
+
+                            {/* Bank Transfer Info */}
+                            {selectedPayment === 'card' && (
+                                <div className="payment_info_section">
+                                    <h4>{t('payment_bank_title')}</h4>
+                                    <p>{t('payment_bank_instruction')}</p>
+                                    <div className="payment_details">
+                                        {cardPaymentInfo.map((info, index) => (
+                                            <div
+                                                key={index}
+                                                className={`payment_detail_item ${selectedPaymentDetail?.bank === info.bank ? 'selected' : ''}`}
+                                                onClick={() => setSelectedPaymentDetail(info)}
+                                            >
+                                                <div className="payment_provider">{info.bank}</div>
+                                                <div className="payment_number">Account: {info.cardNumber} </div>
+                                                <div className="payment_expiry">Expiry: {info.expiry}</div>
+                                                <div className="payment_name">Name: {info.cardHolder}</div>
+                                                <div className="payment_branch">Branch: {info.branch}</div>
+                                                {selectedPaymentDetail?.bank === info.bank && (
+                                                    <div className="selected_indicator">
+                                                        <i className="fas fa-check-circle"></i> {t('payment_selected')}
+                                                    </div>
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
+
+
+                                    {/* Payment Detail Error */}
+                                    {errors.paymentDetail && (
+                                        <div className="error_message_section">
+                                            <span className="error_message">{errors.paymentDetail}</span>
+                                        </div>
+                                    )}
+                                    <p className="payment_note">
+                                        {t('payment_note')}
+                                    </p>
+                                </div>
+                            )}
+
+                            {/* Terms and Submit */}
+                            <div className="terms_section">
+                                <div className="terms_section_checkbox">
                                     <input
                                         type="checkbox"
                                         id="terms"
@@ -442,198 +467,202 @@ function Contact() {
                                     <label htmlFor="terms" className={errors.terms ? 'error' : ''}>
                                         {t('terms_label')} <Link to="/terms" target="_blank" rel="noopener noreferrer">{t('terms_link')}</Link> {t('and')} <Link to="/privacy" target="_blank" rel="noopener noreferrer">{t('privacy_link')}</Link>
                                     </label>
-                                    {errors.terms && <span className="error_message">{errors.terms}</span>}
-                                </div>
-                            </div>
-
-
-
-
-
-
-
-
-                            {/* Right Side - Donation Plan */}
-                            <div className="order_summary_section">
-
-                                <div className="logo_section">
-                                    <img src={Act_Img1} alt="ACNDC Logo" className="summary_logo" />
                                 </div>
 
-                                {/* Donation Importance Section */}
-                                <div className="donation_importance_section">
-                                    <div className="importance_content">
-                                        <h2 className="importance_title">{t('donation_importance_title')}</h2>
-                                        <p className="importance_text">
-                                            {t('donation_importance_p1')}
-                                        </p>
-                                        <p className="importance_text">
-                                            {t('donation_importance_p2')}
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="donation_plan_section">
-                                    <h3 className="section_title">{t('donation_plan_title')}</h3>
-
-                                    {/* Donation Mode Buttons */}
-                                    <div className="donation_mode_buttons">
-                                        <button
-                                            className={`mode_btn ${donationMode === 'monthly' ? 'active' : ''}`}
-                                            onClick={() => {
-                                                setDonationMode('monthly');
-                                                setSelectedAmount(null);
-                                            }}
-                                        >
-                                            <i className="fas fa-calendar-alt"></i>
-                                            {t('donation_mode_monthly')}
-                                        </button>
-                                        <button
-                                            className={`mode_btn ${donationMode === 'onetime' ? 'active' : ''}`}
-                                            onClick={() => {
-                                                setDonationMode('onetime');
-                                                setSelectedAmount(null);
-                                            }}
-                                        >
-                                            <i className="fas fa-heart"></i>
-                                            {t('donation_mode_onetime')}
-                                        </button>
-                                    </div>
-
-                                    {/* Monthly Amounts */}
-                                    {donationMode === 'monthly' && (
-                                        <div className="amounts_grid">
-                                            {monthlyAmounts.map((amount) => (
-                                                <button
-                                                    key={amount}
-                                                    className={`amount_btn ${selectedAmount === amount ? 'active' : ''}`}
-                                                    onClick={() => handleAmountSelect(amount)}
-                                                >
-                                                    <span className="amount_value">${amount}</span> <span className="amount_period">/Mo</span>
-                                                </button>
-                                            ))}
-                                        </div>
-                                    )}
-
-                                    {/* One-Time Amounts */}
-                                    {donationMode === 'onetime' && (
-                                        <div className="amounts_grid">
-                                            {oneTimeAmounts.map((amount) => (
-                                                <button
-                                                    key={amount}
-                                                    className={`amount_btn ${selectedAmount === amount ? 'active' : ''}`}
-                                                    onClick={() => handleAmountSelect(amount)}
-                                                >
-                                                    <span className="amount_value">${amount}</span>
-                                                    {/* <span className="amount_period">Once</span> */}
-                                                </button>
-                                            ))}
-                                        </div>
-                                    )}
-                                </div>
-
-                                {/* Confirmed Donation Summary */}
-                                {isDonationConfirmed && selectedAmount && (
-                                    <div className="confirmed_donation_summary">
-                                        <h3 className="section_title">{t('donation_summary_title')}</h3>
-                                        <div className="donation_summary">
-                                            <div className="summary_item">
-                                                <span className="summary_label">{t('summary_amount_label')}</span>
-                                                <span className="summary_value">
-                                                    ${selectedAmount}
-                                                    {donationMode === 'monthly' && <span className="period">/month</span>}
-                                                </span>
-                                            </div>
-                                            <div className="summary_item">
-                                                <span className="summary_label">{t('summary_type_label')}</span>
-                                                <span className="summary_value">
-                                                    {donationMode === 'monthly' ? t('summary_monthly_donation') : t('summary_onetime_donation')}
-                                                </span>
-                                            </div>
-                                            {selectedPayment && (
-                                                <div className="summary_item">
-                                                    <span className="summary_label">{t('summary_payment_method_label')}</span>
-                                                    <span className="summary_value">
-                                                        {selectedPayment === 'mobile-money' ? t('payment_mobile_money') : t('payment_bank_transfer')}
-                                                    </span>
-                                                </div>
-                                            )}
-                                            {selectedPaymentDetail && (
-                                                <div className="summary_item">
-                                                    <span className="summary_label">{t('summary_payment_details_label')}</span>
-                                                    <span className="summary_value">
-                                                        {selectedPayment === 'mobile-money'
-                                                            ? `${selectedPaymentDetail.provider}: ${selectedPaymentDetail.number}`
-                                                            : `${selectedPaymentDetail.bank}: ${selectedPaymentDetail.cardNumber}`
-                                                        }
-                                                    </span>
-                                                </div>
-                                            )}
-                                        </div>
+                                {/* Terms Error */}
+                                {errors.terms && (
+                                    <div className="error_message_section">
+                                        <span className="error_message">{errors.terms}</span>
                                     </div>
                                 )}
 
+                            </div>
+                        </div>
 
-                                {/* Organization Info */}
-                                <div className="org_info_section">
-                                    <h4>{t('org_about_title')}</h4>
-                                    <p>{t('org_full_name')}</p>
-                                    <div className="org_contact">
-                                        <p><strong>Address:</strong> {t("contact_address_south")}</p>
-                                        <p><strong>Email:</strong> acndccongo@gmail.com</p>
-                                    </div>
+
+
+
+
+
+
+
+                        {/* Right Side - Donation Plan */}
+                        <div className="order_summary_section">
+
+                            <div className="logo_section">
+                                <img src={Act_Img1} alt="ACNDC Logo" className="summary_logo" />
+                            </div>
+
+                            {/* Donation Importance Section */}
+                            <div className="donation_importance_section">
+                                <div className="importance_content">
+                                    <h2 className="importance_title">{t('donation_importance_title')}</h2>
+                                    <p className="importance_text">
+                                        {t('donation_importance_p1')}
+                                    </p>
+                                    <p className="importance_text">
+                                        {t('donation_importance_p2')}
+                                    </p>
                                 </div>
                             </div>
 
-                        </div>
+                            <div className="donation_plan_section">
+                                <h3 className="section_title">{t('donation_plan_title')}</h3>
 
-                        {/* Submit Button */}
-                        <div className="full_width_submit_section">
-                            {/* Donation Mode Error */}
-                            {errors.donationMode && (
-                                <div className="error_message_section">
-                                    <span className="error_message">{errors.donationMode}</span>
+                                {/* Donation Mode Buttons */}
+                                <div className="donation_mode_buttons">
+                                    <button
+                                        className={`mode_btn ${donationMode === 'monthly' ? 'active' : ''}`}
+                                        onClick={() => {
+                                            setDonationMode('monthly');
+                                            setSelectedAmount(null);
+                                        }}
+                                    >
+                                        <i className="fas fa-calendar-alt"></i>
+                                        {t('donation_mode_monthly')}
+                                    </button>
+                                    <button
+                                        className={`mode_btn ${donationMode === 'onetime' ? 'active' : ''}`}
+                                        onClick={() => {
+                                            setDonationMode('onetime');
+                                            setSelectedAmount(null);
+                                        }}
+                                    >
+                                        <i className="fas fa-heart"></i>
+                                        {t('donation_mode_onetime')}
+                                    </button>
                                 </div>
-                            )}
 
-                            {/* Amount Error */}
-                            {errors.amount && (
-                                <div className="error_message_section">
-                                    <span className="error_message">{errors.amount}</span>
-                                </div>
-                            )}
+                                {/* Monthly Amounts */}
+                                {donationMode === 'monthly' && (
+                                    <div className="amounts_grid">
+                                        {monthlyAmounts.map((amount) => (
+                                            <button
+                                                key={amount}
+                                                className={`amount_btn ${selectedAmount === amount ? 'active' : ''}`}
+                                                onClick={() => handleAmountSelect(amount)}
+                                            >
+                                                <span className="amount_value">${amount}</span> <span className="amount_period">/Mo</span>
+                                            </button>
+                                        ))}
 
-                            {/* Payment Method Error */}
-                            {errors.paymentMethod && (
-                                <div className="error_message_section">
-                                    <span className="error_message">{errors.paymentMethod}</span>
-                                </div>
-                            )}
-
-                            {/* Payment Detail Error */}
-                            {errors.paymentDetail && (
-                                <div className="error_message_section">
-                                    <span className="error_message">{errors.paymentDetail}</span>
-                                </div>
-                            )}
-
-                            <button
-                                type="submit"
-                                className="submit_btn full_width"
-                                disabled={isSubmitting}
-                            >
-                                {isSubmitting ? (
-                                    <span>{t('submit_processing')}</span>
-                                ) : (
-                                    <>
-                                        <i className="fas fa-lock"></i> {t('submit_button')} ${selectedAmount}
-                                        {donationMode === 'monthly' && '/month'}
-                                    </>
+                                        {/* Amount Error */}
+                                        {errors.amount && (
+                                            <div className="error_message_section">
+                                                <span className="error_message">{errors.amount}</span>
+                                            </div>
+                                        )}
+                                    </div>
                                 )}
-                            </button>
+
+                                {/* One-Time Amounts */}
+                                {donationMode === 'onetime' && (
+                                    <div className="amounts_grid">
+                                        {oneTimeAmounts.map((amount) => (
+                                            <button
+                                                key={amount}
+                                                className={`amount_btn ${selectedAmount === amount ? 'active' : ''}`}
+                                                onClick={() => handleAmountSelect(amount)}
+                                            >
+                                                <span className="amount_value">${amount}</span>
+                                                {/* <span className="amount_period">Once</span> */}
+                                            </button>
+                                        ))}
+
+                                        {/* Amount Error */}
+                                        {errors.amount && (
+                                            <div className="error_message_section">
+                                                <span className="error_message">{errors.amount}</span>
+                                            </div>
+                                        )}
+                                    </div>
+                                )}
+
+                                {/* Donation Mode Error */}
+                                {errors.donationMode && (
+                                    <div className="error_message_section">
+                                        <span className="error_message">{errors.donationMode}</span>
+                                    </div>
+                                )}
+                            </div>
+
+                            {/* Confirmed Donation Summary */}
+                            {isDonationConfirmed && selectedAmount && (
+                                <div className="confirmed_donation_summary">
+                                    <h3 className="section_title">{t('donation_summary_title')}</h3>
+                                    <div className="donation_summary">
+                                        <div className="summary_item">
+                                            <span className="summary_label">{t('summary_amount_label')}</span>
+                                            <span className="summary_value">
+                                                ${selectedAmount}
+                                                {donationMode === 'monthly' && <span className="period">/month</span>}
+                                            </span>
+                                        </div>
+                                        <div className="summary_item">
+                                            <span className="summary_label">{t('summary_type_label')}</span>
+                                            <span className="summary_value">
+                                                {donationMode === 'monthly' ? t('summary_monthly_donation') : t('summary_onetime_donation')}
+                                            </span>
+                                        </div>
+                                        {selectedPayment && (
+                                            <div className="summary_item">
+                                                <span className="summary_label">{t('summary_payment_method_label')}</span>
+                                                <span className="summary_value">
+                                                    {selectedPayment === 'mobile-money' ? t('payment_mobile_money') : t('payment_bank_transfer')}
+                                                </span>
+                                            </div>
+                                        )}
+                                        {selectedPaymentDetail && (
+                                            <div className="summary_item">
+                                                <span className="summary_label">{t('summary_payment_details_label')}</span>
+                                                <span className="summary_value">
+                                                    {selectedPayment === 'mobile-money'
+                                                        ? `${selectedPaymentDetail.provider}: ${selectedPaymentDetail.number}`
+                                                        : `${selectedPaymentDetail.bank}: ${selectedPaymentDetail.cardNumber}`
+                                                    }
+                                                </span>
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+                            )}
+
+
+                            {/* Organization Info */}
+                            <div className="org_info_section">
+                                <h4>{t('org_about_title')}</h4>
+                                <p>{t('org_full_name')}</p>
+                                <div className="org_contact">
+                                    <p><strong>Address:</strong> {t("contact_address_south")}</p>
+                                    <p><strong>Email:</strong> acndccongo@gmail.com</p>
+                                </div>
+                            </div>
                         </div>
 
-                    </form>
+                    </div>
+
+
+
+                    {/* Submit Button */}
+                    <div className="full_width_submit_section">
+
+                        <button
+                            type="submit"
+                            className="submit_btn full_width"
+                            disabled={isSubmitting}
+                        >
+                            {isSubmitting ? (
+                                <span>{t('submit_processing')}</span>
+                            ) : (
+                                <>
+                                    <i className="fas fa-lock"></i> {t('submit_button')} ${selectedAmount}
+                                    {donationMode === 'monthly' && '/month'}
+                                </>
+                            )}
+                        </button>
+                    </div>
+
+                </form>
 
             </div>
 

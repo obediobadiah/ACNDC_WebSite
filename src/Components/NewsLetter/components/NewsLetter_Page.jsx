@@ -20,6 +20,30 @@ function NewsLetter_Page() {
 	};
   
 	try {
+	  // Save to newsletter database first
+	  const newsletterResponse = await fetch(`${API_BASE_URL}/newsletter-subscribers`, {
+		method: 'POST',
+		headers: {
+		  'Content-Type': 'application/json',
+		},
+		body: JSON.stringify({
+		  email: formData.from_email,
+		  name: formData.from_name,
+		  message: formData.message
+		}),
+	  });
+
+	  if (!newsletterResponse.ok) {
+		const errorData = await newsletterResponse.json();
+		if (errorData.error === 'Email already subscribed') {
+		  // Email already exists, continue with email sending
+		  console.log('Email already subscribed, continuing with email sending');
+		} else {
+		  throw new Error(errorData.error || 'Failed to save to newsletter');
+		}
+	  }
+
+	  // Send email using existing endpoint
 	  const response = await fetch(`${API_BASE_URL}/send-email`, {
 		method: 'POST',
 		headers: {
@@ -31,27 +55,23 @@ function NewsLetter_Page() {
 	  if (response.ok) {
 		Swal.fire({
 		  title: 'Success!',
-		  text: 'Email sent successfully',
+		  text: 'Your message has been sent and you have been subscribed to our newsletter!',
 		  icon: 'success',
-		  confirmButtonText: 'OK'
-		}).then(() => {
-			form.current.reset();
+		  confirmButtonColor: '#28a745',
+		  confirmButtonText: 'Great!'
 		});
+		form.current.reset();
 	  } else {
-		Swal.fire({
-		  title: 'Error!',
-		  text: 'Failed to send email',
-		  icon: 'error',
-		  confirmButtonText: 'OK'
-		});
+		throw new Error('Failed to send email');
 	  }
-	} catch (error) {
-	  console.error('Error sending email:', error);
+	} catch (err) {
+	  console.error('Error:', err);
 	  Swal.fire({
 		title: 'Error!',
-		text: 'An error occurred while sending the email.',
+		text: err.message || 'There was an error sending your message. Please try again.',
 		icon: 'error',
-		confirmButtonText: 'OK'
+		confirmButtonColor: '#dc3545',
+		confirmButtonText: 'Try Again'
 	  });
 	}
   };
