@@ -788,6 +788,7 @@
 	background-color: #1a4b34;
 	box-shadow: 0 8px 24px rgba(40, 111, 78, 0.5);
 	transform: translateY(-2px);
+	color: #fff;
 }
 
 @media screen and (max-width: 1024px) {
