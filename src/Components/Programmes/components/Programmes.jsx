@@ -3,6 +3,7 @@ import Header from '../../Header/header'
 import Footer from '../../Footer/components/Footer'
 import '../styles/style.css'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 function Programmes() {
 
@@ -24,6 +25,9 @@ function Programmes() {
 							<div className="programmes_box_txt">
 								<h2>{t("programmes_security_title")}</h2>
 								<p>{t("programmes_security_dev")}</p>
+								<Link to="/programmes/security" className="read_more_btn">
+									{t("read_more")} →
+								</Link>
 							</div>
 						</div>
 
@@ -35,6 +39,9 @@ function Programmes() {
 							<div className="programmes_box_txt">
 								<h2>{t("programmes_conservation_title")}</h2>
 								<p>{t("programmes_conservation_dev")}</p>
+								<Link to="/programmes/conservation" className="read_more_btn">
+									{t("read_more")} →
+								</Link>
 							</div>
 						</div>
 						<div className="programmes_box">
@@ -44,6 +51,9 @@ function Programmes() {
 							<div className="programmes_box_txt">
 								<h2>{t("programmes_gestion_title")}</h2>
 								<p>{t("programmes_gestion_dev")}</p>
+								<Link to="/programmes/gestion" className="read_more_btn">
+									{t("read_more")} →
+								</Link>
 							</div>
 						</div>
 
@@ -55,6 +65,9 @@ function Programmes() {
 							<div className="programmes_box_txt">
 								<h2>{t("programmes_droit_title")}</h2>
 								<p>{t("programmes_droit_dev")}</p>
+								<Link to="/programmes/droit" className="read_more_btn">
+									{t("read_more")} →
+								</Link>
 							</div>
 						</div>
 
@@ -65,6 +78,9 @@ function Programmes() {
 							<div className="programmes_box_txt">
 								<h2>{t("programmes_urgence_title")}</h2>
 								<p>{t("programmes_urgence_dev")}</p>
+								<Link to="/programmes/urgence" className="read_more_btn">
+									{t("read_more")} →
+								</Link>
 							</div>
 						</div>
 

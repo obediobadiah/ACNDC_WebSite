@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import LandingPage from './Components/LandingPage/components/LandingPage'
 import Programmes from './Components/Programmes/components/Programmes'
+import ProgramDetail from './Components/Programmes/components/ProgramDetail'
 import Commissions from './Components/Commissions/components/Commission'
 import ZoneIntervention from './Components/ZoneIntervention/components/ZoneIntervention'
 import VisionMission from './Components/VisionMission/components/VisionMission'
@@ -37,6 +38,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/Programmes" element={<Programmes />} />
+        <Route path="/programmes/:programType" element={<ProgramDetail />} />
         <Route path="/Commissions" element={<Commissions />} />
         <Route path="/ZoneIntervention" element={<ZoneIntervention />} />
         <Route path="/VisionMission" element={<VisionMission />} />
