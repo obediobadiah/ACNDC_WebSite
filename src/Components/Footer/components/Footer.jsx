@@ -65,7 +65,7 @@ function Footer() {
 							{t("donate_button")}
 						</Link><br />
 						<Link onClick={() => { window.location.href = "/Login" }} className="footer_link">
-							Login
+							Admin
 						</Link>
 					</div>
 
