@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import '../styles/style.css'
 import VisionImg from '../assets/Vision.png'
 import MissionImg from '../assets/Mission.png'

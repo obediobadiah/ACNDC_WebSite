@@ -1,6 +1,6 @@
 import Header from '../../Header/header';
 import Footer from '../../Footer/components/Footer';
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import '../styles/style.css'
 import { useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -13,7 +13,7 @@ function ActualiteDetails() {
     const [actuality, setActuality] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    const fetchActualityData = () => {
+    const fetchActualityData = useCallback(() => {
         fetch(`${API_BASE_URL}/get-actuality`)
             .then((response) => response.json())
             .then((data) => {
@@ -25,11 +25,11 @@ function ActualiteDetails() {
                 console.error('Error fetching data: ', error);
                 setLoading(false);
             });
-    };
+    }, [slug]);
 
     useEffect(() => {
         fetchActualityData();
-    }, [slug]);
+    }, [slug, fetchActualityData]);
 
     return (
         <div className="Act_details_container">

@@ -11,18 +11,13 @@ import Act_Img5 from '../assets/1660507234077.jfif'
 import Act_Img6 from '../assets/DSC_8.jpg'
 import Act_Img7 from '../assets/1663363038452.jfif'
 import Act_Img8 from '../assets/IMG_7931.JPG'
-import Act_Img11 from '../assets/1671217015713.jpg'
-import Act_Img12 from '../assets/IMG-20230124-WA0011.jpg'
-import Act_Img13 from '../assets/DSC_9479.jpg'
 import { useTranslation } from 'react-i18next'
 import API_BASE_URL from '../../../config/api'
-import { Link } from 'react-router-dom'
 
 
 function Actualite() {
 
 	const [data, setData] = useState([]);
-	const [filteredData, setFilteredData] = useState([]);
 	const { t } = useTranslation();
 
 	// Fetch all data
@@ -32,7 +27,6 @@ function Actualite() {
 			.then((response) => response.json())
 			.then((data) => {
 				setData(data);
-				setFilteredData(data);
 			})
 			.catch((error) => console.error('Error getting data: ', error));
 	};

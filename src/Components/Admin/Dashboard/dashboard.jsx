@@ -9,16 +9,10 @@ import Donations from './components/Donations'
 import Newsletter from "./components/Newsletter";
 import './styles/style.css'
 import { useState } from "react";
-import { Routes, BrowserRouter as Router, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 
 function Dashboard() {
-
-    const [activeComponent, setActiveComponent] = useState("HomeSide");
-
-    const handleComponentChange = (componentName, id = null) => {
-        setActiveComponent(componentName);
-    }
     const [toggle, setToggle] = useState(true)
     const Toggle = () => {
         setToggle(!toggle)
@@ -28,7 +22,7 @@ function Dashboard() {
         <div className="bg-light min-vh-100">
             <div className="row">
                 {toggle && <div className="col-4 col-md-2 bg-white shadow vh-100 position-fixed">
-                    <Sidebar handleComponentChange={handleComponentChange} />
+                    <Sidebar />
                 </div>}
                 {toggle && <div className="col-4 col-md-2"></div>}
                 <div className="col vh-100">

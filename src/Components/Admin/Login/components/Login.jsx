@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import '../styles/style.css'
 import { Link } from "react-router-dom"
 import Act_Img1 from '../assets/Logos ACNDC.png'
-import login_vector from '../assets/undraw_projections_re_ulc6.svg'
 import Swal from 'sweetalert2'
 import { CircularProgress } from "@mui/material";
 import API_BASE_URL from '../../../../config/api'
@@ -11,7 +10,6 @@ import API_BASE_URL from '../../../../config/api'
 
 function Login() {
 
-    const [data, setData] = useState([])
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [isLoading, setIsLoading] = useState(false);
@@ -20,7 +18,7 @@ function Login() {
         e.preventDefault();
         setIsLoading(true);
 
-        const data = {
+        const loginData = {
             username: username,
             password: password,
         };
@@ -30,22 +28,22 @@ function Login() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(data),
+            body: JSON.stringify(loginData),
         })
             .then((response) => response.json())
             .then((data) => {
 
-                if (data.message == "Success") {
+                if (data.message === "Success") {
                     console.log(data);
                     window.localStorage.setItem("Token", data.token);
                     verifyTokenAndRedirect(data.token);
                     Swal.fire('Reussi', `Bienvenue`, 'success')
                 }
-                else if (data.message == "Invalid password") {
+                else if (data.message === "Invalid password") {
                     Swal.fire('Echec', 'Votre Mot de Passe est incorrect', 'error')
                     setIsLoading(false);
                 }
-                else if (data.message == "The user doesn't exist") {
+                else if (data.message === "The user doesn't exist") {
                     Swal.fire('Echec', `Ce compte n'existe pas`, 'error')
                     setIsLoading(false);
 
@@ -57,7 +55,7 @@ function Login() {
     const verifyTokenAndRedirect = (token) => {
         const storedToken = window.localStorage.getItem("Token");
 
-        if (storedToken == token) {
+        if (storedToken === token) {
             window.location.href = "/admin-dashboard";
         } else {
             console.log("Unauthorized access");

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Footer from '../../Footer/components/Footer';
 import '../styles/style.css';
 import Act_Img1 from '../assets/Logos ACNDC.png';
@@ -273,9 +273,9 @@ function Contact() {
     };
 
     // Show errors when user interacts with form
-    const handleFormInteraction = () => {
-        showValidationErrors();
-    };
+    // const handleFormInteraction = () => {
+    //     showValidationErrors();
+    // };
 
     return (
         <div className="Contact_container">

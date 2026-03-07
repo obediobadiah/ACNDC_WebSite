@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import '../styles/style.css'
-import logoImg from '../assets/Logos ACNDC.png'
 import API_BASE_URL from '../../../../config/api'
 import Navbar from './navbar'
 import Swal from 'sweetalert2'
-import { Modal } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { Link } from 'react-router-dom'
 import ReactQuill from 'react-quill';
@@ -14,12 +12,12 @@ import 'react-quill/dist/quill.snow.css';
 
 
 function UpdateActivity({ Toggle }) {
-    const [data, setData] = useState([]);
-    const [filteredData, setFilteredData] = useState([]);
-    // const [searchTerm, setSearchTerm] = useState('');
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const { id } = useParams();
+    
+    const handleClose = () => {
+        // Navigate back or close modal logic
+        window.history.back();
+    };
 
     const [title, setActTitle] = useState('');
     const [description, setActDescription] = useState('');
@@ -27,9 +25,6 @@ function UpdateActivity({ Toggle }) {
     const [image, setActImage] = useState(null);
     const [reactQuillvalue, setReactQuillvalue] = useState('');
     const [fileSizeError, setFileSizeError] = useState('');
-
-
-    const { id } = useParams();
 
     const modules = {
         toolbar: [
@@ -95,11 +90,11 @@ function UpdateActivity({ Toggle }) {
 
     
 
-    const fetchDataByID = () => {
+    const fetchDataByID = useCallback(() => {
         fetch(`${API_BASE_URL}/get-actuality-id/` + id)
             .then((response) => response.json())
             .then((data) => {
-                setFilteredData(data);
+                // setFilteredData(data);
                 setActTitle(data[0].title)
                 // setActLink(data[0].link)
                 // setActDescription(data[0].description)
@@ -115,7 +110,7 @@ function UpdateActivity({ Toggle }) {
 
             })
             .catch((error) => console.error('Error getting data: ', error));
-    };
+    }, [id]);
 
 
 
@@ -137,7 +132,7 @@ function UpdateActivity({ Toggle }) {
 
     useEffect(() => {
         fetchDataByID();
-    }, []);
+    }, [id, fetchDataByID]);
 
 
     return (

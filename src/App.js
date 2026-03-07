@@ -14,11 +14,11 @@ import Resultats from './Components/Resultats/components/Resultats'
 import OrganeGestion from './Components/OrganeGestion/components/OrganeGestion'
 import Partenaire from './Components/Partenaire/components/Partenaire'
 import Rapports from './Components/Rapports/components/Rapports'
-import Rapports_Details_2020 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2020'
-import Rapports_Details_2021 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2021'
-import Rapports_Details_2022 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2022'
-import Rapports_Details_2023 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2023'
-import Rapports_Details_2024 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2024'
+import RapportsDetails2020 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2020'
+import RapportsDetails2021 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2021'
+import RapportsDetails2022 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2022'
+import RapportsDetails2023 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2023'
+import RapportsDetails2024 from './Components/Rapports/components/RapportsAnnuel/Rapports_detail_2024'
 import OutilsTravail from './Components/OutilsTravail/components/OutilsTravail'
 import Plans from './Components/Plans/components/Plans'
 import Actualite from './Components/Actualite/components/Actualite'
@@ -48,11 +48,11 @@ function App() {
         <Route path="/OrganeGestion" element={<OrganeGestion />} />
         <Route path="/Partenaire" element={<Partenaire />} />
         <Route path="/Rapports" element={<Rapports />} />
-        <Route path="/Rapport_Detail_2020" element={<Rapports_Details_2020 />} />
-        <Route path="/Rapport_Detail_2021" element={<Rapports_Details_2021 />} />
-        <Route path="/Rapport_Detail_2022" element={<Rapports_Details_2022 />} />
-        <Route path="/Rapport_Detail_2023" element={<Rapports_Details_2023 />} />
-        <Route path="/Rapport_Detail_2024" element={<Rapports_Details_2024 />} />
+        <Route path="/Rapport_Detail_2020" element={<RapportsDetails2020 />} />
+        <Route path="/Rapport_Detail_2021" element={<RapportsDetails2021 />} />
+        <Route path="/Rapport_Detail_2022" element={<RapportsDetails2022 />} />
+        <Route path="/Rapport_Detail_2023" element={<RapportsDetails2023 />} />
+        <Route path="/Rapport_Detail_2024" element={<RapportsDetails2024 />} />
         <Route path="/OutilsTravail" element={<OutilsTravail />} />
         <Route path="/Plans" element={<Plans />} />
         <Route path="/Actualite" element={<Actualite />} />
