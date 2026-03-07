@@ -22,14 +22,24 @@ function sidebar({ handleComponentChange }) {
             <hr className="text-dark" />
             <div className="side-menu">
 
-                <a href={'/admin-dashboard/'} className="list-group-item list-group-item-action p-3">
+                <Link to="/admin-dashboard/" className="list-group-item list-group-item-action p-3">
                     <i className="bi bi-house fs-5 me-3"></i>
                     <span className="fs-6">Home</span>
-                </a>
-                <a href={'/admin-dashboard/actuality/'} className="list-group-item list-group-item-action p-3">
+                </Link>
+
+                <Link to="/admin-dashboard/donations" className="list-group-item list-group-item-action p-3">
+                    <i className="fas fa-hand-holding-heart fs-5 me-3"></i>
+                    <span className="fs-6">Donations</span>
+                </Link>
+
+                <Link to="/admin-dashboard/newsletter" className="list-group-item list-group-item-action p-3">
+                    <i className="fas fa-envelope fs-5 me-3"></i>
+                    <span className="fs-6">Newsletter</span>
+                </Link>
+                <Link to="/admin-dashboard/activity" className="list-group-item list-group-item-action p-3">
                     <i className="bi bi-speedometer2 fs-5 me-3"></i>
                     <span className="fs-6">Activity</span>
-                </a>
+                </Link>
                 {/* <a href={'/admin-dashboard/report'} className="list-group-item list-group-item-action p-3">
                     <i className="bi bi-clipboard-data fs-5 me-3"></i>
                     <span className="fs-6">Report</span>

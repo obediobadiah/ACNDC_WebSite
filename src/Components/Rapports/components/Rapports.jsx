@@ -8,6 +8,7 @@ import Rapport2022Img from '../assets/DSC_8.jpg'
 import Rapport2021Img from '../assets/IMG-20210701-WA0061.jpg'
 import Rapport2020Img from '../assets/3152dacf-2e19-467d-8c1e-fe7ad279ba3d.JPG'
 import Rapport2023Img from '../assets/IMG-20210701-WA0060.jpg'
+import Rapport2024Img from '../assets/IMG_1636.jpg'
 import { useTranslation } from 'react-i18next'
 
 
@@ -28,10 +29,19 @@ function Rapports() {
 				<div className="rapport_comp">
 					<div className="rapport_boxes">
 
-
-
-
-
+						<div className="rapport_box">
+							<div className="rapport_img">
+								<img src={Rapport2024Img} alt="" />
+							</div>
+							<div className="rapport_txt">
+								<div className="rapport_texte">
+									<Link to="/Rapport_Detail_2024" className="rapport_texte_link">
+										<h2>{t("rapport_boxes_txt_h1_2024")}</h2>
+									</Link>
+									<p>{t("rapport_boxes_txt_p_2024")}</p>
+								</div>
+							</div>
+						</div>
 
 						<div className="rapport_box">
 							<div className="rapport_img">

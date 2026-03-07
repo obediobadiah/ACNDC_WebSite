@@ -17,6 +17,8 @@
 	font-weight: bold;
 	font-size: 3.5rem;
 	padding: 200px 150px 150px 150px;
+	position: relative;
+	top: -35px;
 }
 
 

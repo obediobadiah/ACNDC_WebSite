@@ -1,0 +1,221 @@
+.newsletter-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.newsletter-stats {
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    border-left: 4px solid #6c757d;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.stat-card.active {
+    border-left-color: #28a745;
+}
+
+.stat-card.inactive {
+    border-left-color: #ffc107;
+}
+
+.stat-card.unsubscribed {
+    border-left-color: #dc3545;
+}
+
+.stat-card h5 {
+    margin: 0 0 10px 0;
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-card h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.newsletter-table-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.newsletter-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.newsletter-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: none;
+}
+
+.newsletter-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: middle;
+}
+
+.newsletter-table tr:last-child td {
+    border-bottom: none;
+}
+
+.newsletter-table tr:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.2s;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.status-select {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 12px;
+    background: white;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.status-select:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+.delete-btn {
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+.delete-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .newsletter-container {
+        padding: 10px;
+    }
+    
+    .stat-card {
+        margin-bottom: 15px;
+    }
+    
+    .newsletter-table-container {
+        overflow-x: auto;
+    }
+    
+    .newsletter-table {
+        min-width: 700px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .status-select,
+    .delete-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .newsletter-stats .row {
+        gap: 10px;
+    }
+    
+    .newsletter-stats .col-md-3 {
+        flex: 0 0 calc(50% - 5px);
+        max-width: calc(50% - 5px);
+    }
+    
+    .stat-card h3 {
+        font-size: 24px;
+    }
+    
+    .stat-card h5 {
+        font-size: 12px;
+    }
+}
+
+/* Animation for new subscribers */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.newsletter-table tbody tr {
+    animation: slideIn 0.3s ease-out;
+}
+
+/* Custom scrollbar */
+.newsletter-table-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.newsletter-table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.newsletter-table-container::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+
+.newsletter-table-container::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}

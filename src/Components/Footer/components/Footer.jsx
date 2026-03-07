@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next'
 function Footer() {
 
 	const { t } = useTranslation();
+	const currentYear = new Date().getFullYear();
 
 	return (
 		<div className="footer_container">
@@ -26,7 +27,7 @@ function Footer() {
 						</div>
 						<div className="address_text">
 							<h3>
-								<i className="fas fa-map-marker-alt" /><t />
+								<i className="fas fa-map-marker-alt" />
 								Sud-Kivu: A Kasika (100 km), à Mwenga (130km) et à Kitutu (210 km) sur la route nationale 2, Bukavu-Kasongo
 							</h3>
 						</div>
@@ -64,7 +65,7 @@ function Footer() {
 							{t("donate_button")}
 						</Link><br />
 						<Link onClick={() => { window.location.href = "/Login" }} className="footer_link">
-							Login
+							Admin
 						</Link>
 					</div>
 
@@ -85,7 +86,7 @@ function Footer() {
 
 				</div>
 				<div className="alright">
-					<h3>© 2025 Action Pour La Conservation de la Nature et Development Communautaire, All Rights Reserved</h3>
+					<h3>© {currentYear} Action Pour La Conservation de la Nature et Development Communautaire, All Rights Reserved</h3>
 
 					<div className="address_link_icons">
 						<a href="https://web.facebook.com/acndc.org" className="address_link_icon">

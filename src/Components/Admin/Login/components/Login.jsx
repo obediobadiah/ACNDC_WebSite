@@ -5,6 +5,7 @@ import Act_Img1 from '../assets/Logos ACNDC.png'
 import login_vector from '../assets/undraw_projections_re_ulc6.svg'
 import Swal from 'sweetalert2'
 import { CircularProgress } from "@mui/material";
+import API_BASE_URL from '../../../../config/api'
 
 
 
@@ -24,7 +25,7 @@ function Login() {
             password: password,
         };
 
-        fetch('https://acndc-backend.vercel.app/api/auth-users/', {
+        fetch(`${API_BASE_URL}/auth-users/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

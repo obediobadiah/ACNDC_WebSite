@@ -14,11 +14,13 @@
 	background-image: linear-gradient(rgba(186, 171, 0, 0.5), rgba(186, 171, 0, 0.5)), url('../assets/IMG-20210701-WA0029.jpg') !important;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
+	top: -35px;
 }
 
 .Resultats_Intro .Intro_text{
 	height: auto;
-	padding: 150px 100px 100px 100px;
+	padding: 250px 100px 200px 100px;
 }
 
 .Resultats_Intro h1{

@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Navbar from './navbar'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import '../styles/style.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import logoImg from '../assets/Logos ACNDC.png'
+import API_BASE_URL from '../../../../config/api'
+import Navbar from './navbar'
 import Swal from 'sweetalert2'
 import { Modal } from "react-bootstrap";
 import { useParams } from "react-router-dom";
@@ -63,7 +66,7 @@ function UpdateActivity({ Toggle }) {
 
                 console.log(formData)
 
-                fetch('https://acndc-backend.vercel.app/api/update-actuality/' + id, {
+                fetch(`${API_BASE_URL}/update-actuality/` + id, {
                     method: 'POST',
                     body: formData,
                 })
@@ -93,7 +96,7 @@ function UpdateActivity({ Toggle }) {
     
 
     const fetchDataByID = () => {
-        fetch('https://acndc-backend.vercel.app/api/get-actuality-id/' + id)
+        fetch(`${API_BASE_URL}/get-actuality-id/` + id)
             .then((response) => response.json())
             .then((data) => {
                 setFilteredData(data);

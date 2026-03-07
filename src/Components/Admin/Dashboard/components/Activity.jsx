@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Navbar from './navbar'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 import '../styles/style.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import logoImg from '../assets/Logos ACNDC.png'
+import API_BASE_URL from '../../../../config/api'
+import Navbar from './navbar'
 import Swal from 'sweetalert2'
 import { Modal } from "react-bootstrap";
 import { Link } from 'react-router-dom'
@@ -42,7 +45,7 @@ function Activity({ Toggle }) {
             confirmButtonText: 'OUI, Dupliquez cet Actualité!',
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://acndc-backend.vercel.app/api/add-actuality-id/${dipId}`, { method: 'POST' })
+                fetch(`${API_BASE_URL}/add-actuality-id/${dipId}`, { method: 'POST' })
                     .then((response) => {
                         if (response.ok) {
                             Swal.fire('Dupliqué!', 'Actualité Dupliqué', 'success')
@@ -64,7 +67,7 @@ function Activity({ Toggle }) {
     // Fetch all data
 
     const fetchData = () => {
-        fetch('https://acndc-backend.vercel.app/api/get-actuality/')
+        fetch(`${API_BASE_URL}/get-actuality/`)
             .then((response) => response.json())
             .then((data) => {
                 setData(data);
@@ -77,7 +80,7 @@ function Activity({ Toggle }) {
 
     const filterData = () => {
         const encodedSearchTerm = encodeURIComponent(searchTerm);
-        fetch('https://acndc-backend.vercel.app/api/get-actuality/' + encodedSearchTerm)
+        fetch(`${API_BASE_URL}/get-actuality/` + encodedSearchTerm)
             .then((response) => response.json())
             .then((filteredData) => {
                 setFilteredData(filteredData);
@@ -96,7 +99,7 @@ function Activity({ Toggle }) {
             confirmButtonText: 'OUI, Effacé cet Actualité!',
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://acndc-backend.vercel.app/api/delete-actuality/${delId}`, { method: 'POST' })
+                fetch(`${API_BASE_URL}/delete-actuality/${delId}`, { method: 'POST' })
                     .then((response) => {
                         if (response.ok) {
                             Swal.fire('Effacé!', 'Actualité effacé', 'success')

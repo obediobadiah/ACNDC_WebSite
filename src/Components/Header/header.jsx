@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import ActivitesDropdown from './components/ActivitesDropdown'
 import SommeNousDropdown from './components/SommeNousDropdown'
@@ -102,26 +102,70 @@ function Header() {
 
 	return (
 		<>
+			{/* Info Section */}
+			<div className="header-info-section">
+				<div className="header-logo">
+					{/* <Link className="header-logo-link" onClick={() => { window.location.href = "/" }}> */}
+						<img src={logoImg} alt="Site logo" className="logoimg" />
+					{/* </Link> */}
+				</div>
+
+				<div className="header-contact-info">
+					<div className="info-item">
+						<div className="info-icon">
+
+						</div>
+						<div className="info-text">
+							<p className="info-label">{t('header_info_call_label')}</p>
+							<p className="info-value">{t('header_info_call_value')}</p>
+						</div>
+					</div>
+
+					<div className="info-item">
+						<div className="info-icon">
+
+						</div>
+						<div className="info-text">
+							<p className="info-label">{t('header_info_opening_label')}</p>
+							<p className="info-value">{t('header_info_opening_value')}</p>
+						</div>
+					</div>
+
+					<div className="info-item">
+						<div className="info-icon">
+
+						</div>
+						<div className="info-text">
+							<p className="info-label">{t('header_info_email_label')}</p>
+							<p className="info-value">{t('header_info_email_value')}</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			{/* Main Navigation Bar */}
 			<div className="header">
-				{/* <div className="menu-icon" onClick={handleClick}>
-					<i className={click ? 'fas fa-times': 'fas fa-bars'} />
-				</div> */}
 				<div className={`header-details ${hasBackground ? 'scrolled' : ''}`}>
+					{/* Logo appears on scroll */}
+					{hasBackground && (
+						<div className="header-logo">
+							<img src={logoImg} alt="Site logo" className="logoimg" />
+						</div>
+					)}
+
 					<div className="menu-icon" onClick={handleClick}>
 						<i className={click ? 'fas fa-times' : 'fas fa-bars'} />
 					</div>
-					<div className="logo">
-						<Link className="header-logo" onClick={() => { window.location.href = "/" }}>
-							<img src={logoImg} alt="Site logo" className="logoimg" />
-						</Link>
 
-						<div className="donation_button">
-							<Link onClick={() => { window.location.href = "/Contact" }}><p className="donation_btn"> {t("donate_button")} </p> </Link>
-						</div>
+					<div className={`header-menu-content ${click ? 'active' : ''}`}>
+						<ul className="header-menu">
+							<li className="header-home-item">
+								<Link className="header-home-link" onClick={() => { window.location.href = "/" }}>
+									<i className="fas fa-home"></i>
+								</Link>
+							</li>
 
-					</div>
-					<div className="header-menu-content">
-						<ul className={click ? 'header-menu active' : 'header-menu'}>
 							<li className="header-item"
 								onMouseEnter={onMouseEnterAct}
 								onMouseLeave={onMouseLeaveAct}>
@@ -146,23 +190,22 @@ function Header() {
 								<Link className="header-links" onClick={() => { window.location.href = "/Actualite" }}> {t("actuality_menu_link")} </Link>
 							</li>
 
-							<li className="header-item">
+							{/* <li className="header-item">
 								<Link className="header-links" onClick={() => { window.location.href = "/Contact" }}> {t("contact_menu_link")} </Link>
-							</li>
-
-							<select class="LanguageSelector" id="" onChange={(val) => { handleChangeLang(val.target.value); window.location.reload(); }} value={i18n.language}>
-								<option value="fr" >Fr</option>
-								<option value="en">En</option>
-							</select>
-
+							</li> */}
 						</ul>
-
 					</div>
-					{/* <div className="Button_container">
-						<div className="button_container_content">
 
+					<div className="header-actions">
+						<select className="LanguageSelector" onChange={(val) => { handleChangeLang(val.target.value); window.location.reload(); }} value={i18n.language}>
+							<option value="fr" >Fr</option>
+							<option value="en">En</option>
+						</select>
+
+						<div className="donation_button">
+							<Link onClick={() => { window.location.href = "/Contact" }}><p className="donation_btn"> {t("donate_button")} </p> </Link>
 						</div>
-					</div> */}
+					</div>
 				</div>
 			</div>
 		</>
