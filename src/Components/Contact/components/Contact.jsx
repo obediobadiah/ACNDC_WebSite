@@ -634,7 +634,7 @@ function Contact() {
                                 <p>{t('org_full_name')}</p>
                                 <div className="org_contact">
                                     <p><strong>Address:</strong> {t("contact_address_south")}</p>
-                                    <p><strong>Email:</strong> acndccongo@gmail.com</p>
+                                    <p><strong>Email:</strong> acndcong@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -680,7 +680,7 @@ function Contact() {
                         <i className="fas fa-envelope"></i>
                         <div>
                             <p className="info_label">{t('contact_info_email_label')}</p>
-                            <p className="info_value">acndccongo@gmail.com, acndccbo@gmail.com</p>
+                            <p className="info_value">acndcong@gmail.com, acndccbo@gmail.com</p>
                         </div>
                     </div>
                     <div className="contact_info_item">

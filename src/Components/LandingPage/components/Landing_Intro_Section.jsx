@@ -7,9 +7,9 @@ function LandingIntro() {
   const { t } = useTranslation();
 
   const slides = [
-    { id: 'slide_section1',title: t('intro_text_title_slide_1'), text: t('intro_text_par_slide_1') },
-    { id: 'slide_section2',title: t('intro_text_title_slide_2'), text: t('intro_text_par_slide_2') },
-    { id: 'slide_section3',title: t('intro_text_title_slide_3'), text: t('intro_text_par_slide_3') },
+    { id: 'slide_section1', title: t('intro_text_title_slide_1'), text: t('intro_text_par_slide_1') },
+    { id: 'slide_section2', title: t('intro_text_title_slide_2'), text: t('intro_text_par_slide_2') },
+    { id: 'slide_section3', title: t('intro_text_title_slide_3'), text: t('intro_text_par_slide_3') },
   ];
 
   const [activeSlide, setActiveSlide] = useState(0);

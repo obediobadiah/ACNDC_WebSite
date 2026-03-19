@@ -26,15 +26,15 @@ function Dashboard() {
                 </div>}
                 {toggle && <div className="col-4 col-md-2"></div>}
                 <div className="col vh-100">
-                        <Routes>
-                            <Route path="/" element={<HomeSide Toggle={Toggle}/>} />
-                            <Route path="/donations" element={<Donations Toggle={Toggle} />} />
-                            <Route path="/newsletter" element={<Newsletter Toggle={Toggle} />} />
-                            <Route path="/activity" element={<Activity Toggle={Toggle} />} />
-                            <Route path="/add-actuality/" element={<AddActivity Toggle={Toggle}/>} />
-                            <Route path="/report" element={<Report Toggle={Toggle}/>} />
-                            <Route path="/update-actuality/:id" element={<UpdateActivity Toggle={Toggle}/>} />
-                        </Routes>
+                    <Routes>
+                        <Route path="/" element={<HomeSide Toggle={Toggle} />} />
+                        <Route path="/donations" element={<Donations Toggle={Toggle} />} />
+                        <Route path="/newsletter" element={<Newsletter Toggle={Toggle} />} />
+                        <Route path="/activity" element={<Activity Toggle={Toggle} />} />
+                        <Route path="/add-actuality/" element={<AddActivity Toggle={Toggle} />} />
+                        <Route path="/report" element={<Report Toggle={Toggle} />} />
+                        <Route path="/update-actuality/:id" element={<UpdateActivity Toggle={Toggle} />} />
+                    </Routes>
                 </div>
 
             </div>

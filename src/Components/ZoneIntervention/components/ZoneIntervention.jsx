@@ -114,7 +114,7 @@ function ZoneIntervention() {
 						</div>
 
 						{/* Tshopo */}
-						<div className="zone_boxes">
+						{/* <div className="zone_boxes">
 							<div
 								className="zone_dropdown_header"
 								onClick={() => toggleZone(2)}
@@ -141,7 +141,7 @@ function ZoneIntervention() {
 									</div>
 								))}
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>
