@@ -1,21 +1,11 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import  '../styles/style.css'
+import React from 'react'
+import '../styles/style.css'
 import AboutImg from '../assets/IMG-20210701-WA0042.jpg'
 import { useTranslation } from 'react-i18next'
 
 function About_Section() {
 
 	const { t } = useTranslation();
-	const [currentIndex, setCurrentIndex] = useState(0);
-
-	const handlePrev = () => {
-		setCurrentIndex(prev => (prev - 1 + 1) % 1);
-	};
-
-	const handleNext = () => {
-		setCurrentIndex(prev => (prev + 1) % 1);
-	};
 
 	return (
 		<div className="about_video_container">

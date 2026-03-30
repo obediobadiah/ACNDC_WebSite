@@ -1,6 +1,6 @@
 import Header from '../../Header/header';
 import Footer from '../../Footer/components/Footer';
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import '../styles/style.css'
 import { useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -13,9 +13,18 @@ function ActualiteDetails() {
     const [actuality, setActuality] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    const fetchActualityData = () => {
+    const fetchActualityData = useCallback(() => {
         fetch(`${API_BASE_URL}/get-actuality`)
-            .then((response) => response.json())
+            .then((response) => {
+                if (!response.ok) {
+                    return response.json().then(data => {
+                        throw new Error(data.message || `HTTP ${response.status}: Failed to fetch actuality details`);
+                    }).catch(err => {
+                        throw new Error(`HTTP ${response.status}: Failed to fetch actuality details`);
+                    });
+                }
+                return response.json();
+            })
             .then((data) => {
                 const foundActuality = data.find((item) => item.slug === slug);
                 setActuality(foundActuality || null);
@@ -23,13 +32,14 @@ function ActualiteDetails() {
             })
             .catch((error) => {
                 console.error('Error fetching data: ', error);
+                setActuality(null);
                 setLoading(false);
             });
-    };
+    }, [slug]);
 
     useEffect(() => {
         fetchActualityData();
-    }, [slug]);
+    }, [slug, fetchActualityData]);
 
     return (
         <div className="Act_details_container">

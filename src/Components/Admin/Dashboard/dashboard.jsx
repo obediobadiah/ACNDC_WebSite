@@ -9,16 +9,10 @@ import Donations from './components/Donations'
 import Newsletter from "./components/Newsletter";
 import './styles/style.css'
 import { useState } from "react";
-import { Routes, BrowserRouter as Router, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 
 function Dashboard() {
-
-    const [activeComponent, setActiveComponent] = useState("HomeSide");
-
-    const handleComponentChange = (componentName, id = null) => {
-        setActiveComponent(componentName);
-    }
     const [toggle, setToggle] = useState(true)
     const Toggle = () => {
         setToggle(!toggle)
@@ -28,19 +22,19 @@ function Dashboard() {
         <div className="bg-light min-vh-100">
             <div className="row">
                 {toggle && <div className="col-4 col-md-2 bg-white shadow vh-100 position-fixed">
-                    <Sidebar handleComponentChange={handleComponentChange} />
+                    <Sidebar />
                 </div>}
                 {toggle && <div className="col-4 col-md-2"></div>}
                 <div className="col vh-100">
-                        <Routes>
-                            <Route path="/" element={<HomeSide Toggle={Toggle}/>} />
-                            <Route path="/donations" element={<Donations Toggle={Toggle} />} />
-                            <Route path="/newsletter" element={<Newsletter Toggle={Toggle} />} />
-                            <Route path="/activity" element={<Activity Toggle={Toggle} />} />
-                            <Route path="/add-actuality/" element={<AddActivity Toggle={Toggle}/>} />
-                            <Route path="/report" element={<Report Toggle={Toggle}/>} />
-                            <Route path="/update-actuality/:id" element={<UpdateActivity Toggle={Toggle}/>} />
-                        </Routes>
+                    <Routes>
+                        <Route path="/" element={<HomeSide Toggle={Toggle} />} />
+                        <Route path="/donations" element={<Donations Toggle={Toggle} />} />
+                        <Route path="/newsletter" element={<Newsletter Toggle={Toggle} />} />
+                        <Route path="/activity" element={<Activity Toggle={Toggle} />} />
+                        <Route path="/add-actuality/" element={<AddActivity Toggle={Toggle} />} />
+                        <Route path="/report" element={<Report Toggle={Toggle} />} />
+                        <Route path="/update-actuality/:id" element={<UpdateActivity Toggle={Toggle} />} />
+                    </Routes>
                 </div>
 
             </div>

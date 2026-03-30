@@ -292,7 +292,7 @@
 .about_video_container {
 	width: 100%;
 	background: linear-gradient(to right, rgb(49, 49, 49) 0%, rgba(49, 49, 49) 40%, rgba(49, 49, 49, 0.869) 100%),
-	            url('../assets/IMG-20210701-WA0042.jpg') right/cover no-repeat;
+		url('../assets/IMG-20210701-WA0042.jpg') right/cover no-repeat;
 	padding: 100px 0;
 	position: relative;
 	/* filter: grayscale(100%); */

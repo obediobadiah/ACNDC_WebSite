@@ -145,9 +145,9 @@ function Report({ Toggle }) {
                             </div>
 
                             <div className="activities_buttons">
-                                <a href="#" className="bg-primary border-0 px-2 fw-bold text-white rounded-3 mt-3 text-white">
+                                <button type="button" className="bg-primary border-0 px-2 fw-bold text-white rounded-3 mt-3 text-white">
                                     <i className="bi bi-save fs-5 m-2"></i>AJOUTER
-                                </a>
+                                </button>
                             </div>
                         </div>
                     </div>

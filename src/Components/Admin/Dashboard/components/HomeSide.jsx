@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import '../styles/style.css'
-import logoImg from '../assets/Logos ACNDC.png'
 import API_BASE_URL from '../../../../config/api'
 import Navbar from "./navbar";
 
@@ -85,7 +84,7 @@ function HomeSide({ Toggle }) {
                                 <td><span>{item.title}</span></td>
                                 <td>{item.description}</td>
                                 <td className="">{item.link}</td>
-                                <td className=""><img src={`data:image/jpeg;base64,${item.image}`}alt="Actuality Image" width="150" height="150"/></td>
+                                <td className=""><img src={`data:image/jpeg;base64,${item.image}`}alt="Actuality" width="150" height="150"/></td>
                             </tr>
                         )).reverse()}
                     </tbody>

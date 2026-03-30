@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import '../styles/style.css'
 import Bailleur1Img from '../../Partenaire/assets/images (2).png'
-import Bailleur2Img from '../../Partenaire/assets/lxoese.jpg'
 import Bailleur3Img from '../../Partenaire/assets/logo crispine.png'
 import Bailleur4Img from '../../Partenaire/assets/logo_MIC-300x300 Bailleur.png'
-import Bailleur5Img from '../../Partenaire/assets/Purposeful Logo 2021 PINEAPPLE (2) Bailleur.png'
+import Bailleur5Img from '../../Partenaire/assets/uaf-africa.png'
+import Bailleur6Img from '../../Partenaire/assets/Purposeful Logo 2021 PINEAPPLE (2) Bailleur.png'
+import Bailleur7Img from '../../Partenaire/assets/Me Too.png'
 import Reaseau1Img from '../../Partenaire/assets/Engage.png'
 import Reaseau2Img from '../../Partenaire/assets/Voice.png'
 import Reaseau3Img from '../../Partenaire/assets/IMG_8068.jpg'
@@ -23,11 +24,13 @@ function Partners_Carousel() {
 		{ id: 3, src: Bailleur3Img, alt: 'Partner 3' },
 		{ id: 4, src: Bailleur4Img, alt: 'Partner 4' },
 		{ id: 5, src: Bailleur5Img, alt: 'Partner 5' },
-		{ id: 6, src: Reaseau1Img, alt: 'Partner 6' },
-		{ id: 7, src: Reaseau2Img, alt: 'Partner 7' },
-		{ id: 8, src: Reaseau3Img, alt: 'Partner 8' },
-		{ id: 9, src: Reaseau4Img, alt: 'Partner 9' },
-		{ id: 10, src: Reaseau5Img, alt: 'Partner 10' }
+		{ id: 6, src: Bailleur6Img, alt: 'Partner 6' },
+		{ id: 7, src: Bailleur7Img, alt: 'Partner 7' },
+		{ id: 8, src: Reaseau1Img, alt: 'Partner 8' },
+		{ id: 9, src: Reaseau2Img, alt: 'Partner 9' },
+		{ id: 10, src: Reaseau3Img, alt: 'Partner 10' },
+		{ id: 11, src: Reaseau4Img, alt: 'Partner 11' },
+		{ id: 12, src: Reaseau5Img, alt: 'Partner 12' }
 	];
 
 	const handlePrevClick = () => {
@@ -51,7 +54,7 @@ function Partners_Carousel() {
 				</div>
 
 				<div className="partners_carousel_wrapper">
-					<button 
+					<button
 						className="partners_carousel_btn partners_carousel_btn_prev"
 						onClick={handlePrevClick}
 						disabled={scrollPosition === 0}
@@ -61,7 +64,7 @@ function Partners_Carousel() {
 					</button>
 
 					<div className="partners_carousel_track_container">
-						<div 
+						<div
 							className="partners_carousel_track"
 							style={{
 								transform: `translateX(calc(-${scrollPosition * (200 + 20)}px))`
@@ -76,7 +79,7 @@ function Partners_Carousel() {
 						</div>
 					</div>
 
-					<button 
+					<button
 						className="partners_carousel_btn partners_carousel_btn_next"
 						onClick={handleNextClick}
 						disabled={scrollPosition === allLogos.length - 1}

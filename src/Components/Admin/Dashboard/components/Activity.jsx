@@ -1,38 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import '../styles/style.css'
-import logoImg from '../assets/Logos ACNDC.png'
 import API_BASE_URL from '../../../../config/api'
 import Navbar from './navbar'
 import Swal from 'sweetalert2'
-import { Modal } from "react-bootstrap";
 import { Link } from 'react-router-dom'
-import { CircularProgress } from "@mui/material";
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
 
 
 function Activity({ Toggle }) {
 
     const [data, setData] = useState([]);
-    const [filteredData, setFilteredData] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
-    const [show, setShow] = useState(false);
-    // const handleCloseAddForm = () => setShow(false);
-    // const handleShowAddForm = () => setShow(true);
-    // const [fullscreen, setFullscreen] = useState(true);
-
-    const [value, setValue] = useState('');
-
-    // const handleCloseEditForm = () => setShow(false);
-    // const handleShowEditForm = () => setShow(true);
-
-    const [title, setActTitle] = useState('');
-    const [description, setActDescription] = useState('');
-    const [link, setActLink] = useState('');
-    const [image, setActImage] = useState(null);
-    const [fileSizeError, setFileSizeError] = useState('');
 
     const duplicateAct = (dipId) => {
         Swal.fire({
@@ -47,18 +26,24 @@ function Activity({ Toggle }) {
             if (result.isConfirmed) {
                 fetch(`${API_BASE_URL}/add-actuality-id/${dipId}`, { method: 'POST' })
                     .then((response) => {
-                        if (response.ok) {
-                            Swal.fire('Dupliqué!', 'Actualité Dupliqué', 'success')
-                                .then(() => {
-                                    window.location.reload();
-                                });
-                        } else {
-                            Swal.fire('Error', 'Echec de duplication', 'error');
+                        if (!response.ok) {
+                            return response.json().then(data => {
+                                throw new Error(data.message || `HTTP ${response.status}: Failed to duplicate actuality`);
+                            }).catch(err => {
+                                throw new Error(`HTTP ${response.status}: Failed to duplicate actuality`);
+                            });
                         }
+                        return response.json();
+                    })
+                    .then((data) => {
+                        Swal.fire('Dupliqué!', 'Actualité Dupliqué', 'success')
+                            .then(() => {
+                                window.location.reload();
+                            });
                     })
                     .catch((error) => {
                         console.error('Echec ', error);
-                        Swal.fire('Error', 'Echec', 'error');
+                        Swal.fire('Error', error.message || 'Echec de duplication', 'error');
                     });
             }
         });
@@ -68,25 +53,45 @@ function Activity({ Toggle }) {
 
     const fetchData = () => {
         fetch(`${API_BASE_URL}/get-actuality/`)
-            .then((response) => response.json())
+            .then((response) => {
+                if (!response.ok) {
+                    return response.json().then(data => {
+                        throw new Error(data.message || `HTTP ${response.status}: Failed to fetch actualities`);
+                    }).catch(err => {
+                        throw new Error(`HTTP ${response.status}: Failed to fetch actualities`);
+                    });
+                }
+                return response.json();
+            })
             .then((data) => {
                 setData(data);
-                setFilteredData(data);
             })
-            .catch((error) => console.error('Error getting data: ', error));
+            .catch((error) => {
+                console.error('Error getting data: ', error);
+                Swal.fire('Error', 'Impossible de charger les actualités', 'error');
+            });
     };
 
     // Filter data
 
-    const filterData = () => {
+    const filterData = useCallback(() => {
         const encodedSearchTerm = encodeURIComponent(searchTerm);
         fetch(`${API_BASE_URL}/get-actuality/` + encodedSearchTerm)
-            .then((response) => response.json())
+            .then((response) => {
+                if (!response.ok) {
+                    return response.json().then(data => {
+                        throw new Error(data.message || `HTTP ${response.status}: Failed to filter actualities`);
+                    }).catch(err => {
+                        throw new Error(`HTTP ${response.status}: Failed to filter actualities`);
+                    });
+                }
+                return response.json();
+            })
             .then((filteredData) => {
-                setFilteredData(filteredData);
+                // setFilteredData(filteredData);
             })
             .catch((error) => console.error('Error filtering data: ', error));
-    };
+    }, [searchTerm]);
 
     const deleteAct = (delId) => {
         Swal.fire({
@@ -101,18 +106,24 @@ function Activity({ Toggle }) {
             if (result.isConfirmed) {
                 fetch(`${API_BASE_URL}/delete-actuality/${delId}`, { method: 'POST' })
                     .then((response) => {
-                        if (response.ok) {
-                            Swal.fire('Effacé!', 'Actualité effacé', 'success')
-                                .then(() => {
-                                    window.location.reload();
-                                });
-                        } else {
-                            Swal.fire('Error', 'Echec de suppretion', 'error');
+                        if (!response.ok) {
+                            return response.json().then(data => {
+                                throw new Error(data.message || `HTTP ${response.status}: Failed to delete actuality`);
+                            }).catch(err => {
+                                throw new Error(`HTTP ${response.status}: Failed to delete actuality`);
+                            });
                         }
+                        return response.json();
+                    })
+                    .then((data) => {
+                        Swal.fire('Effacé!', 'Actualité effacé', 'success')
+                            .then(() => {
+                                window.location.reload();
+                            });
                     })
                     .catch((error) => {
                         console.error('Error deleting data:', error);
-                        Swal.fire('Error', 'Failed to delete item.', 'error');
+                        Swal.fire('Error', error.message || 'Echec de suppression', 'error');
                     });
             }
         });
@@ -120,7 +131,7 @@ function Activity({ Toggle }) {
 
     useEffect(() => {
         filterData();
-    }, [searchTerm]);
+    }, [searchTerm, filterData]);
 
     useEffect(() => {
         fetchData();
@@ -173,7 +184,7 @@ function Activity({ Toggle }) {
                                 <td>{item.description}</td>
                                 <td className="">{item.link}</td>
                                 <td>
-                                    <img src={`data:image/jpeg;base64,${item.image}`} alt="Actuality Image" width="150" height="150" />
+                                    <img src={`data:image/jpeg;base64,${item.image}`} alt="Actuality" width="150" height="150" />
                                 </td>
                                 <td>
                                     <Link to={`/admin-dashboard/update-actuality/${item.id}`} className="bg-warning border-0 px-5 fw-bold text-white rounded m-1" >

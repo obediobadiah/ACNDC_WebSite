@@ -7,7 +7,6 @@ import NewsLetter from '../../NewsLetter/components/NewsLetter_Page'
 import ConseilSection from './Conseil_Section'
 import CoordinationSection from './Coordination_Section'
 import '../styles/style.css'
-import IntroImg from '../assets/IMG-20210701-WA0030.jpg'
 import { useTranslation } from 'react-i18next'
 
 function OrganeGestion() {

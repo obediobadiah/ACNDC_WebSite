@@ -4,10 +4,11 @@ import Footer from '../../Footer/components/Footer'
 import '../styles/style.css'
 import IntroImg from '../assets/IMG-20210701-WA0042.jpg'
 import Bailleur1Img from '../assets/images (2).png'
-import Bailleur2Img from '../assets/lxoese.jpg'
 import Bailleur3Img from '../assets/logo crispine.png'
 import Bailleur4Img from '../assets/logo_MIC-300x300 Bailleur.png'
-import Bailleur5Img from '../assets/Purposeful Logo 2021 PINEAPPLE (2) Bailleur.png'
+import Bailleur5Img from '../../Partenaire/assets/uaf-africa.png'
+import Bailleur6Img from '../assets/Purposeful Logo 2021 PINEAPPLE (2) Bailleur.png'
+import Bailleur7Img from '../assets/Me Too.png'
 import Reaseau1Img from '../assets/Engage.png'
 import Reaseau2Img from '../assets/Voice.png'
 import Reaseau3Img from '../assets/IMG_8068.jpg'
@@ -43,9 +44,11 @@ function Partenaire() {
 								{/* <div><img src={Bailleur2Img} alt="" /></div> */}
 								<div><img src={Bailleur4Img} alt="" /></div>
 								<div><img src={Bailleur5Img} alt="" /></div>
+								<div><img src={Bailleur6Img} alt="" /></div>
+								<div><img src={Bailleur7Img} alt="" /></div>
 								<div>
 									<img src={Bailleur3Img} alt="" />
-									<h2>Alternatives Menages,<br/> Nature et <br/>Marché,  AMEN</h2>
+									<h2>Alternatives Menages,<br /> Nature et <br />Marché,  AMEN</h2>
 								</div>
 							</div>
 						</div>

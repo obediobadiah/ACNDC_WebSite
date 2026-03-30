@@ -2,7 +2,6 @@ import React from 'react'
 import Header from '../../Header/header'
 import Footer from '../../Footer/components/Footer'
 import '../styles/style.css'
-import IntroImg from '../assets/IMG-20210701-WA00631.png'
 import QuoteImg from '../assets/IMG-20210701-WA0029.jpg'
 import { useTranslation } from 'react-i18next'
 

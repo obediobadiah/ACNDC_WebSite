@@ -12,6 +12,8 @@ import MariMuliro from '../assets/Marianna Muliro.JPG'
 import JoseAmina from '../assets/Joséphine Amina.JPG'
 import GayNgendo from '../assets/Gaylord Ngendo.JPG'
 import JustMaombi from '../assets/Justine Maombi.JPG'
+import ValentineKahambu from '../assets/Valentine Kahambu.JPG'
+import FortuneSarah from '../assets/Fortune Sarah.JPG'
 
 function Coordination_Section() {
 
@@ -37,31 +39,6 @@ function Coordination_Section() {
 				</div>
 
 
-
-				<div className="OrganeGestion_Exp">
-					<div className="OrganeGestion_Img">
-						<img src={AnimateurTerrain} alt="Administratrice" />
-					</div>
-					<div className="OrganeGestion_Function">
-						<h3>Amos Bahiya</h3>
-						<p>{t("organe_coord_animateur_terrain")}</p>
-					</div>
-				</div>
-
-
-
-				<div className="OrganeGestion_Exp">
-					<div className="OrganeGestion_Img">
-						<img src={ByamMAEC} alt="Chargé des droits" />
-					</div>
-					<div className="OrganeGestion_Function">
-						<h3>Byamungu Kakolela</h3>
-						<p>{t("organe_coord_maec")}</p>
-					</div>
-				</div>
-
-
-
 				<div className="OrganeGestion_Exp">
 					<div className="OrganeGestion_Img">
 						<img src={MariMuliro} alt="Chargé de conservation" />
@@ -69,54 +46,6 @@ function Coordination_Section() {
 					<div className="OrganeGestion_Function">
 						<h3>Marianna Muliro</h3>
 						<p>{t("organe_coord_programme_urgence")}</p>
-					</div>
-				</div>
-
-
-
-				<div className="OrganeGestion_Exp">
-					<div className="OrganeGestion_Img">
-						<img src={ShaKam} alt="Chargé entrepreneuriat" />
-					</div>
-					<div className="OrganeGestion_Function">
-						<h3>Shadrack Kamwenge</h3>
-						<p>{t("organe_coord_monitoring")}</p>
-					</div>
-				</div>
-
-
-
-				<div className="OrganeGestion_Exp">
-					<div className="OrganeGestion_Img">
-						<img src={EstFur} alt="Chargé de programme" />
-					</div>
-					<div className="OrganeGestion_Function">
-						<h3>Esther Furaha</h3>
-						<p>{t("organe_coord_assistante_mouvement")}</p>
-					</div>
-				</div>
-
-
-
-				<div className="OrganeGestion_Exp">
-					<div className="OrganeGestion_Img">
-						<img src={JulBanzaNgoyi} alt="Chargé de partenariat" />
-					</div>
-					<div className="OrganeGestion_Function">
-						<h3>Julienne Banza Ngoyi</h3>
-						<p>{t("organe_coord_psychologue")}</p>
-					</div>
-				</div>
-
-
-
-				<div className="OrganeGestion_Exp">
-					<div className="OrganeGestion_Img">
-						<img src={JoseAmina} alt="Chargé de partenariat" />
-					</div>
-					<div className="OrganeGestion_Function">
-						<h3>Joséphine Amina</h3>
-						<p>{t("organe_coord_assistante_plaidoyer")}</p>
 					</div>
 				</div>
 
@@ -136,6 +65,68 @@ function Coordination_Section() {
 
 				<div className="OrganeGestion_Exp">
 					<div className="OrganeGestion_Img">
+						<img src={JoseAmina} alt="Chargé de partenariat" />
+					</div>
+					<div className="OrganeGestion_Function">
+						<h3>Joséphine Amina</h3>
+						<p>{t("organe_coord_assistante_plaidoyer")}</p>
+					</div>
+				</div>
+
+
+
+				<div className="OrganeGestion_Exp">
+					<div className="OrganeGestion_Img">
+						<img src={EstFur} alt="Chargé de programme" />
+					</div>
+					<div className="OrganeGestion_Function">
+						<h3>Esther Furaha</h3>
+						<p>{t("organe_coord_assistante_mouvement")}</p>
+					</div>
+				</div>
+
+
+
+				<div className="OrganeGestion_Exp">
+					<div className="OrganeGestion_Img">
+						<img src={ShaKam} alt="Chargé entrepreneuriat" />
+					</div>
+					<div className="OrganeGestion_Function">
+						<h3>Shadrack Kamwenge</h3>
+						<p>{t("organe_coord_monitoring")}</p>
+					</div>
+				</div>
+
+
+
+
+				<div className="OrganeGestion_Exp">
+					<div className="OrganeGestion_Img">
+						<img src={JulBanzaNgoyi} alt="Chargé de partenariat" />
+					</div>
+					<div className="OrganeGestion_Function">
+						<h3>Julienne Banza Ngoyi</h3>
+						<p>{t("organe_coord_psychologue")}</p>
+					</div>
+				</div>
+
+
+
+				<div className="OrganeGestion_Exp">
+					<div className="OrganeGestion_Img">
+						<img src={ByamMAEC} alt="Chargé des droits" />
+					</div>
+					<div className="OrganeGestion_Function">
+						<h3>Byamungu Kakolela</h3>
+						<p>{t("organe_coord_maec")}</p>
+					</div>
+				</div>
+
+
+
+
+				<div className="OrganeGestion_Exp">
+					<div className="OrganeGestion_Img">
 						<img src={JustMaombi} alt="Chargé de conservation" />
 					</div>
 					<div className="OrganeGestion_Function">
@@ -143,6 +134,47 @@ function Coordination_Section() {
 						<p>{t("organe_coord_assistante_programme")}</p>
 					</div>
 				</div>
+
+
+
+
+
+				<div className="OrganeGestion_Exp">
+					<div className="OrganeGestion_Img">
+						<img src={AnimateurTerrain} alt="Administratrice" />
+					</div>
+					<div className="OrganeGestion_Function">
+						<h3>Amos Bahiya</h3>
+						<p>{t("organe_coord_animateur_terrain")}</p>
+					</div>
+				</div>
+
+
+
+
+				<div className="OrganeGestion_Exp">
+					<div className="OrganeGestion_Img">
+						<img src={ValentineKahambu} alt="Administratrice" />
+					</div>
+					<div className="OrganeGestion_Function">
+						<h3>Valentine Kahambu</h3>
+						<p>{t("organe_coord_animatrice")}</p>
+					</div>
+				</div>
+
+
+
+
+				<div className="OrganeGestion_Exp">
+					<div className="OrganeGestion_Img">
+						<img src={FortuneSarah} alt="Administratrice" />
+					</div>
+					<div className="OrganeGestion_Function">
+						<h3>Fortune Sarah</h3>
+						<p>{t("organe_coord_mobilisatrice")}</p>
+					</div>
+				</div>
+
 
 
 

@@ -1,26 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/style.css';
-import img1 from '../assets/IMG-20210701-WA0043.jpg';
-import img2 from '../assets/IMG-20210701-WA00281.jpg';
-import img3 from '../assets/IMG-20210701-WA0032.jpg';
 import { useTranslation } from 'react-i18next';
 
 function LandingIntro() {
   const { t } = useTranslation();
 
   const slides = [
-    { id: 'slide_section1',title: t('intro_text_title_slide_1'), text: t('intro_text_par_slide_1') },
-    { id: 'slide_section2',title: t('intro_text_title_slide_2'), text: t('intro_text_par_slide_2') },
-    { id: 'slide_section3',title: t('intro_text_title_slide_3'), text: t('intro_text_par_slide_3') },
+    { id: 'slide_section1', title: t('intro_text_title_slide_1'), text: t('intro_text_par_slide_1') },
+    { id: 'slide_section2', title: t('intro_text_title_slide_2'), text: t('intro_text_par_slide_2') },
+    { id: 'slide_section3', title: t('intro_text_title_slide_3'), text: t('intro_text_par_slide_3') },
   ];
 
   const [activeSlide, setActiveSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setActiveSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-  };
+  }, [slides.length]);
 
   const handlePrev = () => {
     setActiveSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
@@ -34,7 +31,7 @@ function LandingIntro() {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [isPaused]);
+  }, [isPaused, handleNext]);
 
   return (
     <div

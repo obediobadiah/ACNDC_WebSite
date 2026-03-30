@@ -14,7 +14,7 @@ function Header() {
 	const [Actdropdown, setActDropdown] = useState(false);
 	const [SomDropdown, setSomDropdown] = useState(false);
 	const [hasBackground, setHasBackground] = useState(false);
-	const [setLangDropdown] = useState(false);
+	// const [setLangDropdown] = useState(false);
 	const handleClick = () => setClick(!click);
 
 	const { t, i18n } = useTranslation();
@@ -67,25 +67,25 @@ function Header() {
 	};
 
 
-	const onMouseEnterLang = () => {
-		if (window.innerWidth < 960) {
+	// const onMouseEnterLang = () => {
+	// 	if (window.innerWidth < 960) {
 
-			setLangDropdown(true);
-		} else {
+	// 		setLangDropdown(true);
+	// 	} else {
 
-			setLangDropdown(true);
-		}
-	};
+	// 		setLangDropdown(true);
+	// 	}
+	// };
 
-	const onMouseLeaveLang = () => {
-		if (window.innerWidth < 960) {
+	// const onMouseLeaveLang = () => {
+	// 	if (window.innerWidth < 960) {
 
-			setLangDropdown(false);
-		} else {
+	// 		setLangDropdown(false);
+	// 	} else {
 
-			setLangDropdown(false);
-		}
-	};
+	// 		setLangDropdown(false);
+	// 	}
+	// };
 
 	useEffect(() => {
 		const handleScroll = () => {

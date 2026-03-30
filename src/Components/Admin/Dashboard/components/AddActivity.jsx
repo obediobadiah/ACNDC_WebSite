@@ -1,28 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import '../styles/style.css'
-import logoImg from '../assets/Logos ACNDC.png'
 import API_BASE_URL from '../../../../config/api'
 import Navbar from './navbar'
 import Swal from 'sweetalert2'
-import { Modal } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import { Link } from 'react-router-dom'
-import { CircularProgress } from "@mui/material";
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
+import { CircularProgress } from "@mui/material";
 
 
 
 
 function AddActivity({ Toggle }) {
-    const [data, setData] = useState([]);
-    const [filteredData, setFilteredData] = useState([]);
-    const [searchTerm, setSearchTerm] = useState('');
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    // const { id } = useParams();
+    
+    const handleClose = () => {
+        // Navigate back or close modal logic
+        window.history.back();
+    };
 
     const [reactQuillvalue, setReactQuillvalue] = useState('');
 
@@ -32,10 +30,6 @@ function AddActivity({ Toggle }) {
     const [image, setActImage] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
     const [fileSizeError, setFileSizeError] = useState('');
-
-
-
-    const { id } = useParams();
 
     const modules = {
         toolbar: [
@@ -75,6 +69,13 @@ function AddActivity({ Toggle }) {
                     body: formData,
                 })
                     .then((res) => {
+                        if (!res.ok) {
+                            return res.json().then(data => {
+                                throw new Error(data.message || `HTTP ${res.status}: Failed to add actuality`);
+                            }).catch(err => {
+                                throw new Error(`HTTP ${res.status}: Failed to add actuality`);
+                            });
+                        }
                         const contentType = res.headers.get('content-type');
                         if (contentType && contentType.includes('application/json')) {
                             return res.json();
@@ -91,7 +92,7 @@ function AddActivity({ Toggle }) {
                     })
                     .catch((error) => {
                         console.error('Echec: ', error);
-                        Swal.fire('Error', 'Echec d\'ajout de données', 'error');
+                        Swal.fire('Error', error.message || 'Echec d\'ajout de données', 'error');
                         setIsLoading(false);
                     });
             }
@@ -169,9 +170,9 @@ function AddActivity({ Toggle }) {
 
 
 
-    const handleSearch = (e) => {
-        setSearchTerm(e.target.value);
-    };
+    // const handleSearch = (e) => {
+//     setSearchTerm(e.target.value);
+// };
 
     // useEffect(() => {
     //     fetchDataByID();
