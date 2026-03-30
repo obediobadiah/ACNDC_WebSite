@@ -66,6 +66,13 @@ function UpdateActivity({ Toggle }) {
                     body: formData,
                 })
                     .then((res) => {
+                        if (!res.ok) {
+                            return res.json().then(data => {
+                                throw new Error(data.message || `HTTP ${res.status}: Failed to update actuality`);
+                            }).catch(err => {
+                                throw new Error(`HTTP ${res.status}: Failed to update actuality`);
+                            });
+                        }
                         const contentType = res.headers.get('content-type');
                         if (contentType && contentType.includes('application/json')) {
                             return res.json();
@@ -81,7 +88,7 @@ function UpdateActivity({ Toggle }) {
                     })
                     .catch((error) => {
                         console.error('Echec ', error);
-                        Swal.fire('Error', 'Echec', 'error');
+                        Swal.fire('Error', error.message || 'Echec de mise à jour', 'error');
                     });
             }
         });
@@ -92,7 +99,16 @@ function UpdateActivity({ Toggle }) {
 
     const fetchDataByID = useCallback(() => {
         fetch(`${API_BASE_URL}/get-actuality-id/` + id)
-            .then((response) => response.json())
+            .then((response) => {
+                if (!response.ok) {
+                    return response.json().then(data => {
+                        throw new Error(data.message || `HTTP ${response.status}: Failed to fetch actuality`);
+                    }).catch(err => {
+                        throw new Error(`HTTP ${response.status}: Failed to fetch actuality`);
+                    });
+                }
+                return response.json();
+            })
             .then((data) => {
                 // setFilteredData(data);
                 setActTitle(data[0].title)

@@ -69,6 +69,13 @@ function AddActivity({ Toggle }) {
                     body: formData,
                 })
                     .then((res) => {
+                        if (!res.ok) {
+                            return res.json().then(data => {
+                                throw new Error(data.message || `HTTP ${res.status}: Failed to add actuality`);
+                            }).catch(err => {
+                                throw new Error(`HTTP ${res.status}: Failed to add actuality`);
+                            });
+                        }
                         const contentType = res.headers.get('content-type');
                         if (contentType && contentType.includes('application/json')) {
                             return res.json();
@@ -85,7 +92,7 @@ function AddActivity({ Toggle }) {
                     })
                     .catch((error) => {
                         console.error('Echec: ', error);
-                        Swal.fire('Error', 'Echec d\'ajout de données', 'error');
+                        Swal.fire('Error', error.message || 'Echec d\'ajout de données', 'error');
                         setIsLoading(false);
                     });
             }

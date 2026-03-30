@@ -30,26 +30,46 @@ function Login() {
             },
             body: JSON.stringify(loginData),
         })
-            .then((response) => response.json())
+            .then((response) => {
+                // Check if the response is successful
+                if (!response.ok) {
+                    // For non-2xx responses, still try to parse error message from JSON
+                    return response.json().then(data => {
+                        throw new Error(data.message || `HTTP ${response.status}: Authentication failed`);
+                    }).catch(err => {
+                        // If JSON parsing fails, throw a generic error
+                        throw new Error(`HTTP ${response.status}: Authentication failed`);
+                    });
+                }
+                return response.json();
+            })
             .then((data) => {
-
                 if (data.message === "Success") {
                     console.log(data);
                     window.localStorage.setItem("Token", data.token);
                     verifyTokenAndRedirect(data.token);
                     Swal.fire('Reussi', `Bienvenue`, 'success')
-                }
-                else if (data.message === "Invalid password") {
-                    Swal.fire('Echec', 'Votre Mot de Passe est incorrect', 'error')
+                } else {
+                    // Fallback for unexpected responses
+                    Swal.fire('Echec', 'Une erreur est survenue', 'error')
                     setIsLoading(false);
-                }
-                else if (data.message === "The user doesn't exist") {
-                    Swal.fire('Echec', `Ce compte n'existe pas`, 'error')
-                    setIsLoading(false);
-
                 }
             })
-            .catch((error) => console.error('Error getting data: ', error));
+            .catch((error) => {
+                console.error('Error during login: ', error);
+                // Check the error message and show appropriate user message
+                const errorMessage = error.message;
+                if (errorMessage.includes('Invalid password')) {
+                    Swal.fire('Echec', 'Votre Mot de Passe est incorrect', 'error');
+                } else if (errorMessage.includes('User not found')) {
+                    Swal.fire('Echec', `Ce compte n'existe pas`, 'error');
+                } else if (errorMessage.includes('Username and password are required')) {
+                    Swal.fire('Echec', 'Le nom d\'utilisateur et le mot de passe sont requis', 'error');
+                } else {
+                    Swal.fire('Echec', 'Une erreur est survenue lors de la connexion. Veuillez réessayer.', 'error');
+                }
+                setIsLoading(false);
+            });
     }
 
     const verifyTokenAndRedirect = (token) => {

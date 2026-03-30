@@ -16,11 +16,22 @@ function Actualite_Section() {
 	// Fetch all data
 	const fetchData = () => {
 		fetch(`${API_BASE_URL}/get-actuality/`)
-			.then((response) => response.json())
+			.then((response) => {
+				if (!response.ok) {
+					return response.json().then(data => {
+						throw new Error(data.message || `HTTP ${response.status}: Failed to fetch actualities`);
+					}).catch(err => {
+						throw new Error(`HTTP ${response.status}: Failed to fetch actualities`);
+					});
+				}
+				return response.json();
+			})
 			.then((data) => {
 				setData(data);
 			})
-			.catch((error) => console.error('Error getting data: ', error));
+			.catch((error) => {
+				console.error('Error getting data: ', error);
+			});
 	};
 
 	useEffect(() => {

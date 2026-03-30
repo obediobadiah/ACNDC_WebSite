@@ -15,7 +15,16 @@ function ActualiteDetails() {
 
     const fetchActualityData = useCallback(() => {
         fetch(`${API_BASE_URL}/get-actuality`)
-            .then((response) => response.json())
+            .then((response) => {
+                if (!response.ok) {
+                    return response.json().then(data => {
+                        throw new Error(data.message || `HTTP ${response.status}: Failed to fetch actuality details`);
+                    }).catch(err => {
+                        throw new Error(`HTTP ${response.status}: Failed to fetch actuality details`);
+                    });
+                }
+                return response.json();
+            })
             .then((data) => {
                 const foundActuality = data.find((item) => item.slug === slug);
                 setActuality(foundActuality || null);
@@ -23,6 +32,7 @@ function ActualiteDetails() {
             })
             .catch((error) => {
                 console.error('Error fetching data: ', error);
+                setActuality(null);
                 setLoading(false);
             });
     }, [slug]);

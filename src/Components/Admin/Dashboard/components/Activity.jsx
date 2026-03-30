@@ -26,18 +26,24 @@ function Activity({ Toggle }) {
             if (result.isConfirmed) {
                 fetch(`${API_BASE_URL}/add-actuality-id/${dipId}`, { method: 'POST' })
                     .then((response) => {
-                        if (response.ok) {
-                            Swal.fire('Dupliqué!', 'Actualité Dupliqué', 'success')
-                                .then(() => {
-                                    window.location.reload();
-                                });
-                        } else {
-                            Swal.fire('Error', 'Echec de duplication', 'error');
+                        if (!response.ok) {
+                            return response.json().then(data => {
+                                throw new Error(data.message || `HTTP ${response.status}: Failed to duplicate actuality`);
+                            }).catch(err => {
+                                throw new Error(`HTTP ${response.status}: Failed to duplicate actuality`);
+                            });
                         }
+                        return response.json();
+                    })
+                    .then((data) => {
+                        Swal.fire('Dupliqué!', 'Actualité Dupliqué', 'success')
+                            .then(() => {
+                                window.location.reload();
+                            });
                     })
                     .catch((error) => {
                         console.error('Echec ', error);
-                        Swal.fire('Error', 'Echec', 'error');
+                        Swal.fire('Error', error.message || 'Echec de duplication', 'error');
                     });
             }
         });
@@ -47,11 +53,23 @@ function Activity({ Toggle }) {
 
     const fetchData = () => {
         fetch(`${API_BASE_URL}/get-actuality/`)
-            .then((response) => response.json())
+            .then((response) => {
+                if (!response.ok) {
+                    return response.json().then(data => {
+                        throw new Error(data.message || `HTTP ${response.status}: Failed to fetch actualities`);
+                    }).catch(err => {
+                        throw new Error(`HTTP ${response.status}: Failed to fetch actualities`);
+                    });
+                }
+                return response.json();
+            })
             .then((data) => {
                 setData(data);
             })
-            .catch((error) => console.error('Error getting data: ', error));
+            .catch((error) => {
+                console.error('Error getting data: ', error);
+                Swal.fire('Error', 'Impossible de charger les actualités', 'error');
+            });
     };
 
     // Filter data
@@ -59,7 +77,16 @@ function Activity({ Toggle }) {
     const filterData = useCallback(() => {
         const encodedSearchTerm = encodeURIComponent(searchTerm);
         fetch(`${API_BASE_URL}/get-actuality/` + encodedSearchTerm)
-            .then((response) => response.json())
+            .then((response) => {
+                if (!response.ok) {
+                    return response.json().then(data => {
+                        throw new Error(data.message || `HTTP ${response.status}: Failed to filter actualities`);
+                    }).catch(err => {
+                        throw new Error(`HTTP ${response.status}: Failed to filter actualities`);
+                    });
+                }
+                return response.json();
+            })
             .then((filteredData) => {
                 // setFilteredData(filteredData);
             })
@@ -79,18 +106,24 @@ function Activity({ Toggle }) {
             if (result.isConfirmed) {
                 fetch(`${API_BASE_URL}/delete-actuality/${delId}`, { method: 'POST' })
                     .then((response) => {
-                        if (response.ok) {
-                            Swal.fire('Effacé!', 'Actualité effacé', 'success')
-                                .then(() => {
-                                    window.location.reload();
-                                });
-                        } else {
-                            Swal.fire('Error', 'Echec de suppretion', 'error');
+                        if (!response.ok) {
+                            return response.json().then(data => {
+                                throw new Error(data.message || `HTTP ${response.status}: Failed to delete actuality`);
+                            }).catch(err => {
+                                throw new Error(`HTTP ${response.status}: Failed to delete actuality`);
+                            });
                         }
+                        return response.json();
+                    })
+                    .then((data) => {
+                        Swal.fire('Effacé!', 'Actualité effacé', 'success')
+                            .then(() => {
+                                window.location.reload();
+                            });
                     })
                     .catch((error) => {
                         console.error('Error deleting data:', error);
-                        Swal.fire('Error', 'Failed to delete item.', 'error');
+                        Swal.fire('Error', error.message || 'Echec de suppression', 'error');
                     });
             }
         });

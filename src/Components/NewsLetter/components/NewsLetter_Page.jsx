@@ -34,12 +34,16 @@ function NewsLetter_Page() {
 			});
 
 			if (!newsletterResponse.ok) {
-				const errorData = await newsletterResponse.json();
-				if (errorData.error === 'Email already subscribed') {
-					// Email already exists, continue with email sending
-					console.log('Email already subscribed, continuing with email sending');
-				} else {
-					throw new Error(errorData.error || 'Failed to save to newsletter');
+				try {
+					const errorData = await newsletterResponse.json();
+					if (errorData.error === 'Email already subscribed') {
+						// Email already exists, continue with email sending
+						console.log('Email already subscribed, continuing with email sending');
+					} else {
+						throw new Error(errorData.error || `HTTP ${newsletterResponse.status}: Failed to save to newsletter`);
+					}
+				} catch (parseError) {
+					throw new Error(`HTTP ${newsletterResponse.status}: Failed to save to newsletter`);
 				}
 			}
 
@@ -52,6 +56,15 @@ function NewsLetter_Page() {
 					},
 					body: JSON.stringify(formData),
 				});
+
+				if (!response.ok) {
+					try {
+						const errorData = await response.json();
+						console.error('Email sending failed:', errorData.error || errorData.message);
+					} catch (e) {
+						console.error(`Email sending failed: HTTP ${response.status}`);
+					}
+				}
 
 				if (response.ok) {
 					Swal.fire({
