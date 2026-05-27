@@ -33,11 +33,12 @@ function Login() {
             .then((response) => {
                 // Check if the response is successful
                 if (!response.ok) {
-                    // For non-2xx responses, still try to parse error message from JSON
+                    // For non-2xx responses, try to parse the error message from JSON
                     return response.json().then(data => {
+                        // Re-throw with the server's specific message so the catch block can match it
                         throw new Error(data.message || `HTTP ${response.status}: Authentication failed`);
-                    }).catch(err => {
-                        // If JSON parsing fails, throw a generic error
+                    }, () => {
+                        // Second argument to .then() handles JSON parse errors only
                         throw new Error(`HTTP ${response.status}: Authentication failed`);
                     });
                 }
