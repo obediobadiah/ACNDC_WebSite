@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.b01f1f44.chunk.css",
-    "main.js": "/static/js/main.3e087b6c.chunk.js",
-    "main.js.map": "/static/js/main.3e087b6c.chunk.js.map",
+    "main.js": "/static/js/main.ea5b2c60.chunk.js",
+    "main.js.map": "/static/js/main.ea5b2c60.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.371ceb87.js",
     "runtime-main.js.map": "/static/js/runtime-main.371ceb87.js.map",
     "static/css/2.5dc93482.chunk.css": "/static/css/2.5dc93482.chunk.css",
-    "static/js/2.3c1ec4f4.chunk.js": "/static/js/2.3c1ec4f4.chunk.js",
-    "static/js/2.3c1ec4f4.chunk.js.map": "/static/js/2.3c1ec4f4.chunk.js.map",
+    "static/js/2.4d6e1a62.chunk.js": "/static/js/2.4d6e1a62.chunk.js",
+    "static/js/2.4d6e1a62.chunk.js.map": "/static/js/2.4d6e1a62.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.5dc93482.chunk.css.map": "/static/css/2.5dc93482.chunk.css.map",
     "static/css/main.b01f1f44.chunk.css.map": "/static/css/main.b01f1f44.chunk.css.map",
-    "static/js/2.3c1ec4f4.chunk.js.LICENSE.txt": "/static/js/2.3c1ec4f4.chunk.js.LICENSE.txt",
+    "static/js/2.4d6e1a62.chunk.js.LICENSE.txt": "/static/js/2.4d6e1a62.chunk.js.LICENSE.txt",
     "static/media/000_33EN462.d9bf9999.jpg": "/static/media/000_33EN462.d9bf9999.jpg",
     "static/media/style.css": "/static/media/IMG_5336.3d093ee3.JPG",
     "static/media/1660507234077.f99aab20.jfif": "/static/media/1660507234077.f99aab20.jfif",
@@ -57,6 +57,7 @@
     "static/media/RAPPORT GENERAL ANNUEL DES ACTIVITES 2022.b9c1cec5.pdf": "/static/media/RAPPORT GENERAL ANNUEL DES ACTIVITES 2022.b9c1cec5.pdf",
     "static/media/RAPPORT GENERAL ANNUEL DES ACTIVITES 2023.4f15c28d.pdf": "/static/media/RAPPORT GENERAL ANNUEL DES ACTIVITES 2023.4f15c28d.pdf",
     "static/media/RAPPORT GENERAL ANNUEL DES ACTIVITES 2024.56ed879e.pdf": "/static/media/RAPPORT GENERAL ANNUEL DES ACTIVITES 2024.56ed879e.pdf",
+    "static/media/RAPPORT GENERAL ANNUEL DES ACTIVITES 2025.2118410c.pdf": "/static/media/RAPPORT GENERAL ANNUEL DES ACTIVITES 2025.2118410c.pdf",
     "static/media/RAPPORT GENERAL DES ACTIVITES 2020.dfb2d5cb.pdf": "/static/media/RAPPORT GENERAL DES ACTIVITES 2020.dfb2d5cb.pdf",
     "static/media/REJEFEMAC MOUVEMENT_n.a4394a25.jpg": "/static/media/REJEFEMAC MOUVEMENT_n.a4394a25.jpg",
     "static/media/Rapporteuse.b03657ca.jpg": "/static/media/Rapporteuse.b03657ca.jpg",
@@ -78,8 +79,8 @@
   "entrypoints": [
     "static/js/runtime-main.371ceb87.js",
     "static/css/2.5dc93482.chunk.css",
-    "static/js/2.3c1ec4f4.chunk.js",
+    "static/js/2.4d6e1a62.chunk.js",
     "static/css/main.b01f1f44.chunk.css",
-    "static/js/main.3e087b6c.chunk.js"
+    "static/js/main.ea5b2c60.chunk.js"
   ]
 }
